@@ -1,0 +1,131 @@
+/* The room is a single dimensional scene. People and their faces occupy seats. */
+.roundtable-room{background:radial-gradient(ellipse at 50% 43%,#2b140f 0,#120c0b 48%,#070707 83%);min-height:760px}
+.roundtable-room .arena-hud{top:18px;left:24px;right:24px;gap:18px}
+.roundtable-room .arena-toolbar{gap:6px}
+.roundtable-room .arena-toolbar>button,.roundtable-room .arena-toolbar>a{font-size:14px;padding:9px 12px}
+.roundtable-room .arena-toolbar>[data-action="edit-avatar"]{color:#ff9d87;border-color:#eb583e66}
+.roundtable-room .arena-mode{top:87px;left:28px;right:28px}
+.roundtable-room .arena-stage{top:110px;left:0;right:0;bottom:calc(var(--dock-height,220px) + 40px);min-height:0}
+.roundtable-room .arena-product{top:0;left:24px;right:24px;z-index:3}
+.roundtable-room .arena-product h2{font-size:17px;font-weight:550;margin:0 0 4px}
+.roundtable-room .arena-product p{font-size:13px;line-height:1.5;color:#b0a29a}
+.roundtable-room .globe-container{inset:36px 0 36px;width:auto;height:auto;min-height:0;margin:0;overflow:visible}
+.roundtable-room .globe-shell{width:100%;height:100%;min-height:0!important;overflow:visible!important}
+.roundtable-room .globe-shell canvas{display:block;width:100%;height:100%;outline-offset:-4px}
+.roundtable-room .globe-controls{left:auto;right:24px;bottom:0;top:auto;transform:none;padding:5px 9px;border-color:#ffffff24;background:#0d0b0be8;z-index:5}
+.roundtable-room .globe-controls>span{color:#b2a49a;font-size:13px}
+.roundtable-room .arena-world-peek{left:24px;right:auto;top:auto;bottom:3px;max-width:min(50vw,550px);text-align:left;z-index:4}
+.roundtable-room .arena-world-peek button{font-size:13px;color:#c7b8ac;background:#0d0b0bd9;max-width:100%;padding:7px 12px;border:1px solid #ffffff20;border-radius:999px}
+.roundtable-room .arena-dock{bottom:18px;max-height:34vh;width:min(1050px,calc(100% - 48px));border-color:#ffffff24;background:#11100ff2}
+.roundtable-room .arena-dock .dock-phase-copy h2{font-size:20px}
+.roundtable-room .action-fields label{font-size:14px}
+.roundtable-room .action-description{font-size:14px!important;line-height:1.55}
+.roundtable-room .dock-secondary button,.roundtable-room .dock-secondary>span{font-size:13px}
+
+/* Tiny scene annotations belong to a person, never a replacement person card. */
+.roundtable-label{position:absolute;z-index:3;transform:translate(-50%,-50%);color:#f5eee8;text-align:center;pointer-events:none;line-height:1.4;max-width:190px}
+.roundtable-label button{pointer-events:auto;font-family:inherit}
+.roundtable-name,.roundtable-person-name{display:block;font-size:14px;font-weight:550;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;max-width:185px}
+.roundtable-score{font-size:16px;font-weight:600;line-height:1.35;font-variant-numeric:tabular-nums}
+.roundtable-state{display:block;font-size:13px;color:#bdada2;line-height:1.5}
+.roundtable-label small{font-size:13px;color:#bdada2}
+.roundtable-label button:focus-visible{outline:2px solid #ff8f72;outline-offset:4px}
+.roundtable-label button:hover{color:#ffa08a}
+.roundtable-label:is(button){pointer-events:auto;border:0;background:none;padding:0;font:inherit;cursor:pointer}
+.roundtable-label:is(button):focus-visible{outline:2px solid #ff8f72;outline-offset:4px;border-radius:5px}
+.roundtable-head-hit{position:absolute;z-index:4;display:block;transform:translate(-50%,-50%);width:56px;height:56px;padding:0;border:0;border-radius:50%;background:transparent;color:transparent;font-size:0;cursor:pointer;touch-action:manipulation}
+.roundtable-head-hit:hover{box-shadow:0 0 0 2px #ffffff6b,0 0 24px #eb583e44}
+.roundtable-head-hit:focus-visible{outline:3px solid #ff987e;outline-offset:3px}
+
+@media(min-width:1001px){.roundtable-room .arena-product{top:-12px}}
+
+@media(min-width:1001px) and (max-width:1240px){
+ .roundtable-room .arena-hud{gap:12px;left:18px;right:18px}
+ .roundtable-room .arena-toolbar{gap:4px}
+ .roundtable-room .arena-toolbar>button,.roundtable-room .arena-toolbar>a{padding:9px 9px;font-size:14px}
+ .roundtable-room .arena-phase{font-size:13px;gap:8px}
+ .roundtable-room .arena-phase>strong{font-size:27px;min-width:53px}
+ .roundtable-room .arena-room{gap:9px;padding-right:12px}
+ .roundtable-room .room-code span{display:none}
+}
+@media(min-width:681px) and (max-width:1000px){
+ .roundtable-room .arena-hud{flex-wrap:wrap;top:14px;left:18px;right:18px;gap:9px}
+ .roundtable-room .arena-toolbar{order:3;flex-basis:100%;justify-content:center;gap:6px}
+ .roundtable-room .arena-toolbar>button,.roundtable-room .arena-toolbar>a{font-size:14px;padding:8px 11px;min-height:38px}
+ .roundtable-room .arena-phase{min-height:54px;margin-left:auto}
+ .roundtable-room .arena-mode{top:126px;left:22px;right:22px}
+ .roundtable-room .arena-stage{top:151px;bottom:calc(var(--dock-height,245px) + 40px)}
+ .roundtable-room .arena-dock{max-height:38vh;width:calc(100% - 36px)}
+ .roundtable-room .arena-product{left:20px;right:20px}
+ .roundtable-room .globe-controls>span{display:none}
+ .roundtable-room .arena-world-peek{max-width:56vw;left:18px}
+ .roundtable-label{max-width:155px}
+ .roundtable-name,.roundtable-person-name{max-width:150px}
+}
+@media(min-width:681px) and (max-height:759px){
+ body.in-game{overflow:auto}
+ .roundtable-room{height:760px;min-height:760px}
+ .roundtable-room .arena-dock{max-height:260px}
+}
+@media(max-width:680px){
+ body.in-game{overflow:auto}
+ .roundtable-room{height:auto;min-height:100dvh;overflow:hidden;padding:0 0 18px}
+ .roundtable-room .arena-hud{position:relative;top:auto;left:auto;right:auto;padding:14px 16px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center}
+ .roundtable-room .arena-room{justify-self:start;gap:8px;min-width:0;padding:6px 10px 6px 6px}
+ .roundtable-room .arena-room h1{font-size:15px}
+ .roundtable-room .arena-back{width:34px;height:34px;font-size:19px}
+ .roundtable-room .room-code{font-size:13px;line-height:1.5}
+ .roundtable-room .room-code span{display:none}
+ .roundtable-room .arena-phase{min-height:48px;gap:7px;margin:0;font-size:13px;display:grid;grid-template-columns:auto;justify-items:end}
+ .roundtable-room .arena-phase>strong{font-size:25px;min-width:0;line-height:1.1}
+ .roundtable-room .arena-phase>strong span{font-size:13px}
+ .roundtable-room .arena-toolbar{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;width:100%;order:0}
+ .roundtable-room .arena-toolbar>button,.roundtable-room .arena-toolbar>a{font-size:14px;min-height:36px;justify-content:center;padding:5px 7px;background:#15100edb;border-color:#ffffff20}
+ .roundtable-room .arena-toolbar button span{display:none}
+ .roundtable-room .arena-toolbar>.arena-jump{display:inline-flex}
+ .roundtable-room .arena-mode{position:relative;top:auto;left:auto;right:auto;padding:11px 18px 0;gap:10px;font-size:13px;line-height:1.5;flex-wrap:wrap}
+ .roundtable-room .arena-stage{position:relative;inset:auto;width:100%;height:510px;min-height:0;margin-top:10px}
+ .roundtable-room .arena-product{inset:0 16px auto;z-index:3}
+ .roundtable-room .arena-product h2{font-size:17px;margin:0 0 3px}
+ .roundtable-room .arena-product p{font-size:13px;display:block;max-width:100%;line-height:1.5}
+ .roundtable-room .globe-container{inset:43px 0 48px;width:auto;height:auto;min-height:0}
+ .roundtable-room .globe-controls{inset:auto 16px 4px auto;transform:none;gap:8px;min-height:36px;padding:4px 8px;max-width:calc(100% - 32px)}
+ .roundtable-room .globe-controls .icon-button{width:32px;height:32px}
+ .roundtable-room .globe-controls .quiet-button{font-size:14px;line-height:1.4;padding:6px 0}
+ .roundtable-room .globe-controls>span{display:none}
+ .roundtable-room .arena-world-peek{display:none}
+ .roundtable-room .arena-dock{position:relative;inset:auto;transform:none;width:calc(100% - 32px);margin:12px 16px 0;max-height:none;overflow:visible;display:block;padding:18px 16px}
+ .roundtable-room .arena-dock .dock-phase-copy h2{font-size:21px}
+ .roundtable-room .arena-dock .dock-phase-copy p{font-size:15px;line-height:1.6}
+ .roundtable-room .dock-phase-actions{margin-top:17px;justify-content:flex-start}
+ .roundtable-room .action-fields{grid-template-columns:1fr 1fr;gap:13px 10px}
+ .roundtable-room .action-fields>label:first-child,.roundtable-room .action-fields>.button{grid-column:1/-1}
+ .roundtable-room .action-fields select{font-size:15px;min-height:46px}
+ .roundtable-room .action-description{font-size:14px!important;line-height:1.65}
+ .roundtable-room .action-feedback{display:block}
+ .roundtable-room .action-estimate{font-size:13px;justify-content:flex-start;margin-top:10px;line-height:1.6}
+ .roundtable-room .roundtable-label{max-width:118px}
+ .roundtable-room .roundtable-name,.roundtable-room .roundtable-person-name{font-size:13px;max-width:114px}
+ .roundtable-room .roundtable-score{font-size:15px}
+ .roundtable-room .roundtable-label small{font-size:13px}
+}
+@media(max-width:360px){
+ .roundtable-room .arena-hud{padding-left:12px;padding-right:12px;gap:8px}
+ .roundtable-room .arena-toolbar{gap:5px}
+ .roundtable-room .arena-toolbar>button,.roundtable-room .arena-toolbar>a{padding:5px 4px;font-size:14px}
+ .roundtable-room .arena-stage{height:490px}
+ .roundtable-room .arena-mode{padding-left:14px;padding-right:14px;font-size:13px;gap:4px}
+ .roundtable-room .arena-mode>span:last-child{font-size:13px}
+ .roundtable-room .arena-dock{width:calc(100% - 24px);margin-left:12px;margin-right:12px;padding:17px 13px}
+ .roundtable-room .roundtable-label{max-width:108px}
+ .roundtable-room .roundtable-name,.roundtable-room .roundtable-person-name{max-width:105px}
+}
+
+/* Native online multiplayer lobby: compact occupancy, no mock player cards. */
+.invitation-note{font-size:15px!important;line-height:1.6;color:#f1b6a3;margin:0;padding:0 0 4px}
+.lobby-seat-status{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 18px;padding:0;margin:12px 0 0;min-width:0}
+.lobby-seat-status li{display:flex;align-items:center;gap:7px;min-width:0;font-size:14px;line-height:1.5;color:#d8ccc2}
+.lobby-seat-status li>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lobby-seat-status i{flex-shrink:0;display:block;width:7px;height:7px;border-radius:50%;background:var(--seat-color,#71655e)}
+.lobby-seat-status .vacant{color:#9e8f83}
+@media(max-width:680px){.lobby-seat-status{gap:8px 12px;margin-top:14px}.lobby-seat-status li{font-size:14px}.roundtable-room .arena-dock:not(:has(#action-form)){max-height:none}}
