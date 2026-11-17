@@ -1,0 +1,27 @@
+{
+  "product": "Growth Tavern V6 experience, hosting version 7",
+  "project_id": "appgprj_6af1a8e67e188191ae760465531b894b",
+  "version_number": 7,
+  "version_id": "appgprj_6af1a8e67e188191ae760465531b894b~appgver_f120bcb7d63c8191ad53f59d4f9c968f",
+  "deployment_id": "appgdep_6afc6cbef67c81918887d317c643327e",
+  "status": "succeeded",
+  "env_set_revision": 2,
+  "source_sha": "c1aeaff6f3a38b6473e19244f55087db190e6ecc",
+  "url": "https://growth-tavern-suli-demo.zheiisu.chatgpt.site",
+  "published_at": "2026-11-17T15:03:46.804901+00:00",
+  "scope": "Native Sites publication; retains existing public audience, D1 and server secret. Adds RFC-compatible weak ETag matching after the successful version6 six-round public run.",
+  "checks": {
+    "offline_tests": 158,
+    "offline_failed": 0,
+    "worker_modules": 19,
+    "worker_bytes": 2597031,
+    "gzip_bytes": 1417914,
+    "public_etag_probe": "etag-public-v7.json"
+  },
+  "budget": {
+    "mode": "unlimited",
+    "cumulative_counter_reset": false,
+    "max_output_tokens": 600,
+    "automatic_recharge": false
+  }
+}
