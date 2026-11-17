@@ -1,4 +1,4 @@
-import {roomEtag} from '../worker/room-transport.js';
+import {roomEtag,etagMatches} from '../worker/room-transport.js';
 import {publicHostMessage,publicHostHistory,makeHostMessage,publishHostMessage} from '../worker/host-messages.js';
 import {sanitizeHostStatus} from '../worker/host-health.js';
 /** Growth-specific room API. Room projection/Bearer/SSE patterns follow MIT AgentBar.
