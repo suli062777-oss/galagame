@@ -1,0 +1,603 @@
+{
+  "snapshot": "V6 review branch 2026-11-17",
+  "baseCommit": "575680aa606e2678d3d4e2c2e80d65266d7ba9b7",
+  "paths": [
+    {
+      "path": "online/.gitignore",
+      "size": 125,
+      "sha256": "a52e99ed90e51e35d79479883a4f11268c135a9fa75ec29f5ab8fe184f521237"
+    },
+    {
+      "path": "online/.openai/hosting.json",
+      "size": 91,
+      "sha256": "bbce920e5d20191e3b45e393cf613c2c19faa8c705e6830ac5bc41f9113f060d"
+    },
+    {
+      "path": "online/docs/build-god-eval-data.mjs",
+      "size": 8341,
+      "sha256": "8eaed9cb1fc5550456a9be2f3cbe95ad0dcd3391dc68c74d6487e81febb08fb0"
+    },
+    {
+      "path": "online/docs/check-action-budget-init.mjs",
+      "size": 2625,
+      "sha256": "3999127567145f7b7affd93b3538b37958df7ef6073fc8a35d9fffe3189b4049"
+    },
+    {
+      "path": "online/docs/check-agent-entry.mjs",
+      "size": 5893,
+      "sha256": "f241ec6c5d4bd1de6a262ebf9f9b2cab377a8268235009e470eb2db28b9b0e36"
+    },
+    {
+      "path": "online/docs/check-receipt-state.mjs",
+      "size": 3237,
+      "sha256": "ebc0df3443d1627d0caca42a3196776427eeb74dbf9dd219f1d3d4d36b3ffc48"
+    },
+    {
+      "path": "online/docs/check-ui-templates.mjs",
+      "size": 2297,
+      "sha256": "69eaca9284643773401440623196abd04fa071fd39b2b4fd3cf5c706dd62df86"
+    },
+    {
+      "path": "online/docs/check-v6-room-sync.mjs",
+      "size": 4054,
+      "sha256": "db1fa55129319e620a762e63cf8096a5c751bda4ffde95da6bc62ded66a87cdb"
+    },
+    {
+      "path": "online/docs/evidence/classroom-online-v6.json",
+      "size": 2894,
+      "sha256": "eeb03029231453ef71c3535c84c9448549bdf4155bbc00938d82812e46d78f30"
+    },
+    {
+      "path": "online/docs/evidence/CLASSROOM_ONLINE_V6_INDEPENDENT_AUDIT.md",
+      "size": 4042,
+      "sha256": "701eab2b46f7f09773b6ad79cea6b2364c3ac1a197d92be642855730ffdc91c6"
+    },
+    {
+      "path": "online/docs/evidence/god-live-focus-v3-human-review.json",
+      "size": 7741,
+      "sha256": "666dcf0b94475d87a43c43156dcc245279f1beafaf1f91a682f6c77c13134568"
+    },
+    {
+      "path": "online/docs/evidence/god-live-focus-v3-human-review.md",
+      "size": 5523,
+      "sha256": "142c03dafb232017021d486e5b12f9058eae1191c1987be46407fcd44c6cbcf9"
+    },
+    {
+      "path": "online/docs/evidence/god-live-human-review.md",
+      "size": 7484,
+      "sha256": "1e2eaa8081ebf78e131105c59ab41e2dc752c35c87fbe04feda5bede71da0837"
+    },
+    {
+      "path": "online/docs/evidence/god-live-run-summary.json",
+      "size": 3602,
+      "sha256": "173f893da8179502a39e19e961ae7d949693f5e7b4dff5cd22511c3fce509dc3"
+    },
+    {
+      "path": "online/docs/evidence/god-live-targeted-human-review.md",
+      "size": 1284,
+      "sha256": "cd450d102046cb68ef257fa1923ac94974ee0e38d61415d7b7775e24f3d32e2c"
+    },
+    {
+      "path": "online/docs/evidence/god-offline-final-guards.json",
+      "size": 2471,
+      "sha256": "275db32d085029fb06063b17b31fec4c2646ebbddd2dad60a28f75226b553bd6"
+    },
+    {
+      "path": "online/docs/evidence/multiplayer-local-v6.md",
+      "size": 1248,
+      "sha256": "3c981fe418914c10adb12bff306423d71b0181eafdc584c85b5216363248aa8a"
+    },
+    {
+      "path": "online/docs/evidence/v6-built-worker-smoke.json",
+      "size": 358,
+      "sha256": "d1eaf901605fd368e0db3acc863b1ced29a6a2ea7269938ec9a3c67bdb9dbc25"
+    },
+    {
+      "path": "online/docs/evidence/V6_GOD_RUNTIME_INDEPENDENT_REVIEW.md",
+      "size": 3637,
+      "sha256": "752778bff83c012fe5b14795c833d882b8afcc50559a23191b42fa3dd25a1884"
+    },
+    {
+      "path": "online/docs/FIGMA_MAP.md",
+      "size": 1638,
+      "sha256": "26b8e05c8b9590703d0730502cc33e554e54b1b1b6af8d6425a6a494617de5d6"
+    },
+    {
+      "path": "online/docs/FIGMA_V6_SYNC.md",
+      "size": 3995,
+      "sha256": "4d346e0bf9a100c7df8b5cde0d8e6f4947f322614babaef6bf4486ee7e761cbb"
+    },
+    {
+      "path": "online/docs/god-evaluation-contract.json",
+      "size": 1721,
+      "sha256": "647a6d62173cb21d809806df46f9a61488b356c9743bbb3dad69507b21b9b3c0"
+    },
+    {
+      "path": "online/docs/god-evaluation-set.json",
+      "size": 862857,
+      "sha256": "21ec8a3ebf387149f9c24e52076a2328bd0df64efd70d4a22ed7b91ecb0c546f"
+    },
+    {
+      "path": "online/docs/GOD_INDEPENDENT_REVIEW.md",
+      "size": 2469,
+      "sha256": "aa6fa7956a39ea5a214010c1432a31a94741b8cd8cdcad2036a64963214ad0cb"
+    },
+    {
+      "path": "online/docs/GOD_NATURAL_CONTRACT.md",
+      "size": 8776,
+      "sha256": "f382ba520f1e6a8b43639a7cd7352f625fe3e66f0ef3c8dff59ba0caed5fbd23"
+    },
+    {
+      "path": "online/docs/QA_REQUIREMENTS.md",
+      "size": 3353,
+      "sha256": "54bf9460204f88e80d0dad6266aaf77432eb86273201691188e568b434eed92c"
+    },
+    {
+      "path": "online/docs/SCENE_PERFORMANCE_2026-11-17.md",
+      "size": 4536,
+      "sha256": "6383f9404878919cdd253a3ea71ae1a4e85fa4fd07ae496b08a1015aa610ead8"
+    },
+    {
+      "path": "online/docs/V3_SCENE.md",
+      "size": 5133,
+      "sha256": "05322f508a35ed49c12da27b5b8ae130df5884ebc43f2bd779404fa8e6981bd1"
+    },
+    {
+      "path": "online/docs/V3_UI.md",
+      "size": 7713,
+      "sha256": "68602898e39498dab89f1122f96bb68c28d8183060bbed0dd3dc9b1f702127bb"
+    },
+    {
+      "path": "online/docs/V6_UI.md",
+      "size": 4884,
+      "sha256": "80ff2f6e27a6c1e424ccf3a707f6936aba66eb96ce62e478f3e854e3cd87f9dd"
+    },
+    {
+      "path": "online/drizzle/0000_online.sql",
+      "size": 868,
+      "sha256": "8c3ffaf03a62c1f680a1d8dfd4e4631a9a1eb301a97efc1d25b69d72ed8f3dd3"
+    },
+    {
+      "path": "online/drizzle/meta/_journal.json",
+      "size": 197,
+      "sha256": "6eaff37d9b9cac9765253076857eb05433fcd87d75c27eda971bffd082eaaa45"
+    },
+    {
+      "path": "online/ONLINE_UI.md",
+      "size": 220,
+      "sha256": "725f90b61cff8ed57cce663d9ed34b2edbcac9f78b5fa6502a153166a9ba9389"
+    },
+    {
+      "path": "online/package-lock.json",
+      "size": 20065,
+      "sha256": "fed4003c6f9ee94db8d9aa3c800502a320c866ff3d0467547ad606388d4b7ac8"
+    },
+    {
+      "path": "online/package.json",
+      "size": 830,
+      "sha256": "7b08051df0f4fa07cee50bca4ef9cbd827f9cf471711147d1795657aa45232c6"
+    },
+    {
+      "path": "online/public/app.js",
+      "size": 89876,
+      "sha256": "983665e8c6538072eea92d4be81a79af8bbe097d1a238d2e098f706465c65f2c"
+    },
+    {
+      "path": "online/public/assets/book-hero.webp",
+      "size": 159772,
+      "sha256": "3f059ce146ec9b0e5389e62791fe7f183dbc8309bb6c19cba81b90867a493c51"
+    },
+    {
+      "path": "online/public/assets/figma/case-path.png",
+      "size": 1856304,
+      "sha256": "25668509e868dfa3559968324889b11755522afc2f83431cdaed33b1e3539d27"
+    },
+    {
+      "path": "online/public/assets/figma/folded-path.png",
+      "size": 1722475,
+      "sha256": "a8042a56820c411e12496b86bc8f5d8d02044c69d425753a8f4e7569272d3a48"
+    },
+    {
+      "path": "online/public/assets/figma/ivory-sun.svg",
+      "size": 236,
+      "sha256": "f1ef3c55f2a28930eadede89d301c5b8b3a945bec5c03295355e98ed8437b112"
+    },
+    {
+      "path": "online/public/assets/figma/landscape.png",
+      "size": 1362606,
+      "sha256": "d6b74f1c7896746804845cd34f093c973ed8bdbf6ef385f149051d15b37e7255"
+    },
+    {
+      "path": "online/public/assets/figma/learning-cycle.svg",
+      "size": 606,
+      "sha256": "75e18c378180550a88cd4614c422ce56dcf1fa8a0beea46dc90095fd6b14d169"
+    },
+    {
+      "path": "online/public/assets/figma/reading-circle.svg",
+      "size": 650,
+      "sha256": "92447d3e54f57b6072ccdd9f03b7f81f0be6f728fe0263b42cab4ae3f85fce91"
+    },
+    {
+      "path": "online/public/assets/figma/red-sun.svg",
+      "size": 1494,
+      "sha256": "3d62ff0e0a58e09aeebde3c95ce1cce8f15e08069ea34f2de607d2a5621c1c72"
+    },
+    {
+      "path": "online/public/assets/figma/value-pathway.svg",
+      "size": 322,
+      "sha256": "2946e99722accdca98c28329be41639f50d426514428953fc1c57bf3f79f5af2"
+    },
+    {
+      "path": "online/public/assets/figma/value-platforms.png",
+      "size": 650241,
+      "sha256": "992237402c68034c65f52ab91e0b4401c1f8601732a40db3bcadd3242fdddd63"
+    },
+    {
+      "path": "online/public/assets/god-avatar.webp",
+      "size": 27984,
+      "sha256": "793ed25afec5a89d14807c863d4866db7f4b3693164d649889615e5df8587024"
+    },
+    {
+      "path": "online/public/assets/tavern-atmosphere.webp",
+      "size": 123288,
+      "sha256": "829027f2a11b69dddee97c06d15f15e9a45d61d446e1a6e2945fc8efadd45b55"
+    },
+    {
+      "path": "online/public/assets/vendor/three.module.min.js",
+      "size": 677935,
+      "sha256": "1af5bef9a9fd79fcb73fcfd3e4dd2ac0cea8720205bc7607d67369ce194a87fa"
+    },
+    {
+      "path": "online/public/avatar-art.js",
+      "size": 3645,
+      "sha256": "37e218fec0dd8d556548080228a0174d31993a8bed10e63b44fb9f7550f1f5b8"
+    },
+    {
+      "path": "online/public/avatar-contract.js",
+      "size": 2161,
+      "sha256": "3ee9ddd820ade04a8da0bec61c21fe55284f435ca650c3ab83eb3bed4948e887"
+    },
+    {
+      "path": "online/public/avatar-editor.js",
+      "size": 11165,
+      "sha256": "7b31624e53717d3bbd65cccd2c56bae48fb058ab82bc15c177deb696ed413e72"
+    },
+    {
+      "path": "online/public/content.js",
+      "size": 20043,
+      "sha256": "c8aab8de304f6d1e6c3e3e0a3cb511e2ec1eb9734f489907c2376ab4dd681e12"
+    },
+    {
+      "path": "online/public/globe-math.js",
+      "size": 940,
+      "sha256": "e4a27499ee6b5478ec4ca81af8bd1ba21fa6fe233e5cdeee19d2f96728242fc4"
+    },
+    {
+      "path": "online/public/globe.js",
+      "size": 187,
+      "sha256": "7da1264de393990516e88ed3eb302940dd2ff54f7f1b83c9002fa984297adfed"
+    },
+    {
+      "path": "online/public/index.html",
+      "size": 1151,
+      "sha256": "233a192b981570ee2a9aa9a3a41ec8a7e9e5e0ac3243eba21571fff66dfb383e"
+    },
+    {
+      "path": "online/public/roundtable-scene.js",
+      "size": 28024,
+      "sha256": "8f4dd36df1a6424db8bd78613e3c525ea9068549f31964ba8bc9b83b176b199e"
+    },
+    {
+      "path": "online/public/roundtable.css",
+      "size": 1703,
+      "sha256": "3fb1b8f387d55302400e67b1bd397cc2869cd0bf4909aa0b0d996fc9c2b2e6a6"
+    },
+    {
+      "path": "online/public/scene-runtime.js",
+      "size": 3859,
+      "sha256": "acf371bf58307a06f0383f638849b382d836077bc03580cd5170513c4f15921c"
+    },
+    {
+      "path": "online/public/style.css",
+      "size": 35004,
+      "sha256": "7dcd892bf30a28eeedb1d165a35b6961f659d23c86f5be6af9e0b3cc97b32a4e"
+    },
+    {
+      "path": "online/public/tavern-environment.js",
+      "size": 8918,
+      "sha256": "ad40c2eac3a207c659e06ecd36b3ea14f26bde305dfb720addb1d65f8bb1d32a"
+    },
+    {
+      "path": "online/public/tavern-models.js",
+      "size": 9023,
+      "sha256": "e6b5c25a5d92e320dbc7202c85c3eee2d0ee40c525928266f9638c1e3bef607f"
+    },
+    {
+      "path": "online/public/tavern-v2.css",
+      "size": 26124,
+      "sha256": "a05390ccf1a61263ef652e79ffffc0c5e4b5d4adef94c17ae947c72fca82ff5c"
+    },
+    {
+      "path": "online/public/tavern-v3.css",
+      "size": 34209,
+      "sha256": "6ad73ecf8eebb3f099bccccc2fe658730b12f62ea6a9315e8209ced53edafa4e"
+    },
+    {
+      "path": "online/README.md",
+      "size": 3470,
+      "sha256": "2909daa2734c059635cad3c6f9ca4c2f71fb632395e16732d1b92b5e6508a324"
+    },
+    {
+      "path": "online/scripts/build.mjs",
+      "size": 3871,
+      "sha256": "b72ebd78e933daa666d5d79c410fae59352d04a0bf7a154e935a1b1135d1e007"
+    },
+    {
+      "path": "online/scripts/dev-server.mjs",
+      "size": 7882,
+      "sha256": "9bac65480f82172c9048ca0a6beff3300d6396069c672671302bce0f12388ec7"
+    },
+    {
+      "path": "online/scripts/god-live-eval.mjs",
+      "size": 6664,
+      "sha256": "f47af6389e48e471446f8801aee1ada5df5f195b73e396fe29256ff29bcc2b31"
+    },
+    {
+      "path": "online/scripts/qa-classroom-online.mjs",
+      "size": 16440,
+      "sha256": "e64142b631cab7106eec919769553c44d4afda07176b00e81558492533123d4e"
+    },
+    {
+      "path": "online/scripts/qa-classroom-online.ps1",
+      "size": 19446,
+      "sha256": "d7005daf69766fb368a54d36ea5fb7412bcd1ef3b730980713ace695d583f90a"
+    },
+    {
+      "path": "online/scripts/qa-classroom-v6-online.ps1",
+      "size": 31913,
+      "sha256": "62d1e02fcb4243d1526da043a41eb77386ca7b1e10611b6a75664a0aef829e71"
+    },
+    {
+      "path": "online/scripts/qa-multiplayer-v6.mjs",
+      "size": 21577,
+      "sha256": "cca419c3d41b2ba818d4fb9dc59a5172979cc64492d90f47ebf5b58359138bb6"
+    },
+    {
+      "path": "online/scripts/qa-v3-api.mjs",
+      "size": 7482,
+      "sha256": "c7d2e9335f1b3db1932f8b38803afd8481d40c927d8a5210d5958cc24948f678"
+    },
+    {
+      "path": "online/scripts/qa-v3-browser.mjs",
+      "size": 45124,
+      "sha256": "527bd0e0502e25984a1b203c38545f073f3a09d1552a0aa5b97f222be4f10638"
+    },
+    {
+      "path": "online/scripts/qa-v6-browser.mjs",
+      "size": 32597,
+      "sha256": "946257ad82903e85e17a9aa760f8ee716909da23f29cec36fcb1167556bb1782"
+    },
+    {
+      "path": "online/server/api.js",
+      "size": 24295,
+      "sha256": "68663070c213fceb1f1554067ccb0fa1aed3f78db9573de605e6c2de7bcd5b20"
+    },
+    {
+      "path": "online/server/avatars.js",
+      "size": 2881,
+      "sha256": "df443f22e7e7ea1f8da9c0c098fb006c435f766ff6344443139d1bb699fe9b22"
+    },
+    {
+      "path": "online/server/engine.js",
+      "size": 37318,
+      "sha256": "121c291622aea5e2c8bdbc9d0de74392ebb6863546ec4be71849daa95ff190a6"
+    },
+    {
+      "path": "online/server/god-runtime.js",
+      "size": 5459,
+      "sha256": "f1d7a1991592ea21b153349cf1fd39b288ed8c602c1a3a30e05014844aa3fae6"
+    },
+    {
+      "path": "online/server/god.js",
+      "size": 308,
+      "sha256": "ffaf5963fff479ae0e66f1b84c7bcfb8adb2876e76abef0c6e366135e96efd6d"
+    },
+    {
+      "path": "online/server/knowledge.json",
+      "size": 4921,
+      "sha256": "b6580891fd3b4fa54e523805ae00cdd88d94a437095cf5d05e2aaef862d68075"
+    },
+    {
+      "path": "online/server/persistence.js",
+      "size": 1432,
+      "sha256": "bd95736c511dad063a9622e62747def6d9089c188edbb8ed2c4f6f63afac0525"
+    },
+    {
+      "path": "online/tests/d1-adapter.mjs",
+      "size": 3058,
+      "sha256": "392078d1c8937f90166e26697de84dfae02bd1a693e8aa8a743e4932d91a1cfc"
+    },
+    {
+      "path": "online/tests/etag-independent.test.mjs",
+      "size": 4897,
+      "sha256": "cc3544d64cefbf4e02c8799ccd5dc78e6344ee2f2176c0e3869396890fa67ff5"
+    },
+    {
+      "path": "online/tests/frontend-etag.test.mjs",
+      "size": 4981,
+      "sha256": "80afc362bd720b67b1650c66af0f76c5d4f7b74c88475444acd33ce8ab27d50f"
+    },
+    {
+      "path": "online/tests/god-collective-audit.test.mjs",
+      "size": 2390,
+      "sha256": "59b59cbd11f41709f007f58fd5d95c0c290eedf00da290d36db91fc4d746c49f"
+    },
+    {
+      "path": "online/tests/god-contract-natural.test.mjs",
+      "size": 12687,
+      "sha256": "b2c742c8bacd1adaf93a470020fdc8a42cc9ea85e7547415d445eae684fa7c66"
+    },
+    {
+      "path": "online/tests/god-event-content.test.mjs",
+      "size": 4296,
+      "sha256": "448a82550d2414afc8f572a2fc4ebc502f6db0cefe3fc8d4f92b7e06db7955b0"
+    },
+    {
+      "path": "online/tests/god-fact-tense-independent.test.mjs",
+      "size": 1590,
+      "sha256": "e21ac9f2fc376153f0c36e68db1bd0d7a0f45358617ca1f0a7b2710b0a1880b6"
+    },
+    {
+      "path": "online/tests/god-focus-independent.test.mjs",
+      "size": 5347,
+      "sha256": "3ebb9ce1125130c3af50ad3798d4c086e1fc4b3358ea01e4ef1283253cf77d1c"
+    },
+    {
+      "path": "online/tests/god-independent-review.test.mjs",
+      "size": 5764,
+      "sha256": "6dfc681e2ef9dd2380e8f1e87f13dd7cd7ab781b97d83c490f3a4825a1bbde14"
+    },
+    {
+      "path": "online/tests/host-reference-snapshot-independent.test.mjs",
+      "size": 1753,
+      "sha256": "e9520224cdce82687a7807e81fda7ea797d7ea58b9b5f564da55ae62e9c646f9"
+    },
+    {
+      "path": "online/tests/host-v6.test.mjs",
+      "size": 6379,
+      "sha256": "4342075a2f9bc2f573b1103c2d33885891e04f707e7bbd0cd0082940a0192ef4"
+    },
+    {
+      "path": "online/tests/online-host.test.mjs",
+      "size": 13003,
+      "sha256": "6e90ccbe40de375d17b715ae3229ab7ab2d3c7ca2563349f2fd43faab51f208f"
+    },
+    {
+      "path": "online/tests/scene-models.test.mjs",
+      "size": 5840,
+      "sha256": "6ad46f6a4c38483dcd11a319425686e3f770878e9989818b094dc96b27e2567e"
+    },
+    {
+      "path": "online/tests/scene-performance.test.mjs",
+      "size": 2283,
+      "sha256": "b52b993688e4c2c36c3a1a9fd570340f1da393db49d5663160e260a251a294d5"
+    },
+    {
+      "path": "online/worker/api.js",
+      "size": 20077,
+      "sha256": "2c8d06bc8f14b2b99cfb7ecbfec1fd1b8547df3183c4c61fb16501d4b0978d1f"
+    },
+    {
+      "path": "online/worker/avatar-contract.js",
+      "size": 2161,
+      "sha256": "3ee9ddd820ade04a8da0bec61c21fe55284f435ca650c3ab83eb3bed4948e887"
+    },
+    {
+      "path": "online/worker/avatars.js",
+      "size": 3430,
+      "sha256": "6a17d773e5867bf492f01c3211b7be17b38603e6bc99bff4e90485c90f661d27"
+    },
+    {
+      "path": "online/worker/engine.js",
+      "size": 37318,
+      "sha256": "b2a2b0005910ccb9a9f5ca4120c1ac041c29479880e97138cde3872c01418fba"
+    },
+    {
+      "path": "online/worker/god-contract.js",
+      "size": 9526,
+      "sha256": "a49facf6a38dbb205a7358e1591f8382313d00889521a8038e846542e987f452"
+    },
+    {
+      "path": "online/worker/god-focus.js",
+      "size": 2249,
+      "sha256": "4ad2461e5a9217006fb2d8afd7c19951035a537dd2efb0d588abb56c89606047"
+    },
+    {
+      "path": "online/worker/god-grounding.js",
+      "size": 11246,
+      "sha256": "6aab421c32034fb46f734ec792bd5e6c747ff60f52a077196746854a25dfc7b4"
+    },
+    {
+      "path": "online/worker/god-knowledge.js",
+      "size": 17955,
+      "sha256": "6bb709932f0eaa107835b5992a15516d3d84d527bed6b8e36ed547da631d921e"
+    },
+    {
+      "path": "online/worker/god-prompt.js",
+      "size": 3970,
+      "sha256": "00295846436b23a44c6ab476ade69c66f32d02bcf4a59b17a2bd452db77f282f"
+    },
+    {
+      "path": "online/worker/god-retrieval.js",
+      "size": 3553,
+      "sha256": "66dd433aba7a80482d4143aae0ba178b10f62928bff1faa2db5e70f1a579c217"
+    },
+    {
+      "path": "online/worker/host-health.js",
+      "size": 1167,
+      "sha256": "df6564ba90cc022cc899989833ce684d97f65fcabd430312230bd14f08757301"
+    },
+    {
+      "path": "online/worker/host-messages.js",
+      "size": 3797,
+      "sha256": "d2eeacc96fa89a20ade71aa6ad9a9f6bdcfcc322bb6f2536fafacb07cb673975"
+    },
+    {
+      "path": "online/worker/host-runtime.js",
+      "size": 9109,
+      "sha256": "fb63ee4a364e8f64c4d05fc25839555c9f8267f91063d82819a913cfb03177a0"
+    },
+    {
+      "path": "online/worker/host.js",
+      "size": 137,
+      "sha256": "2d68ce364b71b945280ef959b31869726a1a78a3a6423136ef8a31d59f4b0501"
+    },
+    {
+      "path": "online/worker/index.js",
+      "size": 1613,
+      "sha256": "dea10d9dc95a44dab675dd21f6f6482c1e4886c4a1524014ae2c2b0780a1d50a"
+    },
+    {
+      "path": "online/worker/room-transport.js",
+      "size": 1295,
+      "sha256": "d31adabf353afa8035983593e7e3a4e20aef823fd4d0ae8ac4b8539aae8c6b45"
+    },
+    {
+      "path": "online/worker/sha256.js",
+      "size": 2207,
+      "sha256": "ef82793e1b1084c89dd31dfd508ae5915c8d3e41254594eacc26fed095adf339"
+    },
+    {
+      "path": "online/worker/storage.js",
+      "size": 2005,
+      "sha256": "7d15e12d30bc9a3926fe320e35acf9a18e026f78c4c93ee57fba641640435677"
+    },
+    {
+      "path": "online/worker/tests/engine-oracle.json",
+      "size": 1137,
+      "sha256": "033ca17d99a80272ddb3d672a810d7967112813d79bbdf20111728104eb2eaff"
+    },
+    {
+      "path": "online/worker/tests/online-api.test.mjs",
+      "size": 11162,
+      "sha256": "f8de1d65fc61688d668065452c3fd15c092b26a480dd0648c5b8dbebd15ebadc"
+    },
+    {
+      "path": "README.md",
+      "size": 1921,
+      "sha256": "dacf80749558f90a7db4e6ff2d81be12779207727cd9483678679c98c0492d4e"
+    }
+  ],
+  "fixedPowerShellSha256": "62d1e02fcb4243d1526da043a41eb77386ca7b1e10611b6a75664a0aef829e71",
+  "exclusions": [
+    "node_modules",
+    ".env",
+    "data",
+    "dist",
+    "worker/assets.js",
+    "delivery",
+    "classroom-online/.sites-checkout",
+    "raw browser/request archives",
+    "private room state and credentials"
+  ]
+}

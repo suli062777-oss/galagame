@@ -1,9 +1,13 @@
 {
-  "name": "growth-tavern-online",
+  "name": "growth-tavern-v3",
   "private": true,
   "type": "module",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "scripts": {
+    "start": "node server/api.js",
+    "dev": "node scripts/dev-server.mjs",
+    "test": "node --test tests/online-host.test.mjs worker/tests/online-api.test.mjs tests/scene-models.test.mjs tests/scene-performance.test.mjs tests/god-contract-natural.test.mjs tests/god-independent-review.test.mjs tests/host-v6.test.mjs tests/frontend-etag.test.mjs tests/god-focus-independent.test.mjs tests/god-collective-audit.test.mjs tests/god-event-content.test.mjs tests/god-fact-tense-independent.test.mjs tests/host-reference-snapshot-independent.test.mjs tests/etag-independent.test.mjs",
+    "test:api": "node scripts/qa-v3-api.mjs",
     "build": "node scripts/build.mjs"
   },
   "devDependencies": {

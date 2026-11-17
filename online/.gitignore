@@ -5,3 +5,7 @@ node_modules/
 *.log
 .DS_Store
 .wrangler/
+data/
+dist/
+worker/assets.js
+docs/evidence/*-private.json

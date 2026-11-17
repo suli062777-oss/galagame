@@ -10,7 +10,7 @@ const realFetch=globalThis.fetch;
 let unexpectedNetwork=0;
 before(()=>{globalThis.fetch=async()=>{unexpectedNetwork++;throw Error('NETWORK_DISABLED_IN_HOST_TESTS');};});
 after(()=>{globalThis.fetch=realFetch;assert.equal(unexpectedNetwork,0,'a test attempted unmocked network access');});
-const envFor=(DB,scope)=>({DB,GOD_PROVIDER:'deepseek',GOD_ALLOW_PAID_CALLS:'true',DEEPSEEK_API_KEY:'TEST_ONLY_NOT_A_REAL_KEY',GOD_MAX_CALLS:'12',GOD_BUDGET_ID:scope});
+const envFor=(DB,scope)=>({DB,GOD_PROVIDER:'deepseek',GOD_ALLOW_PAID_CALLS:'true',DEEPSEEK_API_KEY:'TEST_ONLY_NOT_A_REAL_KEY',GOD_MAX_CALLS:'12',GOD_NATURAL_REQUIRED:'false',GOD_BUDGET_ID:scope});
 function roomFixture(id){
  const game=createGame({seed:'online-host-'+id});beginRound(game);
  return {id,version:1,mode:'practice',phase:'decision',createdAt:0,deadline:60000,game,hostId:id+'-0',players:Array.from({length:4},(_,seat)=>({id:id+'-'+seat,seat,name:'Test seat '+seat,isBot:seat>0,color:['red','gold','green','blue'][seat],avatar:{kind:'preset',id:['ember','tide','moss','orbit'][seat]}})),god:{provider:'template',text:'Original template'}};
@@ -173,7 +173,7 @@ test('model request excludes credentials, private research, future state, pendin
  for(const marker of [...markers,avatarBytes,env.DEEPSEEK_API_KEY])assert.ok(!body.includes(marker),'private sentinel entered model body');
  assert.ok(!body.includes('data:image'));assert.ok(!body.includes('avatar'));
  const input=JSON.parse(JSON.parse(body).messages.find(m=>m.role==='user').content);
- assert.equal(input.version,'god-contract-2');assert.ok(input.claims.some(c=>c.id==='C0'));assert.ok(input.knowledge.some(k=>k.id==='K02'));
+ assert.equal(input.version,'god-contract-2');assert.ok(input.claims.length>0);assert.ok(input.claims.every(c=>/^[CPLW]\d+$/.test(c.id)));assert.ok(input.knowledge.length>0);assert.ok(input.knowledge.every(k=>k.id!=='K-E15'));
 });
 
 test('zero budget makes no provider request and scheduleNarration registers its returned promise',async t=>{

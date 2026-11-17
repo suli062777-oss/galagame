@@ -3,7 +3,7 @@ import path from 'node:path';
 import zlib from 'node:zlib';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),dir=path.join(root,'worker');
-const sharp=(await import('sharp').catch(()=>import('/Users/lisuhang1/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp/dist/index.mjs'))).default;
+const sharp=(await import('sharp')).default;
 const assets={};
 async function walk(relative=''){
  for(const e of fs.readdirSync(path.join(root,'public',relative),{withFileTypes:true})){
@@ -41,6 +41,8 @@ function compile(id){
 }
 compile('index.js');
 const output='const __cache=Object.create(null);\nfunction __require(id){if(__cache[id])return __cache[id];const value=__factories[id]();__cache[id]=value;return value;}\nconst __factories={\n'+[...factories].map(([id,factory])=>JSON.stringify(id)+':'+factory).join(',\n')+'\n};\nexport default __require("index.js").default;\n';
-const dist=path.join(root,'dist');fs.rmSync(dist,{recursive:true,force:true});fs.mkdirSync(path.join(dist,'server'),{recursive:true});fs.mkdirSync(path.join(dist,'.openai'),{recursive:true});
+const dist=path.resolve(root,'dist');
+if(path.dirname(dist)!==root||path.basename(dist)!=='dist')throw Error('Refusing to replace build output outside this project');
+fs.rmSync(dist,{recursive:true,force:true});fs.mkdirSync(path.join(dist,'server'),{recursive:true});fs.mkdirSync(path.join(dist,'.openai'),{recursive:true});
 fs.writeFileSync(path.join(dist,'server/index.js'),output);fs.copyFileSync(path.join(root,'.openai/hosting.json'),path.join(dist,'.openai/hosting.json'));
 console.log(JSON.stringify({modules:factories.size,assets:Object.keys(assets).length,workerBytes:Buffer.byteLength(output),gzipBytes:zlib.gzipSync(output).length}));
