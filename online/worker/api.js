@@ -1,3 +1,6 @@
+import {roomEtag,phaseIsDue,etagMatches} from './room-transport.js';
+import {publicHostMessage,publicHostHistory} from './host-messages.js';
+import {sanitizeHostStatus} from './host-health.js';
 /** Pure Web API multiplayer runtime. Deterministic economics + D1 CAS authority. */
 import {createHash} from './sha256.js';
 import {readRoom,createRoom,mutateRoom} from './storage.js';
@@ -23,7 +26,7 @@ export function project(room,player=null,now=Date.now()){
   const ranking=rankings(room.game),ranks=new Map(ranking.rows.map(r=>[r.seat,r.rank]));
   const players=room.players.map(p=>{const c=room.game.companies[p.seat];return{id:p.id,seat:p.seat,name:p.name,color:p.color,avatar:publicAvatar(p),isBot:p.isBot,users:c.active.reduce((a,b)=>a+b,0),cash:c.cash,profit:c.profit,score:c.score,delta:c.delta,rank:ranks.get(p.seat),bankrupt:c.bankrupt,retention:c.retention,contributions:clone(c.contributions),scoreInputs:clone(c.inputs||{}),submitted:['decision','settling'].includes(room.phase)&&(p.isBot||!!p.decision),agentConnected:p.agentConnected&&now-(p.agentLastSeen||0)<60000};});
   const me=player?{id:player.id,seat:player.seat,avatar:publicAvatar(player),persona:player.persona,risk:player.risk,authorization:player.authorization,defaultAction:clone(player.defaultAction),action:clone(player.decision?.action||null),receipt:clone(player.receipt),privateNotes:clone(room.game.companies[player.seat].privateNotes),company:{activeBySegment:clone(room.game.companies[player.seat].active),pricing:room.game.companies[player.seat].pricing,onboarding:clone(room.game.companies[player.seat].onboard),habit:clone(room.game.companies[player.seat].habit),quality:room.game.companies[player.seat].quality,pendingContent:clone(room.game.companies[player.seat].pendingContent)},intent:player.intent,suggestion:clone(player.suggestion),agentConnected:player.agentConnected&&now-(player.agentLastSeen||0)<60000,agentExpiresAt:player.agentExpiresAt}:null;
-  const state={id:room.id,mode:room.mode,phase:room.phase,round:room.game.round,totalRounds:6,deadline:room.deadline,serverTime:now,version:room.version,createdAt:room.createdAt,product:publicProduct(room.game),players,me,world:publicWorld(room.game),history:room.game.history.map(h=>({round:h.round,players:h.players.map(d=>({...publicLedger(d),id:room.players.find(p=>p.seat===d.seat)?.id})),marketTotals:clone(h.marketTotals)})),rules:clone(room.rulesSnapshot||RULES),winners:room.phase==='finished'?ranking.winners.map(s=>room.players.find(p=>p.seat===s)?.id).filter(Boolean):[],hostId:room.hostId,god:clone(room.god||{provider:'template',text:'模板主持已就位。胜负由确定性经营规则计算。'})};
+  const state={id:room.id,mode:room.mode,phase:room.phase,round:room.game.round,totalRounds:6,deadline:room.deadline,serverTime:now,version:room.version,createdAt:room.createdAt,product:publicProduct(room.game),players,me,world:publicWorld(room.game),history:room.game.history.map(h=>({round:h.round,players:h.players.map(d=>({...publicLedger(d),id:room.players.find(p=>p.seat===d.seat)?.id})),marketTotals:clone(h.marketTotals)})),rules:clone(room.rulesSnapshot||RULES),winners:room.phase==='finished'?ranking.winners.map(s=>room.players.find(p=>p.seat===s)?.id).filter(Boolean):[],hostId:room.hostId,god:publicHostMessage(room.god,room.game.round),godHistory:publicHostHistory(room)};
   return state;
 }
 function collectActions(room){
@@ -49,7 +52,7 @@ function resolveRound(room,now,timing){
 }
 export const projectPublic=room=>project(room,null,Date.now());
 function headers(extra={}){return {'X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin','X-Frame-Options':'DENY','Content-Security-Policy':"default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",...extra};}
-function json(status,payload){return new Response(JSON.stringify(payload),{status,headers:headers({'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'})});}
+function json(status,payload,extra={}){return new Response(status===304?null:JSON.stringify(payload),{status,headers:headers({'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store',...extra})});}
 async function readJson(request,limit=16384){
  if(!request.body)return{};const reader=request.body.getReader(),parts=[];let size=0;
  try{while(true){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;if(size>limit){await reader.cancel();fail('请求过大',413);}parts.push(value);}}
@@ -66,7 +69,7 @@ function authenticate(request,room,now,{agentOnly=false,humanOnly=false}={}){
  fail('凭据不属于本房间',403,'forbidden');
 }
 function assertVersion(room){if(room.game.ruleVersion!==RULES.version)fail('本局规则版本与当前运行器不兼容，需恢复对应版本或迁移；未更改原局',409,'rule_version_mismatch');}
-function sanitizeHost(s={}){return {configuredProvider:s.configuredProvider==='deepseek'?'deepseek':'template',keyConfigured:s.keyConfigured===true,enabled:s.enabled===true,model:clean(s.model||'deepseek-flash',80),calls:Math.max(0,Number(s.calls)||0),limit:Math.max(0,Number(s.limit)||0),busy:Math.max(0,Number(s.busy)||0),lastResult:s.lastResult?{provider:s.lastResult.provider==='deepseek'?'deepseek':'template',reason:s.lastResult.reason?clean(s.lastResult.reason,60):null}:null,lastSuccessAt:typeof s.lastSuccessAt==='string'?clean(s.lastSuccessAt,40):null,lastLatencyMs:Number.isFinite(s.lastLatencyMs)?Math.max(0,s.lastLatencyMs):null,reportedUsage:Object.fromEntries(['prompt_tokens','completion_tokens','total_tokens'].map(k=>[k,Math.max(0,Number(s.reportedUsage?.[k])||0)]))};}
+const sanitizeHost=sanitizeHostStatus;
 export async function handleApi(request,env,ctx={},services={}){
  try{
   const clock=typeof services.clock==='function'?services.clock:()=>Date.now(),timing={decisionMs:45000,preparationMs:5000,settlementMs:1000,...services.timing};
@@ -78,7 +81,7 @@ export async function handleApi(request,env,ctx={},services={}){
   function schedule(room){if(typeof services.scheduleNarration!=='function')return;try{const task=services.scheduleNarration(room,env,ctx);if(task&&typeof task.then==='function')ctx.waitUntil?.(task.catch(()=>{}));}catch{}}
   if(url.pathname==='/api/health'&&method==='GET'){
    const host=sanitizeHost(typeof services.hostStatus==='function'?await services.hostStatus(env):{});
-   return json(200,{ok:true,status:env?.DB?'ready':'storage-unavailable',storage:'cloudflare-d1',online:true,multiplayer:true,provider:host.enabled?'deepseek':'template',host,ruleVersion:RULES.version});
+   return json(200,{ok:true,status:env?.DB?'ready':'storage-unavailable',storage:'cloudflare-d1',online:true,multiplayer:true,provider:host.enabled&&(host.unlimited||host.remaining>0)?'deepseek':'template',host,ruleVersion:RULES.version});
   }
   if(['/api/config','/api/catalog'].includes(url.pathname)&&method==='GET')return json(200,{ok:true,online:true,multiplayer:true,actions:clone(ACTIONS),products:PRODUCTS.map(p=>({id:p.id,name:p.name,coreBehavior:p.core_behavior,segments:clone(p.segments)})),rules:clone(RULES)});
   if(url.pathname==='/api/rooms'&&method==='POST'){
@@ -104,7 +107,7 @@ export async function handleApi(request,env,ctx={},services={}){
   // Every authenticated room request applies at most one due phase transition.
   // CAS retries re-read phase, credentials and clock; only the successful resolve schedules God.
   let resolved=false;
-  room=await mutateRoom(env,id,r=>{
+  if(phaseIsDue(room,clock()))room=await mutateRoom(env,id,r=>{
    resolved=false;authenticate(request,r,clock(),authOptions);
    if(r.game.ruleVersion!==RULES.version||!['preparing','decision','settling'].includes(r.phase)||clock()<r.deadline)return false;
    const t=r.timing||timing,now=clock();
@@ -116,8 +119,8 @@ export async function handleApi(request,env,ctx={},services={}){
   let auth=authenticate(request,room,clock(),authOptions),playerId=auth.player.id;
   if(room.game.ruleVersion!==RULES.version&&(method!=='GET'||route==='replay'))assertVersion(room);
   async function change(fn){const next=await mutateRoom(env,id,r=>{assertVersion(r);const a=authenticate(request,r,clock(),authOptions);return fn(r,a.player,a,clock());});if(!next)fail('房间不存在',404,'not_found');room=next;auth=authenticate(request,room,clock(),authOptions);playerId=auth.player.id;return room;}
-  const response=(extra={})=>json(200,{ok:true,...extra,state:project(room,room.players.find(p=>p.id===playerId),clock())});
-  if(auth.isAgent&&['agent/check','agent/state','agent/inbox','agent/action'].includes(route))await change((r,p,_a,now)=>{p.agentConnected=true;p.agentLastSeen=now;});
+const response=(extra={})=>{const now=clock(),tag=roomEtag(room,playerId,now),metadata={ETag:tag,'X-Server-Time':String(now)};if(!route&&method==='GET'&&etagMatches(request.headers.get('if-none-match'),tag))return json(304,null,metadata);return json(200,{ok:true,...extra,state:project(room,room.players.find(p=>p.id===playerId),now)},metadata);};
+  if(auth.isAgent&&['agent/check','agent/state','agent/inbox','agent/action'].includes(route))await change((r,p,_a,now)=>{if(p.agentConnected&&now-(p.agentLastSeen||0)<10000)return false;p.agentConnected=true;p.agentLastSeen=now;});
   if(!route&&method==='GET')return response();
   if(route==='events'&&method==='GET')return response({transport:'polling',polling:true,pollAfterMs:1000});
   if(route==='start'&&method==='POST'){

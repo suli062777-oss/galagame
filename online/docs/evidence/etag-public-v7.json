@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-17T15:05:08.8791054Z",
+  "scope": "Actual public native PowerShell lobby requests, zero room starts and zero direct provider calls",
+  "returnedWeakTag": true,
+  "initialStatus": 200,
+  "echoReturnedTag": 304,
+  "bodyBytes": 0,
+  "listStatus": 304,
+  "wildcardStatus": 304,
+  "unauthenticatedStatus": 401,
+  "passed": true
+}

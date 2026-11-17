@@ -1,0 +1,113 @@
+{
+  "at": "2026-11-17T15:53:44.651Z",
+  "status": "passed_with_observations",
+  "site": "https://growth-tavern-suli-demo.zheiisu.chatgpt.site/#/tavern",
+  "hostingVersion": 7,
+  "siteSource": "c1aeaff6f3a38b6473e19244f55087db190e6ecc",
+  "sourcePullRequest": "https://github.com/suli062777-oss/galagame/pull/1",
+  "sourceBranch": "codex/tavern-v6-20261117",
+  "evidence": {
+    "localFile": "docs/evidence/classroom-online-v7.json",
+    "runId": "ca5d71fb-bdea-4be0-8cfc-be0e333ee016",
+    "sha256": "471015f85cb58136df9b18d3cfdec54ed3147aeed77f40b05c32839609322433",
+    "rawReportNotUploaded": true
+  },
+  "scope": "Public PowerShell protocol clients: two rooms, eight independent seat credentials, fixed A12 actions, original configured45s and six rounds. Not eight humans, physical phones or external LLM Agent applications.",
+  "tables": [
+    {
+      "label": "A",
+      "settledRounds": 6,
+      "matchingClientsEachRound": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "matchingFinalClients": 4,
+      "completedNarrations": 7,
+      "deepseek": 6,
+      "template": 1,
+      "fallbackReasons": [
+        "invalid-response"
+      ],
+      "generatingObserved": true
+    },
+    {
+      "label": "B",
+      "settledRounds": 6,
+      "matchingClientsEachRound": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "matchingFinalClients": 4,
+      "completedNarrations": 7,
+      "deepseek": 5,
+      "template": 2,
+      "fallbackReasons": [
+        "invalid-response",
+        "invalid-response"
+      ],
+      "generatingObserved": true
+    }
+  ],
+  "acceptedActions": 48,
+  "agentSuggestions": 12,
+  "httpAttempts": 1540,
+  "acceptedHttpLatency": {
+    "count": 48,
+    "p50Ms": 1004.07,
+    "p95Ms": 2368.88,
+    "maxMs": 2906.18
+  },
+  "poll304": {
+    "count": 1168,
+    "p50Ms": 283.77,
+    "p95Ms": 815.41,
+    "maxMs": 3150.63,
+    "bodyBytes": 0
+  },
+  "poll200": {
+    "count": 288,
+    "p50Ms": 430.24,
+    "p95Ms": 1389.13,
+    "maxMs": 2753.68
+  },
+  "network": {
+    "failedAttempts": 1,
+    "recovered": 1,
+    "allFailuresRetained": true
+  },
+  "godUsage": {
+    "callsBefore": 54,
+    "callsAfter": 68,
+    "counterScope": "Global deployed service, including other traffic; difference is not attributed entirely to this test",
+    "directProviderRequests": 0
+  },
+  "training": {
+    "knowledgeCards": 76,
+    "knowledgeVersion": "growth-god-knowledge-2.0.2",
+    "promptVersion": "growth-host-prompt-3.1.1",
+    "parameterFineTuning": false,
+    "method": "Public-evidence retrieval, prompt/few-shot development, synthetic real-provider evaluations and independent review"
+  },
+  "otherVerification": {
+    "offlineChecks": 159,
+    "sourceTreeStartup": "Six practice rounds,7template messages and weak304 via extracted source tree plus verified Node import correction; final archive is separately packaged and checked",
+    "figmaEditableLayers": 219
+  },
+  "limits": [
+    "Action HTTP p95 exceeds the candidate2s threshold; it is not browser click-to-render latency.",
+    "One6s transport timeout recovered; do not claim zero network errors.",
+    "Earlier run observed deadline minus another response timestamp45102ms. Cause remains unresolved; no clock clamping or server-rule change. Strict cross-request wall-clock accuracy is not proven.",
+    "Conditional hits and persistent native sessions affect the comparison to earlier cold-client measurements; do not attribute all improvement to ETag.",
+    "Real model output can contain soft generic strategy suggestions; narration is teaching reference, never an authority to change scores or submit actions.",
+    "Physical devices, classroom network, all12actions in this public game, provider timeout recovery and students external Agent apps are not certified by this run.",
+    "User requested public re-test and source handoff now; real-device playtest remains a pre-class check rather than a delivery prerequisite."
+  ]
+}

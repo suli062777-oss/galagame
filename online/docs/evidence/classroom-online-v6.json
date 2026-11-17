@@ -1,0 +1,96 @@
+{
+  "summaryOnly": true,
+  "sourceReportSha256": "b712d70259017be7448da3f1a8662daf4b1c53a5390b9cb88e4839c07e87e60c",
+  "status": "passed",
+  "origin": "https://growth-tavern-suli-demo.zheiisu.chatgpt.site",
+  "startedAt": "2026-11-17T14:47:36.4541418Z",
+  "finishedAt": "2026-11-17T14:53:23.2935492Z",
+  "scope": "Two real public multiplayer tables, eight independent human-seat credentials and fixed protocol clients, six production-timed rounds; not eight humans or external LLM Agents",
+  "transport": "PowerShell 7 Invoke-WebRequest native default User-Agent; ForEach-Object -Parallel throttle 8",
+  "weakEtagFixStatus": "This measurement predates the weak-ETag fix included in this review source. Postfix public evidence is separate.",
+  "tableCount": 2,
+  "roundsPerTable": [
+    6,
+    6
+  ],
+  "matchingFinalClients": [
+    4,
+    4
+  ],
+  "acceptedActions": 48,
+  "suggestions": 12,
+  "networkErrorCount": 0,
+  "actualHostProviders": {
+    "deepseek": 13,
+    "template": 1
+  },
+  "latency": {
+    "all": {
+      "count": 1099,
+      "p50Ms": 981.13,
+      "p95Ms": 2311.27,
+      "maxMs": 6067.38
+    },
+    "poll200": {
+      "count": 1016,
+      "p50Ms": 980.96,
+      "p95Ms": 2261.71,
+      "maxMs": 6067.38
+    },
+    "poll304": {
+      "count": 0,
+      "p95Ms": null,
+      "maxMs": null,
+      "p50Ms": null
+    },
+    "actionRequestsAll": {
+      "count": 60,
+      "p50Ms": 1009.51,
+      "p95Ms": 2473.95,
+      "maxMs": 3258.38
+    },
+    "acceptedActionRequests": {
+      "count": 48,
+      "p50Ms": 969.19,
+      "p95Ms": 2473.95,
+      "maxMs": 3258.38
+    },
+    "suggestionRequests": {
+      "count": 12,
+      "p50Ms": 1083.24,
+      "p95Ms": 2821.68,
+      "maxMs": 2821.68
+    }
+  },
+  "responseBodies": {
+    "unit": "decoded UTF-8 bytes, body only",
+    "status200": {
+      "count": 1085,
+      "totalBytes": 21257822
+    },
+    "status304": {
+      "count": 0,
+      "totalBytes": 0
+    }
+  },
+  "godUsage": {
+    "callsBefore": 12,
+    "callsAfter": 26,
+    "counterScope": "Global deployed service, including other traffic; difference is not attributed entirely to this test",
+    "directProviderRequests": 0
+  },
+  "notVerified": [],
+  "constraints": [
+    "No browser/User-Agent impersonation or WAF bypass",
+    "No /advance or clock override",
+    "No provider-key access",
+    "Latency is a single HTTP request Stopwatch, excluding polling sleeps",
+    "304 bytes mean the actual decoded response body, not headers or compressed wire bytes"
+  ],
+  "limitations": [
+    "Protocol clients are not 8 real students.",
+    "The accepted-action p95 2473.95ms exceeds the candidate 2000ms target.",
+    "This beforefix report has zero 304 samples; tests cannot replace subsequent deployed measurements.",
+    "Room IDs, participant identities, requests, source state, hashes, credentials and full browser archives are excluded from this public summary."
+  ]
+}
