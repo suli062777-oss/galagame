@@ -46,10 +46,20 @@ export function actionGuideMarkup(catalog,groupId,{sample=false}={}){
  return `<div class="classroom-action-guide">${sample?'<p>这里是等待时的操作样例，不会提交或计入成绩。</p>':'<p>以下是当前规则的行动范围。费用是标准档基础成本，完整机制可以展开核对。</p>'}${groups.map(g=>`<section><h3>${g.name}</h3>${catalog.filter(a=>g.actions.includes(a.id)).map(a=>{const [purpose,tradeoff]=actionNotes[a.id]||['查看本局规则','效果以公开规则为准。'];return `<article><div class="action-guide-heading"><h4>${esc(a.name)}</h4><span>${number(a.cost)} 标准费用</span></div><p>${purpose}</p><p class="muted">${tradeoff}</p><details><summary>完整机制</summary><p>${esc(a.effect||'')}</p></details>${!sample?`<button type="button" class="quiet-button" data-action="choose-action" data-id="${esc(a.id)}">选择这个行动 →</button>`:''}</article>`;}).join('')}</section>`).join('')}${sample?'<div class="action-sample"><h3>确认前，核对三件事</h3><ol><li>选择行动：它处理哪个问题？</li><li>选择目标与投入：费用是否在预算内？</li><li>点击确认：看到服务端“已接收”，才算提交。</li></ol><p>正式每轮 45 秒，截止前可更新。没有确认的默认草稿不会自动执行；超时采用你已保存的合法默认，否则等待。</p></div>':''}</div>`;
 }
 
-export function evidenceMarkup(s,{round=s.round,compact=false}={}){
+function currentEvidence(s,round=s.round){
  const available=(s.world||[]).filter(w=>Number(w.round||0)<=Number(round));
- const current=available.filter(w=>w.round===round||Number(w.endRound)>=round);
- const items=(current.length?current:available).slice().reverse();
+ const verified=new Set(available.filter(w=>w.type==='verification').map(w=>w.claimId).filter(Boolean));
+ return available.filter(w=>(Number(w.round)===Number(round)||Number(w.endRound)>=Number(round))&&!(w.type==='rumor'&&verified.has(w.id))).slice().reverse();
+}
+
+export function hostBriefMarkup(s){
+ const items=currentEvidence(s),confirmed=items.find(w=>['fact','verification'].includes(w.type)),rumor=items.find(w=>w.type==='rumor');
+ const line=(label,text)=>`<p><b>${label}</b><span>${esc(text)}</span></p>`;
+ return `<div class="host-brief" aria-label="公开记录与思考提示" role="status" aria-live="polite">${line('已确认',confirmed?.text||'本轮暂无新增确认消息，已公开历史可在情报中核对。')}${line('尚未核实',rumor?.text||'本轮暂无待核实传闻。')}${line('值得思考',s.phase==='finished'?'哪一轮最值得回看？先分清已确认事实与自己的解释。':'本次行动要改善哪一环？先核对证据与预算，再作决定。')}<small>公开记录整理 · 主持原文见展开</small></div>`;
+}
+
+export function evidenceMarkup(s,{round=s.round,compact=false}={}){
+ const items=currentEvidence(s,round);
  const definitions=[['fact','已确认'],['forecast','有限预告'],['rumor','尚未核实'],['verification','本轮核验']];
  const rows=definitions.map(([type,label])=>{const entry=items.find(w=>w.type===type);if(!entry)return '';const text=compact&&entry.text.length>115?entry.text.slice(0,115)+'…':entry.text;return `<div class="evidence-line evidence-${type}"><b>${label}</b><p>${esc(text)}</p></div>`;}).filter(Boolean);
  return rows.length?rows.slice(0,compact?2:4).join(''):`<p class="evidence-empty">${s.phase==='lobby'?'开局后发布公开情报。':'本轮没有新的公开消息，可以查看已公开历史。'}</p>`;
@@ -58,9 +68,10 @@ export function evidenceMarkup(s,{round=s.round,compact=false}={}){
 export function actionContextMarkup(s){return `<details class="action-context"><summary>选行动时，回看本轮情报</summary>${evidenceMarkup(s)}<button type="button" class="quiet-button" data-action="open-panel" data-panel="world">查看完整公开情报</button></details>`;}
 
 function metric(label,value){return `<div><dt>${label}</dt><dd>${value}</dd></div>`;}
-export function roundSummaryMarkup(s){
+export function roundSummaryMarkup(s,catalog=[]){
  const h=s.history?.at(-1),r=ownLedger(s,h);if(!h||!r||s.phase==='finished')return '';
- return `<section class="classroom-round-summary"><div class="round-summary-heading"><h2>第 ${h.round} 轮已结算</h2><button class="quiet-button" data-action="review-round" data-round="${h.round}">回看这轮 →</button></div><dl>${metric('综合分变化',`${Number(r.delta)>=0?'+':''}${fixed(r.delta)}`)}${metric('有效用户',number(r.users))}${metric('本轮净利润',number(r.net))}</dl><p>已按真实账本记录。结果同时受行动、市场竞争与事件影响，一次变化不能单独证明行动效果。</p></section>`;
+ const action=catalog.find(a=>a.id===r.action?.id),previous=finite(r.previousUsers)?number(r.previousUsers):'—';
+ return `<section class="classroom-round-summary"><div class="round-summary-heading"><h2>第 ${h.round} 轮已结算</h2><button class="quiet-button" data-action="review-round" data-round="${h.round}">回看这轮 →</button></div><p class="round-summary-action">实际执行${esc(action?.name||r.action?.id||'等待')}，行动费用 ${number(r.actionCost)}。</p><dl>${metric('综合分变化',`${Number(r.delta)>=0?'+':''}${fixed(r.delta)}`)}${metric('有效用户',`${previous} → ${number(r.users)}`)}${metric('本轮净利润',number(r.net))}</dl><p class="round-summary-cash">现金 ${number(r.cashBefore)} → ${number(r.cash)}</p><details class="round-summary-evidence"><summary>核对第 ${h.round} 轮的公开记录</summary>${evidenceMarkup(s,{round:h.round})}<p>截至本轮结算已公开，可能含结算消息；不代表行动前已知。</p></details><p>结果同时受行动、市场竞争与事件影响，一次变化不能单独证明行动效果。</p></section>`;
 }
 
 export function roundReviewMarkup(s,round,catalog=[]){

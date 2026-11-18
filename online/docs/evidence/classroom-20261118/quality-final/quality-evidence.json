@@ -1,0 +1,792 @@
+{
+  "date": "2026-11-18",
+  "scope": "Independent Chrome screenshots; actual local template practice and UI; no public rooms or model calls; software WebGL; desktop emulation of phone dimensions",
+  "health": {
+    "provider": "template",
+    "enabled": false
+  },
+  "screens": [
+    {
+      "name": "mobile-host-brief",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 845,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 347,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-host-brief-320",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 320,
+      "height": 800,
+      "scrollY": 0,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "scrollHeight": 854,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 10,
+        "y": 176.078125,
+        "width": 285,
+        "height": 240,
+        "bottom": 416.078125
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-host-full",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 845,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报",
+        "酒馆主持",
+        "引用知识"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 347,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-host-source",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 845,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报",
+        "酒馆主持",
+        "引用知识"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 347,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-brief-public-source",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 845,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报",
+        "酒馆主持",
+        "引用知识"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 347,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-concept-return-context",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 845,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报",
+        "留存：让价值持续发生"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 347,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "desktop-settlement-summary",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 58,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1058,
+      "phase": "preparing",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "第 1 轮已结算",
+        "看看本轮发生了什么",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "激活与留存"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 42,
+        "width": 1051,
+        "height": 310,
+        "bottom": 352
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-settlement-summary",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 390,
+      "height": 844,
+      "scrollY": 484,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1328,
+      "phase": "preparing",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "第 1 轮已结算",
+        "看看本轮发生了什么",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "激活与留存"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": -316.3125,
+        "width": 347,
+        "height": 240,
+        "bottom": -76.3125
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-settlement-summary-320",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 320,
+      "height": 800,
+      "scrollY": 526,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "scrollHeight": 1362,
+      "phase": "preparing",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "第 1 轮已结算",
+        "看看本轮发生了什么",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "激活与留存"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 10,
+        "y": -349.921875,
+        "width": 285,
+        "height": 240,
+        "bottom": -109.921875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-settlement-public-evidence",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 320,
+      "height": 800,
+      "scrollY": 562,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "scrollHeight": 1568,
+      "phase": "preparing",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "第 1 轮已结算",
+        "看看本轮发生了什么",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "激活与留存"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 10,
+        "y": -385.921875,
+        "width": 285,
+        "height": 240,
+        "bottom": -145.921875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "mobile-settlement-detail",
+      "url": "http://127.0.0.1:3020/#/tavern/52FF16",
+      "width": 320,
+      "height": 800,
+      "scrollY": 0,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "scrollHeight": 1568,
+      "phase": "preparing",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "第 1 轮已结算",
+        "看看本轮发生了什么",
+        "桌上消息",
+        "本轮情报",
+        "回看第 1 轮",
+        "调整新手引导"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 10,
+        "y": 176.078125,
+        "width": 285,
+        "height": 240,
+        "bottom": 416.078125
+      },
+      "brokenImages": []
+    }
+  ],
+  "observations": [
+    {
+      "kind": "brief",
+      "text": "已确认四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。尚未核实下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。值得思考本次行动要改善哪一环？先核对证据与预算，再作决定。公开记录整理 · 主持原文见展开",
+      "labels": [
+        "已确认",
+        "尚未核实",
+        "值得思考"
+      ],
+      "height": 173.75,
+      "hostHeight": 245.75,
+      "hostTop": 418.6875,
+      "sourceButton": false,
+      "godText": "先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。",
+      "publicWorld": [
+        {
+          "id": "e7784941942b96",
+          "round": 1,
+          "type": "fact",
+          "text": "四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。"
+        },
+        {
+          "id": "27d4764c3a4e9b",
+          "round": 1,
+          "type": "rumor",
+          "text": "下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。"
+        }
+      ]
+    },
+    {
+      "kind": "round-summary",
+      "phase": "preparing",
+      "round": 1,
+      "text": "第 1 轮已结算回看这轮 →实际执行调整新手引导，行动费用 80。综合分变化+536.98有效用户450 → 339.42本轮净利润332.84现金 1,200 → 1,532.84核对第 1 轮的公开记录已确认第1周结算完成。当前最高分 538.40；完整账本已保存。尚未核实下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。截至本轮结算已公开，可能含结算消息；不代表行动前已知。结果同时受行动、市场竞争与事件影响，一次变化不能单独证明行动效果。",
+      "expected": {
+        "action": "A04",
+        "actionName": "调整新手引导",
+        "cash": "1,200 → 1,532.84",
+        "users": "450 → 339.42",
+        "score": "536.98",
+        "net": "332.84"
+      },
+      "ledger": {
+        "seat": 0,
+        "round": 1,
+        "action": {
+          "id": "A04",
+          "target": 1,
+          "scale": 0.5
+        },
+        "cashBefore": 1200,
+        "previousUsers": 450,
+        "actionCost": 80,
+        "users": 339.42499999999995,
+        "retained": 327,
+        "newUsers": 12.425,
+        "activeBySegment": [
+          89.4,
+          115.425,
+          134.6
+        ],
+        "paying": 64.7125,
+        "revenue": 517.7,
+        "operations": 104.86,
+        "net": 332.84,
+        "cash": 1532.84,
+        "profit": 332.84,
+        "bankrupt": false,
+        "score": 536.98,
+        "delta": 536.98,
+        "retention": 0.7266666666666667,
+        "contributions": {
+          "growth": 214.98242391614147,
+          "profit": 212.9993998068944,
+          "retention": 109
+        },
+        "scoreInputs": {
+          "users": 339.42499999999995,
+          "profit": 332.84,
+          "retained": 327,
+          "previousUsers": 450
+        },
+        "effects": {
+          "paid_cost": 1,
+          "organic": 1,
+          "paid_activation": 1,
+          "retention": 0,
+          "pay": 1,
+          "variable_cost": 1,
+          "referral": 1,
+          "activation": 0,
+          "target_exposure": 1,
+          "local_variable_cost": 1,
+          "local_pay": 1
+        },
+        "price": 8,
+        "id": "3dbeddb0a2519150"
+      },
+      "height": 317.34375,
+      "metrics": [
+        "综合分变化+536.98",
+        "有效用户450 → 339.42",
+        "本轮净利润332.84"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "Structured brief has three explicit evidence/judgment labels",
+      "passed": true,
+      "details": {
+        "text": "已确认四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。尚未核实下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。值得思考本次行动要改善哪一环？先核对证据与预算，再作决定。公开记录整理 · 主持原文见展开",
+        "labels": [
+          "已确认",
+          "尚未核实",
+          "值得思考"
+        ],
+        "height": 173.75,
+        "hostHeight": 245.75,
+        "hostTop": 418.6875,
+        "sourceButton": false,
+        "godText": "先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。",
+        "publicWorld": [
+          {
+            "id": "e7784941942b96",
+            "round": 1,
+            "type": "fact",
+            "text": "四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。"
+          },
+          {
+            "id": "27d4764c3a4e9b",
+            "round": 1,
+            "type": "rumor",
+            "text": "下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Expanded host retains exact complete narration and truthful provider",
+      "passed": true,
+      "details": {
+        "text": "先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。",
+        "expected": "先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。",
+        "source": "模板主持第 1 轮",
+        "knowledgeCount": 1,
+        "expectedCount": 1
+      }
+    },
+    {
+      "name": "Expanded host retains knowledge refs or honest no-ref state",
+      "passed": true,
+      "details": {
+        "text": "先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。",
+        "expected": "先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。",
+        "source": "模板主持第 1 轮",
+        "knowledgeCount": 1,
+        "expectedCount": 1
+      }
+    },
+    {
+      "name": "Expanded knowledge source remains open through poll",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "Closing full host restores opener focus",
+      "passed": true,
+      "details": {
+        "tag": "BUTTON",
+        "id": "",
+        "action": "host-latest",
+        "text": "展开",
+        "visible": true
+      }
+    },
+    {
+      "name": "Closing full host preserves chosen draft",
+      "passed": true,
+      "details": {
+        "before": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        },
+        "after": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        }
+      }
+    },
+    {
+      "name": "Host history remains available",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "expected": 1,
+        "text": "酒馆主持×最新播报往期播报模板主持第 1 轮先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。引用知识核心价值先于扩张north-star先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。同上，产品核心价值与增长前提概念转述；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述 · book-and-game-summary · growth-god-knowledge-2.0.2播报详情template-mode2026/11/18 09:34:42"
+      }
+    },
+    {
+      "name": "Closing host history restores opener focus",
+      "passed": true,
+      "details": {
+        "tag": "BUTTON",
+        "id": "",
+        "action": "host-history",
+        "text": "往期",
+        "visible": true
+      }
+    },
+    {
+      "name": "Brief opens actual public source panel",
+      "passed": true,
+      "details": {
+        "sheet": "info",
+        "text": "本轮情报查看往期未核实传闻第 1 轮下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。事实第 1 轮四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。"
+      }
+    },
+    {
+      "name": "Closing public source restores visible opener focus",
+      "passed": true,
+      "details": {
+        "tag": "BUTTON",
+        "id": "",
+        "action": "open-panel",
+        "panel": "world",
+        "text": "情报",
+        "visible": true
+      }
+    },
+    {
+      "name": "Closing public source preserves chosen draft",
+      "passed": true,
+      "details": {
+        "before": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        },
+        "after": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "action": "open-panel",
+          "panel": "world",
+          "text": "情报",
+          "visible": true
+        }
+      }
+    },
+    {
+      "name": "Public source opened from action restores same sheet and visible context trigger",
+      "passed": true,
+      "details": {
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "action": "open-panel",
+          "panel": "world",
+          "text": "查看完整公开情报",
+          "visible": true
+        },
+        "draft": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        }
+      }
+    },
+    {
+      "name": "Escape from public source restores action context",
+      "passed": true,
+      "details": {
+        "focus": {
+          "tag": "BUTTON",
+          "id": "",
+          "action": "open-panel",
+          "panel": "world",
+          "text": "查看完整公开情报",
+          "visible": true
+        },
+        "draft": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        }
+      }
+    },
+    {
+      "name": "Closing action concept restores an actionable draft context",
+      "passed": true,
+      "details": {
+        "actionOpen": "true",
+        "activeId": "action-concept-link",
+        "activeAction": "concept",
+        "activeTag": "BUTTON"
+      }
+    },
+    {
+      "name": "Closing action concept preserves draft",
+      "passed": true,
+      "details": {
+        "before": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        },
+        "after": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        }
+      }
+    },
+    {
+      "name": "Escape from concept restores same draft context",
+      "passed": true,
+      "details": {
+        "tag": "BUTTON",
+        "id": "action-concept-link",
+        "action": "concept",
+        "text": "理解这个行动背后的方法",
+        "visible": true
+      }
+    },
+    {
+      "name": "Closing action guide restores visible guide trigger",
+      "passed": true,
+      "details": {
+        "tag": "BUTTON",
+        "id": "",
+        "action": "action-guide",
+        "text": "激活与留存",
+        "visible": true
+      }
+    },
+    {
+      "name": "Guide close preserves chosen draft",
+      "passed": true,
+      "details": {
+        "before": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        },
+        "after": {
+          "actionId": "A05",
+          "target": "1",
+          "scale": "0.5"
+        }
+      }
+    },
+    {
+      "name": "Escape from guide restores same action sheet",
+      "passed": true,
+      "details": {
+        "tag": "BUTTON",
+        "id": "",
+        "action": "action-guide",
+        "text": "激活与留存",
+        "visible": true
+      }
+    },
+    {
+      "name": "Choosing in guide updates draft and focuses actual action select",
+      "passed": true,
+      "details": {
+        "draft": {
+          "actionId": "A04",
+          "target": "1",
+          "scale": "0.5"
+        },
+        "focus": {
+          "tag": "SELECT",
+          "id": "action-id",
+          "text": "付费获客内容获客用户推荐调整新手引导调整习惯机制改善核心价值限时付费试用提高订阅价格降低订阅价格用户调研小规模对照实验等待并观察",
+          "visible": true
+        }
+      }
+    },
+    {
+      "name": "Settlement summary identifies actual action",
+      "passed": true,
+      "details": {
+        "text": "第 1 轮已结算回看这轮 →实际执行调整新手引导，行动费用 80。综合分变化+536.98有效用户450 → 339.42本轮净利润332.84现金 1,200 → 1,532.84核对第 1 轮的公开记录已确认第1周结算完成。当前最高分 538.40；完整账本已保存。尚未核实下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。截至本轮结算已公开，可能含结算消息；不代表行动前已知。结果同时受行动、市场竞争与事件影响，一次变化不能单独证明行动效果。",
+        "action": "A04"
+      }
+    },
+    {
+      "name": "Settlement summary cash matches cashBefore→cash",
+      "passed": true,
+      "details": {
+        "action": "A04",
+        "actionName": "调整新手引导",
+        "cash": "1,200 → 1,532.84",
+        "users": "450 → 339.42",
+        "score": "536.98",
+        "net": "332.84"
+      }
+    },
+    {
+      "name": "Settlement summary users match previousUsers→users",
+      "passed": true,
+      "details": {
+        "action": "A04",
+        "actionName": "调整新手引导",
+        "cash": "1,200 → 1,532.84",
+        "users": "450 → 339.42",
+        "score": "536.98",
+        "net": "332.84"
+      }
+    },
+    {
+      "name": "Settlement summary score/net match ledger",
+      "passed": true,
+      "details": {
+        "action": "A04",
+        "actionName": "调整新手引导",
+        "cash": "1,200 → 1,532.84",
+        "users": "450 → 339.42",
+        "score": "536.98",
+        "net": "332.84"
+      }
+    },
+    {
+      "name": "Settlement detail opens matching completed round",
+      "passed": true,
+      "details": {
+        "round": "1",
+        "text": "第 1 轮 · 你的实际行动调整新手引导行动费用80有效用户450 → 339.42本轮净利润332.84综合分536.98核对截至这一轮结算的公开记录以下只列截至第 1 轮结算已公开的记录，可能包含结算后消息；不代表做决定前已经知道。后续轮次的核验不会列入。事实四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。尚未核实下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。事实第1周结算完成。当前最高分 538.40；完整账本已保存。留存用户 327 · 新增有效用户 12.43 · 结算前现金 1,200 · 结算后现金 1,532.84你当时根据什么做决定？哪些变化还不能归因于这次行动？写下这一轮的判断 →看看相关增长方法"
+      }
+    },
+    {
+      "name": "Controlled evidence branches exclude future/private/retired rumor and handle no rumor",
+      "passed": true,
+      "details": {
+        "scope": "Controlled function fixtures, not real game events or screenshots",
+        "excludesFuture": true,
+        "excludesPrivate": true,
+        "excludesVerifiedRumor": true,
+        "emptyRumor": true
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

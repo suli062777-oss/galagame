@@ -825,3 +825,54 @@ body[data-game-phase=finished] .economy-secondary > div:first-child dd { font-si
   html { scroll-behavior: auto; }
   .night .button, .scene-toggle, .classroom-entry-nav button, .round-timeline button { transition: none; }
 }
+
+/* Public-record brief: labels remain visible; full evidence stays one action away. */
+.in-game .host-brief { min-width: 0; gap: 6px; }
+.in-game .host-brief > p {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: start;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+  line-height: 1.65;
+}
+.in-game .host-brief > p > b {
+  margin: 0;
+  color: #dfcaa6;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.9;
+}
+.in-game .host-brief > p > span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-width: 0;
+  color: #d7cfba;
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.in-game .host-brief > small { display: block; font-size: 12px; line-height: 1.6; color: #b0a994; }
+.classroom-round-summary .round-summary-action { margin-top: 12px; color: #ded3ba; }
+.classroom-round-summary .round-summary-cash { color: #c6bfa8; font-variant-numeric: tabular-nums; }
+.classroom-round-summary dd { min-width: 0; overflow-wrap: anywhere; line-height: 1.5; }
+.round-summary-evidence { margin-top: 11px; padding-top: 5px; border-top: 1px solid #3b3d30; }
+.round-summary-evidence > summary { font-size: 14px; color: #d1bb99; min-height: 44px; }
+.round-summary-evidence > p { margin-top: 9px; font-size: 14px; line-height: 1.8; }
+
+@media (max-width: 900px) {
+  .in-game .host-brief { gap: 5px; }
+  .in-game .host-brief > p { grid-template-columns: 65px minmax(0, 1fr); gap: 8px; }
+  .in-game .host-brief > p > b { font-size: 13px; line-height: 1.8; }
+  .in-game .host-brief > p > span { font-size: 14px; line-height: 1.65; }
+  .in-game .host-brief > small { font-size: 12px; margin-top: 1px; }
+  .in-game .host-broadcast-label h2 { display: block; margin: 0 0 2px; line-height: 1.4; }
+  .in-game .host-provider { display: block; line-height: 1.4; white-space: normal; }
+  .in-game .host-broadcast-actions { align-self: start; }
+  .classroom-round-summary dd { font-size: 19px; }
+  .classroom-round-summary .round-summary-action,
+  .classroom-round-summary .round-summary-cash { font-size: 14px; line-height: 1.75; }
+}

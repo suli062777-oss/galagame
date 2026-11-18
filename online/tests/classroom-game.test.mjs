@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {missionMarkup,actionOptions,roundReviewMarkup,resultMarkup,roundNoteData,noteSourceMarkup} from '../public/classroom-game.js';
+import {missionMarkup,actionOptions,roundReviewMarkup,resultMarkup,roundNoteData,noteSourceMarkup,hostBriefMarkup,evidenceMarkup,roundSummaryMarkup} from '../public/classroom-game.js';
 import {ACTIONS} from '../server/engine.js';
 
 const row={seat:0,action:{id:'A01',target:0,scale:.5},previousUsers:450,users:420,actionCost:110,net:23,cashBefore:1200,cash:1223,profit:23,score:350,delta:350,retained:310,newUsers:110,contributions:{growth:240,profit:35,retention:75}};
@@ -42,4 +42,25 @@ test('note source rejects untrusted room IDs and out-of-range rounds',()=>{
  assert.equal(noteSourceMarkup({kind:'tavern-round',roomId:'" onclick="bad',round:1}), '');
  assert.equal(noteSourceMarkup({kind:'tavern-round',roomId:'ROOM',round:99}), '');
  assert.equal(roundNoteData(state(),6,ACTIONS),null);
+});
+
+test('public brief separates rumor from facts, excludes forecasts and future records, and retires verified rumors',()=>{
+ const s=state();s.round=1;s.phase='decision';s.world=[
+  {id:'fact',round:1,type:'fact',text:'本轮确认记录'},
+  {id:'rumor',round:1,endRound:3,type:'rumor',text:'<传闻，尚未核实>'},
+  {id:'forecast',round:1,type:'forecast',text:'有限预告，不是确认事实'},
+  {id:'future',round:2,type:'fact',text:'未来才公开的事实'}
+ ];
+ const brief=hostBriefMarkup(s);assert.match(brief,/本轮确认记录/);assert.match(brief,/&lt;传闻，尚未核实&gt;/);
+ assert.doesNotMatch(brief,/有限预告，不是确认事实|未来才公开的事实/);assert.match(brief,/公开记录整理/);
+ s.round=2;s.world.push({id:'verification',round:2,type:'verification',claimId:'rumor',text:'传闻已核验，未发生'});
+ const updated=evidenceMarkup(s);assert.match(updated,/传闻已核验，未发生/);assert.doesNotMatch(updated,/&lt;传闻，尚未核实&gt;/);
+ assert.match(hostBriefMarkup(s),/本轮暂无待核实传闻/);
+});
+
+test('settlement summary shows own actual action and money with evidence bounded to that settled round',()=>{
+ const s=state();s.phase='decision';const html=roundSummaryMarkup(s,ACTIONS);
+ assert.match(html,/实际执行付费获客，行动费用 110/);assert.match(html,/现金 1,200 → 1,223/);
+ assert.match(html,/450 → 420/);assert.match(html,/第1轮已公开事实/);
+ assert.doesNotMatch(html,/只在第2轮公开的消息|999/);assert.match(html,/不代表行动前已知/);
 });

@@ -6,1057 +6,1069 @@ TAP version 13
 # Subtest: a historical review excludes later-round messages and identifies settlement-time evidence
 ok 1 - a historical review excludes later-round messages and identifies settlement-time evidence
   ---
-  duration_ms: 42.1876
+  duration_ms: 43.4109
   type: 'test'
   ...
 # Subtest: a bankrupt early finish reports actual completed rounds and the score override
 ok 2 - a bankrupt early finish reports actual completed rounds and the score override
   ---
-  duration_ms: 1.6685
+  duration_ms: 1.8789
   type: 'test'
   ...
 # Subtest: round note uses this seat actual execution, not another player or an assumed human intention
 ok 3 - round note uses this seat actual execution, not another player or an assumed human intention
   ---
-  duration_ms: 1.4806
+  duration_ms: 1.7598
   type: 'test'
   ...
 # Subtest: mission uses actual product and bound rule weights, with safe escaped data
 ok 4 - mission uses actual product and bound rule weights, with safe escaped data
   ---
-  duration_ms: 0.6669
+  duration_ms: 0.8169
   type: 'test'
   ...
 # Subtest: all catalog actions remain available exactly once, including an unknown future catalog entry
 ok 5 - all catalog actions remain available exactly once, including an unknown future catalog entry
   ---
-  duration_ms: 2.2153
+  duration_ms: 0.984
   type: 'test'
   ...
 # Subtest: note source rejects untrusted room IDs and out-of-range rounds
 ok 6 - note source rejects untrusted room IDs and out-of-range rounds
   ---
-  duration_ms: 0.4122
+  duration_ms: 0.627
   type: 'test'
   ...
-# (node:65408) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# Subtest: public brief separates rumor from facts, excludes forecasts and future records, and retires verified rumors
+ok 7 - public brief separates rumor from facts, excludes forecasts and future records, and retires verified rumors
+  ---
+  duration_ms: 1.1979
+  type: 'test'
+  ...
+# Subtest: settlement summary shows own actual action and money with evidence bounded to that settled round
+ok 8 - settlement summary shows own actual action and money with evidence bounded to that settled round
+  ---
+  duration_ms: 1.2761
+  type: 'test'
+  ...
+# (node:87328) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: A comma inside an opaque tag is data, not a list delimiter
-ok 7 - A comma inside an opaque tag is data, not a list delimiter
+ok 9 - A comma inside an opaque tag is data, not a list delimiter
   ---
-  duration_ms: 3.0333
+  duration_ms: 3.1714
   type: 'test'
   ...
 # Subtest: Weak indicators and opaque values retain RFC case sensitivity
-ok 8 - Weak indicators and opaque values retain RFC case sensitivity
+ok 10 - Weak indicators and opaque values retain RFC case sensitivity
   ---
-  duration_ms: 0.3442
+  duration_ms: 0.326
   type: 'test'
   ...
 # Subtest: Invalid mixed wildcard and malformed suffixes cannot short-circuit a valid member
-ok 9 - Invalid mixed wildcard and malformed suffixes cannot short-circuit a valid member
+ok 11 - Invalid mixed wildcard and malformed suffixes cannot short-circuit a valid member
   ---
-  duration_ms: 0.3947
+  duration_ms: 0.4171
   type: 'test'
   ...
 # Subtest: If-None-Match weak form matches the same own-seat opaque tag
-ok 10 - If-None-Match weak form matches the same own-seat opaque tag
+ok 12 - If-None-Match weak form matches the same own-seat opaque tag
   ---
-  duration_ms: 80.1289
+  duration_ms: 107.7517
   type: 'test'
   ...
 # Subtest: If-None-Match list matches any strong or weak member with optional whitespace
-ok 11 - If-None-Match list matches any strong or weak member with optional whitespace
+ok 13 - If-None-Match list matches any strong or weak member with optional whitespace
   ---
-  duration_ms: 13.2973
+  duration_ms: 15.1875
   type: 'test'
   ...
 # Subtest: Authenticated wildcard matches an existing room representation
-ok 12 - Authenticated wildcard matches an existing room representation
+ok 14 - Authenticated wildcard matches an existing room representation
   ---
-  duration_ms: 12.4762
+  duration_ms: 13.0439
   type: 'test'
   ...
 # Subtest: A nonmatching tag list returns the actual own-seat representation
-ok 13 - A nonmatching tag list returns the actual own-seat representation
+ok 15 - A nonmatching tag list returns the actual own-seat representation
   ---
-  duration_ms: 12.8039
+  duration_ms: 13.3714
   type: 'test'
   ...
 # Subtest: Wildcard and weak tags never bypass authentication or room isolation
-ok 14 - Wildcard and weak tags never bypass authentication or room isolation
+ok 16 - Wildcard and weak tags never bypass authentication or room isolation
   ---
-  duration_ms: 22.9066
+  duration_ms: 20.3451
   type: 'test'
   ...
 # Subtest: An old weak tag cannot hide an authoritative deadline transition
-ok 15 - An old weak tag cannot hide an authoritative deadline transition
+ok 17 - An old weak tag cannot hide an authoritative deadline transition
   ---
-  duration_ms: 22.2014
+  duration_ms: 25.2574
   type: 'test'
   ...
 # Subtest: Wildcard still performs the due phase change before emitting 304
-ok 16 - Wildcard still performs the due phase change before emitting 304
+ok 18 - Wildcard still performs the due phase change before emitting 304
   ---
-  duration_ms: 12.8304
+  duration_ms: 15.0553
   type: 'test'
   ...
 # Subtest: 304 avoids JSON/render, preserves dirty draft, restores connection and synchronizes clock
-ok 17 - 304 avoids JSON/render, preserves dirty draft, restores connection and synchronizes clock
+ok 19 - 304 avoids JSON/render, preserves dirty draft, restores connection and synchronizes clock
   ---
-  duration_ms: 13.8462
+  duration_ms: 14.4709
   type: 'test'
   ...
 # Subtest: new-version and next-round JSON responses update the ETag only with accepted state
-ok 18 - new-version and next-round JSON responses update the ETag only with accepted state
+ok 20 - new-version and next-round JSON responses update the ETag only with accepted state
   ---
-  duration_ms: 3.323
+  duration_ms: 4.9223
   type: 'test'
   ...
 # Subtest: late old-tag 304 cannot replace a newer POST tag or clock; absent POST tag clears cache
-ok 19 - late old-tag 304 cannot replace a newer POST tag or clock; absent POST tag clears cache
+ok 21 - late old-tag 304 cannot replace a newer POST tag or clock; absent POST tag clears cache
   ---
-  duration_ms: 3.2373
+  duration_ms: 4.7035
   type: 'test'
   ...
 # Subtest: ETag never crosses a human token or route epoch, even when fetch ignores abort
-ok 20 - ETag never crosses a human token or route epoch, even when fetch ignores abort
+ok 22 - ETag never crosses a human token or route epoch, even when fetch ignores abort
   ---
-  duration_ms: 4.567
+  duration_ms: 6.3067
   type: 'test'
   ...
 # Subtest: specific settled-round deep links retain room identity without broad prefix matching
-ok 21 - specific settled-round deep links retain room identity without broad prefix matching
+ok 23 - specific settled-round deep links retain room identity without broad prefix matching
   ---
-  duration_ms: 2.6267
+  duration_ms: 3.4164
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 均为
-ok 22 - Reject false collective users predicate: 均为
+ok 24 - Reject false collective users predicate: 均为
   ---
-  duration_ms: 7.7355
+  duration_ms: 9.3501
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 同为
-ok 23 - Reject false collective users predicate: 同为
+ok 25 - Reject false collective users predicate: 同为
   ---
-  duration_ms: 1.433
+  duration_ms: 1.6116
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 同样为
-ok 24 - Reject false collective users predicate: 同样为
+ok 26 - Reject false collective users predicate: 同样为
   ---
-  duration_ms: 0.5468
+  duration_ms: 0.5445
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 都为
-ok 25 - Reject false collective users predicate: 都为
+ok 27 - Reject false collective users predicate: 都为
   ---
-  duration_ms: 0.3634
+  duration_ms: 0.3815
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 都是
-ok 26 - Reject false collective users predicate: 都是
+ok 28 - Reject false collective users predicate: 都是
   ---
-  duration_ms: 0.5464
+  duration_ms: 0.5641
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 皆为
-ok 27 - Reject false collective users predicate: 皆为
+ok 29 - Reject false collective users predicate: 皆为
   ---
-  duration_ms: 0.2897
+  duration_ms: 0.3034
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 全都为
-ok 28 - Reject false collective users predicate: 全都为
+ok 30 - Reject false collective users predicate: 全都为
   ---
-  duration_ms: 0.3853
+  duration_ms: 0.4055
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 均有
-ok 29 - Reject false collective users predicate: 均有
+ok 31 - Reject false collective users predicate: 均有
   ---
-  duration_ms: 0.2844
+  duration_ms: 0.345
   type: 'test'
   ...
 # Subtest: Reject false collective users predicate: 都有
-ok 30 - Reject false collective users predicate: 都有
+ok 32 - Reject false collective users predicate: 都有
   ---
-  duration_ms: 0.8351
+  duration_ms: 1.5283
   type: 'test'
   ...
 # Subtest: Reject false relationship even with two public citations: 席位1的有效用户高于席位2[P0][P1]。
-ok 31 - Reject false relationship even with two public citations: 席位1的有效用户高于席位2[P0][P1]。
+ok 33 - Reject false relationship even with two public citations: 席位1的有效用户高于席位2[P0][P1]。
   ---
-  duration_ms: 1.6441
+  duration_ms: 5.0616
   type: 'test'
   ...
 # Subtest: Reject false relationship even with two public citations: 席位1比席位2拥有更多有效用户[P0][P1]。
-ok 32 - Reject false relationship even with two public citations: 席位1比席位2拥有更多有效用户[P0][P1]。
+ok 34 - Reject false relationship even with two public citations: 席位1比席位2拥有更多有效用户[P0][P1]。
   ---
-  duration_ms: 0.6614
+  duration_ms: 2.6463
   type: 'test'
   ...
 # Subtest: Reject false relationship even with two public citations: 席位1的有效用户最高[P0][P1]。
-ok 33 - Reject false relationship even with two public citations: 席位1的有效用户最高[P0][P1]。
+ok 35 - Reject false relationship even with two public citations: 席位1的有效用户最高[P0][P1]。
   ---
-  duration_ms: 0.2902
+  duration_ms: 0.8404
   type: 'test'
   ...
 # Subtest: Single-seat unsupported superlative is rejected
-ok 34 - Single-seat unsupported superlative is rejected
+ok 36 - Single-seat unsupported superlative is rejected
   ---
-  duration_ms: 0.3704
+  duration_ms: 0.8682
   type: 'test'
   ...
 # Subtest: Normal once/next-judgment wording is not fabricated arithmetic
-ok 35 - Normal once/next-judgment wording is not fabricated arithmetic
+ok 37 - Normal once/next-judgment wording is not fabricated arithmetic
   ---
-  duration_ms: 2.4998
+  duration_ms: 3.8638
   type: 'test'
   ...
 # Subtest: Explicitly negated guarantee remains a caution, not an unsafe promise
-ok 36 - Explicitly negated guarantee remains a caution, not an unsafe promise
+ok 38 - Explicitly negated guarantee remains a caution, not an unsafe promise
   ---
-  duration_ms: 0.7745
+  duration_ms: 1.8075
   type: 'test'
   ...
 # Subtest: Knowledge has unique traceable records and exact coverage of all current catalogs
-ok 37 - Knowledge has unique traceable records and exact coverage of all current catalogs
+ok 39 - Knowledge has unique traceable records and exact coverage of all current catalogs
   ---
-  duration_ms: 4.3144
+  duration_ms: 6.2304
   type: 'test'
   ...
 # Subtest: K01 is actually retrievable, legacy K02 stays available, and explanatory FAQ can be found
-ok 38 - K01 is actually retrievable, legacy K02 stays available, and explanatory FAQ can be found
+ok 40 - K01 is actually retrievable, legacy K02 stays available, and explanatory FAQ can be found
   ---
-  duration_ms: 32.3786
+  duration_ms: 38.5153
   type: 'test'
   ...
 # Subtest: Each settled action and each current public product retrieves its own rule card
-ok 39 - Each settled action and each current public product retrieves its own rule card
+ok 41 - Each settled action and each current public product retrieves its own rule card
   ---
-  duration_ms: 20.8629
+  duration_ms: 18.2461
   type: 'test'
   ...
 # Subtest: All public event cards are gated by published facts; private E15 and guessed future events stay out
-ok 40 - All public event cards are gated by published facts; private E15 and guessed future events stay out
+ok 42 - All public event cards are gated by published facts; private E15 and guessed future events stay out
   ---
-  duration_ms: 21.9657
+  duration_ms: 19.0928
   type: 'test'
   ...
 # Subtest: Model input whitelist excludes secrets, private notes, pending actions, hidden parameters and future schedule
-ok 41 - Model input whitelist excludes secrets, private notes, pending actions, hidden parameters and future schedule
+ok 43 - Model input whitelist excludes secrets, private notes, pending actions, hidden parameters and future schedule
   ---
-  duration_ms: 1.9725
+  duration_ms: 2.0431
   type: 'test'
   ...
 # Subtest: Natural Chinese renders the actual generated text, removes only evidence tags, and retains traceable refs
-ok 42 - Natural Chinese renders the actual generated text, removes only evidence tags, and retains traceable refs
+ok 44 - Natural Chinese renders the actual generated text, removes only evidence tags, and retains traceable refs
   ---
-  duration_ms: 18.7575
+  duration_ms: 15.5775
   type: 'test'
   ...
 # Subtest: Legacy four-field outputs remain valid by default but real natural-only callers can reject them
-ok 43 - Legacy four-field outputs remain valid by default but real natural-only callers can reject them
+ok 45 - Legacy four-field outputs remain valid by default but real natural-only callers can reject them
   ---
-  duration_ms: 2.745
+  duration_ms: 3.016
   type: 'test'
   ...
 # Subtest: The checked-in few-shot examples pass the actual natural validator with matching fixture evidence
-ok 44 - The checked-in few-shot examples pass the actual natural validator with matching fixture evidence
+ok 46 - The checked-in few-shot examples pass the actual natural validator with matching fixture evidence
   ---
-  duration_ms: 5.549
+  duration_ms: 5.5673
   type: 'test'
   ...
 # Subtest: Settled action and published event narration can paraphrase actual cited evidence
-ok 45 - Settled action and published event narration can paraphrase actual cited evidence
+ok 47 - Settled action and published event narration can paraphrase actual cited evidence
   ---
-  duration_ms: 3.3717
+  duration_ms: 4.7175
   type: 'test'
   ...
 # Subtest: Invented Arabic/Chinese numbers and cross-seat metric laundering are rejected
-ok 46 - Invented Arabic/Chinese numbers and cross-seat metric laundering are rejected
+ok 48 - Invented Arabic/Chinese numbers and cross-seat metric laundering are rejected
   ---
-  duration_ms: 2.2208
+  duration_ms: 3.8801
   type: 'test'
   ...
 # Subtest: Invented private findings, player directives, score changes and credential text are rejected
-ok 47 - Invented private findings, player directives, score changes and credential text are rejected
+ok 49 - Invented private findings, player directives, score changes and credential text are rejected
   ---
-  duration_ms: 1.4559
+  duration_ms: 5.2855
   type: 'test'
   ...
 # Subtest: Rumor/forecast cannot be silently promoted to verified fact or certain future
-ok 48 - Rumor/forecast cannot be silently promoted to verified fact or certain future
+ok 50 - Rumor/forecast cannot be silently promoted to verified fact or certain future
   ---
-  duration_ms: 5.1836
+  duration_ms: 5.5268
   type: 'test'
   ...
 # Subtest: Citation omissions, foreign IDs, unsupported entities, early victory and causal certainty are rejected
-ok 49 - Citation omissions, foreign IDs, unsupported entities, early victory and causal certainty are rejected
+ok 51 - Citation omissions, foreign IDs, unsupported entities, early victory and causal certainty are rejected
   ---
-  duration_ms: 2.6132
+  duration_ms: 2.4395
   type: 'test'
   ...
 # Subtest: Template fallback stays explicitly labelled and cites only selected public knowledge
-ok 50 - Template fallback stays explicitly labelled and cites only selected public knowledge
+ok 52 - Template fallback stays explicitly labelled and cites only selected public knowledge
   ---
-  duration_ms: 2.1248
+  duration_ms: 2.108
   type: 'test'
   ...
 # Subtest: Instruction-shaped public text and credential-like payloads cannot enter model context or template fallback
-ok 51 - Instruction-shaped public text and credential-like payloads cannot enter model context or template fallback
+ok 53 - Instruction-shaped public text and credential-like payloads cannot enter model context or template fallback
   ---
-  duration_ms: 3.0879
+  duration_ms: 3.6507
   type: 'test'
   ...
 # Subtest: User display rounding matches the UI without changing raw economic state
-ok 52 - User display rounding matches the UI without changing raw economic state
+ok 54 - User display rounding matches the UI without changing raw economic state
   ---
-  duration_ms: 1.3307
+  duration_ms: 2.1715
   type: 'test'
   ...
 # Subtest: FAQ API source locators identify the actual API module, not the economics engine
-ok 53 - FAQ API source locators identify the actual API module, not the economics engine
+ok 55 - FAQ API source locators identify the actual API module, not the economics engine
   ---
-  duration_ms: 0.5441
+  duration_ms: 0.6083
   type: 'test'
   ...
 # Subtest: E13 distinguishes its announcement lifetime from economic cost effects
-ok 54 - E13 distinguishes its announcement lifetime from economic cost effects
+ok 56 - E13 distinguishes its announcement lifetime from economic cost effects
   ---
-  duration_ms: 4.0487
+  duration_ms: 4.3663
   type: 'test'
   ...
 # Subtest: Published E13 compact payload contains mechanics, not a generic occurrence disclaimer
-ok 55 - Published E13 compact payload contains mechanics, not a generic occurrence disclaimer
+ok 57 - Published E13 compact payload contains mechanics, not a generic occurrence disclaimer
   ---
-  duration_ms: 35.9664
+  duration_ms: 41.0889
   type: 'test'
   ...
 # Subtest: E16 neutralizes company perspective and converts only explicit public targets to human seats
-ok 56 - E16 neutralizes company perspective and converts only explicit public targets to human seats
+ok 58 - E16 neutralizes company perspective and converts only explicit public targets to human seats
   ---
-  duration_ms: 3.7936
+  duration_ms: 4.0123
   type: 'test'
   ...
 # Subtest: Missing, empty or malformed target lists never guess a whole table or another seat
-ok 57 - Missing, empty or malformed target lists never guess a whole table or another seat
+ok 59 - Missing, empty or malformed target lists never guess a whole table or another seat
+  ---
+  duration_ms: 4.185
+  type: 'test'
+  ...
+# Subtest: Event provenance stays out of compact knowledge even for a legacy input without focus
+ok 60 - Event provenance stays out of compact knowledge even for a legacy input without focus
+  ---
+  duration_ms: 1.9912
+  type: 'test'
+  ...
+# Subtest: Prompt states fact certainty, strategy limits and fixed timing rather than new mechanics
+ok 61 - Prompt states fact certainty, strategy limits and fixed timing rather than new mechanics
+  ---
+  duration_ms: 0.4831
+  type: 'test'
+  ...
+# Subtest: Published E12 cannot be announced as an event still about to arrive
+ok 62 - Published E12 cannot be announced as an event still about to arrive
+  ---
+  duration_ms: 8.5515
+  type: 'test'
+  ...
+# Subtest: Published E12 cannot be described as not yet happened
+ok 63 - Published E12 cannot be described as not yet happened
+  ---
+  duration_ms: 0.8372
+  type: 'test'
+  ...
+# Subtest: A current public peak may retain its explicitly published future falloff
+ok 64 - A current public peak may retain its explicitly published future falloff
+  ---
+  duration_ms: 6.9365
+  type: 'test'
+  ...
+# Subtest: focus public event E01 without unrelated seat data
+ok 65 - focus public event E01 without unrelated seat data
+  ---
+  duration_ms: 42.755
+  type: 'test'
+  ...
+# Subtest: focus public event E02 without unrelated seat data
+ok 66 - focus public event E02 without unrelated seat data
+  ---
+  duration_ms: 3.1304
+  type: 'test'
+  ...
+# Subtest: focus public event E03 without unrelated seat data
+ok 67 - focus public event E03 without unrelated seat data
+  ---
+  duration_ms: 1.2443
+  type: 'test'
+  ...
+# Subtest: focus public event E04 without unrelated seat data
+ok 68 - focus public event E04 without unrelated seat data
+  ---
+  duration_ms: 2.3627
+  type: 'test'
+  ...
+# Subtest: focus public event E05 without unrelated seat data
+ok 69 - focus public event E05 without unrelated seat data
+  ---
+  duration_ms: 1.7379
+  type: 'test'
+  ...
+# Subtest: focus public event E06 without unrelated seat data
+ok 70 - focus public event E06 without unrelated seat data
+  ---
+  duration_ms: 1.2578
+  type: 'test'
+  ...
+# Subtest: focus public event E07 without unrelated seat data
+ok 71 - focus public event E07 without unrelated seat data
+  ---
+  duration_ms: 1.7792
+  type: 'test'
+  ...
+# Subtest: focus public event E08 without unrelated seat data
+ok 72 - focus public event E08 without unrelated seat data
+  ---
+  duration_ms: 1.4279
+  type: 'test'
+  ...
+# Subtest: focus public event E09 without unrelated seat data
+ok 73 - focus public event E09 without unrelated seat data
+  ---
+  duration_ms: 2.5978
+  type: 'test'
+  ...
+# Subtest: focus public event E10 without unrelated seat data
+ok 74 - focus public event E10 without unrelated seat data
   ---
   duration_ms: 2.8381
   type: 'test'
   ...
-# Subtest: Event provenance stays out of compact knowledge even for a legacy input without focus
-ok 58 - Event provenance stays out of compact knowledge even for a legacy input without focus
-  ---
-  duration_ms: 1.7622
-  type: 'test'
-  ...
-# Subtest: Prompt states fact certainty, strategy limits and fixed timing rather than new mechanics
-ok 59 - Prompt states fact certainty, strategy limits and fixed timing rather than new mechanics
-  ---
-  duration_ms: 0.2619
-  type: 'test'
-  ...
-# Subtest: Published E12 cannot be announced as an event still about to arrive
-ok 60 - Published E12 cannot be announced as an event still about to arrive
-  ---
-  duration_ms: 8.8904
-  type: 'test'
-  ...
-# Subtest: Published E12 cannot be described as not yet happened
-ok 61 - Published E12 cannot be described as not yet happened
-  ---
-  duration_ms: 0.6624
-  type: 'test'
-  ...
-# Subtest: A current public peak may retain its explicitly published future falloff
-ok 62 - A current public peak may retain its explicitly published future falloff
-  ---
-  duration_ms: 5.5125
-  type: 'test'
-  ...
-# Subtest: focus public event E01 without unrelated seat data
-ok 63 - focus public event E01 without unrelated seat data
-  ---
-  duration_ms: 37.3549
-  type: 'test'
-  ...
-# Subtest: focus public event E02 without unrelated seat data
-ok 64 - focus public event E02 without unrelated seat data
-  ---
-  duration_ms: 4.2659
-  type: 'test'
-  ...
-# Subtest: focus public event E03 without unrelated seat data
-ok 65 - focus public event E03 without unrelated seat data
-  ---
-  duration_ms: 1.9416
-  type: 'test'
-  ...
-# Subtest: focus public event E04 without unrelated seat data
-ok 66 - focus public event E04 without unrelated seat data
-  ---
-  duration_ms: 1.7629
-  type: 'test'
-  ...
-# Subtest: focus public event E05 without unrelated seat data
-ok 67 - focus public event E05 without unrelated seat data
-  ---
-  duration_ms: 1.22
-  type: 'test'
-  ...
-# Subtest: focus public event E06 without unrelated seat data
-ok 68 - focus public event E06 without unrelated seat data
-  ---
-  duration_ms: 1.0289
-  type: 'test'
-  ...
-# Subtest: focus public event E07 without unrelated seat data
-ok 69 - focus public event E07 without unrelated seat data
-  ---
-  duration_ms: 1.2168
-  type: 'test'
-  ...
-# Subtest: focus public event E08 without unrelated seat data
-ok 70 - focus public event E08 without unrelated seat data
-  ---
-  duration_ms: 1.089
-  type: 'test'
-  ...
-# Subtest: focus public event E09 without unrelated seat data
-ok 71 - focus public event E09 without unrelated seat data
-  ---
-  duration_ms: 1.9405
-  type: 'test'
-  ...
-# Subtest: focus public event E10 without unrelated seat data
-ok 72 - focus public event E10 without unrelated seat data
-  ---
-  duration_ms: 2.0023
-  type: 'test'
-  ...
 # Subtest: focus public event E11 without unrelated seat data
-ok 73 - focus public event E11 without unrelated seat data
+ok 75 - focus public event E11 without unrelated seat data
   ---
-  duration_ms: 1.2232
+  duration_ms: 1.4531
   type: 'test'
   ...
 # Subtest: focus public event E12 without unrelated seat data
-ok 74 - focus public event E12 without unrelated seat data
+ok 76 - focus public event E12 without unrelated seat data
   ---
-  duration_ms: 1.0695
+  duration_ms: 1.846
   type: 'test'
   ...
 # Subtest: focus public event E13 without unrelated seat data
-ok 75 - focus public event E13 without unrelated seat data
+ok 77 - focus public event E13 without unrelated seat data
   ---
-  duration_ms: 1.1192
+  duration_ms: 2.1113
   type: 'test'
   ...
 # Subtest: focus public event E14 without unrelated seat data
-ok 76 - focus public event E14 without unrelated seat data
+ok 78 - focus public event E14 without unrelated seat data
   ---
-  duration_ms: 1.2678
+  duration_ms: 1.528
   type: 'test'
   ...
 # Subtest: focus public event E16 without unrelated seat data
-ok 77 - focus public event E16 without unrelated seat data
+ok 79 - focus public event E16 without unrelated seat data
   ---
-  duration_ms: 1.071
+  duration_ms: 1.0651
   type: 'test'
   ...
 # Subtest: focus public event E17 without unrelated seat data
-ok 78 - focus public event E17 without unrelated seat data
+ok 80 - focus public event E17 without unrelated seat data
   ---
-  duration_ms: 1.0994
+  duration_ms: 1.1645
   type: 'test'
   ...
 # Subtest: focus public event E18 without unrelated seat data
-ok 79 - focus public event E18 without unrelated seat data
+ok 81 - focus public event E18 without unrelated seat data
   ---
-  duration_ms: 1.9787
+  duration_ms: 2.1637
   type: 'test'
   ...
 # Subtest: latest public message wins over earlier messages
-ok 80 - latest public message wins over earlier messages
+ok 82 - latest public message wins over earlier messages
   ---
-  duration_ms: 0.9546
+  duration_ms: 1.0108
   type: 'test'
   ...
 # Subtest: rumor keeps its uncertainty category and receives no unpublished event mechanics
-ok 81 - rumor keeps its uncertainty category and receives no unpublished event mechanics
+ok 83 - rumor keeps its uncertainty category and receives no unpublished event mechanics
   ---
-  duration_ms: 1.2819
+  duration_ms: 1.6336
   type: 'test'
   ...
 # Subtest: forecast keeps its future category rather than becoming an event fact
-ok 82 - forecast keeps its future category rather than becoming an event fact
+ok 84 - forecast keeps its future category rather than becoming an event fact
   ---
-  duration_ms: 0.8536
+  duration_ms: 1.4667
   type: 'test'
   ...
 # Subtest: finished prioritizes the public nonbankrupt result over world and settled actions
-ok 83 - finished prioritizes the public nonbankrupt result over world and settled actions
+ok 85 - finished prioritizes the public nonbankrupt result over world and settled actions
   ---
-  duration_ms: 1.6945
+  duration_ms: 2.4803
   type: 'test'
   ...
 # Subtest: bankrupt players are never selected as the final winner
-ok 84 - bankrupt players are never selected as the final winner
+ok 86 - bankrupt players are never selected as the final winner
   ---
-  duration_ms: 0.933
+  duration_ms: 1.4939
   type: 'test'
   ...
 # Subtest: all-bankrupt final input makes no invented individual winner selection
-ok 85 - all-bankrupt final input makes no invented individual winner selection
+ok 87 - all-bankrupt final input makes no invented individual winner selection
   ---
-  duration_ms: 0.7999
+  duration_ms: 1.2411
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A01 and its own knowledge
-ok 86 - rotating settled focus preserves action A01 and its own knowledge
+ok 88 - rotating settled focus preserves action A01 and its own knowledge
   ---
-  duration_ms: 5.4741
+  duration_ms: 9.3163
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A02 and its own knowledge
-ok 87 - rotating settled focus preserves action A02 and its own knowledge
+ok 89 - rotating settled focus preserves action A02 and its own knowledge
   ---
-  duration_ms: 6.0712
+  duration_ms: 10.1
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A03 and its own knowledge
-ok 88 - rotating settled focus preserves action A03 and its own knowledge
+ok 90 - rotating settled focus preserves action A03 and its own knowledge
   ---
-  duration_ms: 5.0221
+  duration_ms: 7.3581
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A04 and its own knowledge
-ok 89 - rotating settled focus preserves action A04 and its own knowledge
+ok 91 - rotating settled focus preserves action A04 and its own knowledge
   ---
-  duration_ms: 4.9922
+  duration_ms: 7.0158
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A05 and its own knowledge
-ok 90 - rotating settled focus preserves action A05 and its own knowledge
+ok 92 - rotating settled focus preserves action A05 and its own knowledge
   ---
-  duration_ms: 5.7498
+  duration_ms: 8.7733
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A06 and its own knowledge
-ok 91 - rotating settled focus preserves action A06 and its own knowledge
+ok 93 - rotating settled focus preserves action A06 and its own knowledge
   ---
-  duration_ms: 5.6223
+  duration_ms: 16.0328
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A07 and its own knowledge
-ok 92 - rotating settled focus preserves action A07 and its own knowledge
+ok 94 - rotating settled focus preserves action A07 and its own knowledge
   ---
-  duration_ms: 6.2154
+  duration_ms: 10.4751
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A08 and its own knowledge
-ok 93 - rotating settled focus preserves action A08 and its own knowledge
+ok 95 - rotating settled focus preserves action A08 and its own knowledge
   ---
-  duration_ms: 7.2458
+  duration_ms: 9.2793
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A09 and its own knowledge
-ok 94 - rotating settled focus preserves action A09 and its own knowledge
+ok 96 - rotating settled focus preserves action A09 and its own knowledge
   ---
-  duration_ms: 4.8063
+  duration_ms: 7.6988
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A10 and its own knowledge
-ok 95 - rotating settled focus preserves action A10 and its own knowledge
+ok 97 - rotating settled focus preserves action A10 and its own knowledge
   ---
-  duration_ms: 4.609
+  duration_ms: 7.1757
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A11 and its own knowledge
-ok 96 - rotating settled focus preserves action A11 and its own knowledge
+ok 98 - rotating settled focus preserves action A11 and its own knowledge
   ---
-  duration_ms: 5.8005
+  duration_ms: 6.8447
   type: 'test'
   ...
 # Subtest: rotating settled focus preserves action A12 and its own knowledge
-ok 97 - rotating settled focus preserves action A12 and its own knowledge
+ok 99 - rotating settled focus preserves action A12 and its own knowledge
   ---
-  duration_ms: 4.9059
+  duration_ms: 6.221
   type: 'test'
   ...
 # Subtest: opening product P01 cannot borrow another product definition
-ok 98 - opening product P01 cannot borrow another product definition
+ok 100 - opening product P01 cannot borrow another product definition
   ---
-  duration_ms: 1.1223
+  duration_ms: 1.337
   type: 'test'
   ...
 # Subtest: opening product P02 cannot borrow another product definition
-ok 99 - opening product P02 cannot borrow another product definition
+ok 101 - opening product P02 cannot borrow another product definition
   ---
-  duration_ms: 0.766
+  duration_ms: 0.7465
   type: 'test'
   ...
 # Subtest: opening product P03 cannot borrow another product definition
-ok 100 - opening product P03 cannot borrow another product definition
+ok 102 - opening product P03 cannot borrow another product definition
   ---
-  duration_ms: 0.6205
+  duration_ms: 0.9514
   type: 'test'
   ...
 # Subtest: compact model payload excludes private state and retains provenance only on the server
-ok 101 - compact model payload excludes private state and retains provenance only on the server
+ok 103 - compact model payload excludes private state and retains provenance only on the server
   ---
-  duration_ms: 2.8044
+  duration_ms: 3.1747
   type: 'test'
   ...
 # Subtest: knowledge covers actual 12 actions, 3 products and 18 events with traceable rule sources
-ok 102 - knowledge covers actual 12 actions, 3 products and 18 events with traceable rule sources
+ok 104 - knowledge covers actual 12 actions, 3 products and 18 events with traceable rule sources
   ---
-  duration_ms: 6.2461
+  duration_ms: 10.3069
   type: 'test'
   ...
 # Subtest: private E15, player intent/research/avatar, future and unpublished action values never enter host context
-ok 103 - private E15, player intent/research/avatar, future and unpublished action values never enter host context
+ok 105 - private E15, player intent/research/avatar, future and unpublished action values never enter host context
   ---
-  duration_ms: 14.8813
+  duration_ms: 22.2017
   type: 'test'
   ...
 # Subtest: settled A01 retrieves its actual action card
-ok 104 - settled A01 retrieves its actual action card
+ok 106 - settled A01 retrieves its actual action card
   ---
-  duration_ms: 2.7725
+  duration_ms: 2.063
   type: 'test'
   ...
 # Subtest: settled A02 retrieves its actual action card
-ok 105 - settled A02 retrieves its actual action card
+ok 107 - settled A02 retrieves its actual action card
   ---
-  duration_ms: 1.4829
+  duration_ms: 1.282
   type: 'test'
   ...
 # Subtest: settled A03 retrieves its actual action card
-ok 106 - settled A03 retrieves its actual action card
+ok 108 - settled A03 retrieves its actual action card
   ---
-  duration_ms: 2.5055
+  duration_ms: 1.8652
   type: 'test'
   ...
 # Subtest: settled A04 retrieves its actual action card
-ok 107 - settled A04 retrieves its actual action card
+ok 109 - settled A04 retrieves its actual action card
   ---
-  duration_ms: 1.7245
+  duration_ms: 1.3935
   type: 'test'
   ...
 # Subtest: settled A05 retrieves its actual action card
-ok 108 - settled A05 retrieves its actual action card
+ok 110 - settled A05 retrieves its actual action card
   ---
-  duration_ms: 1.7685
+  duration_ms: 1.3506
   type: 'test'
   ...
 # Subtest: settled A06 retrieves its actual action card
-ok 109 - settled A06 retrieves its actual action card
+ok 111 - settled A06 retrieves its actual action card
   ---
-  duration_ms: 1.7074
+  duration_ms: 1.3858
   type: 'test'
   ...
 # Subtest: settled A07 retrieves its actual action card
-ok 110 - settled A07 retrieves its actual action card
+ok 112 - settled A07 retrieves its actual action card
   ---
-  duration_ms: 1.9337
+  duration_ms: 2.0641
   type: 'test'
   ...
 # Subtest: settled A08 retrieves its actual action card
-ok 111 - settled A08 retrieves its actual action card
+ok 113 - settled A08 retrieves its actual action card
   ---
-  duration_ms: 1.8572
+  duration_ms: 1.8874
   type: 'test'
   ...
 # Subtest: settled A09 retrieves its actual action card
-ok 112 - settled A09 retrieves its actual action card
+ok 114 - settled A09 retrieves its actual action card
   ---
-  duration_ms: 1.3898
+  duration_ms: 1.4423
   type: 'test'
   ...
 # Subtest: settled A10 retrieves its actual action card
-ok 113 - settled A10 retrieves its actual action card
+ok 115 - settled A10 retrieves its actual action card
   ---
-  duration_ms: 1.2163
+  duration_ms: 1.4083
   type: 'test'
   ...
 # Subtest: settled A11 retrieves its actual action card
-ok 114 - settled A11 retrieves its actual action card
+ok 116 - settled A11 retrieves its actual action card
   ---
-  duration_ms: 1.4755
+  duration_ms: 1.0567
   type: 'test'
   ...
 # Subtest: settled A12 retrieves its actual action card
-ok 115 - settled A12 retrieves its actual action card
+ok 117 - settled A12 retrieves its actual action card
   ---
-  duration_ms: 0.98
+  duration_ms: 1.5007
   type: 'test'
   ...
 # Subtest: product P01 retrieves only its public definition
-ok 116 - product P01 retrieves only its public definition
+ok 118 - product P01 retrieves only its public definition
   ---
-  duration_ms: 1.0977
+  duration_ms: 1.1597
   type: 'test'
   ...
 # Subtest: product P02 retrieves only its public definition
-ok 117 - product P02 retrieves only its public definition
+ok 119 - product P02 retrieves only its public definition
   ---
-  duration_ms: 0.665
+  duration_ms: 0.961
   type: 'test'
   ...
 # Subtest: product P03 retrieves only its public definition
-ok 118 - product P03 retrieves only its public definition
+ok 120 - product P03 retrieves only its public definition
   ---
-  duration_ms: 0.6404
+  duration_ms: 0.7465
   type: 'test'
   ...
 # Subtest: reject first-seat metric swap
-ok 119 - reject first-seat metric swap
+ok 121 - reject first-seat metric swap
   ---
-  duration_ms: 7.8191
+  duration_ms: 8.5946
   type: 'test'
   ...
 # Subtest: reject adverb metric swap
-ok 120 - reject adverb metric swap
+ok 122 - reject adverb metric swap
   ---
-  duration_ms: 2.0786
+  duration_ms: 2.1882
   type: 'test'
   ...
 # Subtest: reject premature paraphrased victory
-ok 121 - reject premature paraphrased victory
+ok 123 - reject premature paraphrased victory
   ---
-  duration_ms: 2.9811
+  duration_ms: 2.3843
   type: 'test'
   ...
 # Subtest: reject rumor falsely verified
-ok 122 - reject rumor falsely verified
+ok 124 - reject rumor falsely verified
   ---
-  duration_ms: 1.5727
+  duration_ms: 1.4089
   type: 'test'
   ...
 # Subtest: reject forecast falsely realized
-ok 123 - reject forecast falsely realized
+ok 125 - reject forecast falsely realized
   ---
-  duration_ms: 0.9405
+  duration_ms: 1.1721
   type: 'test'
   ...
 # Subtest: reject host acting on a player behalf
-ok 124 - reject host acting on a player behalf
+ok 126 - reject host acting on a player behalf
   ---
-  duration_ms: 0.2642
+  duration_ms: 0.3716
   type: 'test'
   ...
 # Subtest: reject invented private research conclusion
-ok 125 - reject invented private research conclusion
+ok 127 - reject invented private research conclusion
   ---
-  duration_ms: 2.5255
+  duration_ms: 3.1554
   type: 'test'
   ...
 # Subtest: reject unreleased player action
-ok 126 - reject unreleased player action
+ok 128 - reject unreleased player action
   ---
-  duration_ms: 0.7882
+  duration_ms: 1.2463
   type: 'test'
   ...
 # Subtest: reject wrong aggregate using a real but unrelated number
-ok 127 - reject wrong aggregate using a real but unrelated number
+ok 129 - reject wrong aggregate using a real but unrelated number
   ---
-  duration_ms: 0.5049
+  duration_ms: 0.7939
   type: 'test'
   ...
 # Subtest: reject wrong shared metric relationship
-ok 128 - reject wrong shared metric relationship
+ok 130 - reject wrong shared metric relationship
   ---
-  duration_ms: 0.5586
+  duration_ms: 0.7777
   type: 'test'
   ...
 # Subtest: allow an actually public rumor event name while preserving uncertainty
-ok 129 - allow an actually public rumor event name while preserving uncertainty
+ok 131 - allow an actually public rumor event name while preserving uncertainty
   ---
-  duration_ms: 2.5484
+  duration_ms: 3.5481
   type: 'test'
   ...
 # Subtest: Historical reference keeps its stored version and wording after directory changes
-ok 130 - Historical reference keeps its stored version and wording after directory changes
+ok 132 - Historical reference keeps its stored version and wording after directory changes
   ---
-  duration_ms: 7.6008
+  duration_ms: 8.9335
   type: 'test'
   ...
 # Subtest: A forged stored snapshot never makes private E15 or unknown IDs public
-ok 131 - A forged stored snapshot never makes private E15 or unknown IDs public
+ok 133 - A forged stored snapshot never makes private E15 or unknown IDs public
   ---
-  duration_ms: 1.0213
+  duration_ms: 1.06
   type: 'test'
   ...
 # Subtest: Legacy messages without snapshots still resolve valid current public references
-ok 132 - Legacy messages without snapshots still resolve valid current public references
+ok 134 - Legacy messages without snapshots still resolve valid current public references
   ---
-  duration_ms: 0.8647
+  duration_ms: 1.0647
   type: 'test'
   ...
-# (node:56640) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (node:85092) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: explicit unlimited mode preserves the prior twelve attempts and permits further counted requests
-ok 133 - explicit unlimited mode preserves the prior twelve attempts and permits further counted requests
+ok 135 - explicit unlimited mode preserves the prior twelve attempts and permits further counted requests
   ---
-  duration_ms: 96.683
+  duration_ms: 117.76
   type: 'test'
   ...
 # Subtest: actual job pending, completion, public citations and history survive a fresh database read
-ok 134 - actual job pending, completion, public citations and history survive a fresh database read
+ok 136 - actual job pending, completion, public citations and history survive a fresh database read
   ---
-  duration_ms: 11.3038
+  duration_ms: 16.0322
   type: 'test'
   ...
 # Subtest: private ETags avoid duplicate room reads, change on deadlines and never bypass own-seat authorization
-ok 135 - private ETags avoid duplicate room reads, change on deadlines and never bypass own-seat authorization
+ok 137 - private ETags avoid duplicate room reads, change on deadlines and never bypass own-seat authorization
   ---
-  duration_ms: 81.5166
+  duration_ms: 93.0413
   type: 'test'
   ...
 # Subtest: online-presence expiry invalidates an unchanged version tag
-ok 136 - online-presence expiry invalidates an unchanged version tag
+ok 138 - online-presence expiry invalidates an unchanged version tag
   ---
-  duration_ms: 22.115
+  duration_ms: 18.6277
   type: 'test'
   ...
 # Subtest: actual Node HTTP room reads accept weak validators while retaining auth and deadline changes
-ok 137 - actual Node HTTP room reads accept weak validators while retaining auth and deadline changes
+ok 139 - actual Node HTTP room reads accept weak validators while retaining auth and deadline changes
   ---
-  duration_ms: 257.5024
+  duration_ms: 298.1875
   type: 'test'
   ...
 # Subtest: unsaved text survives a new service and form without changing the formal note
-ok 138 - unsaved text survives a new service and form without changing the formal note
+ok 140 - unsaved text survives a new service and form without changing the formal note
   ---
-  duration_ms: 7.2967
+  duration_ms: 9.3658
   type: 'test'
   ...
 # Subtest: new-note and individual-note drafts use separate keys; clearing one preserves others
-ok 139 - new-note and individual-note drafts use separate keys; clearing one preserves others
+ok 141 - new-note and individual-note drafts use separate keys; clearing one preserves others
   ---
-  duration_ms: 1.4062
+  duration_ms: 1.2956
   type: 'test'
   ...
 # Subtest: successful save marks current raw form clean and prevents route capture resurrecting draft
-ok 140 - successful save marks current raw form clean and prevents route capture resurrecting draft
+ok 142 - successful save marks current raw form clean and prevents route capture resurrecting draft
   ---
-  duration_ms: 1.274
+  duration_ms: 1.3945
   type: 'test'
   ...
 # Subtest: quota failure keeps this-session text and reports memory scope honestly
-ok 141 - quota failure keeps this-session text and reports memory scope honestly
+ok 143 - quota failure keeps this-session text and reports memory scope honestly
   ---
-  duration_ms: 1.1885
+  duration_ms: 5.4123
   type: 'test'
   ...
 # Subtest: unreadable persisted draft is not silently overwritten
-ok 142 - unreadable persisted draft is not silently overwritten
+ok 144 - unreadable persisted draft is not silently overwritten
   ---
-  duration_ms: 0.9802
+  duration_ms: 3.8439
   type: 'test'
   ...
 # Subtest: newer saved version requires explicit restore; passive route capture preserves conflicted draft
-ok 143 - newer saved version requires explicit restore; passive route capture preserves conflicted draft
+ok 145 - newer saved version requires explicit restore; passive route capture preserves conflicted draft
   ---
-  duration_ms: 1.2921
+  duration_ms: 1.9516
   type: 'test'
   ...
 # Subtest: explicit discard returns to saved values and removes only that draft
-ok 144 - explicit discard returns to saved values and removes only that draft
+ok 146 - explicit discard returns to saved values and removes only that draft
   ---
-  duration_ms: 1.0794
+  duration_ms: 1.4738
   type: 'test'
   ...
-# (node:68396) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (node:83052) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: default provider retains the Worker global fetch receiver
-ok 145 - default provider retains the Worker global fetch receiver
+ok 147 - default provider retains the Worker global fetch receiver
   ---
-  duration_ms: 67.2432
+  duration_ms: 100.6688
   type: 'test'
   ...
 # Subtest: Worker-compatible manual redirects never follow or forward credentials
-ok 146 - Worker-compatible manual redirects never follow or forward credentials
+ok 148 - Worker-compatible manual redirects never follow or forward credentials
   ---
-  duration_ms: 55.8787
+  duration_ms: 64.2535
   type: 'test'
   ...
 # Subtest: D1 adapter preserves bind reuse, RETURNING and atomic batch rollback
-ok 147 - D1 adapter preserves bind reuse, RETURNING and atomic batch rollback
+ok 149 - D1 adapter preserves bind reuse, RETURNING and atomic batch rollback
   ---
-  duration_ms: 4.3246
+  duration_ms: 6.0881
   type: 'test'
   ...
 # Subtest: real SQL CAS retains overlapping mutations and rejects duplicate room creation
-ok 148 - real SQL CAS retains overlapping mutations and rejects duplicate room creation
+ok 150 - real SQL CAS retains overlapping mutations and rejects duplicate room creation
   ---
-  duration_ms: 9.0503
+  duration_ms: 9.8586
   type: 'test'
   ...
 # Subtest: CAS gives a retryable conflict after ten real competing SQL revisions
-ok 149 - CAS gives a retryable conflict after ten real competing SQL revisions
+ok 151 - CAS gives a retryable conflict after ten real competing SQL revisions
   ---
-  duration_ms: 10.2464
+  duration_ms: 9.2494
   type: 'test'
   ...
 # Subtest: independent hosts share twelve durable attempts and deduplicate one economic key
-ok 150 - independent hosts share twelve durable attempts and deduplicate one economic key
+ok 152 - independent hosts share twelve durable attempts and deduplicate one economic key
   ---
-  duration_ms: 142.3971
+  duration_ms: 158.9256
   type: 'test'
   ...
 # Subtest: concurrent rooms across independent hosts cannot reserve a thirteenth attempt
-ok 151 - concurrent rooms across independent hosts cannot reserve a thirteenth attempt
+ok 153 - concurrent rooms across independent hosts cannot reserve a thirteenth attempt
   ---
-  duration_ms: 124.3496
+  duration_ms: 146.3239
   type: 'test'
   ...
 # Subtest: retryable failures consume attempts; authentication does not retry; last slot cannot retry
     # Subtest: HTTP 429
     ok 1 - HTTP 429
       ---
-      duration_ms: 275.7287
+      duration_ms: 271.9191
       type: 'test'
       ...
     # Subtest: HTTP 503
     ok 2 - HTTP 503
       ---
-      duration_ms: 261.7334
+      duration_ms: 262.9113
       type: 'test'
       ...
     # Subtest: HTTP 401
     ok 3 - HTTP 401
       ---
-      duration_ms: 8.0425
+      duration_ms: 9.2444
       type: 'test'
       ...
     # Subtest: budget has only one remaining attempt
     ok 4 - budget has only one remaining attempt
       ---
-      duration_ms: 272.3013
+      duration_ms: 270.7489
       type: 'test'
       ...
     1..4
-ok 152 - retryable failures consume attempts; authentication does not retry; last slot cannot retry
+ok 154 - retryable failures consume attempts; authentication does not retry; last slot cannot retry
   ---
-  duration_ms: 819.9434
+  duration_ms: 817.5074
   type: 'test'
   ...
 # Subtest: an old round response cannot overwrite a newer room or its narration
-ok 153 - an old round response cannot overwrite a newer room or its narration
+ok 155 - an old round response cannot overwrite a newer room or its narration
   ---
-  duration_ms: 11.8619
+  duration_ms: 8.8373
   type: 'test'
   ...
 # Subtest: model request excludes credentials, private research, future state, pending actions and avatar bytes
-ok 154 - model request excludes credentials, private research, future state, pending actions and avatar bytes
+ok 156 - model request excludes credentials, private research, future state, pending actions and avatar bytes
   ---
-  duration_ms: 8.0643
+  duration_ms: 10.6693
   type: 'test'
   ...
 # Subtest: zero budget makes no provider request and scheduleNarration registers its returned promise
-ok 155 - zero budget makes no provider request and scheduleNarration registers its returned promise
+ok 157 - zero budget makes no provider request and scheduleNarration registers its returned promise
   ---
-  duration_ms: 10.7107
+  duration_ms: 13.516
   type: 'test'
   ...
 # Subtest: four real seated bodies have correctly attached heads and visible face planes
-ok 156 - four real seated bodies have correctly attached heads and visible face planes
+ok 158 - four real seated bodies have correctly attached heads and visible face planes
   ---
-  duration_ms: 95.7955
+  duration_ms: 118.2674
   type: 'test'
   ...
 # Subtest: all palms meet the tabletop instead of sinking inside its slab
-ok 157 - all palms meet the tabletop instead of sinking inside its slab
+ok 159 - all palms meet the tabletop instead of sinking inside its slab
   ---
-  duration_ms: 45.8357
+  duration_ms: 53.5623
   type: 'test'
   ...
 # Subtest: tavern furniture and atmospheric props contain finite geometry without external assets
-ok 158 - tavern furniture and atmospheric props contain finite geometry without external assets
+ok 160 - tavern furniture and atmospheric props contain finite geometry without external assets
   ---
-  duration_ms: 63.4479
+  duration_ms: 66.3766
   type: 'test'
   ...
 # Subtest: static material batches preserve actual world bounds and triangles while reducing submitted meshes
-ok 159 - static material batches preserve actual world bounds and triangles while reducing submitted meshes
+ok 161 - static material batches preserve actual world bounds and triangles while reducing submitted meshes
   ---
-  duration_ms: 111.1931
+  duration_ms: 140.7772
   type: 'test'
   ...
 # {"scope":"CPU geometry fixture, not GPU timing","before":{"meshes":468,"triangles":37298},"after":{"meshes":189,"triangles":37298},"batches":[{"sourceMeshes":144,"batches":11,"drawsSaved":133},{"sourceMeshes":30,"batches":6,"drawsSaved":24},{"sourceMeshes":15,"batches":4,"drawsSaved":11},{"sourceMeshes":15,"batches":4,"drawsSaved":11},{"sourceMeshes":15,"batches":4,"drawsSaved":11},{"sourceMeshes":15,"batches":4,"drawsSaved":11},{"sourceMeshes":40,"batches":1,"drawsSaved":39},{"sourceMeshes":40,"batches":1,"drawsSaved":39}]}
 # Subtest: idle scenes schedule nothing; repeated invalidation coalesces and stops after one frame
-ok 160 - idle scenes schedule nothing; repeated invalidation coalesces and stops after one frame
+ok 162 - idle scenes schedule nothing; repeated invalidation coalesces and stops after one frame
   ---
-  duration_ms: 3.3712
+  duration_ms: 2.8244
   type: 'test'
   ...
 # Subtest: continuous rotation stops while suspended and resumes without losing a pending update
-ok 161 - continuous rotation stops while suspended and resumes without losing a pending update
+ok 163 - continuous rotation stops while suspended and resumes without losing a pending update
   ---
-  duration_ms: 0.6745
+  duration_ms: 0.8039
   type: 'test'
   ...
 # Subtest: automatic quality conservatively selects mobile and weak hardware without inventing a frame-rate measurement
-ok 162 - automatic quality conservatively selects mobile and weak hardware without inventing a frame-rate measurement
+ok 164 - automatic quality conservatively selects mobile and weak hardware without inventing a frame-rate measurement
   ---
-  duration_ms: 0.9245
+  duration_ms: 1.0004
   type: 'test'
   ...
-# (node:63552) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (node:77200) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 # (Use `node --trace-warnings ...` to show where the warning was created)
 # Subtest: Synchronous SHA256 and all six-round engine outcomes match native engine byte for byte
-ok 163 - Synchronous SHA256 and all six-round engine outcomes match native engine byte for byte
+ok 165 - Synchronous SHA256 and all six-round engine outcomes match native engine byte for byte
   ---
-  duration_ms: 94.5715
+  duration_ms: 118.8141
   type: 'test'
   ...
 # Subtest: Four real Request clients share authoritative D1 room, concurrent joins cannot duplicate seats, full six-round replay
-ok 164 - Four real Request clients share authoritative D1 room, concurrent joins cannot duplicate seats, full six-round replay
+ok 166 - Four real Request clients share authoritative D1 room, concurrent joins cannot duplicate seats, full six-round replay
   ---
-  duration_ms: 618.6713
+  duration_ms: 699.0102
   type: 'test'
   ...
 # Subtest: Deadlines, defaults, agent assist/autopilot, token rotation, cross-room auth and private research survive authoritative reads
-ok 165 - Deadlines, defaults, agent assist/autopilot, token rotation, cross-room auth and private research survive authoritative reads
+ok 167 - Deadlines, defaults, agent assist/autopilot, token rotation, cross-room auth and private research survive authoritative reads
   ---
-  duration_ms: 36.2554
+  duration_ms: 40.9021
   type: 'test'
   ...
 # Subtest: Production phase timing gives complete 45 seconds and simultaneous polls settle only once
-ok 166 - Production phase timing gives complete 45 seconds and simultaneous polls settle only once
+ok 168 - Production phase timing gives complete 45 seconds and simultaneous polls settle only once
   ---
-  duration_ms: 22.1866
+  duration_ms: 26.0239
   type: 'test'
   ...
 # Subtest: Web PNG verification, avatar human-only scope, body limits and D1 persistence
-ok 167 - Web PNG verification, avatar human-only scope, body limits and D1 persistence
+ok 169 - Web PNG verification, avatar human-only scope, body limits and D1 persistence
   ---
-  duration_ms: 50.2231
+  duration_ms: 60.4971
   type: 'test'
   ...
 # Subtest: CAS retries protect simultaneous updates and reject async mutators
-ok 168 - CAS retries protect simultaneous updates and reject async mutators
+ok 170 - CAS retries protect simultaneous updates and reject async mutators
   ---
-  duration_ms: 12.27
+  duration_ms: 13.5287
   type: 'test'
   ...
 # Subtest: Slow POST bodies cannot carry revoked Agent authority or a decision across the deadline
-ok 169 - Slow POST bodies cannot carry revoked Agent authority or a decision across the deadline
+ok 171 - Slow POST bodies cannot carry revoked Agent authority or a decision across the deadline
   ---
-  duration_ms: 16.0059
+  duration_ms: 17.5486
   type: 'test'
   ...
-1..169
-# tests 173
+1..171
+# tests 175
 # suites 0
-# pass 173
+# pass 175
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 2321.7972
+# duration_ms 2910.4465

@@ -2,7 +2,7 @@
 
 本轮按2026-11-18详评落实课堂加入、开局任务、十二行动说明、手机操作、真实回合复盘、札记草稿和实验预测。纸白阅读与暖暗酒馆延续原品牌，首页新增内置image_gen生成的折纸棋子插画和真实经营预览。
 
-回退基线：`baseline-v8-20261118`（cbcc8cc）；开发分支：`codex/classroom-experience-20261118`。完整实现映射与验收边界见 [CLASSROOM_RELEASE.md](docs/CLASSROOM_RELEASE.md)，独立品审见 [CLASSROOM_INDEPENDENT_REVIEW.md](docs/CLASSROOM_INDEPENDENT_REVIEW.md)，图片与最终提示词见 [HERO_IMAGE.md](docs/HERO_IMAGE.md)。实际部署版本由交付记录确认。
+回退基线：`baseline-v8-20261118`（cbcc8cc）；开发分支：`codex/classroom-release-20261118`。完整实现映射与验收边界见 [CLASSROOM_RELEASE.md](docs/CLASSROOM_RELEASE.md)，独立品审见 [CLASSROOM_INDEPENDENT_REVIEW.md](docs/CLASSROOM_INDEPENDENT_REVIEW.md)，图片与最终提示词见 [HERO_IMAGE.md](docs/HERO_IMAGE.md)。实际部署版本由交付记录确认。
 
 运行仍为Node.js24、`npm ci`、`npm run dev`，默认 http://localhost:3020/#/home ，本地主持为模板，无需密钥；`npm test`包含新增草稿、历史证据与回链回归，`npm run build`构建原站点Worker。没有新增框架或运行依赖。
 
