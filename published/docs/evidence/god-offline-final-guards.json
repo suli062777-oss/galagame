@@ -1,0 +1,154 @@
+{
+  "scope": "Stored original outputs evaluated with final validator; not a new model run, E11/E12/E13/E16 have later targeted semantic repairs",
+  "checks": [
+    {
+      "id": "opening-P01",
+      "accepted": true
+    },
+    {
+      "id": "opening-P02",
+      "accepted": true
+    },
+    {
+      "id": "opening-P03",
+      "accepted": true
+    },
+    {
+      "id": "action-A01",
+      "accepted": true
+    },
+    {
+      "id": "action-A02",
+      "accepted": true
+    },
+    {
+      "id": "action-A03",
+      "accepted": true
+    },
+    {
+      "id": "action-A04",
+      "accepted": true
+    },
+    {
+      "id": "action-A05",
+      "accepted": true
+    },
+    {
+      "id": "action-A06",
+      "accepted": true
+    },
+    {
+      "id": "action-A07",
+      "accepted": true
+    },
+    {
+      "id": "action-A08",
+      "accepted": true
+    },
+    {
+      "id": "action-A09",
+      "accepted": true
+    },
+    {
+      "id": "action-A10",
+      "accepted": true
+    },
+    {
+      "id": "action-A11",
+      "accepted": true
+    },
+    {
+      "id": "action-A12",
+      "accepted": true
+    },
+    {
+      "id": "event-E01",
+      "accepted": true
+    },
+    {
+      "id": "event-E02",
+      "accepted": true
+    },
+    {
+      "id": "event-E03",
+      "accepted": true
+    },
+    {
+      "id": "event-E04",
+      "accepted": true
+    },
+    {
+      "id": "event-E05",
+      "accepted": true
+    },
+    {
+      "id": "event-E06",
+      "accepted": true
+    },
+    {
+      "id": "event-E07",
+      "accepted": true
+    },
+    {
+      "id": "event-E08",
+      "accepted": true
+    },
+    {
+      "id": "event-E09",
+      "accepted": true
+    },
+    {
+      "id": "event-E10",
+      "accepted": true
+    },
+    {
+      "id": "event-E11",
+      "accepted": true
+    },
+    {
+      "id": "event-E12",
+      "accepted": false,
+      "reason": "HOST_FACT_TENSE"
+    },
+    {
+      "id": "event-E13",
+      "accepted": true
+    },
+    {
+      "id": "event-E14",
+      "accepted": true
+    },
+    {
+      "id": "event-E16",
+      "accepted": true
+    },
+    {
+      "id": "event-E17",
+      "accepted": true
+    },
+    {
+      "id": "event-E18",
+      "accepted": true
+    },
+    {
+      "id": "recap-P01",
+      "accepted": true
+    },
+    {
+      "id": "recap-P02",
+      "accepted": true
+    },
+    {
+      "id": "recap-P03",
+      "accepted": true
+    },
+    {
+      "id": "rumor",
+      "accepted": true
+    },
+    {
+      "id": "injection",
+      "accepted": true
+    }
+  ]
+}

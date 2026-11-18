@@ -1,0 +1,4 @@
+先打开 review.html 查看完整图文评审。
+打开 direction-demo.html 查看加入、任务、决策、复盘四个状态的结构示意。
+三份独立子报告均提供 HTML 与 Markdown。证据和参考图附在 screenshots/、references/。
+本轮只做评审与计划，未改动或发布生产产品。结构示意不连接房间。

@@ -1,0 +1,10 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const url=new URL('../public/app.js',import.meta.url);let app=await readFile(url,'utf8');
+app=app.replace("function storeDraft(){if(!currentState||!$('#action-id'))return;draftState=", "function storeDraft(){if(!currentState||!$('#action-id'))return;updateActionEstimate();draftState=");
+const old="$('#action-id').value=a.id;$('#action-target').value=a.target;$('#action-scale').value=a.scale;updateActionEstimate();";
+app=app.replace(old,"applyActionToInputs(a);");
+const marker='function selectedAction(){';
+app=app.replace(marker,"function applyActionToInputs(action){if(!$('#action-id'))return;$('#action-id').value=action.id;$('#action-scale').dataset.action='';updateActionEstimate();$('#action-target').value=action.target;$('#action-scale').value=action.scale;updateActionEstimate();}\n"+marker);
+const oldCase="case 'accept-suggestion':{const a=currentState.me.suggestion?.action||currentState.me.suggestion;await act('action',{round:currentState.round,action:a,requestId:uid()});toast('已确认Agent建议。');break;}";
+const newCase="case 'accept-suggestion':{if(submitting)return;const a=currentState.me.suggestion?.action||currentState.me.suggestion;if(!a)return;const key=roomActionKey(currentState);submitting=true;submissionError='';updateReceipt();try{await act('action',{round:currentState.round,action:a,requestId:uid()});if(roomActionKey(currentState)===key){draftState={key,action:structuredClone(a),dirty:false};applyActionToInputs(a);}toast('服务端已接收 Agent 建议。');}catch(error){submissionError=error.message;if($('#action-error'))$('#action-error').textContent=error.message;}finally{submitting=false;updateReceipt();}break;}";
+if(!app.includes(oldCase))throw Error('Suggestion handler source mismatch');app=app.replace(oldCase,newCase);await writeFile(url,app,'utf8');

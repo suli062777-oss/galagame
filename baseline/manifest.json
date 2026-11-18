@@ -1,0 +1,2186 @@
+{
+  "date": "2026-11-18",
+  "repository": "suli062777-oss/galagame",
+  "archiveBranch": "codex/archive-pre-improvement-20261118",
+  "baselineTag": "baseline-v8-20261118",
+  "baseGitHubCommit": "0064d949d58f9dba09279c55c24c543fd40ac466",
+  "publishedSiteVersion": 8,
+  "publishedSiteCommit": "1b1d0b98d15b2321f5c5e668ceda6fce82a2c5d3",
+  "publishedVersionId": "appgprj_6af1a8e67e188191ae760465531b894b~appgver_129701012af4819191401d519cb1971a",
+  "files": [
+    {
+      "path": "online/.env.example",
+      "bytes": 429,
+      "sha256": "6a9f5bbeb9d4506403947cc5412e7077b4e173a84696ddebb2896ce2e2d5c7bd",
+      "git_blob": "97f301e05d2099a6ce5f5b7fab7f51ddc0ec9b77"
+    },
+    {
+      "path": "online/.gitignore",
+      "bytes": 125,
+      "sha256": "a52e99ed90e51e35d79479883a4f11268c135a9fa75ec29f5ab8fe184f521237",
+      "git_blob": "0145e72b311b72f0fb00952258708d231dc31707"
+    },
+    {
+      "path": "online/.openai/hosting.json",
+      "bytes": 91,
+      "sha256": "bbce920e5d20191e3b45e393cf613c2c19faa8c705e6830ac5bc41f9113f060d",
+      "git_blob": "f7ca0eb00818799009f94e43bf2b1217b80b96ba"
+    },
+    {
+      "path": "online/docs/apply-v3-ui.mjs",
+      "bytes": 4016,
+      "sha256": "e702a1cb09ccefb80f5096378296e5fbbf889aca931bf5f798fc99f7a3e43618",
+      "git_blob": "234fc8622a7583d8de78a6675586e3295ffee399"
+    },
+    {
+      "path": "online/docs/build-god-eval-data.mjs",
+      "bytes": 8341,
+      "sha256": "8eaed9cb1fc5550456a9be2f3cbe95ad0dcd3391dc68c74d6487e81febb08fb0",
+      "git_blob": "eec5070dfaf02d281247b305f0ed1dfc0303d850"
+    },
+    {
+      "path": "online/docs/check-action-budget-init.mjs",
+      "bytes": 2625,
+      "sha256": "3999127567145f7b7affd93b3538b37958df7ef6073fc8a35d9fffe3189b4049",
+      "git_blob": "b59d6993db26108b1e63a0b3ec6d500b36802f16"
+    },
+    {
+      "path": "online/docs/check-agent-entry.mjs",
+      "bytes": 5893,
+      "sha256": "f241ec6c5d4bd1de6a262ebf9f9b2cab377a8268235009e470eb2db28b9b0e36",
+      "git_blob": "bc4541070b62caf829a17588562476c9c24bb9c8"
+    },
+    {
+      "path": "online/docs/check-receipt-state.mjs",
+      "bytes": 3237,
+      "sha256": "ebc0df3443d1627d0caca42a3196776427eeb74dbf9dd219f1d3d4d36b3ffc48",
+      "git_blob": "dad25c8a882e60b8a68850f6ae2585910f9364c8"
+    },
+    {
+      "path": "online/docs/check-ui-templates.mjs",
+      "bytes": 2297,
+      "sha256": "69eaca9284643773401440623196abd04fa071fd39b2b4fd3cf5c706dd62df86",
+      "git_blob": "b6aa79f6bce3538f664706c33c9e837d4275f786"
+    },
+    {
+      "path": "online/docs/check-v6-room-sync.mjs",
+      "bytes": 4054,
+      "sha256": "db1fa55129319e620a762e63cf8096a5c751bda4ffde95da6bc62ded66a87cdb",
+      "git_blob": "db08a674347f7358143fa075fedf3c546c525ea4"
+    },
+    {
+      "path": "online/docs/ETAG_WEAK_VALIDATION.md",
+      "bytes": 1131,
+      "sha256": "26484343f41392c9d2dfbf90779b326d3dfafda2100629c4e5566f9012dda02c",
+      "git_blob": "f00723fa548ad45635b5538f9814c2b5232efe2b"
+    },
+    {
+      "path": "online/docs/evidence/classroom-deployment-v7.json",
+      "bytes": 1100,
+      "sha256": "674504511ee91136ede9a5ea77fb1432cced4cbeb004987d975a8f47c3a50c33",
+      "git_blob": "cfa3915dd85aa659cb341be07c31ac914687cbb3"
+    },
+    {
+      "path": "online/docs/evidence/classroom-online-v6.json",
+      "bytes": 2990,
+      "sha256": "1dd48125df9f868d047694afa6860b48696946638ce591936fb0bfd535e9ded4",
+      "git_blob": "7f5ba87df12affaac4431cbc2d2826b0c922a6cf"
+    },
+    {
+      "path": "online/docs/evidence/CLASSROOM_ONLINE_V6_INDEPENDENT_AUDIT.md",
+      "bytes": 4071,
+      "sha256": "9542a94ce667433296b6e7c9bad88d5c88da6ef9c1783f4a82e27a63eba0debe",
+      "git_blob": "7207f39eea8a7a4ec1d82ce2d2c4af9ee888f8a4"
+    },
+    {
+      "path": "online/docs/evidence/CLASSROOM_ONLINE_V7_FINAL_AUDIT.md",
+      "bytes": 2404,
+      "sha256": "32e3d5108ac763dd39bc9ba58d0e20dd162d0118bc2312995315cd28a665a7f8",
+      "git_blob": "0c413321313aaf02fb333bac0eafc0dce176ba4c"
+    },
+    {
+      "path": "online/docs/evidence/etag-public-v7.json",
+      "bytes": 356,
+      "sha256": "e9ccf231f8d9a32c9dbf153940d1280a6bfe3a2c0999fa023e0b60de94f91021",
+      "git_blob": "e907ff4dc0a9b6561d28dc3d50d9a0794b1637ec"
+    },
+    {
+      "path": "online/docs/evidence/god-live-focus-v3-human-review.json",
+      "bytes": 8073,
+      "sha256": "7eab671fad223657940924f96a82af4116820a92a0d0364442527540e155b08b",
+      "git_blob": "4f9cd58d1971370f21561b535132dcc8d83b9eba"
+    },
+    {
+      "path": "online/docs/evidence/god-live-focus-v3-human-review.md",
+      "bytes": 5578,
+      "sha256": "3f439a1bd3ed923744adc96324f01708f3ef786447688e797f0587b5f17b9217",
+      "git_blob": "57b6c11c237b6818f15687f73cd698ebdf956052"
+    },
+    {
+      "path": "online/docs/evidence/god-live-human-review.md",
+      "bytes": 7564,
+      "sha256": "cdc8a1abe6b174724ba21cadc96ebe6a416499ab26da55b1123268be99c0202e",
+      "git_blob": "0b6daa06c9962fae6ed1142efdbf9de849a50c1d"
+    },
+    {
+      "path": "online/docs/evidence/god-live-run-summary.json",
+      "bytes": 3730,
+      "sha256": "971ac2322412d70bce925a45592d2b8d4e009da946b7bedc2f7f8f631c6d402e",
+      "git_blob": "1f4bcb9c69a6e58cc0faa76880a07144fc338dc1"
+    },
+    {
+      "path": "online/docs/evidence/god-live-targeted-human-review.md",
+      "bytes": 1296,
+      "sha256": "7812694eb736b6d22bef95a1d546ddc02e3cc9b8a114c5844171fa72b282387f",
+      "git_blob": "061df0b45a5380d23a651d084150026d2b3229c8"
+    },
+    {
+      "path": "online/docs/evidence/god-offline-final-guards.json",
+      "bytes": 2624,
+      "sha256": "bed18ee9327f4f2089860945ae70e3a50d0da193458b5368bb54c3448e00c4af",
+      "git_blob": "1eabc7a074a21b6881f64d1967f415e9de6ca1b9"
+    },
+    {
+      "path": "online/docs/evidence/home-cta-20261118-verification.json",
+      "bytes": 4647,
+      "sha256": "4808ed37156a6fbfe56b1bb96b0f3db3acce87be2edb8b3e2a6effbd58360683",
+      "git_blob": "8a8db2f761517458075ce4a7f3442e16ccca48b1"
+    },
+    {
+      "path": "online/docs/evidence/home-cta-20261118.png",
+      "bytes": 20235,
+      "sha256": "eaddd2d39a8223eb0e97cc795f98320a62678d99bbaee73b6a738a2498384297",
+      "git_blob": "5c7ba43c3a7bd672a05287948e6d84306489d68b"
+    },
+    {
+      "path": "online/docs/evidence/multiplayer-local-v6.md",
+      "bytes": 1259,
+      "sha256": "31778c41085e0aaf2b79a3f91cd255e80f828db4f2eea22ab34b3e18859203c1",
+      "git_blob": "afde8da901b46060a484cee6723f993c8622de1f"
+    },
+    {
+      "path": "online/docs/evidence/source.json",
+      "bytes": 20650,
+      "sha256": "73c1813c9aca8348d483591bf0cd7a1f1412b5f927a1dde22810587c79ddff11",
+      "git_blob": "525ffce7ee5e3a2c19d445be509331e70741956d"
+    },
+    {
+      "path": "online/docs/evidence/v6-built-worker-smoke.json",
+      "bytes": 369,
+      "sha256": "4a4c18dc9a362d9eca1e1187eb0f2f02b8e7d91817c6d8c98b941597d9e70ef7",
+      "git_blob": "a7334b24f183e8a5ebd7ed2ed1f7e3d95b224e93"
+    },
+    {
+      "path": "online/docs/evidence/V6_GOD_RUNTIME_INDEPENDENT_REVIEW.md",
+      "bytes": 3671,
+      "sha256": "81acb432c7db662e4945368f2cb80ce4f0908a6a34b3929e60fcef2b60da1837",
+      "git_blob": "de79a407bd24c2e7d97c768814322f547e0fff58"
+    },
+    {
+      "path": "online/docs/evidence/交付公网复测摘要.json",
+      "bytes": 4086,
+      "sha256": "b17b462c5bef60c23d972c86710610edb0e788f57f1609ec9aec42b062bcd51a",
+      "git_blob": "1755989b83bd5f3df65f129851b0c15351e73f6a"
+    },
+    {
+      "path": "online/docs/figma-v3-main.js",
+      "bytes": 7531,
+      "sha256": "542b86edadf32918cb4208fff8f8f56576d2c4d2c09a0e9f676e8e3852e9a7ba",
+      "git_blob": "9bb1827a2a358b3d74149a0243c1e91a8b53d1a0"
+    },
+    {
+      "path": "online/docs/figma-v6-build.js",
+      "bytes": 15363,
+      "sha256": "4559799fa084f5c768bbf9565dd09758fd88af4c07f80118a7f4144a40f3cce7",
+      "git_blob": "f646cb2a0fa41bb5ad172df8e8173c87fd8ed7da"
+    },
+    {
+      "path": "online/docs/FIGMA_MAP.md",
+      "bytes": 1638,
+      "sha256": "26b8e05c8b9590703d0730502cc33e554e54b1b1b6af8d6425a6a494617de5d6",
+      "git_blob": "848842bd9a888a042df6881bedfa08debb53b074"
+    },
+    {
+      "path": "online/docs/FIGMA_V6_SYNC.md",
+      "bytes": 3995,
+      "sha256": "4d346e0bf9a100c7df8b5cde0d8e6f4947f322614babaef6bf4486ee7e761cbb",
+      "git_blob": "b12ec70dac1ac213a4b4b7ecb7832903aedf3f79"
+    },
+    {
+      "path": "online/docs/finalize-v3-ui.mjs",
+      "bytes": 1878,
+      "sha256": "22ad7c9134d1f11f5be1da5b8c5ad471bf9a83961ab1c41760ecf3f8c259f676",
+      "git_blob": "6e81507cd509f4fc921b25ddd9c6e585a6f5c525"
+    },
+    {
+      "path": "online/docs/finalize-v6-sync.mjs",
+      "bytes": 2510,
+      "sha256": "73d48a325fd323576169af346b1bf553eed3d2b85d687fe050511f570d1ddedc",
+      "git_blob": "ee4943e2ea077cb9f37ffc30f44462ca8c621a86"
+    },
+    {
+      "path": "online/docs/fix-action-budget-initialization.mjs",
+      "bytes": 495,
+      "sha256": "c9547cfa0420d306aca21538314a6ee36a6af5a4059edd16b982077449b30ce2",
+      "git_blob": "fe5a4367cabfaf6df7800b0fa0555a9740c78d51"
+    },
+    {
+      "path": "online/docs/fix-action-normalization.mjs",
+      "bytes": 1864,
+      "sha256": "21975db61c979f57d970a4cfa725634aefd7f5c198f5b55d07dbe5488aacfe4e",
+      "git_blob": "faee7f41ec7138e5b73b9a5976da922a84f4b5fb"
+    },
+    {
+      "path": "online/docs/fix-host-history-details-key.mjs",
+      "bytes": 728,
+      "sha256": "c5893b864d83a68fc135c0a907f05a4e2f9e42fbd3b09d6c25ff7775e9e11ccc",
+      "git_blob": "12eff9631e2d18b8bee13e00b69994ff5905c317"
+    },
+    {
+      "path": "online/docs/fix-reconciled-receipt.mjs",
+      "bytes": 1930,
+      "sha256": "5c7bf939815026644e827181a4344e29f4b4cf311d757e2bcc54703db36d54a2",
+      "git_blob": "a7bf7c517a6d988514a6e419dab005cde5ed0eaf"
+    },
+    {
+      "path": "online/docs/fix-stable-desktop-stage.mjs",
+      "bytes": 968,
+      "sha256": "0707e7a36b987514c6777e3d6e4d139b8ec568cdbd12310717185ac2da1fe6f6",
+      "git_blob": "a5d42c9826eccf93ab06fa54d1cdd4b4295c3819"
+    },
+    {
+      "path": "online/docs/fix-ui-contrast.mjs",
+      "bytes": 444,
+      "sha256": "57ba3985220f13c87168ede90ee676f64816c80b3b1db19d6d3ea0811f3734a8",
+      "git_blob": "9cdfa9cbb2d60c30cbcd4b37d046933e4583a5b5"
+    },
+    {
+      "path": "online/docs/github-v6-read.mjs",
+      "bytes": 1060,
+      "sha256": "e0e3b458c56e8414f0a1dfa9b91832ef3d7d87c87908d2a91e9cd1883707346c",
+      "git_blob": "8689fc6bc728e233ca098dc242b01169e677fdb0"
+    },
+    {
+      "path": "online/docs/GITHUB_V6_REVIEW.md",
+      "bytes": 828,
+      "sha256": "0770771ddd16d0f567a385d297bf96b3ca03fbd25bf325bc35daa11cf163f2fe",
+      "git_blob": "8ed35d56244b928c0c9a2954cca602e85f667613"
+    },
+    {
+      "path": "online/docs/god-evaluation-contract.json",
+      "bytes": 1721,
+      "sha256": "647a6d62173cb21d809806df46f9a61488b356c9743bbb3dad69507b21b9b3c0",
+      "git_blob": "50513f4e08c03ab9d2db0fd08d9d3cee3a3fb7a2"
+    },
+    {
+      "path": "online/docs/god-evaluation-set.json",
+      "bytes": 862857,
+      "sha256": "21ec8a3ebf387149f9c24e52076a2328bd0df64efd70d4a22ed7b91ecb0c546f",
+      "git_blob": "b9a3010511b5b3722d6fb2c374fed3a22d11dd0a"
+    },
+    {
+      "path": "online/docs/GOD_INDEPENDENT_REVIEW.md",
+      "bytes": 2469,
+      "sha256": "aa6fa7956a39ea5a214010c1432a31a94741b8cd8cdcad2036a64963214ad0cb",
+      "git_blob": "2077720f074315052774664c7f3c94dce78856ef"
+    },
+    {
+      "path": "online/docs/GOD_NATURAL_CONTRACT.md",
+      "bytes": 8776,
+      "sha256": "f382ba520f1e6a8b43639a7cd7352f625fe3e66f0ef3c8dff59ba0caed5fbd23",
+      "git_blob": "804afe6c9362cd51de1507d73a74c6255db740bf"
+    },
+    {
+      "path": "online/docs/implement-v6-css.mjs",
+      "bytes": 4401,
+      "sha256": "72ea6cbe0a6912a22837de87bcf5386ceba6bdafe42c6001b976ddc9eee69bfe",
+      "git_blob": "a1732ba0c9d277bb236d7567444840e06c5f1086"
+    },
+    {
+      "path": "online/docs/implement-v6-etag.mjs",
+      "bytes": 3421,
+      "sha256": "46f8d8ae72d3f1b464d85708efc3865ffc963770e4119c8c4518615bc3d214bd",
+      "git_blob": "692afd531a0c86a61556848f9840926e895d5aae"
+    },
+    {
+      "path": "online/docs/implement-v6-ui.mjs",
+      "bytes": 11945,
+      "sha256": "f7526ff9c89f431cf28304073b8ca9c66f11a66e3c25fa3336eb2b40b22cd131",
+      "git_blob": "d097ee52391686cfa077aeb411e7ba6c505d05d0"
+    },
+    {
+      "path": "online/docs/prepare-github-v6.mjs",
+      "bytes": 14569,
+      "sha256": "c76072a07f63f7e9152a432e4a7edcc015cb11614a0ab0d6aaa46b415bba4dee",
+      "git_blob": "d81875fad67d1a55ebdd97f90bf60558aad05552"
+    },
+    {
+      "path": "online/docs/probe-god-independent-extra.mjs",
+      "bytes": 1405,
+      "sha256": "d5b4194b4956ebe985db52e4ed4a3a6c5c63795a254bf385b636fd93c71edb87",
+      "git_blob": "f8bd5c69b2584b6beb3b9771e6e5b14234d846b1"
+    },
+    {
+      "path": "online/docs/probe-god-independent.mjs",
+      "bytes": 1661,
+      "sha256": "bd9a11c7415325d581ec2f42a05fe5723ce67bb3e48a87efd28ccccd2e56ed08",
+      "git_blob": "9ee5c9779973f838e29953cdaa3e0d41a372f21f"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/browser-evidence.json",
+      "bytes": 51844,
+      "sha256": "4ef18f090be8220aceeeb8150e6a60982d43a9f9653ba89755dd73b20e8e94cd",
+      "git_blob": "e084f3eff7418935a1558376f5703d2d7f977e16"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/build-review.py",
+      "bytes": 9286,
+      "sha256": "c1ba677dce432e4cc6fe66ee8c85040ee2b0bcf5c0d7361df7ba1364fb68f657",
+      "git_blob": "5858b894c4a104adcb7f5511a9208fc43599cbe0"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/capture-review.mjs",
+      "bytes": 12395,
+      "sha256": "9be92075b2e3e748213559dfc5a7b1be30ecec91c05bd48bfeda5dc1cd4e47c7",
+      "git_blob": "7b1ebc2c7d854329d5cb054174501e5d2f95fb76"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/completion-audit.json",
+      "bytes": 1911,
+      "sha256": "84451087eb0e8a91199ae9476c30f374577315c0ad7b01e818300f11551a14b0",
+      "git_blob": "59d3e0183cc4680a5f1316b47610f53802697ffd"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/delivery-verification.json",
+      "bytes": 2193,
+      "sha256": "5c8ffda9e9b487f328a44eac41ca34945df038445adb869aec6b3d924f44f38a",
+      "git_blob": "7cdd4b9b87e9b80924d9c4eb96b0aec582554234"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/details-evidence.json",
+      "bytes": 2743,
+      "sha256": "961fc567bee2a1e94ba4ced32a337aae1d3c45f30172b184b3865279f200a333",
+      "git_blob": "ec0ea75b18893fa160d243bc8200ebf9769531c2"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/direction-demo.html",
+      "bytes": 17502,
+      "sha256": "0732a25d7521b8264f78052099b5bf7e88672ed279cb27ce88ebd774e87d647c",
+      "git_blob": "0e4299e170a35b3ad834d28b390d5dc5efc76ef4"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/product-ux-review.html",
+      "bytes": 33370,
+      "sha256": "d33156f00dedc7957f95cd2325b253485737b3e4e060a31ff49c28fc4e71df98",
+      "git_blob": "6a31aaf822e5e09b25a2a082bd7062c1923381bb"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/product-ux-review.md",
+      "bytes": 23673,
+      "sha256": "521f54a7a9409740a4c6042f0f1e90a31ad4081e4a2bda4d74cfa1219f546818",
+      "git_blob": "7a10246ddef4ea547a8716fb8fde2051fdd65586"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/reference-research.html",
+      "bytes": 23940,
+      "sha256": "deffbda76483f06b508a48cf222669c5c9de5f433794ed19d78385c91664cbc7",
+      "git_blob": "3d7888441719c3e4c1bac0b8200f8efe83a6b1a4"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/reference-research.md",
+      "bytes": 16596,
+      "sha256": "a2a984023a04806c6216ba4c20233ff72bc5a856e9019d144468d1703eeedbd0",
+      "git_blob": "b0c7254fbb998ad409d42a855fc7d91dbfea0d49"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/references/linear-2026-borders-official.png",
+      "bytes": 249084,
+      "sha256": "450302c9fa79943588f99c58a728dc2356c17ace31c66181764c6be36334edba",
+      "git_blob": "f02483ff6cf5d1ba75abd79f8c5e249713156a68"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/references/linear-2026-sidebar-official.png",
+      "bytes": 295755,
+      "sha256": "1114ad29dda45c2e37c127ae5ae6ce4d001a4f7f0b592faf135ab5b2d456db38",
+      "git_blob": "3af22569d4099f67308acc4c70a93f1b1e633594"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/references/provenance.json",
+      "bytes": 2511,
+      "sha256": "c4065b97bd17d6f95754bfa915c28a76b8e0ece49216c79a5f26d2d5ced5866c",
+      "git_blob": "f0196113752ae1f749289ffe0ee3d1a55cb08466"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/references/readwise-inbox-official.webp",
+      "bytes": 79882,
+      "sha256": "b79d67e6c9e97c51067cd8a90e8db798da9316ef94c1fc82b58c79e049d830c4",
+      "git_blob": "a8cf6fe99e53c216f997ed20a6acf0fac9ca2b26"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/references/readwise-reading-official.webp",
+      "bytes": 129684,
+      "sha256": "97aeb5179e4bcfd640888ef1c382da5818fa507eef8943e2c70d57898c584f0e",
+      "git_blob": "d762abfb8a42b64e6323def4a7cc59eaddf006a1"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/review.html",
+      "bytes": 43928,
+      "sha256": "b91101e510101a16494e817a222713aebf10986ed53a92bfeee409e6142e29a7",
+      "git_blob": "b4d4b26f7b6854f69089aad0d7487abeadef9ebd"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/REVIEW.md",
+      "bytes": 31900,
+      "sha256": "932da760c433f192b87401b43a3975c13e1262baf20d736cc8edbbe074562370",
+      "git_blob": "a47d523a16141f752bff777bb44e166ecaa17764"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/decision-proposal-preview.png",
+      "bytes": 177318,
+      "sha256": "e133c31747f77876bc8efc2f23a20eaf525e1119b7ea6f13209d3d7ae884320b",
+      "git_blob": "48206b10ad32d965ad13c8ba5516e5eec9e57816"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-action-accepted.png",
+      "bytes": 276895,
+      "sha256": "c2c389e4df3da5c7dd93803dae823cffe832daa2b8f06e4c2875f4af58c8aabd",
+      "git_blob": "6087b0416fde1bcae71ed9f31faa8ceedd7f13e8"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-cases.png",
+      "bytes": 155792,
+      "sha256": "81618d35395538d048a3f304b3ef80a0e9d7d84b9f69defb77f0056d08215230",
+      "git_blob": "84353cbfb960f256a7b52703092d89c8ec2b695a"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-entry-join.png",
+      "bytes": 143011,
+      "sha256": "ce5e3921d68bdda1975c670fe050cec97f0434fcccfa26d2ef9b3e4dd24e89d9",
+      "git_blob": "d56a4406181f7ea040fff3f12a1166a8a939a4e0"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-finished.png",
+      "bytes": 281845,
+      "sha256": "0424970c0379d551779325cdc2e020c09e954a1edb1b6d2be036a9463c38aadf",
+      "git_blob": "47b435deed3127b72552f9de19c4311f895c3685"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-first-decision.png",
+      "bytes": 276608,
+      "sha256": "3ff6b6b33ee95e5ead7f2127e3c2deac8cdcff019912265a35a4c03f12efcd52",
+      "git_blob": "1636c0ee69583047abff1334136bef84705aef72"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-home.png",
+      "bytes": 353920,
+      "sha256": "9c74daef40dbd8f46d9218975a32a9cc2fb3c42d4673cd5c641ee64cb5c56c70",
+      "git_blob": "f82b124ce7a01c8439f1b17a4f8c5eeb7a7aaf06"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-host-detail.png",
+      "bytes": 181286,
+      "sha256": "ef6d9c467bb9f533c24b6c68256d48a06023ea915ed1a02f62be236ce3958e9e",
+      "git_blob": "899bac6744cefc3e371493ed67c6d5bd75f9f04e"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-lab.png",
+      "bytes": 176851,
+      "sha256": "74d77f31bb4b69fff0e0b19f1a7a3810eb299d241686612906aa4b5f94c03a1c",
+      "git_blob": "5b178ba126192a8d6b9888602bf5570021a8140a"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-map.png",
+      "bytes": 114109,
+      "sha256": "2622d7c9376454f571b81d9517401f0c41d2b05cbf8a26cb3b01214dc3a129d8",
+      "git_blob": "ca1b391dbb708edb7ac8205ff48af517ab8dcae7"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-notes.png",
+      "bytes": 67577,
+      "sha256": "5c79bdc5f7fbc93f5c800c66190fb9f4c962c2b1ddbbbdf1d1a3b779cd9ffd77",
+      "git_blob": "a5c001591de3812e656dce6c731b22f79d1b5eb3"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-read-experiments.png",
+      "bytes": 214740,
+      "sha256": "a3db26e75e747e12cccad78e2233202e0ab661294b5f9b1157c44c4730a1bf65",
+      "git_blob": "47ae54286f14c99119a54e3beb447085689f7f58"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-room-lobby.png",
+      "bytes": 253237,
+      "sha256": "704583978d0adf6f8688bb658ad95052cf6f57586cc186366e95c679bbc6dd21",
+      "git_blob": "19ce8ae8be579e5231d25c3cb0987022da7d9b4e"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/desktop-tavern.png",
+      "bytes": 142689,
+      "sha256": "94e6ee4a496dc1b923d0a3ef20a111833a0c8efb489e162e5dffefb81b23341f",
+      "git_blob": "97d835edadddacc54f33e4543054c1c008b8d6a9"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/direction-demo-preview.png",
+      "bytes": 97635,
+      "sha256": "272d7f234ad8f951e19c24d107d56605a57215035efa263bf2c7c26713f43464",
+      "git_blob": "e7b358563f12d252ace2981aff968fbbb5ca319d"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/live-entry-desktop.png",
+      "bytes": 145047,
+      "sha256": "df17a652cf775ff5909c428be386062e873f9ff8cc81d37787297ae97beda507",
+      "git_blob": "485340709b4779a5403148a93b3ffe3535f68f99"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/live-home-desktop.png",
+      "bytes": 344324,
+      "sha256": "b4c3a789346f1e8d231146703907c1435e2ad22688b40d38cdcc4a4fd9bc89fe",
+      "git_blob": "e79874881df0ed2de9eb7bfec76d2a5807bff0ad"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/mobile-action-sheet.png",
+      "bytes": 46495,
+      "sha256": "269d501d2b1980bfa90923f71dd59108bfe68796189e49c289d5100565d57299",
+      "git_blob": "ae92b6f073199999139ee9a1b9594620ad114e87"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/mobile-finished.png",
+      "bytes": 140639,
+      "sha256": "bcf74f3591d8706082d712e24f6d4f63f652ccef56e00163b0e6409a198f2c23",
+      "git_blob": "9add6a25e998cfcaf2f847edc30011eec833dd35"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/mobile-first-decision.png",
+      "bytes": 132230,
+      "sha256": "7144c4badd701211955b41922a010b7d5c9ca3fe6fe8420298829e97616ac583",
+      "git_blob": "a947493356e67c60b0ec9edf81fcda687bc1cd43"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/mobile-home.png",
+      "bytes": 179828,
+      "sha256": "7bb9ea3970db500d8b8974dc9fae8583a8f1409e38d4dd807ab940faab229aef",
+      "git_blob": "6bf4c8738c8952f40c067d1daaa035b5b6fa9ae2"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/mobile-read-experiments.png",
+      "bytes": 192560,
+      "sha256": "87d6b37417536098dfa618ea410491aa307459fd0081ba5c2a5460c19d540cf7",
+      "git_blob": "cb73e20462b4f034d4fd9e7043422e5b6786cda6"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/mobile-tavern.png",
+      "bytes": 90639,
+      "sha256": "05f649599fa8c43a76ea7704e9ba4afe7557aae8a829ebf6a560b1931cc7ae5d",
+      "git_blob": "040587fa9ae10faf4e3b873ecd47dc2390c608ec"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/ref-lichess-analysis.png",
+      "bytes": 62521,
+      "sha256": "9cad1ce46c3b8631dcb131f136e43ae5c9ede979a46179bc229e402d6d5147c5",
+      "git_blob": "ae62f245f201e24329c6a6a7ef603b0d4194046c"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/ref-linear-design.png",
+      "bytes": 80931,
+      "sha256": "3ed111e55e0523d829bf71fd3ebd0f23352f259b0d7dad05ef2c3b5bab4fc58f",
+      "git_blob": "8e89db53624f847841afeb571449a695ad7ff167"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/ref-stripe-press.png",
+      "bytes": 1794184,
+      "sha256": "8587867a0cd30fe508ed2e3e50141a0d79ffab236145bf87734703a181538f3d",
+      "git_blob": "df1bf5baaa33729c5783f71085333b3ceebda26b"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/screenshots/review-preview.png",
+      "bytes": 207501,
+      "sha256": "cab0ff616fc1769371be86f7421fa4d6907d93d4cbfd3248a50c4a90bbe8b59c",
+      "git_blob": "0ee8ad5c331c72622dbbe58d6ca441aaa63e7b09"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/verify-delivery.mjs",
+      "bytes": 5773,
+      "sha256": "80b7afa74f00700d2818ba0d471fba6766e6a875896908bc013f9a325ac441dd",
+      "git_blob": "b12d1b62e0e0d6088f57bf303017fe8ee97096db"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/visual-review.html",
+      "bytes": 35585,
+      "sha256": "8998d257490c871a5c9a94d70d99c9984ae286b2e4c263ae25d014267f9e07ff",
+      "git_blob": "a95788d94ff4188a20365ae5c051bc8fd197b570"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/visual-review.md",
+      "bytes": 24948,
+      "sha256": "76fdaa7278598995aebe68b30929d8d36b0601065ede01c0e65f4ba8b550bb09",
+      "git_blob": "8ca27ebdaf1fa36b6a86405ccc055fde5065c9f5"
+    },
+    {
+      "path": "online/docs/product-review-2026-11-18/先读我.txt",
+      "bytes": 351,
+      "sha256": "35f0074fd326e261e1fc56790ee5c245987ee034a7f83ca91623da5a52fe5495",
+      "git_blob": "def8eff8d11083353d255ace1c13afe9c6fdf1db"
+    },
+    {
+      "path": "online/docs/QA_REQUIREMENTS.md",
+      "bytes": 3353,
+      "sha256": "54bf9460204f88e80d0dad6266aaf77432eb86273201691188e568b434eed92c",
+      "git_blob": "e9556fa52f44e4c2c83f5ea67c8e2aed2793daf2"
+    },
+    {
+      "path": "online/docs/record-god-focus-v3-review.mjs",
+      "bytes": 7258,
+      "sha256": "e206d9016b64a92953eccc2c2c5d224df92f96d9292a5dbcae3ee9cbbac3500f",
+      "git_blob": "ae2ff215fe2cc1d1d555cd43183633fb77fbf1eb"
+    },
+    {
+      "path": "online/docs/refine-actual-viewport.mjs",
+      "bytes": 2720,
+      "sha256": "f81031b38d66741afda87916ea00e18ee21321f5f18fbf6ae6c7857948f58dd4",
+      "git_blob": "b104eaaf6be18b6ba3fe5f5deb3bf2ea5c93e8d9"
+    },
+    {
+      "path": "online/docs/refine-v3-ui.mjs",
+      "bytes": 4772,
+      "sha256": "fb8eb4628027e66dd4711cc74baabfc4989cdcae05762e18183da9d435a4f304",
+      "git_blob": "b142b5d522aacc61f444e17b5a36d41a646913e5"
+    },
+    {
+      "path": "online/docs/SCENE_PERFORMANCE_2026-11-17.md",
+      "bytes": 4536,
+      "sha256": "6383f9404878919cdd253a3ea71ae1a4e85fa4fd07ae496b08a1015aa610ead8",
+      "git_blob": "37defd1bb662aaedddf70480dfbf9c04a29c8b02"
+    },
+    {
+      "path": "online/docs/share-action-submission.mjs",
+      "bytes": 1963,
+      "sha256": "7d683e43b32642065c63f7f7298685432f2b98af84c81c4f0dab480c3ea8b5f5",
+      "git_blob": "3ff6eacf54773679ea75dea30d98e888fcfe01de"
+    },
+    {
+      "path": "online/docs/v3-room-ui.js",
+      "bytes": 21417,
+      "sha256": "df0e7270ebd7c7710376f2cffa93c35c685df2646e6d3594a54bd45a37a91c23",
+      "git_blob": "2e7f34545a4d409d8aa9f13cb3d6245750deb142"
+    },
+    {
+      "path": "online/docs/v3-ui-controller.js",
+      "bytes": 3136,
+      "sha256": "e2bbb916b00eb46085ee6dfbf31e609ef79aa6a538c009b436cd00c896ca34ce",
+      "git_blob": "a684effb1712ed5747d8c92d9f968a15079cd3a3"
+    },
+    {
+      "path": "online/docs/V3_SCENE.md",
+      "bytes": 5133,
+      "sha256": "05322f508a35ed49c12da27b5b8ae130df5884ebc43f2bd779404fa8e6981bd1",
+      "git_blob": "31c147d730499b2b7daaa2684b6b53af00150606"
+    },
+    {
+      "path": "online/docs/V3_UI.md",
+      "bytes": 7713,
+      "sha256": "68602898e39498dab89f1122f96bb68c28d8183060bbed0dd3dc9b1f702127bb",
+      "git_blob": "9c221a221852a2d85bbba671eebe56e6797542d5"
+    },
+    {
+      "path": "online/docs/v6-host-ui.js",
+      "bytes": 4377,
+      "sha256": "a8c7b16b4ad8b233ef610cbe75f3647885b7ad3f9af6726f21ade7e29edc51b8",
+      "git_blob": "81cbc78eae8b5114f959047471c5a8d7905b5149"
+    },
+    {
+      "path": "online/docs/v6-room-sync.js",
+      "bytes": 5343,
+      "sha256": "f3bac1751ac68863019ff87cadb778dd2cb344cc66427848959349ff59e8d69e",
+      "git_blob": "af7ee2025cd0b862900fb251cda6568d83c396d2"
+    },
+    {
+      "path": "online/docs/V6_UI.md",
+      "bytes": 4884,
+      "sha256": "80ff2f6e27a6c1e424ccf3a707f6936aba66eb96ce62e478f3e854e3cd87f9dd",
+      "git_blob": "0f9000b985798dcd87bfecf7a6927f3b0d3ef9f0"
+    },
+    {
+      "path": "online/docs/交付说明_2026-11-17.md",
+      "bytes": 3827,
+      "sha256": "2052d08193c933628f3dc5dcb6ca660ab4a4341ab1f6ae4d1ffd1503fec84c40",
+      "git_blob": "ed2ff136b5bbe296835dbaf708eaff83c4cfcc63"
+    },
+    {
+      "path": "online/drizzle/0000_online.sql",
+      "bytes": 868,
+      "sha256": "8c3ffaf03a62c1f680a1d8dfd4e4631a9a1eb301a97efc1d25b69d72ed8f3dd3",
+      "git_blob": "0b01c7d1170565cc78189c45e08a9440dea6ec38"
+    },
+    {
+      "path": "online/drizzle/meta/_journal.json",
+      "bytes": 197,
+      "sha256": "6eaff37d9b9cac9765253076857eb05433fcd87d75c27eda971bffd082eaaa45",
+      "git_blob": "2cb88cab5bb2fc8c8efe0fe5d56edc00910e7180"
+    },
+    {
+      "path": "online/ONLINE_UI.md",
+      "bytes": 223,
+      "sha256": "993780509b6910bd8c89705dfa427992b8ac6ef10a8b9a8d4d4ff43a41dff5b5",
+      "git_blob": "bb4e3791a13bd9f40c918935d1bd489e45e596bb"
+    },
+    {
+      "path": "online/package-lock.json",
+      "bytes": 20065,
+      "sha256": "fed4003c6f9ee94db8d9aa3c800502a320c866ff3d0467547ad606388d4b7ac8",
+      "git_blob": "b0ca7de5411503b76e887dba4dfaee018bfc4d65"
+    },
+    {
+      "path": "online/package.json",
+      "bytes": 876,
+      "sha256": "fdf760ef9282621507b591b5d4034940129a0b79cd0ba7f477989b9499f427f8",
+      "git_blob": "27457d68f9779022cdbea768fd536a894178c2de"
+    },
+    {
+      "path": "online/public/app.js",
+      "bytes": 89921,
+      "sha256": "076baff2cfa5a2c56840d92a88bd51766f4bb57112a6c973c0613b7b7bfdc688",
+      "git_blob": "a3d3a89b6110862f159ee4cf6f797b62099f6afb"
+    },
+    {
+      "path": "online/public/assets/book-hero.webp",
+      "bytes": 159772,
+      "sha256": "3f059ce146ec9b0e5389e62791fe7f183dbc8309bb6c19cba81b90867a493c51",
+      "git_blob": "5c5c70d69202e7b1b2d236a311b5837ffb6a3653"
+    },
+    {
+      "path": "online/public/assets/figma/case-path.png",
+      "bytes": 1856304,
+      "sha256": "25668509e868dfa3559968324889b11755522afc2f83431cdaed33b1e3539d27",
+      "git_blob": "0f11a86df3303f26c82494a62e1bd3196f7ae523"
+    },
+    {
+      "path": "online/public/assets/figma/folded-path.png",
+      "bytes": 1722475,
+      "sha256": "a8042a56820c411e12496b86bc8f5d8d02044c69d425753a8f4e7569272d3a48",
+      "git_blob": "d17915d0f7b9da57dd44118ff8fc7c40362cd2bf"
+    },
+    {
+      "path": "online/public/assets/figma/ivory-sun.svg",
+      "bytes": 236,
+      "sha256": "f1ef3c55f2a28930eadede89d301c5b8b3a945bec5c03295355e98ed8437b112",
+      "git_blob": "a4af3f268e3c31d970b4bfe5513df4469ed40d52"
+    },
+    {
+      "path": "online/public/assets/figma/landscape.png",
+      "bytes": 1362606,
+      "sha256": "d6b74f1c7896746804845cd34f093c973ed8bdbf6ef385f149051d15b37e7255",
+      "git_blob": "387143757ef13cb285bc996084ea53f6bcbc0982"
+    },
+    {
+      "path": "online/public/assets/figma/learning-cycle.svg",
+      "bytes": 606,
+      "sha256": "75e18c378180550a88cd4614c422ce56dcf1fa8a0beea46dc90095fd6b14d169",
+      "git_blob": "64fbe694d8ac8accfd620ace6cbbfa673beca75e"
+    },
+    {
+      "path": "online/public/assets/figma/reading-circle.svg",
+      "bytes": 650,
+      "sha256": "92447d3e54f57b6072ccdd9f03b7f81f0be6f728fe0263b42cab4ae3f85fce91",
+      "git_blob": "79aa615ac3f9e6a356b84cdc4c3fbde40e4f3343"
+    },
+    {
+      "path": "online/public/assets/figma/red-sun.svg",
+      "bytes": 1494,
+      "sha256": "3d62ff0e0a58e09aeebde3c95ce1cce8f15e08069ea34f2de607d2a5621c1c72",
+      "git_blob": "d470b57ea75d829f1607561a90cd080b9264f604"
+    },
+    {
+      "path": "online/public/assets/figma/value-pathway.svg",
+      "bytes": 322,
+      "sha256": "2946e99722accdca98c28329be41639f50d426514428953fc1c57bf3f79f5af2",
+      "git_blob": "d75e8617f885a4348c4ec3563565a1f35f8e0330"
+    },
+    {
+      "path": "online/public/assets/figma/value-platforms.png",
+      "bytes": 650241,
+      "sha256": "992237402c68034c65f52ab91e0b4401c1f8601732a40db3bcadd3242fdddd63",
+      "git_blob": "2e5e7dc51a8d0b718d39185cdb5e4e6092627523"
+    },
+    {
+      "path": "online/public/assets/god-avatar.webp",
+      "bytes": 27984,
+      "sha256": "793ed25afec5a89d14807c863d4866db7f4b3693164d649889615e5df8587024",
+      "git_blob": "bcde4162de9e3a4673cf36e88517144315746482"
+    },
+    {
+      "path": "online/public/assets/tavern-atmosphere.webp",
+      "bytes": 123288,
+      "sha256": "829027f2a11b69dddee97c06d15f15e9a45d61d446e1a6e2945fc8efadd45b55",
+      "git_blob": "abc506a7d3b66f163b071610d8a89f2a5e3d32f0"
+    },
+    {
+      "path": "online/public/assets/vendor/three.module.min.js",
+      "bytes": 677935,
+      "sha256": "1af5bef9a9fd79fcb73fcfd3e4dd2ac0cea8720205bc7607d67369ce194a87fa",
+      "git_blob": "97f39bfd70c9ccbe661bfeba06794cf89065ba38"
+    },
+    {
+      "path": "online/public/avatar-art.js",
+      "bytes": 3645,
+      "sha256": "37e218fec0dd8d556548080228a0174d31993a8bed10e63b44fb9f7550f1f5b8",
+      "git_blob": "bcba1907145421b4379acd11d458a6531f3c35b1"
+    },
+    {
+      "path": "online/public/avatar-contract.js",
+      "bytes": 2161,
+      "sha256": "3ee9ddd820ade04a8da0bec61c21fe55284f435ca650c3ab83eb3bed4948e887",
+      "git_blob": "3cc7367e74ceff2c703febb4f47c8b6a05c8083e"
+    },
+    {
+      "path": "online/public/avatar-editor.js",
+      "bytes": 11165,
+      "sha256": "7b31624e53717d3bbd65cccd2c56bae48fb058ab82bc15c177deb696ed413e72",
+      "git_blob": "5791f36e04280194fa1cfddd0c01712e8f86cc69"
+    },
+    {
+      "path": "online/public/content.js",
+      "bytes": 20043,
+      "sha256": "c8aab8de304f6d1e6c3e3e0a3cb511e2ec1eb9734f489907c2376ab4dd681e12",
+      "git_blob": "b3e8e9e006e85b50a649d6a13ecd7a08732941a5"
+    },
+    {
+      "path": "online/public/globe-math.js",
+      "bytes": 940,
+      "sha256": "e4a27499ee6b5478ec4ca81af8bd1ba21fa6fe233e5cdeee19d2f96728242fc4",
+      "git_blob": "6fb1a99dec97abba3b5ccef6b9833d9ad43dd7fe"
+    },
+    {
+      "path": "online/public/globe.js",
+      "bytes": 187,
+      "sha256": "7da1264de393990516e88ed3eb302940dd2ff54f7f1b83c9002fa984297adfed",
+      "git_blob": "ff76f9e94ad3de491a6782a47a97113d992cc12d"
+    },
+    {
+      "path": "online/public/index.html",
+      "bytes": 1160,
+      "sha256": "50da64ece1fd9c27eab8a7f9edfd9feae69ef3a4cb878eadb8abf2afe3f627f5",
+      "git_blob": "10801ce7527bc1b435b32453177bf174f39709c0"
+    },
+    {
+      "path": "online/public/roundtable-scene.js",
+      "bytes": 28024,
+      "sha256": "8f4dd36df1a6424db8bd78613e3c525ea9068549f31964ba8bc9b83b176b199e",
+      "git_blob": "02775592ddcdff214a5b7dbb80551379fc21a302"
+    },
+    {
+      "path": "online/public/roundtable.css",
+      "bytes": 1703,
+      "sha256": "3fb1b8f387d55302400e67b1bd397cc2869cd0bf4909aa0b0d996fc9c2b2e6a6",
+      "git_blob": "73d56b5b3afc0b9dfea639b2aa8e51697a805c7d"
+    },
+    {
+      "path": "online/public/scene-runtime.js",
+      "bytes": 3859,
+      "sha256": "acf371bf58307a06f0383f638849b382d836077bc03580cd5170513c4f15921c",
+      "git_blob": "649424d48cc9600c2410a112c54e5c080017f8f8"
+    },
+    {
+      "path": "online/public/style.css",
+      "bytes": 35284,
+      "sha256": "3690de3378caf19e7721f626db7ef52be75be807fe4cc91b22af25a6e9e64ff1",
+      "git_blob": "10ad49a2cfa09a75f5079f006bffcdc49ecd683b"
+    },
+    {
+      "path": "online/public/tavern-environment.js",
+      "bytes": 8918,
+      "sha256": "ad40c2eac3a207c659e06ecd36b3ea14f26bde305dfb720addb1d65f8bb1d32a",
+      "git_blob": "de6d4e358535f84f2e469f5fe59a5484dbf51909"
+    },
+    {
+      "path": "online/public/tavern-models.js",
+      "bytes": 9023,
+      "sha256": "e6b5c25a5d92e320dbc7202c85c3eee2d0ee40c525928266f9638c1e3bef607f",
+      "git_blob": "6b4fbf3a1ce89be11be0b4daa9e33445e7a5360b"
+    },
+    {
+      "path": "online/public/tavern-v2.css",
+      "bytes": 26124,
+      "sha256": "a05390ccf1a61263ef652e79ffffc0c5e4b5d4adef94c17ae947c72fca82ff5c",
+      "git_blob": "92c6bff0bcd959e4ec4298a1b9e744d4627141a8"
+    },
+    {
+      "path": "online/public/tavern-v3.css",
+      "bytes": 34209,
+      "sha256": "6ad73ecf8eebb3f099bccccc2fe658730b12f62ea6a9315e8209ced53edafa4e",
+      "git_blob": "d67b86eaee9015e273bdbf77f09ec905fb668fe4"
+    },
+    {
+      "path": "online/README.md",
+      "bytes": 4937,
+      "sha256": "a771243f18ada52ceff05701b6d31fdb3d9a53ec4b308ad22f9bb8a7bb6c5f11",
+      "git_blob": "b33a313b3f28229f43d211b2f6b55b594717ab75"
+    },
+    {
+      "path": "online/scripts/build.mjs",
+      "bytes": 3871,
+      "sha256": "b72ebd78e933daa666d5d79c410fae59352d04a0bf7a154e935a1b1135d1e007",
+      "git_blob": "6197f542a42f12ac1c9760082db2dd06d30fe46a"
+    },
+    {
+      "path": "online/scripts/dev-server.mjs",
+      "bytes": 7882,
+      "sha256": "9bac65480f82172c9048ca0a6beff3300d6396069c672671302bce0f12388ec7",
+      "git_blob": "af73fb7d4f693693767a00b2aaa523a5082b2c29"
+    },
+    {
+      "path": "online/scripts/god-live-eval.mjs",
+      "bytes": 6664,
+      "sha256": "f47af6389e48e471446f8801aee1ada5df5f195b73e396fe29256ff29bcc2b31",
+      "git_blob": "c8a3bd7f08391a5d40ff30cae9fae09a0ce328df"
+    },
+    {
+      "path": "online/scripts/package-source.ps1",
+      "bytes": 4822,
+      "sha256": "f5af8ed4302180c1b14f82526e4d3020cb89385cae3139ee632026ff4b61aa3f",
+      "git_blob": "1ff21d5a27c82bc4401cf4791efa15e304196a46"
+    },
+    {
+      "path": "online/scripts/qa-classroom-online.mjs",
+      "bytes": 16440,
+      "sha256": "e64142b631cab7106eec919769553c44d4afda07176b00e81558492533123d4e",
+      "git_blob": "7c01ea68aa8e908ee7a5bca33dd3af0feda8b771"
+    },
+    {
+      "path": "online/scripts/qa-classroom-online.ps1",
+      "bytes": 19446,
+      "sha256": "d7005daf69766fb368a54d36ea5fb7412bcd1ef3b730980713ace695d583f90a",
+      "git_blob": "20703f73b286f7d4ec1853981e26ae862dbf290a"
+    },
+    {
+      "path": "online/scripts/qa-classroom-v6-online.ps1",
+      "bytes": 43794,
+      "sha256": "d1ea75523cd843a2c0d0fd86fff7240dc886bf837206d75d6f0d0017e04be699",
+      "git_blob": "b86b54868134f50d3a0d65ced49552a147be4350"
+    },
+    {
+      "path": "online/scripts/qa-multiplayer-v6.mjs",
+      "bytes": 21577,
+      "sha256": "cca419c3d41b2ba818d4fb9dc59a5172979cc64492d90f47ebf5b58359138bb6",
+      "git_blob": "dc3f1534a0eec084b1bbd2bf9a622d10e113cd36"
+    },
+    {
+      "path": "online/scripts/qa-v3-api.mjs",
+      "bytes": 7482,
+      "sha256": "c7d2e9335f1b3db1932f8b38803afd8481d40c927d8a5210d5958cc24948f678",
+      "git_blob": "4a7e7269e4fb4973e969dae8d2aef537103618df"
+    },
+    {
+      "path": "online/scripts/qa-v3-browser.mjs",
+      "bytes": 45124,
+      "sha256": "527bd0e0502e25984a1b203c38545f073f3a09d1552a0aa5b97f222be4f10638",
+      "git_blob": "601bfd34f3ee39a3e413912c19b99f0c67b200ff"
+    },
+    {
+      "path": "online/scripts/qa-v6-browser.mjs",
+      "bytes": 32597,
+      "sha256": "946257ad82903e85e17a9aa760f8ee716909da23f29cec36fcb1167556bb1782",
+      "git_blob": "6156e7654828d2fca25504f7250da05f95e39632"
+    },
+    {
+      "path": "online/server/api.js",
+      "bytes": 24307,
+      "sha256": "f1933388b6d67a8675edfa3edcaba9592615000a46c7a2478ccf43557cf0c4f0",
+      "git_blob": "54a4f0da66b0946be58abdf27c88461ea66c9bc4"
+    },
+    {
+      "path": "online/server/avatars.js",
+      "bytes": 2881,
+      "sha256": "df443f22e7e7ea1f8da9c0c098fb006c435f766ff6344443139d1bb699fe9b22",
+      "git_blob": "cc5617dba91fbbb6f0151176325c7b3b86a3f1c7"
+    },
+    {
+      "path": "online/server/engine.js",
+      "bytes": 37318,
+      "sha256": "121c291622aea5e2c8bdbc9d0de74392ebb6863546ec4be71849daa95ff190a6",
+      "git_blob": "e3faa09359ac962318b431913a2a930211c3bab8"
+    },
+    {
+      "path": "online/server/god-runtime.js",
+      "bytes": 5459,
+      "sha256": "f1d7a1991592ea21b153349cf1fd39b288ed8c602c1a3a30e05014844aa3fae6",
+      "git_blob": "a5f91b08667f6cc8f5535c259c2c268139124f14"
+    },
+    {
+      "path": "online/server/god.js",
+      "bytes": 308,
+      "sha256": "ffaf5963fff479ae0e66f1b84c7bcfb8adb2876e76abef0c6e366135e96efd6d",
+      "git_blob": "352dc46419fbecdd5ac01b44ceff4ddfd47db5ba"
+    },
+    {
+      "path": "online/server/knowledge.json",
+      "bytes": 4921,
+      "sha256": "b6580891fd3b4fa54e523805ae00cdd88d94a437095cf5d05e2aaef862d68075",
+      "git_blob": "c4f392c428c36f72caf75b5e20a2505a71a260af"
+    },
+    {
+      "path": "online/server/persistence.js",
+      "bytes": 1432,
+      "sha256": "bd95736c511dad063a9622e62747def6d9089c188edbb8ed2c4f6f63afac0525",
+      "git_blob": "c70f4b015ad04e4f6a5ab43fb0017de605ea440a"
+    },
+    {
+      "path": "online/tests/d1-adapter.mjs",
+      "bytes": 3058,
+      "sha256": "392078d1c8937f90166e26697de84dfae02bd1a693e8aa8a743e4932d91a1cfc",
+      "git_blob": "e1ff72a6ea2c93151b65008446f3deb08513b9f0"
+    },
+    {
+      "path": "online/tests/etag-independent.test.mjs",
+      "bytes": 4897,
+      "sha256": "cc3544d64cefbf4e02c8799ccd5dc78e6344ee2f2176c0e3869396890fa67ff5",
+      "git_blob": "278abc66e09f1514014af821728db076d970dbbb"
+    },
+    {
+      "path": "online/tests/frontend-etag.test.mjs",
+      "bytes": 4981,
+      "sha256": "80afc362bd720b67b1650c66af0f76c5d4f7b74c88475444acd33ce8ab27d50f",
+      "git_blob": "b9125ac1d3466f244e9bd17fe1acbd7887d05781"
+    },
+    {
+      "path": "online/tests/god-collective-audit.test.mjs",
+      "bytes": 2390,
+      "sha256": "59b59cbd11f41709f007f58fd5d95c0c290eedf00da290d36db91fc4d746c49f",
+      "git_blob": "02f495cef3b949207f6ffc870f996413f9d9b8e3"
+    },
+    {
+      "path": "online/tests/god-contract-natural.test.mjs",
+      "bytes": 12687,
+      "sha256": "b2c742c8bacd1adaf93a470020fdc8a42cc9ea85e7547415d445eae684fa7c66",
+      "git_blob": "300a95612474271eba2b3703c389dbb0bd02703b"
+    },
+    {
+      "path": "online/tests/god-event-content.test.mjs",
+      "bytes": 4296,
+      "sha256": "448a82550d2414afc8f572a2fc4ebc502f6db0cefe3fc8d4f92b7e06db7955b0",
+      "git_blob": "bc96be76ab145dfeaa9f5544c27d6567bb277d00"
+    },
+    {
+      "path": "online/tests/god-fact-tense-independent.test.mjs",
+      "bytes": 1590,
+      "sha256": "e21ac9f2fc376153f0c36e68db1bd0d7a0f45358617ca1f0a7b2710b0a1880b6",
+      "git_blob": "42a3efcfd6b65703ea4fa4180ba3327341f189e6"
+    },
+    {
+      "path": "online/tests/god-focus-independent.test.mjs",
+      "bytes": 5347,
+      "sha256": "3ebb9ce1125130c3af50ad3798d4c086e1fc4b3358ea01e4ef1283253cf77d1c",
+      "git_blob": "b4b25e3cafd4ca750d87d1500201e79411e88fa0"
+    },
+    {
+      "path": "online/tests/god-independent-review.test.mjs",
+      "bytes": 5764,
+      "sha256": "6dfc681e2ef9dd2380e8f1e87f13dd7cd7ab781b97d83c490f3a4825a1bbde14",
+      "git_blob": "3bb8233a59576ac2c9f091b448af0b4640464808"
+    },
+    {
+      "path": "online/tests/host-reference-snapshot-independent.test.mjs",
+      "bytes": 1753,
+      "sha256": "e9520224cdce82687a7807e81fda7ea797d7ea58b9b5f564da55ae62e9c646f9",
+      "git_blob": "c59e7c768762912025784313f5ffea9dffefdd8f"
+    },
+    {
+      "path": "online/tests/host-v6.test.mjs",
+      "bytes": 6379,
+      "sha256": "4342075a2f9bc2f573b1103c2d33885891e04f707e7bbd0cd0082940a0192ef4",
+      "git_blob": "12597d5fb50e219ef373ea97f77aa90f27599592"
+    },
+    {
+      "path": "online/tests/node-transport.test.mjs",
+      "bytes": 2459,
+      "sha256": "c9d2fd753c681f11ef3c3aafa0721635bace229451ab0ba9f792a9543438eafc",
+      "git_blob": "f5ed0b4ff48a6c615a06a3ff61e017600d07dc52"
+    },
+    {
+      "path": "online/tests/online-host.test.mjs",
+      "bytes": 13003,
+      "sha256": "6e90ccbe40de375d17b715ae3229ab7ab2d3c7ca2563349f2fd43faab51f208f",
+      "git_blob": "5011269808ad14e65e2fc9eee2e0e5c8d5f01945"
+    },
+    {
+      "path": "online/tests/scene-models.test.mjs",
+      "bytes": 5840,
+      "sha256": "6ad46f6a4c38483dcd11a319425686e3f770878e9989818b094dc96b27e2567e",
+      "git_blob": "08914d8fcdecfb9080e05a8ada88152df8f4b4e7"
+    },
+    {
+      "path": "online/tests/scene-performance.test.mjs",
+      "bytes": 2283,
+      "sha256": "b52b993688e4c2c36c3a1a9fd570340f1da393db49d5663160e260a251a294d5",
+      "git_blob": "40a7021b9603a126181be981e2dc48b1e8c7c5d6"
+    },
+    {
+      "path": "online/worker/api.js",
+      "bytes": 20077,
+      "sha256": "2c8d06bc8f14b2b99cfb7ecbfec1fd1b8547df3183c4c61fb16501d4b0978d1f",
+      "git_blob": "63b6f3fda6970068089fa4dd53ea1ca16c81f9d6"
+    },
+    {
+      "path": "online/worker/avatar-contract.js",
+      "bytes": 2161,
+      "sha256": "3ee9ddd820ade04a8da0bec61c21fe55284f435ca650c3ab83eb3bed4948e887",
+      "git_blob": "3cc7367e74ceff2c703febb4f47c8b6a05c8083e"
+    },
+    {
+      "path": "online/worker/avatars.js",
+      "bytes": 3430,
+      "sha256": "6a17d773e5867bf492f01c3211b7be17b38603e6bc99bff4e90485c90f661d27",
+      "git_blob": "53191605ac3f4a4de267051238902eda1ca6575c"
+    },
+    {
+      "path": "online/worker/engine.js",
+      "bytes": 37318,
+      "sha256": "b2a2b0005910ccb9a9f5ca4120c1ac041c29479880e97138cde3872c01418fba",
+      "git_blob": "5bf988e53c14c639bd4a27c98cd3e38bc8e4349c"
+    },
+    {
+      "path": "online/worker/god-contract.js",
+      "bytes": 9526,
+      "sha256": "a49facf6a38dbb205a7358e1591f8382313d00889521a8038e846542e987f452",
+      "git_blob": "413f0fdfa2e91f403a8039add8d57d9408962669"
+    },
+    {
+      "path": "online/worker/god-focus.js",
+      "bytes": 2249,
+      "sha256": "4ad2461e5a9217006fb2d8afd7c19951035a537dd2efb0d588abb56c89606047",
+      "git_blob": "24c312bf383319a4875e558d1037cccf920c745e"
+    },
+    {
+      "path": "online/worker/god-grounding.js",
+      "bytes": 11246,
+      "sha256": "6aab421c32034fb46f734ec792bd5e6c747ff60f52a077196746854a25dfc7b4",
+      "git_blob": "50015525b9e5480aaab92fa968f807bd39f66c29"
+    },
+    {
+      "path": "online/worker/god-knowledge.js",
+      "bytes": 17955,
+      "sha256": "6bb709932f0eaa107835b5992a15516d3d84d527bed6b8e36ed547da631d921e",
+      "git_blob": "826425e9fd117bfc0979f40561a41061654e5925"
+    },
+    {
+      "path": "online/worker/god-prompt.js",
+      "bytes": 3970,
+      "sha256": "00295846436b23a44c6ab476ade69c66f32d02bcf4a59b17a2bd452db77f282f",
+      "git_blob": "f7c229302bd91804a9affef073621e2bf9191b6c"
+    },
+    {
+      "path": "online/worker/god-retrieval.js",
+      "bytes": 3553,
+      "sha256": "66dd433aba7a80482d4143aae0ba178b10f62928bff1faa2db5e70f1a579c217",
+      "git_blob": "f1e51461775da5c25fdd1c1d9dcb5d69e4c95f61"
+    },
+    {
+      "path": "online/worker/host-health.js",
+      "bytes": 1167,
+      "sha256": "df6564ba90cc022cc899989833ce684d97f65fcabd430312230bd14f08757301",
+      "git_blob": "9a8bdb81995915820e157b85cc17a9cb4c739668"
+    },
+    {
+      "path": "online/worker/host-messages.js",
+      "bytes": 3797,
+      "sha256": "d2eeacc96fa89a20ade71aa6ad9a9f6bdcfcc322bb6f2536fafacb07cb673975",
+      "git_blob": "c4d95af6ecba9157d30b5c0ae6a8c2bb82a2daac"
+    },
+    {
+      "path": "online/worker/host-runtime.js",
+      "bytes": 9109,
+      "sha256": "fb63ee4a364e8f64c4d05fc25839555c9f8267f91063d82819a913cfb03177a0",
+      "git_blob": "0844814c6b640c05f1686713f1c24cc9c5ebaf65"
+    },
+    {
+      "path": "online/worker/host.js",
+      "bytes": 137,
+      "sha256": "2d68ce364b71b945280ef959b31869726a1a78a3a6423136ef8a31d59f4b0501",
+      "git_blob": "00b99435c9ae9557151fe496d207d91d6be0c5c1"
+    },
+    {
+      "path": "online/worker/index.js",
+      "bytes": 1613,
+      "sha256": "dea10d9dc95a44dab675dd21f6f6482c1e4886c4a1524014ae2c2b0780a1d50a",
+      "git_blob": "8161ff92465cd1ea690f13a5550b5a7380d5c256"
+    },
+    {
+      "path": "online/worker/room-transport.js",
+      "bytes": 1295,
+      "sha256": "d31adabf353afa8035983593e7e3a4e20aef823fd4d0ae8ac4b8539aae8c6b45",
+      "git_blob": "45de561ecbe1d1ed472d4d8ce701b684de4cde4d"
+    },
+    {
+      "path": "online/worker/sha256.js",
+      "bytes": 2207,
+      "sha256": "ef82793e1b1084c89dd31dfd508ae5915c8d3e41254594eacc26fed095adf339",
+      "git_blob": "aae43ebfca03f6d7366ea813854d85b875d38db0"
+    },
+    {
+      "path": "online/worker/storage.js",
+      "bytes": 2005,
+      "sha256": "7d15e12d30bc9a3926fe320e35acf9a18e026f78c4c93ee57fba641640435677",
+      "git_blob": "e0745b41341c7dc32c3ef7ca9ded9162db639fe7"
+    },
+    {
+      "path": "online/worker/tests/engine-oracle.json",
+      "bytes": 1137,
+      "sha256": "033ca17d99a80272ddb3d672a810d7967112813d79bbdf20111728104eb2eaff",
+      "git_blob": "0350708f60a7272ecc5ccdadbcfae1c493977a78"
+    },
+    {
+      "path": "online/worker/tests/online-api.test.mjs",
+      "bytes": 11162,
+      "sha256": "f8de1d65fc61688d668065452c3fd15c092b26a480dd0648c5b8dbebd15ebadc",
+      "git_blob": "bf937f38fd7ef887f51a7ecfae23bcbe392d39ba"
+    },
+    {
+      "path": "online/明天课堂_开局与排障.txt",
+      "bytes": 3110,
+      "sha256": "8052aead130e74875efa10dfecdcd5a54499f345d62fd9b84141e92accaaae6a",
+      "git_blob": "dcb0ccb7c8b2cb5d634c52c85b03067b6c3443de"
+    },
+    {
+      "path": "online/课堂PK操作指南_2026-11-17.txt",
+      "bytes": 5121,
+      "sha256": "46dc4ca51d571687e616cb39c2e94dc6fec64304d17ef3659af8f76a4c4d09a9",
+      "git_blob": "05db5ae1c74ae5161554610b4bce254e50ecf289"
+    },
+    {
+      "path": "published/.gitignore",
+      "bytes": 136,
+      "sha256": "de1d8257b8d7286d4d5472eba1ab74f7065108f4a3d5107a4eeca07aadb4c260",
+      "git_blob": "3c17b282693890317c72e2305d0a304a5577275d"
+    },
+    {
+      "path": "published/.openai/hosting.json",
+      "bytes": 96,
+      "sha256": "3c53374a0fc69247157e59dab525b5addf19a049c991c24c47543410f2dd5dd2",
+      "git_blob": "72662b5429643efe683972d4ad106c2d25ed8e11"
+    },
+    {
+      "path": "published/BUILD_NOTES.md",
+      "bytes": 1149,
+      "sha256": "4ddebf49569616c96e787dd2fcbd8b5d594f92c88577e65861437b03a81b60f5",
+      "git_blob": "3eeba0ac27e5ea79f600bef5231243082fedc973"
+    },
+    {
+      "path": "published/dist/.openai/hosting.json",
+      "bytes": 96,
+      "sha256": "3c53374a0fc69247157e59dab525b5addf19a049c991c24c47543410f2dd5dd2",
+      "git_blob": "72662b5429643efe683972d4ad106c2d25ed8e11"
+    },
+    {
+      "path": "published/dist/server/index.js",
+      "bytes": 2599187,
+      "sha256": "b073b3cf8e469d09f1f6e5ca27c3779a70ee6e925d3767dbc68561e4709a4838",
+      "git_blob": "1b737389a51f7b6870ea01a0e4be24e1bad78b20"
+    },
+    {
+      "path": "published/docs/apply-v3-ui.mjs",
+      "bytes": 4038,
+      "sha256": "3118b5e539f07b494fdbc3e2429a74ae5dd4c3eaf63975bcd874b193e8e30f3e",
+      "git_blob": "1a769bcbd94fa65fdcfcd02470632951fb9e8f1e"
+    },
+    {
+      "path": "published/docs/build-god-eval-data.mjs",
+      "bytes": 8400,
+      "sha256": "e5af511a77e7c79879e0237dc2c37cc922a07d2832b96c38731884e530a5fb35",
+      "git_blob": "7b3e87c8f84ef6a46595396964c499d99927ed70"
+    },
+    {
+      "path": "published/docs/check-action-budget-init.mjs",
+      "bytes": 2660,
+      "sha256": "517bd09deb4933520f6d9078ba0ccf8098a2ef477d67e545253c8b3023975620",
+      "git_blob": "fec113805e1b8e501584650bcda9f22130e0603d"
+    },
+    {
+      "path": "published/docs/check-agent-entry.mjs",
+      "bytes": 5922,
+      "sha256": "4c4bd345d316f5da830c0cd62734059ccaad103142999ab3849c1715d76c4bb1",
+      "git_blob": "c76c88d83a7b7acc83febea8582513f781a7b322"
+    },
+    {
+      "path": "published/docs/check-receipt-state.mjs",
+      "bytes": 3255,
+      "sha256": "24cd265257b73acecf864e7c4b074454e5c4ae9c37670a89d70e0b4512d92dff",
+      "git_blob": "f23ab8b652f7936b76fe3a2b7276f29cc07a1f53"
+    },
+    {
+      "path": "published/docs/check-ui-templates.mjs",
+      "bytes": 2309,
+      "sha256": "0d3d44a4dbd039fddf9ca7176245652b461cbbb6e804f19e7602864ea322c232",
+      "git_blob": "afe4c722457fbc3cb45e34d3b4aee6d3181339f3"
+    },
+    {
+      "path": "published/docs/check-v6-room-sync.mjs",
+      "bytes": 4075,
+      "sha256": "574d8a08d7dab0dc24a8c9ad327c020abd134dd4640a310e65564d2b654207ca",
+      "git_blob": "196dec240ae3fd38cf4305cb5d2fff958bb901a1"
+    },
+    {
+      "path": "published/docs/evidence/figma-v6-manifest.json",
+      "bytes": 13639,
+      "sha256": "a60ac4457e5bd30123171051ebd31d2d4e7e524c304d534a2c2880feb16587a2",
+      "git_blob": "c9381d9c38b5c8bfc005d348a6f708e4c1d0cf8a"
+    },
+    {
+      "path": "published/docs/evidence/god-live-focus-v3-human-review.json",
+      "bytes": 8073,
+      "sha256": "7eab671fad223657940924f96a82af4116820a92a0d0364442527540e155b08b",
+      "git_blob": "4f9cd58d1971370f21561b535132dcc8d83b9eba"
+    },
+    {
+      "path": "published/docs/evidence/god-live-focus-v3-human-review.md",
+      "bytes": 5578,
+      "sha256": "3f439a1bd3ed923744adc96324f01708f3ef786447688e797f0587b5f17b9217",
+      "git_blob": "57b6c11c237b6818f15687f73cd698ebdf956052"
+    },
+    {
+      "path": "published/docs/evidence/god-live-holdout-1794924900987.json",
+      "bytes": 885667,
+      "sha256": "b9c695c89bfb6ee698ba5c86fa3b0b33764f21cc36ed4d5d33ab1ab3bb165259",
+      "git_blob": "9cd057528d5b3e1550033966eef10367a7f5a4f0"
+    },
+    {
+      "path": "published/docs/evidence/god-live-holdout-1794925026486.json",
+      "bytes": 878189,
+      "sha256": "993e91d3119cb75927c9b6a90cd7be03d247a6e2f87d9cd4c49d2071c1adecc7",
+      "git_blob": "6134d5c65529e1d7325cbf4384b0162511645e3c"
+    },
+    {
+      "path": "published/docs/evidence/god-live-holdout.json",
+      "bytes": 864048,
+      "sha256": "f14c604830f75f060d0915198cdb7407504d63e336f2ccd37e624a7298d5dac3",
+      "git_blob": "adcc3312b3a266f2910d32ac139efc285f1eaa41"
+    },
+    {
+      "path": "published/docs/evidence/god-live-human-review.md",
+      "bytes": 7564,
+      "sha256": "cdc8a1abe6b174724ba21cadc96ebe6a416499ab26da55b1123268be99c0202e",
+      "git_blob": "0b6daa06c9962fae6ed1142efdbf9de849a50c1d"
+    },
+    {
+      "path": "published/docs/evidence/god-live-pilot-1794924200331.json",
+      "bytes": 71557,
+      "sha256": "f2e3c842b8edc8de0d62dd06dc509f156c9245cebe75e9bad87738a8ef0af13d",
+      "git_blob": "942720052048ee49ba1f8657ba156da29ca6eab2"
+    },
+    {
+      "path": "published/docs/evidence/god-live-pilot.json",
+      "bytes": 73726,
+      "sha256": "a89dcf56482b0eab7f52dd7fb26979e87916a7680dc5c9350ba1cbceec3375b0",
+      "git_blob": "9721067b10e728ded4655a08fa4fce7ea945b711"
+    },
+    {
+      "path": "published/docs/evidence/god-live-run-summary.json",
+      "bytes": 3730,
+      "sha256": "971ac2322412d70bce925a45592d2b8d4e009da946b7bedc2f7f8f631c6d402e",
+      "git_blob": "1f4bcb9c69a6e58cc0faa76880a07144fc338dc1"
+    },
+    {
+      "path": "published/docs/evidence/god-live-targeted-1794925841070.json",
+      "bytes": 97595,
+      "sha256": "754cd445e74e9229c76cce25eb3597935b2de552dd5b010afcaa4227ccca8a91",
+      "git_blob": "440430b9c46411032d556633d1f566a8f5d3e137"
+    },
+    {
+      "path": "published/docs/evidence/god-live-targeted-1794925886107.json",
+      "bytes": 25785,
+      "sha256": "67464083d05645abe046e80e1a4f8a595388daada0f83fe02234e11532d0d675",
+      "git_blob": "371b3c3c93363917139733511f2ff48ae47e8497"
+    },
+    {
+      "path": "published/docs/evidence/god-live-targeted-human-review.md",
+      "bytes": 1296,
+      "sha256": "7812694eb736b6d22bef95a1d546ddc02e3cc9b8a114c5844171fa72b282387f",
+      "git_blob": "061df0b45a5380d23a651d084150026d2b3229c8"
+    },
+    {
+      "path": "published/docs/evidence/god-live-targeted.json",
+      "bytes": 25922,
+      "sha256": "e32adf46b6e0d77499500fede840a3c9dfee8f0faae20c0d004f2ad6136222cb",
+      "git_blob": "0c5e9fddd2552acf311fce746861194e03db1944"
+    },
+    {
+      "path": "published/docs/evidence/god-offline-final-guards.json",
+      "bytes": 2624,
+      "sha256": "bed18ee9327f4f2089860945ae70e3a50d0da193458b5368bb54c3448e00c4af",
+      "git_blob": "1eabc7a074a21b6881f64d1967f415e9de6ca1b9"
+    },
+    {
+      "path": "published/docs/evidence/multiplayer-local-v6.json",
+      "bytes": 159039,
+      "sha256": "0b04529690c2df7c07a65e10598f0a57a70251fc75886207b9124cf611b2caca",
+      "git_blob": "256ca8f4990d3f8bc2beaca09ea3f88fcfe7108c"
+    },
+    {
+      "path": "published/docs/evidence/multiplayer-local-v6.md",
+      "bytes": 1259,
+      "sha256": "31778c41085e0aaf2b79a3f91cd255e80f828db4f2eea22ab34b3e18859203c1",
+      "git_blob": "afde8da901b46060a484cee6723f993c8622de1f"
+    },
+    {
+      "path": "published/docs/evidence/v6-built-worker-smoke.json",
+      "bytes": 369,
+      "sha256": "4a4c18dc9a362d9eca1e1187eb0f2f02b8e7d91817c6d8c98b941597d9e70ef7",
+      "git_blob": "a7334b24f183e8a5ebd7ed2ed1f7e3d95b224e93"
+    },
+    {
+      "path": "published/docs/evidence/v6-tests.txt",
+      "bytes": 13105,
+      "sha256": "9e41e82422b34fdbc7f0abe9732663cbd62ce519ee5758eaf8bb8de5c0581ccc",
+      "git_blob": "d25f5f9b96633c593a7d3f83c8672b2652f37712"
+    },
+    {
+      "path": "published/docs/figma-v3-main.js",
+      "bytes": 7564,
+      "sha256": "cbb21cb2230ddf6fca4911c66f5c22792004f230866c88b2e8906ae13efd39e5",
+      "git_blob": "cdf35ce40f4b7209f5dd4de39ba1d17b360f14cb"
+    },
+    {
+      "path": "published/docs/figma-v6-build.js",
+      "bytes": 15427,
+      "sha256": "3af5c4ade4658742456160f534dd1029c31454500012f10496f0e2d83dc2cf05",
+      "git_blob": "160d700f0a95e03ecd3a14045a2a92deae173f94"
+    },
+    {
+      "path": "published/docs/FIGMA_MAP.md",
+      "bytes": 1656,
+      "sha256": "c6c02a0f578e7ff4d471bf67d1616ca92552dcc3e4f2979cb535f626daebbfec",
+      "git_blob": "4512843697193fff34d600d56e2409e0d91a1881"
+    },
+    {
+      "path": "published/docs/FIGMA_V6_SYNC.md",
+      "bytes": 4040,
+      "sha256": "09ead4f2d27ec81b54564479b266e6d73f364d9243591bf00a6aca9bb8c42ac5",
+      "git_blob": "d266e817ab9ff37948434bc99b3e2aa31210f3c0"
+    },
+    {
+      "path": "published/docs/finalize-v3-ui.mjs",
+      "bytes": 1888,
+      "sha256": "2730108e9167cd87021c87a1e1766b9683365d5ddfc7b44c8df1d0e1f62c0b8e",
+      "git_blob": "bf9553231a70fc9ca3a258c7262328f61aa2422d"
+    },
+    {
+      "path": "published/docs/finalize-v6-sync.mjs",
+      "bytes": 2526,
+      "sha256": "c6dc4f41f2a7de4282c7f22b08d086c31e94729b4ed2ca93dbdf5aa37df54fed",
+      "git_blob": "6e3b9fc9ba830ce7d3c6ea77eda78e9ec5a3da00"
+    },
+    {
+      "path": "published/docs/fix-action-budget-initialization.mjs",
+      "bytes": 503,
+      "sha256": "90af52b95a563b92adf3c77f22ffbb2105ce10c606ad4333172963428608b839",
+      "git_blob": "f3219e353f264bc993072f7b542f8904f73ac074"
+    },
+    {
+      "path": "published/docs/fix-action-normalization.mjs",
+      "bytes": 1874,
+      "sha256": "5cbae875d2e5bcd89150a42862b55a1fe9454d6970d00a19cc759c1815c8cb88",
+      "git_blob": "4f29a3a6885f80439845f0eca5788cc096ea1c99"
+    },
+    {
+      "path": "published/docs/fix-host-history-details-key.mjs",
+      "bytes": 736,
+      "sha256": "e7abb459e3d544998215288d80f180836617e546937a3f6155c8f5547fabc5f6",
+      "git_blob": "7f885fb6477069f10dafe70789b349ff37a55308"
+    },
+    {
+      "path": "published/docs/fix-reconciled-receipt.mjs",
+      "bytes": 1937,
+      "sha256": "785b6c7501e18b5bb5bcda5b6dcfd5cae3cb2fbfa79d7a86ebbbdb65e881263c",
+      "git_blob": "c8c1b27bcd05166fb2da7e36f89a07556b6535a2"
+    },
+    {
+      "path": "published/docs/fix-stable-desktop-stage.mjs",
+      "bytes": 978,
+      "sha256": "ebba7e56452a10f4845b5fec79e67be8cd77ae2f82eb1c2ddab1c8db8148f3cb",
+      "git_blob": "62be50564cf5d8020d207eee521b1c295b54ea61"
+    },
+    {
+      "path": "published/docs/fix-ui-contrast.mjs",
+      "bytes": 448,
+      "sha256": "247479c0dbfd5ad4877a4f3d00de65eb0429cd7b1b606c4bc0d25df6c7cb9afc",
+      "git_blob": "37dbd4f1d1711d98e0c812fe203137bfc7891ec4"
+    },
+    {
+      "path": "published/docs/god-evaluation-contract.json",
+      "bytes": 1739,
+      "sha256": "d7ff0a4a0ce20573982962a2206211bf2e58cbcb26354ec79b4588864c85ddb9",
+      "git_blob": "30f46cbc6499a032d96c5bf4017d26f0b71e3d34"
+    },
+    {
+      "path": "published/docs/god-evaluation-set.json",
+      "bytes": 885852,
+      "sha256": "383a87ea5d71e1bc81cb05a76ed9affc9968332e964bd503c9b42edb4f94b1e4",
+      "git_blob": "f4d0b8e679ecee4c13a4cd324561cacf5e223923"
+    },
+    {
+      "path": "published/docs/GOD_INDEPENDENT_REVIEW.md",
+      "bytes": 2499,
+      "sha256": "59d8b4b1b92e13554caa16adca4df3004496926d24b8d1137c02b101a8ed0f3e",
+      "git_blob": "3e83f690971d9e3e847982ebad33b68c92c4057b"
+    },
+    {
+      "path": "published/docs/GOD_NATURAL_CONTRACT.md",
+      "bytes": 8862,
+      "sha256": "ff9c9c572c92db0a1c753bdbc997a968fe7490d9a91c39842e2964dbab13748d",
+      "git_blob": "6824f80fe3623b16e4ad8cc92ba8ab8231a92cee"
+    },
+    {
+      "path": "published/docs/implement-v6-css.mjs",
+      "bytes": 4422,
+      "sha256": "e43abe14479002ac0dc6111e71deb997db39f7b90fa1ec089cc5c1d6b2104432",
+      "git_blob": "004093eac00deb0d1b3b93755553cf46cade966a"
+    },
+    {
+      "path": "published/docs/implement-v6-etag.mjs",
+      "bytes": 3438,
+      "sha256": "94195137ca860f3b0d201359cd277723126d27ff9cee7db0b9463a1eccfd56f6",
+      "git_blob": "f17d5a238db5332dc6ccb45bc189e486fe3b4022"
+    },
+    {
+      "path": "published/docs/implement-v6-ui.mjs",
+      "bytes": 12004,
+      "sha256": "d3593405e5787f6c87fc8ab1ffd7ea59c537ef37a79350836d2411bdaa680f18",
+      "git_blob": "57ac6119d26bc54f25072fb6daaa903663d1aa18"
+    },
+    {
+      "path": "published/docs/probe-god-independent-extra.mjs",
+      "bytes": 1414,
+      "sha256": "56e46f1236186ed392ea15596836b281798ab6f6d72520c1a2f5ddc42a1b550f",
+      "git_blob": "e186543af8a022415adb0fe5290279b7ac8a3a32"
+    },
+    {
+      "path": "published/docs/probe-god-independent.mjs",
+      "bytes": 1675,
+      "sha256": "965ddd03026355725a16f441f4e7d8056c790d7fc1c7b3b29f3ee3bc3da25f89",
+      "git_blob": "74b8399131d259a5058317c3bdce0179451f7c10"
+    },
+    {
+      "path": "published/docs/QA_REQUIREMENTS.md",
+      "bytes": 3384,
+      "sha256": "ccb57396148aacae5827cdff227d0ac4d8cdaf822bf077c7abe29db2e2a2df57",
+      "git_blob": "e4284b55d2b6059962c231e44ab4c3181a991071"
+    },
+    {
+      "path": "published/docs/record-god-focus-v3-review.mjs",
+      "bytes": 7309,
+      "sha256": "1f3edfa9f49e21bfd5494bdceec9b2f12d8abf0e620e790d12e4543696aeea1c",
+      "git_blob": "cbef2d8e3259a6c0063b5ed176ac942bed1be4de"
+    },
+    {
+      "path": "published/docs/refine-actual-viewport.mjs",
+      "bytes": 2738,
+      "sha256": "c3a6807fd49eec2113b3c767f2f9d9f5f7dd3775031d4123cbd4b659abfda05d",
+      "git_blob": "2e6f5d3b29b41ab24a0b7dd9edbe1e2e0c3a979d"
+    },
+    {
+      "path": "published/docs/refine-v3-ui.mjs",
+      "bytes": 4794,
+      "sha256": "19e469aa36c541c72cc413f5997eae1417fcaa49b06e739c7a2f6c6673207fd6",
+      "git_blob": "991ac9b78b73f7af21f813ce412eb2c1a82f1e0d"
+    },
+    {
+      "path": "published/docs/SCENE_PERFORMANCE_2026-11-17.md",
+      "bytes": 4576,
+      "sha256": "31bf0ff2e1d1102c1eddeda5d80b7620426b35364ad290d9fa52da41a30c1937",
+      "git_blob": "3b5fa78ac44967df13d240954fea46ae5c0ff840"
+    },
+    {
+      "path": "published/docs/share-action-submission.mjs",
+      "bytes": 1977,
+      "sha256": "85345b62b6ca316eb770e0ed47dd0a29dae725b99d9fb1cba99e2b3c0db6a944",
+      "git_blob": "21ca1af60b054f5ef75c0f2ffe4434708a831cf0"
+    },
+    {
+      "path": "published/docs/v3-room-ui.js",
+      "bytes": 21451,
+      "sha256": "dcba6f7e4528f5dc4166b3f2ca90a8a8e91079582dc88ee2d13e37128c45f897",
+      "git_blob": "5609c3292228cdb7834005a5ecd857485a283cbd"
+    },
+    {
+      "path": "published/docs/v3-ui-controller.js",
+      "bytes": 3141,
+      "sha256": "93427b4aa575382e8ad82099f7bf6c5762111693d51ee7808fc326a3f496ae14",
+      "git_blob": "939044b9341b6c2c47026b7199fda4217f05fe8e"
+    },
+    {
+      "path": "published/docs/V3_SCENE.md",
+      "bytes": 5191,
+      "sha256": "c035eaf74fa590b8f6d54e30b73b6cb80514b6df44bbb35d261ba228951bce61",
+      "git_blob": "4d7109857ee85751fbc36480c4f23627b75d16c8"
+    },
+    {
+      "path": "published/docs/V3_UI.md",
+      "bytes": 7789,
+      "sha256": "dbc3fafc86a83e3bffb86e694742a0cc3a2410f1f04e85fbebed9bf4f75c23f6",
+      "git_blob": "78e892173444ce20b8a1567b7929f7c4b786c744"
+    },
+    {
+      "path": "published/docs/v6-host-ui.js",
+      "bytes": 4392,
+      "sha256": "d2b9d80826388760d15dcaa31a17e7aeeb01af4b0d99ba3bb302d050063fecec",
+      "git_blob": "96542db00bcb7671d23dc4bb7a66e876545dc5e7"
+    },
+    {
+      "path": "published/docs/v6-room-sync.js",
+      "bytes": 5374,
+      "sha256": "e5c7cddd73758a97fd39c3f45cb0ca4ecf567289d78a0a353f4826e602b2c605",
+      "git_blob": "f8e6f56234ccd62f5d54738911ec919f0fb8da57"
+    },
+    {
+      "path": "published/docs/V6_UI.md",
+      "bytes": 4932,
+      "sha256": "5052c4237af1b5ba659db4efe110ae01c83700ca237e97d6134f52446d054b08",
+      "git_blob": "49a4e13cf048ba4fdb7de9a106e2624cbcc5ba1d"
+    },
+    {
+      "path": "published/drizzle/0000_online.sql",
+      "bytes": 875,
+      "sha256": "b84879668fa72f41063eb4de6818f820212ba9b9d0b3a95d79b592d2162b4910",
+      "git_blob": "8ebfc93c7d3eda42d3d449f875006b140e9f9d32"
+    },
+    {
+      "path": "published/drizzle/meta/_journal.json",
+      "bytes": 210,
+      "sha256": "41c3e994a6b29caf631735cb111e6a0446f5adde565f8c238346d4feec5493bd",
+      "git_blob": "26837d2de0c9acc8eef061280a2db61432bfdac1"
+    },
+    {
+      "path": "published/online-checks.txt",
+      "bytes": 2046,
+      "sha256": "1673af93c4aa96953171de44511cf7443721a349208ab477ba2533708157dcdd",
+      "git_blob": "228c7c59732a4324e15c12b495cca0725414048e"
+    },
+    {
+      "path": "published/ONLINE_UI.md",
+      "bytes": 2322,
+      "sha256": "65d06fa6c4ee7df5a91758c3827742d3a367c2cde6fa6a097e93b811d3fd8552",
+      "git_blob": "7e40715e4cd093b21165503ecfbb2d426be4d002"
+    },
+    {
+      "path": "published/package-lock.json",
+      "bytes": 20699,
+      "sha256": "4ebba4457ae2c2cd744096c0a7658a4d3d56f7a8813e6fe1b22a911e024669bc",
+      "git_blob": "fb15b9a32dc89ee326ea0e5475bcfd5a6865a85e"
+    },
+    {
+      "path": "published/package.json",
+      "bytes": 846,
+      "sha256": "384e55cd1594cde6ecbcb0b4177d38242797ec2040a65c967466ef0663fc68d3",
+      "git_blob": "c1daa9292cc28358970e00ac0e11dffc4c89d71f"
+    },
+    {
+      "path": "published/public/app.js",
+      "bytes": 90194,
+      "sha256": "4fddb6f097198490faca2ba574cb96f51c7bf7286e02007b9a112043cc8c7987",
+      "git_blob": "2956baa667c556491e1e51c2290b0b47b6c90d94"
+    },
+    {
+      "path": "published/public/assets/book-hero.webp",
+      "bytes": 159772,
+      "sha256": "3f059ce146ec9b0e5389e62791fe7f183dbc8309bb6c19cba81b90867a493c51",
+      "git_blob": "5c5c70d69202e7b1b2d236a311b5837ffb6a3653"
+    },
+    {
+      "path": "published/public/assets/figma/case-path.png",
+      "bytes": 1856304,
+      "sha256": "25668509e868dfa3559968324889b11755522afc2f83431cdaed33b1e3539d27",
+      "git_blob": "0f11a86df3303f26c82494a62e1bd3196f7ae523"
+    },
+    {
+      "path": "published/public/assets/figma/folded-path.png",
+      "bytes": 1722475,
+      "sha256": "a8042a56820c411e12496b86bc8f5d8d02044c69d425753a8f4e7569272d3a48",
+      "git_blob": "d17915d0f7b9da57dd44118ff8fc7c40362cd2bf"
+    },
+    {
+      "path": "published/public/assets/figma/ivory-sun.svg",
+      "bytes": 239,
+      "sha256": "79b8c6045d237aac093c84c4e7d53054a4dea3da5c505411f953a7a55f233c35",
+      "git_blob": "32d965295639d3e2994d4d59992fdf748525ec3b"
+    },
+    {
+      "path": "published/public/assets/figma/landscape.png",
+      "bytes": 1362606,
+      "sha256": "d6b74f1c7896746804845cd34f093c973ed8bdbf6ef385f149051d15b37e7255",
+      "git_blob": "387143757ef13cb285bc996084ea53f6bcbc0982"
+    },
+    {
+      "path": "published/public/assets/figma/learning-cycle.svg",
+      "bytes": 611,
+      "sha256": "100b312a05e37cffed9c79727a68a7ea62e2a6829f2768ca713b0190e09cf8e0",
+      "git_blob": "eed758f8b57c272fcc8ab3300872459c29879667"
+    },
+    {
+      "path": "published/public/assets/figma/reading-circle.svg",
+      "bytes": 655,
+      "sha256": "0c99d1499fd2b7f820e442c5fe972e23a399441e6363f5e22a874776fc87a47e",
+      "git_blob": "3b6e29d5f3ef210cfb34678a5fecac7f4dc029d1"
+    },
+    {
+      "path": "published/public/assets/figma/red-sun.svg",
+      "bytes": 1517,
+      "sha256": "1e649972aa2082469fbf3093c957fa55ec19aa466108441b2c373345cca03f7b",
+      "git_blob": "09507ad25360bf4b1d43cc2a33fcbfa6c5356839"
+    },
+    {
+      "path": "published/public/assets/figma/value-pathway.svg",
+      "bytes": 327,
+      "sha256": "633fab8e7205e872e59d280a1288df52225a7ecff0daf09ad38a93d63322e843",
+      "git_blob": "1896831b77941c18a82e98cd7f3a8416cf6d844a"
+    },
+    {
+      "path": "published/public/assets/figma/value-platforms.png",
+      "bytes": 650241,
+      "sha256": "992237402c68034c65f52ab91e0b4401c1f8601732a40db3bcadd3242fdddd63",
+      "git_blob": "2e5e7dc51a8d0b718d39185cdb5e4e6092627523"
+    },
+    {
+      "path": "published/public/assets/god-avatar.webp",
+      "bytes": 27984,
+      "sha256": "793ed25afec5a89d14807c863d4866db7f4b3693164d649889615e5df8587024",
+      "git_blob": "bcde4162de9e3a4673cf36e88517144315746482"
+    },
+    {
+      "path": "published/public/assets/tavern-atmosphere.webp",
+      "bytes": 123288,
+      "sha256": "829027f2a11b69dddee97c06d15f15e9a45d61d446e1a6e2945fc8efadd45b55",
+      "git_blob": "abc506a7d3b66f163b071610d8a89f2a5e3d32f0"
+    },
+    {
+      "path": "published/public/assets/vendor/three.module.min.js",
+      "bytes": 677941,
+      "sha256": "ed41ea1409cf2cd9b19d3762f17e9a343b76ae7e7a0eee307bc07a7c413103f9",
+      "git_blob": "9a3a1f4e9cbddcb9ea29f2a69caf915bc1e12c67"
+    },
+    {
+      "path": "published/public/avatar-art.js",
+      "bytes": 3682,
+      "sha256": "8e1fb739fdd4cfd908c98da5e5b7d50d0aa604bc9a10d24616f5ca3a5ef4764d",
+      "git_blob": "c38675382dc38b7963108d93590c7c45247d820b"
+    },
+    {
+      "path": "published/public/avatar-contract.js",
+      "bytes": 2192,
+      "sha256": "68d3365befca992532d462f590ef38daa7d98ca941668cd48bb39e81483fc533",
+      "git_blob": "7eb2360d643f1f0beabe760ee8c655e7c8b1b8a2"
+    },
+    {
+      "path": "published/public/avatar-editor.js",
+      "bytes": 11221,
+      "sha256": "abb3066c83cf390671f7a1a9c1571f59217f5fe29d16f1b8869805ca92b37386",
+      "git_blob": "c4e5e9a78e8a32344054f16e62b89bd6af73f1f8"
+    },
+    {
+      "path": "published/public/content.js",
+      "bytes": 20089,
+      "sha256": "b66b90bd7f2440ce5289eb95b03b80c662aabd53158e039057f8415b84d66be0",
+      "git_blob": "e7812ef0bde6b995e79ce6dcc41199a501705139"
+    },
+    {
+      "path": "published/public/globe-math.js",
+      "bytes": 958,
+      "sha256": "1232c9346125cc137a177ed018f9147c5a884424b0dea0fefd1dfdf58ee7cf31",
+      "git_blob": "d0eca468fb9d00cebfad86154799e298091d44bb"
+    },
+    {
+      "path": "published/public/globe.js",
+      "bytes": 189,
+      "sha256": "254468a4a4200a43f9372a4de5652b90d2adcac67c8b3303af16bfbf6d8f269b",
+      "git_blob": "2414faf872c981472b94c358dc5cdb06eed3a124"
+    },
+    {
+      "path": "published/public/index.html",
+      "bytes": 1184,
+      "sha256": "d57d35b836e868105b1bc0bd58ee5593ea754758e232556679632075fa7ccba7",
+      "git_blob": "1c37bfd562342c83c95ca1c90acea74afd667bc5"
+    },
+    {
+      "path": "published/public/roundtable-scene.js",
+      "bytes": 28024,
+      "sha256": "8f4dd36df1a6424db8bd78613e3c525ea9068549f31964ba8bc9b83b176b199e",
+      "git_blob": "02775592ddcdff214a5b7dbb80551379fc21a302"
+    },
+    {
+      "path": "published/public/roundtable.css",
+      "bytes": 1712,
+      "sha256": "04c471be2f340a3549846ce4f22b03ef393cef9ecd71bfe698fb4963aa43fdfc",
+      "git_blob": "1fea10eb0bb1952b47640573c28d26035d6a3474"
+    },
+    {
+      "path": "published/public/scene-runtime.js",
+      "bytes": 3915,
+      "sha256": "8d6cfbd2d48729cbb5a02db496b22f6a75e7f5b7cfbd7fa1e9ecbd6492fd5d40",
+      "git_blob": "fc84b5091d2d9f24246080a7bef5642ad4b2a98f"
+    },
+    {
+      "path": "published/public/style.css",
+      "bytes": 35812,
+      "sha256": "ffa53a2f881c220c17f119439c185f65a5c584b9665b7e69312d49c875ad7ca0",
+      "git_blob": "f9a0c4a7875afe1e97c76da1be2e0c94a58bf0a4"
+    },
+    {
+      "path": "published/public/tavern-environment.js",
+      "bytes": 8998,
+      "sha256": "1a487924ca656e665c82410a0e34aabb7bc25bc0fcd89a85929c7966e6b607c0",
+      "git_blob": "555833d45dc9558819ae08b0a7e88954f2711375"
+    },
+    {
+      "path": "published/public/tavern-models.js",
+      "bytes": 9117,
+      "sha256": "ed6379fc350e7f3fc7acacb4168e81e848f15985fd830c39797d8fed7370e143",
+      "git_blob": "756159d5fac70b0247a079c9db25717735772967"
+    },
+    {
+      "path": "published/public/tavern-v2.css",
+      "bytes": 26204,
+      "sha256": "a757557912fb0e67ae2747584bc10a540842b1c73c6a72e52f6cf867c1d1aab7",
+      "git_blob": "c927907e4a92b600de9c416f1bfd1defd0a0db1a"
+    },
+    {
+      "path": "published/public/tavern-v3.css",
+      "bytes": 34277,
+      "sha256": "6d315b9b7018bea9c7d98575a480b0070077bbdfdafddc4e71b9be6ce8b2f333",
+      "git_blob": "d64a6af52b7689fee525ac83ab154b0ae7922757"
+    },
+    {
+      "path": "published/README.md",
+      "bytes": 4829,
+      "sha256": "f8c205d82c6908b6b7c9a77da4c5024ec9bdb658587bdd4a72de7465b00bdb0a",
+      "git_blob": "0a687ce50688468d21de264129a6113050291fcf"
+    },
+    {
+      "path": "published/scripts/build.mjs",
+      "bytes": 3919,
+      "sha256": "b61e5913bba12c0997e043fb7738f7d1da788ff42caa37bb9fbc7ef6c574aa61",
+      "git_blob": "aa933fedbbf57ca68635fedb025b4ff63092c082"
+    },
+    {
+      "path": "published/scripts/dev-server.mjs",
+      "bytes": 7949,
+      "sha256": "74c393dc09e1f541346e7a166a7c67527cfe3212724bcf263ef90559e0e79f9c",
+      "git_blob": "d2097c2629c190e9e2e21bc666bcd7721e438cd6"
+    },
+    {
+      "path": "published/scripts/god-live-eval.mjs",
+      "bytes": 6725,
+      "sha256": "32c8ad50d14132825b954ba135a3dc02dccc35781aa7fe4589e6e7cd1c3dcd75",
+      "git_blob": "36af273369391e7df1ced31654d717019edaef6e"
+    },
+    {
+      "path": "published/scripts/qa-classroom-online.mjs",
+      "bytes": 16609,
+      "sha256": "4d40c16ebfa57960ce81e55d5770001cdf654449ccc38672f49b5917b0c15690",
+      "git_blob": "d0a003427b715d9242c3ca065531d0ae12278f22"
+    },
+    {
+      "path": "published/scripts/qa-classroom-online.ps1",
+      "bytes": 19683,
+      "sha256": "e84cc99704f8aec5c786865bac1d14f2d9258d91a3b34167b8b07915018abc2b",
+      "git_blob": "ded5d0e6954ad0b53df4595a167622c5d0f71091"
+    },
+    {
+      "path": "published/scripts/qa-classroom-v6-online.ps1",
+      "bytes": 31913,
+      "sha256": "62d1e02fcb4243d1526da043a41eb77386ca7b1e10611b6a75664a0aef829e71",
+      "git_blob": "966b6330138ca7570fc21039e81c8357caaa1f39"
+    },
+    {
+      "path": "published/scripts/qa-multiplayer-v6.mjs",
+      "bytes": 21719,
+      "sha256": "b1a6983604aa9d65ef05d936fb3141ea4288c1ffde688a02bc8fc5403f96a48d",
+      "git_blob": "0051897a5e925fcf6257e5053de5f3066e0b21e2"
+    },
+    {
+      "path": "published/scripts/qa-v3-api.mjs",
+      "bytes": 7559,
+      "sha256": "40461bfa8b28dff61bb94618b6d4d96af9ac324c036d578251243c2531776739",
+      "git_blob": "7f6e36b2076ad0d3f8ba1f7cbbb57a3a45ff34b3"
+    },
+    {
+      "path": "published/scripts/qa-v3-browser.mjs",
+      "bytes": 45124,
+      "sha256": "527bd0e0502e25984a1b203c38545f073f3a09d1552a0aa5b97f222be4f10638",
+      "git_blob": "601bfd34f3ee39a3e413912c19b99f0c67b200ff"
+    },
+    {
+      "path": "published/scripts/qa-v6-browser.mjs",
+      "bytes": 32597,
+      "sha256": "946257ad82903e85e17a9aa760f8ee716909da23f29cec36fcb1167556bb1782",
+      "git_blob": "6156e7654828d2fca25504f7250da05f95e39632"
+    },
+    {
+      "path": "published/server/api.js",
+      "bytes": 24506,
+      "sha256": "9d592d4e224fb756945b3dcdc5f448a57ad49b729d3baaf692fe68cba46afe7f",
+      "git_blob": "69853032ebd4db2b8e931ff7798f844830a18eba"
+    },
+    {
+      "path": "published/server/avatars.js",
+      "bytes": 2920,
+      "sha256": "16fd6acb374ee09691df1c534f45b7c3c678b73ed49a4caa7657dfc2a9d6bf49",
+      "git_blob": "9502d9b1778bf7ab9395c5feee909298d6908be5"
+    },
+    {
+      "path": "published/server/engine.js",
+      "bytes": 38397,
+      "sha256": "a818e6839301951c86b34c4dc18129b15ea61ee5d5c6ea8ac08a8775c2106030",
+      "git_blob": "403a80a6483ea2b8ddd248ab1f6c154e901ab996"
+    },
+    {
+      "path": "published/server/god-runtime.js",
+      "bytes": 5507,
+      "sha256": "312657430e834ed30ff3712d672ec9e70c94c472d4c282ef0e311a441e65a809",
+      "git_blob": "bf5144f407c9ac068e53c6d3cd2f8d79a2a238b1"
+    },
+    {
+      "path": "published/server/god.js",
+      "bytes": 313,
+      "sha256": "3c16cb65177c80641adff7f7f2debeac0f23f43bda7576198bdffc22acaefa1a",
+      "git_blob": "b0befbd3d466a6e09c91ccbc9e6b053867b267f1"
+    },
+    {
+      "path": "published/server/knowledge.json",
+      "bytes": 5049,
+      "sha256": "616b1d60c13dec0d2d45b68f3b678e198a5bd377d12bd819d6fd9876d599414d",
+      "git_blob": "e74ac53abc634287ee9716c3c0aca8ef76721282"
+    },
+    {
+      "path": "published/server/persistence.js",
+      "bytes": 1463,
+      "sha256": "9499f6478e8bbaa879dfeeec83d4c83f5bc64aa15760cd260b7bb44853fc3ddc",
+      "git_blob": "eb3bd85ce6b9bdc95d3ab6a1f435185bf5ec5c22"
+    },
+    {
+      "path": "published/tests/d1-adapter.mjs",
+      "bytes": 3118,
+      "sha256": "8f91d837582762a6dc3d21ead216948f59155c32ef134324d6e86fe91d4f8c84",
+      "git_blob": "cad378d091529ddfa8ac3992afb8a1bfb3773302"
+    },
+    {
+      "path": "published/tests/etag-independent.test.mjs",
+      "bytes": 4964,
+      "sha256": "907ef9a5c3e6cf02b6fd372023c6bf57db0bc27f529c96a255af3815a648f259",
+      "git_blob": "0af25c2f29c4b668d430a3d66dcd8d6cee913536"
+    },
+    {
+      "path": "published/tests/frontend-etag.test.mjs",
+      "bytes": 5008,
+      "sha256": "b0b3d68384d2fa0cc8b4cedfc24b8f3e788029255aba819d257b98981d2c369f",
+      "git_blob": "8cf370ddef1385f69b40135321f060e62199a9e2"
+    },
+    {
+      "path": "published/tests/god-collective-audit.test.mjs",
+      "bytes": 2410,
+      "sha256": "80e67029362c29090b72bc1883b73ee01c32009880631259211620b6c50c183e",
+      "git_blob": "c016cb4e65197396dc76cedb5a82ee738dce3a63"
+    },
+    {
+      "path": "published/tests/god-contract-natural.test.mjs",
+      "bytes": 12792,
+      "sha256": "4e8af59cc74fb1a61529b94d9208745931ca4393c30dd5d16c6ecfc467a902c6",
+      "git_blob": "86a2e19bcce074a5e06441d14e0b398c4a939c87"
+    },
+    {
+      "path": "published/tests/god-event-content.test.mjs",
+      "bytes": 4335,
+      "sha256": "1c6fe26baf9cc6d152534a9971cc3bd3a5830c7636f82e6127069cf352fcb700",
+      "git_blob": "f9e9de9888f98ba30afa853fbbac5ab28490ab9a"
+    },
+    {
+      "path": "published/tests/god-fact-tense-independent.test.mjs",
+      "bytes": 1611,
+      "sha256": "555eece40534473689e35684cac731a603e313c76fa99cb0f27134691ec8dc86",
+      "git_blob": "a0251aa03bd2b8f96bf7792176169b20e5827d53"
+    },
+    {
+      "path": "published/tests/god-focus-independent.test.mjs",
+      "bytes": 5389,
+      "sha256": "acaf6c978823bd1ca7d6a9e68cef7589cf8f8f14736d1839d9f9aee1f0095011",
+      "git_blob": "66375505a3de47642b98d9de24a93d950e918a31"
+    },
+    {
+      "path": "published/tests/god-independent-review.test.mjs",
+      "bytes": 5819,
+      "sha256": "ff2fd54fbf74b73e50de395c338a0dd8d5c6bab41d7f75c202964bec8626a77b",
+      "git_blob": "53a9d7dbf10867c47dd8d48ee78f617e7bf7d9f5"
+    },
+    {
+      "path": "published/tests/host-reference-snapshot-independent.test.mjs",
+      "bytes": 1773,
+      "sha256": "78027b0b3512fbb3645a0c1c85d2be8fc865d3526fd8c523a38a351a0e6fac15",
+      "git_blob": "bc5e8a0663b74247dc9f0637e8142203639e20c4"
+    },
+    {
+      "path": "published/tests/host-v6.test.mjs",
+      "bytes": 6426,
+      "sha256": "d1b8dcc93d3c8711cdb42b01333a9d7cc78174fe11d5f4de3e5ec440af80b220",
+      "git_blob": "168e96aeed9bea5364a62f5571bcd03c78625530"
+    },
+    {
+      "path": "published/tests/online-host.test.mjs",
+      "bytes": 13191,
+      "sha256": "1a0fadabdc79bb4d06c5a9457bde2913e52ba3b57bfe3a6634acef99f73b9cef",
+      "git_blob": "be8cb7558ed00b3d8637de1722b68ad8b1033451"
+    },
+    {
+      "path": "published/tests/scene-models.test.mjs",
+      "bytes": 5840,
+      "sha256": "6ad46f6a4c38483dcd11a319425686e3f770878e9989818b094dc96b27e2567e",
+      "git_blob": "08914d8fcdecfb9080e05a8ada88152df8f4b4e7"
+    },
+    {
+      "path": "published/tests/scene-performance.test.mjs",
+      "bytes": 2312,
+      "sha256": "0ae72e23f8ad06630ecc33b3db3d74a43aeacc21516bc1d8bc6e7453baed253c",
+      "git_blob": "2dc3242025ba256b9163f1944473732c65b91651"
+    },
+    {
+      "path": "published/worker/api.js",
+      "bytes": 20238,
+      "sha256": "4e9470fe021bc5af1cd5dfc8a3440e7dd5f491936b85dee19c4b47a9a0892ae8",
+      "git_blob": "62ed16a76b0ad70779f8d668de521e7bb97e2301"
+    },
+    {
+      "path": "published/worker/assets.js",
+      "bytes": 2463106,
+      "sha256": "f0e851178eceef20287853ccdfa1ce3619285f1385b4c73ee653aaac0e80a5a5",
+      "git_blob": "9c99b7d3408186400901c7669c79ab28e8182986"
+    },
+    {
+      "path": "published/worker/avatar-contract.js",
+      "bytes": 2192,
+      "sha256": "68d3365befca992532d462f590ef38daa7d98ca941668cd48bb39e81483fc533",
+      "git_blob": "7eb2360d643f1f0beabe760ee8c655e7c8b1b8a2"
+    },
+    {
+      "path": "published/worker/avatars.js",
+      "bytes": 3465,
+      "sha256": "1705ab31cd87cc320137cae3fb92018f7e6c4d19edf3449056f4dbbc3751aab2",
+      "git_blob": "9ff74e5b2ffdeb26b3cd369c6669696ed9c19d9c"
+    },
+    {
+      "path": "published/worker/engine.js",
+      "bytes": 38397,
+      "sha256": "a4a1e248e9dcbd0f066670133ce30849c651636df6c21685e73eb16bc49cd61c",
+      "git_blob": "f494608507d89722b9756435894abe52096ff384"
+    },
+    {
+      "path": "published/worker/god-contract.js",
+      "bytes": 9598,
+      "sha256": "9a66bce43633de37b9a26bfecff408588c4075597f4f78046a6f01419abd7792",
+      "git_blob": "2835049cc5bab92592bdfa288051030d84c42261"
+    },
+    {
+      "path": "published/worker/god-focus.js",
+      "bytes": 2273,
+      "sha256": "86f4f786d52279813799e13ed00dca4002c8321f0e033d62ad2cd55760ad35c6",
+      "git_blob": "9c19edda68298996429e1b7f1d8c557a2088ddd8"
+    },
+    {
+      "path": "published/worker/god-grounding.js",
+      "bytes": 11322,
+      "sha256": "64dae950ca732dc7efa52d6f1879cb8581086e9bfa194d35becb58b3160271b7",
+      "git_blob": "a12669dc84315e33451eeaef3fae75694286ead2"
+    },
+    {
+      "path": "published/worker/god-knowledge.js",
+      "bytes": 17955,
+      "sha256": "6bb709932f0eaa107835b5992a15516d3d84d527bed6b8e36ed547da631d921e",
+      "git_blob": "826425e9fd117bfc0979f40561a41061654e5925"
+    },
+    {
+      "path": "published/worker/god-prompt.js",
+      "bytes": 3983,
+      "sha256": "609627189e70dc7f9196d960e5793348bd32346d33593a99d8499912666a3ad7",
+      "git_blob": "5d589337cf674b1fbdf6d8159a94171a684cb018"
+    },
+    {
+      "path": "published/worker/god-retrieval.js",
+      "bytes": 3592,
+      "sha256": "e455fa617ebe8640701c581568ea4c341c54922555cf9cf0311b11d29add7c8e",
+      "git_blob": "9027a3f85e78f87e6094f6b1e5f2e93ab38d7d33"
+    },
+    {
+      "path": "published/worker/host-health.js",
+      "bytes": 1173,
+      "sha256": "c81e814c316a9dfe5b26d68f1e4e728c0c5029a7ebf521a0bf2d5e4e32b3cc97",
+      "git_blob": "cad45c5f4a3fe864d5878ef9ab8b98d15fb2966f"
+    },
+    {
+      "path": "published/worker/host-messages.js",
+      "bytes": 3828,
+      "sha256": "4526c8315c2ee66b7685ef70758a138577e7c15d32a23496206e160e711fc9ea",
+      "git_blob": "8eb6ed97d96758f82047656743c8f8cdc577a15f"
+    },
+    {
+      "path": "published/worker/host-runtime.js",
+      "bytes": 9202,
+      "sha256": "70865189605598113a8c286bb05424a6ef1901a5b55dd7b2c30eeb3eaac82297",
+      "git_blob": "734692fd3ce442825d2c078fb86bfd3a3eadc7e7"
+    },
+    {
+      "path": "published/worker/host.js",
+      "bytes": 139,
+      "sha256": "1958a14e8a46e0291c4ec930c4c88b2ff85dd6099c4a700485b5953303b2f45e",
+      "git_blob": "a523d743134cedf71b38d6c082b3c79c23c40306"
+    },
+    {
+      "path": "published/worker/index.js",
+      "bytes": 1631,
+      "sha256": "19f1300157e43236f7dd764e299ebbcc93501b8ef9d404fe162717222b2aa305",
+      "git_blob": "98e84050058123180bfcfaed5c120f1feae1173d"
+    },
+    {
+      "path": "published/worker/room-transport.js",
+      "bytes": 1318,
+      "sha256": "40f2d0f54a07e3b59c211a67fb77d2d7bffd913b54ca0b3863683e7e0bcd26e2",
+      "git_blob": "62580cce2243972151027eb92d6bdf8d00305893"
+    },
+    {
+      "path": "published/worker/sha256.js",
+      "bytes": 2217,
+      "sha256": "c97866342b47e592dfad831ce61191c548b5a75fb75e1b20a1517f66dd6793f4",
+      "git_blob": "cafc5bfe230d52c10a83106e4d97031b8f9f3056"
+    },
+    {
+      "path": "published/worker/storage.js",
+      "bytes": 2027,
+      "sha256": "6ff71b8d3d82941177dd645f4908832d1bf93d72a54d53dce84b620c52d4db0c",
+      "git_blob": "59617030d7403ef57b220f6e8cdb11759494a4cd"
+    },
+    {
+      "path": "published/worker/tests/engine-oracle.json",
+      "bytes": 1160,
+      "sha256": "3779c3d9c7372c1ffb71d89fa6812aee6dcb020c2b4ad59fc8538861002d190d",
+      "git_blob": "ec6968b34dfb633aaadcdee4c52deff8bbc82fd9"
+    },
+    {
+      "path": "published/worker/tests/online-api.test.mjs",
+      "bytes": 11252,
+      "sha256": "ed30b4e92efde53abd2ffbcc04d1726d4aa900aa36f2cce291d32a67c6ba3809",
+      "git_blob": "f5aa9af5408aa69b8ccdc205ef7088277c115475"
+    },
+    {
+      "path": "published/课堂PK操作指南_2026-11-17.txt",
+      "bytes": 5164,
+      "sha256": "0353ccaea5e86fbca7a260515ac27c46cac8d92b33f72ed00ff9afd6ed0683b5",
+      "git_blob": "ac60c3b2f8b41cf2d6ce7d16fc739b4b24d8b49c"
+    }
+  ],
+  "scan": {
+    "files": 360,
+    "bytes": 32655284,
+    "environmentSecretNeedles": 0,
+    "issues": []
+  },
+  "exclusions": [
+    "real environment files",
+    "runtime data",
+    "dependencies",
+    "browser profiles",
+    "local publishing credentials"
+  ],
+  "rollback": "ROLLBACK.md"
+}

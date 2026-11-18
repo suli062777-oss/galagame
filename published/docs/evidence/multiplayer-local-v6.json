@@ -1,0 +1,6897 @@
+{
+  "startedAt": "2026-11-17T14:12:07.579Z",
+  "scope": "Loopback Node HTTP, atomic-local-json storage, two rooms and eight independent seat identities; not production D1/public Internet, eight humans, external Agent applications, or classroom capacity evidence.",
+  "environment": {
+    "node": "v24.13.1",
+    "platform": "win32",
+    "transport": "native Node fetch -> 127.0.0.1 ephemeral HTTP server",
+    "storage": "atomic-local-json"
+  },
+  "timing": {
+    "controlledServiceClock": true,
+    "decisionMs": 45000,
+    "preparationMs": 5000,
+    "settlementMs": 1000,
+    "pollIntervalMs": 250,
+    "httpTiming": "Monotonic wall time from fetch dispatch through full response-body receipt/JSON parsing. No sleeps or service-clock advances are included.",
+    "bodyBytes": "Decoded HTTP response body bytes; excludes headers/TCP/TLS framing."
+  },
+  "modelCalls": 0,
+  "checks": [
+    {
+      "name": "Injected host is honestly template, no provider credentials or calls",
+      "passed": true
+    },
+    {
+      "name": "A: four independent seat identities",
+      "passed": true
+    },
+    {
+      "name": "B: four independent seat identities",
+      "passed": true
+    },
+    {
+      "name": "A: own Agent protocol self-check assist-protocol",
+      "passed": true
+    },
+    {
+      "name": "B: own Agent protocol self-check assist-protocol",
+      "passed": true
+    },
+    {
+      "name": "A: own Agent protocol self-check autopilot-protocol",
+      "passed": true
+    },
+    {
+      "name": "B: own Agent protocol self-check autopilot-protocol",
+      "passed": true
+    },
+    {
+      "name": "A: cross-room, unauthenticated, human-as-Agent and Agent-as-host rejected",
+      "passed": true
+    },
+    {
+      "name": "B: cross-room, unauthenticated, human-as-Agent and Agent-as-host rejected",
+      "passed": true
+    },
+    {
+      "name": "An own-seat ETag cannot serve another seat a304",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "Unchanged304 carries current service time without JSON snapshot",
+      "passed": true
+    },
+    {
+      "name": "Round 1: complete45-second service window",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 1",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-2 round 1",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 1",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-2 round 1",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 1",
+      "passed": true
+    },
+    {
+      "name": "A: idempotent retry round 1",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 1",
+      "passed": true
+    },
+    {
+      "name": "B: idempotent retry round 1",
+      "passed": true
+    },
+    {
+      "name": "A: Agent reads own state round 1",
+      "passed": true
+    },
+    {
+      "name": "B: Agent reads own state round 1",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 1",
+      "passed": true
+    },
+    {
+      "name": "A: assist proposal does not secretly accept round 1",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 1",
+      "passed": true
+    },
+    {
+      "name": "B: assist proposal does not secretly accept round 1",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 1",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 1",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt autopilot-protocol round 1",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt autopilot-protocol round 1",
+      "passed": true
+    },
+    {
+      "name": "Round 1: deadline locks before single settlement",
+      "passed": true
+    },
+    {
+      "name": "A: four authoritative ledgers agree round 1",
+      "passed": true
+    },
+    {
+      "name": "B: four authoritative ledgers agree round 1",
+      "passed": true
+    },
+    {
+      "name": "Round 2: complete45-second service window",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 2",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-2 round 2",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 2",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-2 round 2",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 2",
+      "passed": true
+    },
+    {
+      "name": "A: idempotent retry round 2",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 2",
+      "passed": true
+    },
+    {
+      "name": "B: idempotent retry round 2",
+      "passed": true
+    },
+    {
+      "name": "A: Agent reads own state round 2",
+      "passed": true
+    },
+    {
+      "name": "B: Agent reads own state round 2",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 2",
+      "passed": true
+    },
+    {
+      "name": "A: assist proposal does not secretly accept round 2",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 2",
+      "passed": true
+    },
+    {
+      "name": "B: assist proposal does not secretly accept round 2",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 2",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 2",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt autopilot-protocol round 2",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt autopilot-protocol round 2",
+      "passed": true
+    },
+    {
+      "name": "Round 2: deadline locks before single settlement",
+      "passed": true
+    },
+    {
+      "name": "A: four authoritative ledgers agree round 2",
+      "passed": true
+    },
+    {
+      "name": "B: four authoritative ledgers agree round 2",
+      "passed": true
+    },
+    {
+      "name": "Round 3: complete45-second service window",
+      "passed": true
+    },
+    {
+      "name": "A: rotated Agent credential works and old one fails",
+      "passed": true
+    },
+    {
+      "name": "B: rotated Agent credential works and old one fails",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 3",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-2 round 3",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 3",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-2 round 3",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 3",
+      "passed": true
+    },
+    {
+      "name": "A: idempotent retry round 3",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 3",
+      "passed": true
+    },
+    {
+      "name": "B: idempotent retry round 3",
+      "passed": true
+    },
+    {
+      "name": "A: Agent reads own state round 3",
+      "passed": true
+    },
+    {
+      "name": "B: Agent reads own state round 3",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 3",
+      "passed": true
+    },
+    {
+      "name": "A: assist proposal does not secretly accept round 3",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 3",
+      "passed": true
+    },
+    {
+      "name": "B: assist proposal does not secretly accept round 3",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 3",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 3",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt autopilot-protocol round 3",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt autopilot-protocol round 3",
+      "passed": true
+    },
+    {
+      "name": "Round 3: deadline locks before single settlement",
+      "passed": true
+    },
+    {
+      "name": "A: four authoritative ledgers agree round 3",
+      "passed": true
+    },
+    {
+      "name": "B: four authoritative ledgers agree round 3",
+      "passed": true
+    },
+    {
+      "name": "Round 4: complete45-second service window",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 4",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-2 round 4",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 4",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-2 round 4",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 4",
+      "passed": true
+    },
+    {
+      "name": "A: idempotent retry round 4",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 4",
+      "passed": true
+    },
+    {
+      "name": "B: idempotent retry round 4",
+      "passed": true
+    },
+    {
+      "name": "A: Agent reads own state round 4",
+      "passed": true
+    },
+    {
+      "name": "B: Agent reads own state round 4",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 4",
+      "passed": true
+    },
+    {
+      "name": "A: assist proposal does not secretly accept round 4",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 4",
+      "passed": true
+    },
+    {
+      "name": "B: assist proposal does not secretly accept round 4",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 4",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 4",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt autopilot-protocol round 4",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt autopilot-protocol round 4",
+      "passed": true
+    },
+    {
+      "name": "Round 4: deadline locks before single settlement",
+      "passed": true
+    },
+    {
+      "name": "A: four authoritative ledgers agree round 4",
+      "passed": true
+    },
+    {
+      "name": "B: four authoritative ledgers agree round 4",
+      "passed": true
+    },
+    {
+      "name": "Round 5: complete45-second service window",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 5",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-2 round 5",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 5",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-2 round 5",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 5",
+      "passed": true
+    },
+    {
+      "name": "A: idempotent retry round 5",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 5",
+      "passed": true
+    },
+    {
+      "name": "B: idempotent retry round 5",
+      "passed": true
+    },
+    {
+      "name": "A: Agent reads own state round 5",
+      "passed": true
+    },
+    {
+      "name": "B: Agent reads own state round 5",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 5",
+      "passed": true
+    },
+    {
+      "name": "A: assist proposal does not secretly accept round 5",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 5",
+      "passed": true
+    },
+    {
+      "name": "B: assist proposal does not secretly accept round 5",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 5",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 5",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt autopilot-protocol round 5",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt autopilot-protocol round 5",
+      "passed": true
+    },
+    {
+      "name": "Round 5: deadline locks before single settlement",
+      "passed": true
+    },
+    {
+      "name": "A: four authoritative ledgers agree round 5",
+      "passed": true
+    },
+    {
+      "name": "B: four authoritative ledgers agree round 5",
+      "passed": true
+    },
+    {
+      "name": "Round 6: complete45-second service window",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 6",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-2 round 6",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 6",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-2 round 6",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt manual-1 round 6",
+      "passed": true
+    },
+    {
+      "name": "A: idempotent retry round 6",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt manual-1 round 6",
+      "passed": true
+    },
+    {
+      "name": "B: idempotent retry round 6",
+      "passed": true
+    },
+    {
+      "name": "A: Agent reads own state round 6",
+      "passed": true
+    },
+    {
+      "name": "B: Agent reads own state round 6",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 6",
+      "passed": true
+    },
+    {
+      "name": "A: assist proposal does not secretly accept round 6",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 6",
+      "passed": true
+    },
+    {
+      "name": "B: assist proposal does not secretly accept round 6",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt assist-protocol round 6",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt assist-protocol round 6",
+      "passed": true
+    },
+    {
+      "name": "A: action receipt autopilot-protocol round 6",
+      "passed": true
+    },
+    {
+      "name": "B: action receipt autopilot-protocol round 6",
+      "passed": true
+    },
+    {
+      "name": "304 is empty, tagged and carries server time",
+      "passed": true
+    },
+    {
+      "name": "Round 6: deadline locks before single settlement",
+      "passed": true
+    },
+    {
+      "name": "A: four authoritative ledgers agree round 6",
+      "passed": true
+    },
+    {
+      "name": "B: four authoritative ledgers agree round 6",
+      "passed": true
+    },
+    {
+      "name": "A: real six-round replay verifies",
+      "passed": true
+    },
+    {
+      "name": "A: host remains honestly template",
+      "passed": true
+    },
+    {
+      "name": "B: real six-round replay verifies",
+      "passed": true
+    },
+    {
+      "name": "B: host remains honestly template",
+      "passed": true
+    },
+    {
+      "name": "Eight independent pollers never overlap their own requests or regress versions",
+      "passed": true
+    },
+    {
+      "name": "A: expired Agent authority rejected",
+      "passed": true
+    },
+    {
+      "name": "A: own human credential still restores finished room",
+      "passed": true
+    },
+    {
+      "name": "B: expired Agent authority rejected",
+      "passed": true
+    },
+    {
+      "name": "B: own human credential still restores finished room",
+      "passed": true
+    },
+    {
+      "name": "No model or non-loopback request occurred",
+      "passed": true
+    },
+    {
+      "name": "Conditional polls actually return empty304 bodies",
+      "passed": true
+    }
+  ],
+  "tables": [
+    {
+      "label": "A",
+      "rounds": [
+        {
+          "round": 1,
+          "ledgerSha256": "273897ff9f3c9f608802b567fdaab83c5a655032fb5684ff46632444e82b777d",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1426.25,
+              "users": 354.4666666666667,
+              "profit": 226.25,
+              "score": 531.07
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 1565.54,
+              "users": 335.8,
+              "profit": 365.54,
+              "score": 537.53
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1485.54,
+              "users": 335.8,
+              "profit": 285.54,
+              "score": 530.3
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1540.92,
+              "users": 439.75,
+              "profit": 340.92,
+              "score": 568.84
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "ledgerSha256": "fdeacfb0641e12ee108477664833d67b5948a89fb4a2abcf81fbddbcd5a98d96",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1607.34,
+              "users": 308.672,
+              "profit": 407.34,
+              "score": 540.27
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 1849.44,
+              "users": 257.152,
+              "profit": 649.44,
+              "score": 543.72
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1689.44,
+              "users": 257.152,
+              "profit": 489.44,
+              "score": 532.96
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1885.28,
+              "users": 437.73625,
+              "profit": 685.28,
+              "score": 594.75
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "ledgerSha256": "2280650321be073ba3ffd527b142d1e2ee64045329885b0bfbc634aad0b08771",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1696.92,
+              "users": 278.55285333333336,
+              "profit": 496.92,
+              "score": 541.25
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2029.72,
+              "users": 202.06432,
+              "profit": 829.72,
+              "score": 541.1
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1789.72,
+              "users": 202.06432,
+              "profit": 589.72,
+              "score": 527.23
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2141.51,
+              "users": 440.42542375,
+              "profit": 941.51,
+              "score": 609.2
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "ledgerSha256": "189d626c6c07b040e9a16ea4254e27435b05e2e5cb306a8a87763406922ebe3a",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1768.61,
+              "users": 259.43190186666664,
+              "profit": 568.61,
+              "score": 535.18
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2174.92,
+              "users": 163.9672832,
+              "profit": 974.92,
+              "score": 522.05
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1854.92,
+              "users": 163.9672832,
+              "profit": 654.92,
+              "score": 505.39
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2403.02,
+              "users": 446.85999493625,
+              "profit": 1203.02,
+              "score": 622.28
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "ledgerSha256": "453221259a1212f36dd160966a64d51547fe7d89845b7b661cbd300d828c665c",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1892.32,
+              "users": 256.55879082666667,
+              "profit": 692.32,
+              "score": 538.53
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2332.42,
+              "users": 142.85376256,
+              "profit": 1132.42,
+              "score": 510.27
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1932.42,
+              "users": 142.85376256,
+              "profit": 732.42,
+              "score": 491.64
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2786.31,
+              "users": 472.3925907792738,
+              "profit": 1586.31,
+              "score": 640.54
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "ledgerSha256": "1c45aab8570b7cdc812e88597e0ed6ebf88b8f75a15d7a94b787db20dd92d30d",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1999.92,
+              "users": 243.07405020160002,
+              "profit": 799.92,
+              "score": 540.08
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2462.67,
+              "users": 119.32489538560003,
+              "profit": 1262.67,
+              "score": 499.33
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1982.67,
+              "users": 119.32489538560003,
+              "profit": 782.67,
+              "score": 478.69
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 3175.68,
+              "users": 478.89709330226026,
+              "profit": 1975.68,
+              "score": 653.74
+            }
+          ]
+        }
+      ],
+      "roles": [
+        "manual-1",
+        "manual-2",
+        "assist-protocol",
+        "autopilot-protocol"
+      ],
+      "passed": true
+    },
+    {
+      "label": "B",
+      "rounds": [
+        {
+          "round": 1,
+          "ledgerSha256": "08ecfafbfb2c91eb20d0fb62dc74d9c79744741c4e60d1eb825c7044aed43ff4",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1444.04,
+              "users": 340.54117647058825,
+              "profit": 244.04,
+              "score": 523.96
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 1583.88,
+              "users": 323.6,
+              "profit": 383.88,
+              "score": 530.57
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1503.88,
+              "users": 323.6,
+              "profit": 303.88,
+              "score": 523.51
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1549.91,
+              "users": 412.7,
+              "profit": 349.91,
+              "score": 557.7
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "ledgerSha256": "d2a79fb6691d8c6fb7ae159adebdf62315bd6a5d7fd0608cf97d8c21171972eb",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1634.34,
+              "users": 288.7611764705882,
+              "profit": 434.34,
+              "score": 532.62
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 1879.74,
+              "users": 243.01999999999998,
+              "profit": 679.74,
+              "score": 536.82
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1719.74,
+              "users": 243.01999999999998,
+              "profit": 519.74,
+              "score": 526.43
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1906.41,
+              "users": 411.61897999999997,
+              "profit": 706.41,
+              "score": 584.2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "ledgerSha256": "ce012afddb471447adc05871a316541c5b5f65248562fb92a12f89bb5324e6fa",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1800.06,
+              "users": 266.14788235294117,
+              "profit": 600.06,
+              "score": 539.16
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2114.95,
+              "users": 190.082,
+              "profit": 914.95,
+              "score": 536.82
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1874.95,
+              "users": 190.082,
+              "profit": 674.95,
+              "score": 524.11
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2268.14,
+              "users": 414.05201145199993,
+              "profit": 1068.14,
+              "score": 602.84
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "ledgerSha256": "460fb8251f15c4a5b2089d83f90798ff1e6f1bf64066a74d80c7275e2cbb1ddf",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1935.93,
+              "users": 241.3562705882353,
+              "profit": 735.93,
+              "score": 535.85
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2307.14,
+              "users": 154.22779999999997,
+              "profit": 1107.14,
+              "score": 520.09
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 1987.14,
+              "users": 154.22779999999997,
+              "profit": 787.14,
+              "score": 505.43
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2580.07,
+              "users": 372.49353171702194,
+              "profit": 1380.07,
+              "score": 611.48
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "ledgerSha256": "d4eed8efbd81db0e3492f52579a52243974422ba4358ace5c00acb0abf4156cf",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2050.31,
+              "users": 224.83836955294117,
+              "profit": 850.31,
+              "score": 533.62
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2468.62,
+              "users": 129.96608719999998,
+              "profit": 1268.62,
+              "score": 506.97
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2068.62,
+              "users": 129.96608719999998,
+              "profit": 868.62,
+              "score": 490.52
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2871.13,
+              "users": 356.50581868188567,
+              "profit": 1671.13,
+              "score": 614.56
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "ledgerSha256": "4896015fc6599cbb0c849b88453343c684f473d981568bf1f79a02f5699098fb",
+          "sharedClients": 4,
+          "rows": [
+            {
+              "seat": 0,
+              "action": {
+                "id": "A02",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2159.34,
+              "users": 220.97295850635294,
+              "profit": 959.34,
+              "score": 534.05
+            },
+            {
+              "seat": 1,
+              "action": {
+                "id": "A12",
+                "target": 0,
+                "scale": 1
+              },
+              "cash": 2613.78,
+              "users": 116.88511662399998,
+              "profit": 1413.78,
+              "score": 499.79
+            },
+            {
+              "seat": 2,
+              "action": {
+                "id": "A10",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 2133.78,
+              "users": 116.88511662399998,
+              "profit": 933.78,
+              "score": 481.71
+            },
+            {
+              "seat": 3,
+              "action": {
+                "id": "A03",
+                "target": 1,
+                "scale": 1
+              },
+              "cash": 3159.78,
+              "users": 355.1126700196088,
+              "profit": 1959.78,
+              "score": 616.82
+            }
+          ]
+        }
+      ],
+      "roles": [
+        "manual-1",
+        "manual-2",
+        "assist-protocol",
+        "autopilot-protocol"
+      ],
+      "passed": true
+    }
+  ],
+  "clockAdvances": [
+    {
+      "label": "lobby-clock-only",
+      "advanceMs": 500,
+      "serverTime": 1794916800500
+    },
+    {
+      "label": "round-1-preparation",
+      "advanceMs": 5000,
+      "serverTime": 1794916805500
+    },
+    {
+      "label": "round-1-deadline",
+      "advanceMs": 45000,
+      "serverTime": 1794916850500
+    },
+    {
+      "label": "round-1-settle",
+      "advanceMs": 1000,
+      "serverTime": 1794916851500
+    },
+    {
+      "label": "round-2-preparation",
+      "advanceMs": 5000,
+      "serverTime": 1794916856500
+    },
+    {
+      "label": "round-2-deadline",
+      "advanceMs": 45000,
+      "serverTime": 1794916901500
+    },
+    {
+      "label": "round-2-settle",
+      "advanceMs": 1000,
+      "serverTime": 1794916902500
+    },
+    {
+      "label": "round-3-preparation",
+      "advanceMs": 5000,
+      "serverTime": 1794916907500
+    },
+    {
+      "label": "round-3-deadline",
+      "advanceMs": 45000,
+      "serverTime": 1794916952500
+    },
+    {
+      "label": "round-3-settle",
+      "advanceMs": 1000,
+      "serverTime": 1794916953500
+    },
+    {
+      "label": "round-4-preparation",
+      "advanceMs": 5000,
+      "serverTime": 1794916958500
+    },
+    {
+      "label": "round-4-deadline",
+      "advanceMs": 45000,
+      "serverTime": 1794917003500
+    },
+    {
+      "label": "round-4-settle",
+      "advanceMs": 1000,
+      "serverTime": 1794917004500
+    },
+    {
+      "label": "round-5-preparation",
+      "advanceMs": 5000,
+      "serverTime": 1794917009500
+    },
+    {
+      "label": "round-5-deadline",
+      "advanceMs": 45000,
+      "serverTime": 1794917054500
+    },
+    {
+      "label": "round-5-settle",
+      "advanceMs": 1000,
+      "serverTime": 1794917055500
+    },
+    {
+      "label": "round-6-preparation",
+      "advanceMs": 5000,
+      "serverTime": 1794917060500
+    },
+    {
+      "label": "round-6-deadline",
+      "advanceMs": 45000,
+      "serverTime": 1794917105500
+    },
+    {
+      "label": "round-6-settle",
+      "advanceMs": 1000,
+      "serverTime": 1794917106500
+    },
+    {
+      "label": "Agent-expiration-only-after-six-rounds",
+      "advanceMs": 86400001,
+      "serverTime": 1795003506501
+    }
+  ],
+  "limits": [
+    "Loopback figures do not establish real cloud/Wi-Fi latency or classroom capacity.",
+    "No UI, draft editing, browser, physical mobile device or external LLM Agent was tested.",
+    "The 250ms polling cadence is an explicitly accelerated local protocol check, not the deployed browser cadence.",
+    "Expected 400/401/403/409 security/timing rejections are reported separately from unexpected failures."
+  ],
+  "passed": true,
+  "temporaryDataRemoved": true,
+  "completedAt": "2026-11-17T14:12:15.272Z",
+  "elapsedWallMs": 7692.782,
+  "templateNarrations": 14,
+  "blockedExternalRequests": 0,
+  "requests": {
+    "total": 385,
+    "expectedResponses": 385,
+    "unexpectedResponses": 0,
+    "expectedRejections": 38,
+    "networkOrBodyFailures": 0,
+    "all": {
+      "samples": 385,
+      "p50Ms": 17.497,
+      "p95Ms": 64.217,
+      "maxMs": 82.379
+    },
+    "byStatus": {
+      "200": {
+        "samples": 329,
+        "p50Ms": 18.063,
+        "p95Ms": 65.385,
+        "maxMs": 82.379,
+        "bodyBytes": 6840790,
+        "meanBodyBytes": 20793
+      },
+      "201": {
+        "samples": 8,
+        "p50Ms": 30.82,
+        "p95Ms": 48.619,
+        "maxMs": 48.619,
+        "bodyBytes": 23652,
+        "meanBodyBytes": 2957
+      },
+      "304": {
+        "samples": 10,
+        "p50Ms": 6.224,
+        "p95Ms": 13.634,
+        "maxMs": 13.634,
+        "bodyBytes": 0,
+        "meanBodyBytes": 0
+      },
+      "401": {
+        "samples": 4,
+        "p50Ms": 2.054,
+        "p95Ms": 3.018,
+        "maxMs": 3.018,
+        "bodyBytes": 324,
+        "meanBodyBytes": 81
+      },
+      "403": {
+        "samples": 10,
+        "p50Ms": 1.822,
+        "p95Ms": 3.366,
+        "maxMs": 3.366,
+        "bodyBytes": 660,
+        "meanBodyBytes": 66
+      },
+      "409": {
+        "samples": 24,
+        "p50Ms": 13.682,
+        "p95Ms": 21.027,
+        "maxMs": 21.824,
+        "bodyBytes": 1776,
+        "meanBodyBytes": 74
+      }
+    },
+    "byCategory": {
+      "protocol": {
+        "samples": 51,
+        "p50Ms": 28.39,
+        "p95Ms": 65.731,
+        "maxMs": 76.877
+      },
+      "expected-rejection": {
+        "samples": 38,
+        "p50Ms": 4.418,
+        "p95Ms": 21.027,
+        "maxMs": 21.824
+      },
+      "poll": {
+        "samples": 224,
+        "p50Ms": 16.739,
+        "p95Ms": 54.707,
+        "maxMs": 65.69
+      },
+      "action": {
+        "samples": 72,
+        "p50Ms": 42.255,
+        "p95Ms": 78.619,
+        "maxMs": 82.379
+      }
+    }
+  },
+  "actionAccepted": {
+    "httpRoundTrip": {
+      "samples": 48,
+      "p50Ms": 47.213,
+      "p95Ms": 79.299,
+      "maxMs": 82.379
+    },
+    "visibilityFromSubmitStart": {
+      "samples": 48,
+      "p50Ms": 211.899,
+      "p95Ms": 292.507,
+      "maxMs": 296.763
+    },
+    "visibilityAfterHttpAck": {
+      "samples": 48,
+      "p50Ms": 157.009,
+      "p95Ms": 222.692,
+      "maxMs": 224.631
+    },
+    "acceptedUniqueRequests": 48
+  },
+  "pollers": [
+    {
+      "table": "A",
+      "role": "manual-1",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    },
+    {
+      "table": "B",
+      "role": "manual-1",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    },
+    {
+      "table": "A",
+      "role": "manual-2",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    },
+    {
+      "table": "B",
+      "role": "manual-2",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    },
+    {
+      "table": "A",
+      "role": "assist-protocol",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    },
+    {
+      "table": "B",
+      "role": "assist-protocol",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    },
+    {
+      "table": "A",
+      "role": "autopilot-protocol",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    },
+    {
+      "table": "B",
+      "role": "autopilot-protocol",
+      "polls": 28,
+      "maxOwnInFlight": 1,
+      "finalRound": 6,
+      "historyLength": 6,
+      "error": null
+    }
+  ],
+  "requestSamples": [
+    {
+      "method": "GET",
+      "route": "/api/health",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 464,
+      "durationMs": 46.859,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms",
+      "category": "protocol",
+      "label": "A",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 2455,
+      "durationMs": 41.358,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms",
+      "category": "protocol",
+      "label": "B",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 2446,
+      "durationMs": 43.184,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/join",
+      "category": "protocol",
+      "label": "A",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 2787,
+      "durationMs": 25.109,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/join",
+      "category": "protocol",
+      "label": "B",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 2778,
+      "durationMs": 48.619,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/join",
+      "category": "protocol",
+      "label": "A",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 3127,
+      "durationMs": 29.945,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/join",
+      "category": "protocol",
+      "label": "B",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 3118,
+      "durationMs": 30.82,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/join",
+      "category": "protocol",
+      "label": "A",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 3475,
+      "durationMs": 30.911,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/join",
+      "category": "protocol",
+      "label": "B",
+      "expectedStatuses": [
+        201
+      ],
+      "status": 201,
+      "bodyBytes": 3466,
+      "durationMs": 28.39,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "protocol",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3381,
+      "durationMs": 27.741,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "protocol",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3372,
+      "durationMs": 26.391,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "protocol",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3384,
+      "durationMs": 25.613,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "protocol",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3375,
+      "durationMs": 14.463,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 3.366,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "expected-rejection",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 2.589,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "expected-rejection",
+      "label": "A/anonymous",
+      "expectedStatuses": [
+        401
+      ],
+      "status": 401,
+      "bodyBytes": 69,
+      "durationMs": 3.018,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 2.172,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/start",
+      "category": "expected-rejection",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 2.964,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 1.819,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "expected-rejection",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 1.784,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "expected-rejection",
+      "label": "B/anonymous",
+      "expectedStatuses": [
+        401
+      ],
+      "status": 401,
+      "bodyBytes": 69,
+      "durationMs": 1.638,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 1.822,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/start",
+      "category": "expected-rejection",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 2.214,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3267,
+      "durationMs": 4.043,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3266,
+      "durationMs": 2.849,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3267,
+      "durationMs": 13.334,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3258,
+      "durationMs": 13.685,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3266,
+      "durationMs": 13.838,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3257,
+      "durationMs": 18.226,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3265,
+      "durationMs": 18.254,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3256,
+      "durationMs": 18.371,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3269,
+      "durationMs": 18.612,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 3260,
+      "durationMs": 18.784,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 8.305,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 7.299,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 6.905,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 6.579,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 6.224,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 6.019,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 5.683,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 5.502,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 1.609,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/start",
+      "category": "protocol",
+      "label": "A",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3586,
+      "durationMs": 76.177,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/start",
+      "category": "protocol",
+      "label": "B",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 3571,
+      "durationMs": 76.877,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5250,
+      "durationMs": 11.108,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5235,
+      "durationMs": 10.916,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5249,
+      "durationMs": 11.1,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5234,
+      "durationMs": 11.199,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5248,
+      "durationMs": 11.386,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5233,
+      "durationMs": 11.533,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5252,
+      "durationMs": 11.751,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5237,
+      "durationMs": 11.973,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5756,
+      "durationMs": 45.595,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5750,
+      "durationMs": 45.834,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5741,
+      "durationMs": 47.047,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5735,
+      "durationMs": 47.213,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5772,
+      "durationMs": 5.707,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5757,
+      "durationMs": 4.671,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5247,
+      "durationMs": 5.008,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5232,
+      "durationMs": 5.313,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5724,
+      "durationMs": 22.623,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5709,
+      "durationMs": 22.728,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5981,
+      "durationMs": 22.794,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5966,
+      "durationMs": 22.483,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5250,
+      "durationMs": 3.985,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5235,
+      "durationMs": 4.325,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5755,
+      "durationMs": 21.648,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 5740,
+      "durationMs": 21.58,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 4.117,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 3.184,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5507,
+      "durationMs": 11.231,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5492,
+      "durationMs": 11.047,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5504,
+      "durationMs": 11.159,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5489,
+      "durationMs": 11.28,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5735,
+      "durationMs": 12.558,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5720,
+      "durationMs": 12.757,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5509,
+      "durationMs": 12.977,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5494,
+      "durationMs": 13.285,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 10.877,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 11.163,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5507,
+      "durationMs": 13.715,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5492,
+      "durationMs": 13.711,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5504,
+      "durationMs": 13.805,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5489,
+      "durationMs": 13.954,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5735,
+      "durationMs": 14.184,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5720,
+      "durationMs": 14.614,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5509,
+      "durationMs": 14.891,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 5494,
+      "durationMs": 17.618,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11416,
+      "durationMs": 18.768,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11585,
+      "durationMs": 18.895,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11384,
+      "durationMs": 19.271,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11553,
+      "durationMs": 19.57,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11550,
+      "durationMs": 19.947,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11719,
+      "durationMs": 19.864,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11402,
+      "durationMs": 19.99,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11558,
+      "durationMs": 20.284,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11415,
+      "durationMs": 14.671,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11584,
+      "durationMs": 14.527,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11383,
+      "durationMs": 14.669,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11552,
+      "durationMs": 15.041,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11549,
+      "durationMs": 17.281,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11718,
+      "durationMs": 17.552,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11401,
+      "durationMs": 17.593,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11557,
+      "durationMs": 17.497,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11689,
+      "durationMs": 52.978,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11654,
+      "durationMs": 53.429,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11858,
+      "durationMs": 55.095,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11823,
+      "durationMs": 55.646,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11705,
+      "durationMs": 8.446,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11874,
+      "durationMs": 7.527,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11547,
+      "durationMs": 29.905,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11716,
+      "durationMs": 29.863,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 12024,
+      "durationMs": 25.776,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 12193,
+      "durationMs": 25.822,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 12051,
+      "durationMs": 26.969,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 12220,
+      "durationMs": 26.804,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11398,
+      "durationMs": 24.062,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11554,
+      "durationMs": 24.18,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11672,
+      "durationMs": 28.736,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 11828,
+      "durationMs": 28.75,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 5.429,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 4.528,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11440,
+      "durationMs": 4.434,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11609,
+      "durationMs": 8.912,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11408,
+      "durationMs": 9.049,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11577,
+      "durationMs": 9.891,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11805,
+      "durationMs": 10.342,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11974,
+      "durationMs": 10.792,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11426,
+      "durationMs": 10.826,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11582,
+      "durationMs": 11.013,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 13.682,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 12.354,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11440,
+      "durationMs": 15.608,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11609,
+      "durationMs": 15.734,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11408,
+      "durationMs": 16.161,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11577,
+      "durationMs": 16.549,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11805,
+      "durationMs": 16.997,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11974,
+      "durationMs": 17.338,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11426,
+      "durationMs": 18.055,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 11582,
+      "durationMs": 18.634,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16941,
+      "durationMs": 15.048,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17190,
+      "durationMs": 15.368,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16921,
+      "durationMs": 15.723,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17170,
+      "durationMs": 16.119,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17256,
+      "durationMs": 16.54,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17503,
+      "durationMs": 16.88,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16918,
+      "durationMs": 19.539,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17167,
+      "durationMs": 12.032,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16940,
+      "durationMs": 17.808,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17189,
+      "durationMs": 18.004,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16920,
+      "durationMs": 18.397,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17169,
+      "durationMs": 19.093,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17255,
+      "durationMs": 19.686,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17502,
+      "durationMs": 20.21,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16917,
+      "durationMs": 20.62,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17166,
+      "durationMs": 10.945,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/rotate",
+      "category": "protocol",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17337,
+      "durationMs": 14.839,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "expected-rejection",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 1.557,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17370,
+      "durationMs": 13.084,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/rotate",
+      "category": "protocol",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17584,
+      "durationMs": 15.21,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "expected-rejection",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        403
+      ],
+      "status": 403,
+      "bodyBytes": 66,
+      "durationMs": 1.629,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17617,
+      "durationMs": 14.093,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17214,
+      "durationMs": 55.932,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17191,
+      "durationMs": 56.656,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17463,
+      "durationMs": 58.454,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17440,
+      "durationMs": 59.348,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17230,
+      "durationMs": 9.449,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17479,
+      "durationMs": 8.34,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17253,
+      "durationMs": 6.006,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17500,
+      "durationMs": 5.806,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17730,
+      "durationMs": 27.199,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17977,
+      "durationMs": 27.797,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17757,
+      "durationMs": 29.786,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 18004,
+      "durationMs": 29.018,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 16914,
+      "durationMs": 30.728,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17163,
+      "durationMs": 31.393,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17188,
+      "durationMs": 46.918,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 17437,
+      "durationMs": 47.192,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16965,
+      "durationMs": 48.141,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17214,
+      "durationMs": 48.367,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16945,
+      "durationMs": 48.637,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17194,
+      "durationMs": 48.823,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17758,
+      "durationMs": 17.559,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16942,
+      "durationMs": 17.864,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17511,
+      "durationMs": 18.528,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17191,
+      "durationMs": 23.03,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 21.027,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 19.148,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 15.161,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 15.638,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16965,
+      "durationMs": 9.434,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17214,
+      "durationMs": 8.88,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16945,
+      "durationMs": 8.853,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17194,
+      "durationMs": 8.92,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17758,
+      "durationMs": 4.757,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17511,
+      "durationMs": 7.687,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 17191,
+      "durationMs": 8.146,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 16942,
+      "durationMs": 8.53,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22680,
+      "durationMs": 16.777,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22718,
+      "durationMs": 16.967,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22660,
+      "durationMs": 17.404,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22698,
+      "durationMs": 18.063,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22704,
+      "durationMs": 18.801,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22660,
+      "durationMs": 19.843,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23198,
+      "durationMs": 22.485,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23165,
+      "durationMs": 22.901,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22679,
+      "durationMs": 12.855,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22717,
+      "durationMs": 13.066,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22659,
+      "durationMs": 13.946,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22697,
+      "durationMs": 14.754,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22659,
+      "durationMs": 15.708,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23197,
+      "durationMs": 16.338,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23164,
+      "durationMs": 16.792,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22703,
+      "durationMs": 17.158,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22953,
+      "durationMs": 65.849,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22930,
+      "durationMs": 66.174,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22991,
+      "durationMs": 67.532,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22968,
+      "durationMs": 70.497,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22969,
+      "durationMs": 9.959,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 23007,
+      "durationMs": 6.992,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 23162,
+      "durationMs": 32.015,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 23195,
+      "durationMs": 31.737,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 23639,
+      "durationMs": 29.818,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 23672,
+      "durationMs": 29.975,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 23666,
+      "durationMs": 32.024,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 23699,
+      "durationMs": 31.747,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22656,
+      "durationMs": 32.577,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22700,
+      "durationMs": 37.301,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22930,
+      "durationMs": 51.173,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 22974,
+      "durationMs": 50.657,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22704,
+      "durationMs": 51.59,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22742,
+      "durationMs": 52.108,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22684,
+      "durationMs": 52.637,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22722,
+      "durationMs": 53.099,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22684,
+      "durationMs": 21.595,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23453,
+      "durationMs": 21.711,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23420,
+      "durationMs": 22.428,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22728,
+      "durationMs": 22.81,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 21.824,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 16.667,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 15.295,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 14.608,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22704,
+      "durationMs": 10.985,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22742,
+      "durationMs": 10.893,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22684,
+      "durationMs": 11.125,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22722,
+      "durationMs": 11.426,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22684,
+      "durationMs": 8.859,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23453,
+      "durationMs": 8.734,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 23420,
+      "durationMs": 9.038,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 22728,
+      "durationMs": 9.43,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28326,
+      "durationMs": 14.104,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28306,
+      "durationMs": 15.195,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28435,
+      "durationMs": 15.978,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28453,
+      "durationMs": 16.746,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28309,
+      "durationMs": 17.732,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28979,
+      "durationMs": 16.739,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28440,
+      "durationMs": 17.847,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29103,
+      "durationMs": 18.864,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28325,
+      "durationMs": 13.688,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28305,
+      "durationMs": 13.881,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28434,
+      "durationMs": 14.037,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28452,
+      "durationMs": 17.363,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28308,
+      "durationMs": 17.975,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28978,
+      "durationMs": 15.043,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29102,
+      "durationMs": 15.625,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28439,
+      "durationMs": 16.195,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28599,
+      "durationMs": 78.619,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28576,
+      "durationMs": 79.299,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28726,
+      "durationMs": 81.395,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28705,
+      "durationMs": 82.379,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28615,
+      "durationMs": 11.387,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28742,
+      "durationMs": 9.955,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28976,
+      "durationMs": 46.572,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 29100,
+      "durationMs": 47.005,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 29453,
+      "durationMs": 44.077,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 29577,
+      "durationMs": 43.612,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 29480,
+      "durationMs": 47.041,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 29604,
+      "durationMs": 46.568,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28351,
+      "durationMs": 56.842,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28331,
+      "durationMs": 57.321,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28460,
+      "durationMs": 62.347,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28478,
+      "durationMs": 63.364,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28305,
+      "durationMs": 64.217,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29235,
+      "durationMs": 64.8,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29359,
+      "durationMs": 65.142,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28436,
+      "durationMs": 65.69,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28305,
+      "durationMs": 65.385,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28436,
+      "durationMs": 65.731,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28579,
+      "durationMs": 42.255,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 28710,
+      "durationMs": 42.169,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 4.418,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 3.11,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28350,
+      "durationMs": 15.571,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28330,
+      "durationMs": 15.682,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28459,
+      "durationMs": 16.134,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28477,
+      "durationMs": 16.71,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28333,
+      "durationMs": 17.309,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29234,
+      "durationMs": 17.846,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29358,
+      "durationMs": 18.274,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28464,
+      "durationMs": 18.713,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 15.188,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 14.795,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28350,
+      "durationMs": 14.86,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28330,
+      "durationMs": 15.063,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28459,
+      "durationMs": 15.555,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28477,
+      "durationMs": 16.033,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28333,
+      "durationMs": 16.638,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29234,
+      "durationMs": 17.352,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 29358,
+      "durationMs": 18.164,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 28464,
+      "durationMs": 18.757,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33830,
+      "durationMs": 9.57,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33810,
+      "durationMs": 9.861,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34018,
+      "durationMs": 10.263,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34649,
+      "durationMs": 14.152,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34835,
+      "durationMs": 14.767,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34004,
+      "durationMs": 15.365,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34000,
+      "durationMs": 16.233,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33816,
+      "durationMs": 16.774,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33829,
+      "durationMs": 18.074,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33809,
+      "durationMs": 18.013,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34017,
+      "durationMs": 18.459,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34648,
+      "durationMs": 18.888,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34834,
+      "durationMs": 19.37,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34003,
+      "durationMs": 19.809,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33999,
+      "durationMs": 20.281,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33815,
+      "durationMs": 9.851,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34103,
+      "durationMs": 69.218,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34080,
+      "durationMs": 69.8,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34291,
+      "durationMs": 71.31,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34270,
+      "durationMs": 72.119,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34119,
+      "durationMs": 11.461,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34307,
+      "durationMs": 10.694,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34646,
+      "durationMs": 36.979,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34832,
+      "durationMs": 37.371,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 35123,
+      "durationMs": 44.643,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 35309,
+      "durationMs": 44.274,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 35150,
+      "durationMs": 36.572,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "action",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 35336,
+      "durationMs": 36.237,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 33812,
+      "durationMs": 41.357,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/state",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34000,
+      "durationMs": 41.622,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33855,
+      "durationMs": 53.267,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33835,
+      "durationMs": 53.699,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34043,
+      "durationMs": 54.151,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34905,
+      "durationMs": 54.707,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 35091,
+      "durationMs": 55.246,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34000,
+      "durationMs": 56.25,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34025,
+      "durationMs": 57.189,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34086,
+      "durationMs": 62.981,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/agent/action",
+      "category": "action",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 34274,
+      "durationMs": 62.966,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33840,
+      "durationMs": 48.848,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 5.06,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 3.62,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33854,
+      "durationMs": 21.652,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33834,
+      "durationMs": 21.972,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34042,
+      "durationMs": 22.874,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34904,
+      "durationMs": 23.736,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 35090,
+      "durationMs": 24.709,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34028,
+      "durationMs": 26.038,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34024,
+      "durationMs": 27.275,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 304,
+      "bodyBytes": 0,
+      "durationMs": 13.634,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 19.547,
+      "expected": true
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/[room]/action",
+      "category": "expected-rejection",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        409
+      ],
+      "status": 409,
+      "bodyBytes": 74,
+      "durationMs": 18.32,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33854,
+      "durationMs": 9.711,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33834,
+      "durationMs": 9.936,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34904,
+      "durationMs": 15.803,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34028,
+      "durationMs": 16.274,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34042,
+      "durationMs": 16.748,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 35090,
+      "durationMs": 17.245,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 34024,
+      "durationMs": 17.669,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 33840,
+      "durationMs": 8.013,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 39042,
+      "durationMs": 27.666,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 39026,
+      "durationMs": 28.337,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 40032,
+      "durationMs": 29.486,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 39153,
+      "durationMs": 30.732,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-1",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 39168,
+      "durationMs": 31.62,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/assist-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 40151,
+      "durationMs": 32.326,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "B/manual-2",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 39149,
+      "durationMs": 33.52,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "poll",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        200,
+        304
+      ],
+      "status": 200,
+      "bodyBytes": 39032,
+      "durationMs": 34.581,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/replay",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 61557,
+      "durationMs": 15.011,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/replay",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 61862,
+      "durationMs": 12.913,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "expected-rejection",
+      "label": "A/autopilot-protocol",
+      "expectedStatuses": [
+        401
+      ],
+      "status": 401,
+      "bodyBytes": 93,
+      "durationMs": 2.973,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 39035,
+      "durationMs": 5.673,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]/agent/check",
+      "category": "expected-rejection",
+      "label": "B/autopilot-protocol",
+      "expectedStatuses": [
+        401
+      ],
+      "status": 401,
+      "bodyBytes": 93,
+      "durationMs": 2.054,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/[room]",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 39156,
+      "durationMs": 5.253,
+      "expected": true
+    },
+    {
+      "method": "GET",
+      "route": "/api/health",
+      "category": "protocol",
+      "label": "system",
+      "expectedStatuses": [
+        200
+      ],
+      "status": 200,
+      "bodyBytes": 464,
+      "durationMs": 1.913,
+      "expected": true
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-18",
+  "source": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\public",
+  "scope": "Real local static UI in Chrome headless; no game API or model calls",
+  "viewports": [
+    {
+      "width": 1440,
+      "clientWidth": 1425,
+      "documentWidth": 1425,
+      "buttons": [
+        {
+          "text": "进入增长酒馆 →",
+          "href": "#/tavern",
+          "x": 132.5,
+          "y": 352.953125,
+          "width": 174,
+          "height": 56,
+          "background": "rgb(200, 55, 50)",
+          "color": "rgb(255, 255, 255)",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "borderColor": "rgb(200, 55, 50)"
+        },
+        {
+          "text": "开始阅读",
+          "href": "#/map",
+          "x": 318.5,
+          "y": 357.703125,
+          "width": 102,
+          "height": 46.5,
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 37, 34)",
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "borderColor": "rgb(216, 216, 207)"
+        }
+      ]
+    },
+    {
+      "width": 726,
+      "clientWidth": 711,
+      "documentWidth": 711,
+      "buttons": [
+        {
+          "text": "进入增长酒馆 →",
+          "href": "#/tavern",
+          "x": 24,
+          "y": 330.46875,
+          "width": 174,
+          "height": 56,
+          "background": "rgb(200, 55, 50)",
+          "color": "rgb(255, 255, 255)",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "borderColor": "rgb(200, 55, 50)"
+        },
+        {
+          "text": "开始阅读",
+          "href": "#/map",
+          "x": 208,
+          "y": 335.46875,
+          "width": 86,
+          "height": 46,
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 37, 34)",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "borderColor": "rgb(216, 216, 207)"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "clientWidth": 375,
+      "documentWidth": 375,
+      "buttons": [
+        {
+          "text": "进入增长酒馆 →",
+          "href": "#/tavern",
+          "x": 18,
+          "y": 306.1875,
+          "width": 174,
+          "height": 56,
+          "background": "rgb(200, 55, 50)",
+          "color": "rgb(255, 255, 255)",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "borderColor": "rgb(200, 55, 50)"
+        },
+        {
+          "text": "开始阅读",
+          "href": "#/map",
+          "x": 202,
+          "y": 311.1875,
+          "width": 86,
+          "height": 46,
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 37, 34)",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "borderColor": "rgb(216, 216, 207)"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "clientWidth": 305,
+      "documentWidth": 305,
+      "buttons": [
+        {
+          "text": "进入增长酒馆 →",
+          "href": "#/tavern",
+          "x": 18,
+          "y": 345.734375,
+          "width": 269,
+          "height": 56,
+          "background": "rgb(200, 55, 50)",
+          "color": "rgb(255, 255, 255)",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "borderColor": "rgb(200, 55, 50)"
+        },
+        {
+          "text": "开始阅读",
+          "href": "#/map",
+          "x": 18,
+          "y": 411.734375,
+          "width": 269,
+          "height": 46,
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 37, 34)",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "borderColor": "rgb(216, 216, 207)"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "control": "primary",
+      "hash": "#/tavern",
+      "rendered": ".tavern-landing"
+    },
+    {
+      "control": "secondary",
+      "hash": "#/map",
+      "rendered": ".map-page"
+    }
+  ],
+  "keyboard": [
+    {
+      "text": "进入增长酒馆 →",
+      "href": "#/tavern",
+      "primary": true,
+      "insideHero": true,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(200, 55, 50)"
+    },
+    {
+      "text": "开始阅读",
+      "href": "#/map",
+      "primary": false,
+      "insideHero": true,
+      "focusVisible": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(200, 55, 50)"
+    }
+  ],
+  "errors": [],
+  "keyboardActivation": {
+    "key": "Enter",
+    "control": "secondary",
+    "hash": "#/map"
+  },
+  "screenshot": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\docs\\evidence\\home-cta-20261118.png",
+  "passed": true
+}

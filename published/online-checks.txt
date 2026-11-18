@@ -1,0 +1,29 @@
+✔ D1 adapter preserves bind reuse, RETURNING and atomic batch rollback (4.191375ms)
+✔ real SQL CAS retains overlapping mutations and rejects duplicate room creation (11.774541ms)
+✔ CAS gives a retryable conflict after ten real competing SQL revisions (11.60875ms)
+✔ independent hosts share twelve durable attempts and deduplicate one economic key (33.655791ms)
+✔ concurrent rooms across independent hosts cannot reserve a thirteenth attempt (18.149083ms)
+▶ retryable failures consume attempts; authentication does not retry; last slot cannot retry
+  ✔ HTTP 429 (19.117166ms)
+  ✔ HTTP 503 (2.849708ms)
+  ✔ HTTP 401 (9.428209ms)
+  ✔ budget has only one remaining attempt (7.704375ms)
+✔ retryable failures consume attempts; authentication does not retry; last slot cannot retry (39.71975ms)
+✔ an old round response cannot overwrite a newer room or its narration (2.804083ms)
+✔ model request excludes credentials, private research, future state, pending actions and avatar bytes (2.789083ms)
+✔ zero budget makes no provider request and scheduleNarration registers its returned promise (3.498542ms)
+✔ Synchronous SHA256 and all six-round engine outcomes match native engine byte for byte (19.613125ms)
+✔ Four real Request clients share authoritative D1 room, concurrent joins cannot duplicate seats, full six-round replay (192.753417ms)
+✔ Deadlines, defaults, agent assist/autopilot, token rotation, cross-room auth and private research survive authoritative reads (11.080292ms)
+✔ Production phase timing gives complete 45 seconds and simultaneous polls settle only once (6.943458ms)
+✔ Web PNG verification, avatar human-only scope, body limits and D1 persistence (12.194125ms)
+✔ CAS retries protect simultaneous updates and reject async mutators (3.815083ms)
+✔ Slow POST bodies cannot carry revoked Agent authority or a decision across the deadline (3.627375ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 396.862792

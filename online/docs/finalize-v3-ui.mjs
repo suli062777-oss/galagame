@@ -1,0 +1,10 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const u=new URL('../public/app.js',import.meta.url);let app=await readFile(u,'utf8');
+const old="if($('#mobile-action-state'))$('#mobile-action-state').textContent=state==='accepted'?'服务端已接收':state==='submitting'?'正在提交':state==='error'?'提交未成功':me.action?'有未提交修改':'本轮尚未提交';";
+const replacement="if($('#mobile-action-state'))$('#mobile-action-state').textContent=({accepted:'服务端已接收',submitting:'正在提交',error:'提交未成功',uncertain:'结果待确认',locked:'已截止 · 等待结算',draft:me.action?'有未提交修改':'草稿未提交',unsubmitted:'本轮尚未提交'})[state];const mobileButton=$('[data-action=toggle-action-sheet]');if(mobileButton){mobileButton.textContent=me.action?'更新行动':'选择行动';mobileButton.disabled=submitting||expired||Boolean(s.players.find(p=>p.id===me.id)?.bankrupt);}";
+if(!app.includes(old))throw Error('Receipt source did not match');app=app.replace(old,replacement);
+app=app.replace("submissionUncertain=false;submissionError='';unconfirmedAction=null;", "submissionUncertain=false;submissionError='';unconfirmedAction=null;if($('#action-error'))$('#action-error').textContent='';");
+app=app.replace("draftState=null;submissionError='';globe?.destroy();", "draftState=null;submissionError='';submissionUncertain=false;unconfirmedAction=null;globe?.destroy();");
+app=app.replace("draftState=null;submissionError='';submitting=false;roomUi.actionOpen=false;", "draftState=null;submissionError='';submissionUncertain=false;unconfirmedAction=null;submitting=false;roomUi.actionOpen=false;");
+app=app.replace("<span>可用预算 <b>${num(budget)}</b></span>`;", "<span>可用预算 <b>${num(budget)}</b></span><span class=\"budget-reserve\">已留20运营费</span>`;");
+await writeFile(u,app,'utf8');

@@ -1,0 +1,51 @@
+{
+  "review_date": "2026-11-18",
+  "timezone": "Asia/Shanghai",
+  "purpose": "Visual inspection of official public design examples; not evidence of logged-in application behavior",
+  "assets": [
+    {
+      "file": "linear-2026-sidebar-official.png",
+      "product": "Linear",
+      "source_page": "https://linear.app/now/behind-the-latest-design-refresh",
+      "source_page_date": "2026-03-12",
+      "asset_url": "https://webassets.linear.app/images/ornj730p/production/b6d6be14c96978b10553cfb9205be1065087e793-3904x2720.png?w=1600&q=85&auto=format",
+      "kind": "Official design comparison image",
+      "inspected": true,
+      "limit": "Illustrates the official article; not a live logged-in workspace capture"
+    },
+    {
+      "file": "linear-2026-borders-official.png",
+      "product": "Linear",
+      "source_page": "https://linear.app/now/behind-the-latest-design-refresh",
+      "source_page_date": "2026-03-12",
+      "asset_url": "https://webassets.linear.app/images/ornj730p/production/67561baa677fbc429d94edd080e95aecabb6bae2-3904x2720.png?w=1600&q=85&auto=format",
+      "kind": "Official design comparison image",
+      "inspected": true,
+      "limit": "Illustrates the official article; not a live logged-in workspace capture"
+    },
+    {
+      "file": "readwise-reading-official.webp",
+      "product": "Readwise Reader",
+      "source_page": "https://readwise.io/read",
+      "asset_url": "https://d34adp677peecb.cloudfront.net/static/images/reader/Highlight-Alpha-No-Note%401x.28c2c4cc2706.webp",
+      "kind": "Official public marketing illustration of highlighting",
+      "inspected": true,
+      "limit": "Current public asset may depict an earlier app version; not authenticated interaction testing"
+    },
+    {
+      "file": "readwise-inbox-official.webp",
+      "product": "Readwise Reader",
+      "source_page": "https://readwise.io/read",
+      "asset_url": "https://d34adp677peecb.cloudfront.net/static/images/reader/Hero-Screen%401x.72ad6bf1deaa.webp",
+      "kind": "Official public UI marketing image",
+      "inspected": true,
+      "limit": "Current public asset may depict an earlier app version; not authenticated interaction testing"
+    }
+  ],
+  "additional_browser_captures": {
+    "stripe_press": "../screenshots/ref-stripe-press.png",
+    "linear_article": "../screenshots/ref-linear-design.png",
+    "lichess_analysis": "../screenshots/ref-lichess-analysis.png",
+    "lichess_limit": "Cloudflare verification; do not use as product UI visual evidence"
+  }
+}

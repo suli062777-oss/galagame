@@ -1,0 +1,18 @@
+{
+  "contractVersion": "god-eval-contract-1.0.0",
+  "recordRequired": ["id", "split", "source", "coverage", "input", "expected"],
+  "splitEnum": ["prompt-development", "development", "holdout"],
+  "modelInput": "Only record.input; never send expected labels or referenceOutput",
+  "outputRequired": ["kind", "claimIds", "knowledgeIds", "tone", "narration"],
+  "sentenceEvidence": "Every sentence cites its actual [claimId]/[knowledgeId] before punctuation; displayed narration removes those markers",
+  "runRecordRequired": ["caseId", "datasetVersion", "datasetSha256", "knowledgeVersion", "model", "provider", "startedAt", "latencyMs", "usage", "rawOutput", "validation", "humanReview"],
+  "hardGates": ["valid schema and references", "public input only", "no unknown numbers or mismatched seat metrics", "no private or unpublished information", "no rumor/forecast promotion", "no player action or rewards by the host", "natural narration rather than legacy ID-only output"],
+  "humanReview": {
+    "reviewer": "Someone other than the implementation author",
+    "scoredOneToFive": ["current-round relevance", "natural spoken Chinese", "non-repetition", "teaching value", "fairness and uncertainty"],
+    "candidateMinimum": 3,
+    "requiredNotes": ["specific evidence for any score below 3", "unsafe/unsupported assertions even if the mechanical validator passed"]
+  },
+  "secretPolicy": "Never save provider keys, own-seat credentials, private research or avatar bytes. Record actual provider and template fallback honestly.",
+  "trainingClaim": "Dataset and few-shot preparation are not SFT, parameter fine-tuning, or model learning. No such training may be claimed without a real supported job and its artifacts."
+}

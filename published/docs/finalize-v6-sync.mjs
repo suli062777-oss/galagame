@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+const path=new URL('../public/app.js',import.meta.url);let app=fs.readFileSync(path,'utf8');
+const replace=(before,after)=>{if(!app.includes(before))throw Error(before.slice(0,100));app=app.replace(before,after);};
+replace("roomRequest=path.startsWith('/api/rooms/')", "roomRequest=path==='/api/rooms'||path.startsWith('/api/rooms/')");
+replace("ref.summary||'本条目未提供摘要。'", "ref.summary||ref.text||'本条目未提供摘要。'");
+replace("arena.dataset.sheet=roomUi.sheet||'';arena.dataset.actionOpen=String(roomUi.actionOpen);", "if(arena.dataset.sheet!==(roomUi.sheet||''))arena.dataset.sheet=roomUi.sheet||'';if(arena.dataset.actionOpen!==String(roomUi.actionOpen))arena.dataset.actionOpen=String(roomUi.actionOpen);");
+replace("if(panel)panel.setAttribute('aria-hidden',String(matchMedia('(max-width:900px)').matches&&roomUi.sheet!=='info'));", "setAttr(panel,'aria-hidden',String(matchMedia('(max-width:900px)').matches&&roomUi.sheet!=='info'));");
+replace("el.dataset.state=state;setMarkup", "if(el.dataset.state!==state)el.dataset.state=state;setMarkup");
+replace("entry.dataset.connected=String(connected);", "if(entry.dataset.connected!==String(connected))entry.dataset.connected=String(connected);");
+replace("status.dataset.connected=String(connected);", "if(status.dataset.connected!==String(connected))status.dataset.connected=String(connected);");
+replace("$('#action-estimate').title='已预留20固定运营费。提交被接收后不会立即扣款，截止后统一结算。';", "if($('#action-estimate').title!=='已预留20固定运营费。提交被接收后不会立即扣款，截止后统一结算。')$('#action-estimate').title='已预留20固定运营费。提交被接收后不会立即扣款，截止后统一结算。';");
+replace("if(form.id==='room-form'){const b=", "if(form.id==='room-form'){const entryEpoch=roomEpoch,b=");
+replace("sessions[d.roomId]={token:d.token,agentToken:d.agentToken", "if(entryEpoch!==roomEpoch)return;sessions[d.roomId]={token:d.token,agentToken:d.agentToken");
+replace("catch(err){$('#room-error').textContent=err.message;b.disabled=false;}", "catch(err){if(entryEpoch===roomEpoch&&err.name!=='AbortError'){$('#room-error').textContent=err.message;b.disabled=false;}}");
+app=app.replaceAll("catch(err){toast(err.message,true);}","catch(err){if(err.name!=='AbortError')toast(err.message,true);}");
+fs.writeFileSync(path,app);console.log('Guarded same-value attributes and canceled entry/room requests.');

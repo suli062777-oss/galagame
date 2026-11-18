@@ -1,0 +1,5 @@
+# Preserve exact snapshot bytes, including mixed original line endings.
+online/** -text
+published/** -text
+baseline/** -text
+README.md -text

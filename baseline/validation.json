@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-18",
+  "scope": "Archive integrity and checks on copied source; no production changes",
+  "sourceFileCount": 360,
+  "secretScanIssues": 0,
+  "syntaxChecks": ["online/public/app.js", "published/dist/server/index.js"],
+  "tests": {
+    "command": "node --test online/tests/node-transport.test.mjs online/tests/frontend-etag.test.mjs",
+    "passed": 5,
+    "failed": 0
+  },
+  "siteVersion": 8,
+  "siteSource": "1b1d0b98d15b2321f5c5e668ceda6fce82a2c5d3",
+  "limits": ["Git archive excludes real environment secrets and runtime player data", "Product improvements have not been implemented or deployed"]
+}

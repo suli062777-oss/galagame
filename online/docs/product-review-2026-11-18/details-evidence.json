@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-18",
+  "liveVersion": 8,
+  "scope": "Live public pages read-only; local real API practice with three script seats and template narration; Chrome software WebGL, desktop emulation of mobile, no model calls and no public rooms created",
+  "screens": [
+    {
+      "name": "ref-lichess-analysis",
+      "source": "official-reference",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\docs\\product-review-2026-11-18\\screenshots\\ref-lichess-analysis.png",
+      "url": "https://lichess.org/analysis",
+      "width": 1440,
+      "height": 900,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 900,
+      "phase": null,
+      "headings": [
+        "lichess.org"
+      ],
+      "note": "Public page appearance only; no raw article text retained. Challenge/loading screens do not prove access to product UI."
+    },
+    {
+      "name": "ref-stripe-press",
+      "source": "official-reference",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\docs\\product-review-2026-11-18\\screenshots\\ref-stripe-press.png",
+      "url": "https://stripe.press/",
+      "width": 1440,
+      "height": 900,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 6650,
+      "phase": null,
+      "headings": [
+        "Nomad Letters"
+      ],
+      "note": "Public page appearance only; no raw article text retained. Challenge/loading screens do not prove access to product UI."
+    },
+    {
+      "name": "ref-linear-design",
+      "source": "official-reference",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\docs\\product-review-2026-11-18\\screenshots\\ref-linear-design.png",
+      "url": "https://linear.app/now/behind-the-latest-design-refresh",
+      "width": 1440,
+      "height": 900,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 9135,
+      "phase": null,
+      "headings": [
+        "A calmer interface for a product in motion"
+      ],
+      "note": "Public page appearance only; no raw article text retained. Challenge/loading screens do not prove access to product UI."
+    }
+  ],
+  "journey": [],
+  "errors": [],
+  "entryMetrics": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "input": {
+      "background": "rgba(255, 255, 255, 0.5)",
+      "color": "rgb(238, 233, 221)",
+      "placeholder": "rgb(133, 135, 127)",
+      "parentBackground": "rgb(29, 28, 23)"
+    },
+    "button": {
+      "top": 906.9375,
+      "bottom": 951.4375,
+      "height": 44.5
+    },
+    "initiallyVisible": false
+  },
+  "noteDraftBefore": "课堂评审草稿：暂不保存",
+  "noteDraftAfter": "",
+  "noteDraftLost": true,
+  "finished": true
+}

@@ -1,15 +1,20 @@
-# 增长黑客 · Agent增长酒馆 V6
+# 增长酒馆：改进前存档 · 2026-11-18
 
-**当前运行源码在 [online/](online/README.md)**。这是原生ESM前端、Cloudflare Worker+D1共享房间及Node本地服务；四个真实协议席位、六轮经营、可换照片头像、常显主持与知识来源。公开演示：[增长酒馆](https://growth-tavern-suli-demo.zheiisu.chatgpt.site/#/tavern)。
+冻结标识：`baseline-v8-20261118`；存档分支：`codex/archive-pre-improvement-20261118`。这是用户要求在下一轮改进之前保存的可回退基线。主分支与原源码评审分支保持原有状态。
 
-本分支供评审；不会自动合并或替代部署。历史demo目录与仓库根目录旧Node源码保留，不能把旧浏览器模拟模式当当前线上实现。
+- `online/`：当前本地开发源码，包含首页酒馆主按钮调整、本地 Node 传输修复、规则、素材、测试与运行脚本。
+- `published/`：当前线上版本8对应的完整Git提交内容，来源提交 `1b1d0b98d15b2321f5c5e668ceda6fce82a2c5d3`。保留该提交内的构建输出，便于核对线上基线；与开发目录分开，避免把本地修复和已发布文件混为一谈。
+- [本次详评](online/docs/product-review-2026-11-18/review.html)：三个独立子报告、参考、截图与四状态结构示意。
+- [回退说明](baseline/ROLLBACK.md) 与 [逐文件清单](baseline/manifest.json)。
 
-DeepSeek密钥仅在服务端运行时Secret中。未显式配置时仍为12次上限、重试计数、超限模板；用户于2026-11-17另行授权后，可显式设置GOD_MAX_CALLS=unlimited使用已有余额，D1累计计数不重置，不自动充值。每条播报展示实际DeepSeek/模板/生成中/回退来源。
+线上入口：https://growth-tavern-suli-demo.zheiisu.chatgpt.site/#/home
 
-God使用公开证据、本地知识检索、提示词与few-shot调教、真实模型评测；没有参数微调、SFT或自动学习。私有研究E15、玩家意图、未公开行动、种子和未来安排不送公共主持。详见 [God契约](online/docs/GOD_NATURAL_CONTRACT.md)。
+版本8包含：进入增长酒馆主按钮前置、朱红实心并放大；开始阅读为次要描边按钮。后续详评建议尚未实施。原产品文档中的部分版本7字样属于冻结前已有历史说明，当前发布版本以本清单为准。
 
-前一版公网两桌六轮验证通过，14条播报中13条真实DeepSeek、1条如实模板；行动请求p95为2.474秒，未达到候选2秒目标，304样本为0。此源码已补弱ETag比较并有独立回归，实际304上线效果需要后续postfix报告，不能用源码测试替代。协议身份与合成fixture不等于8名真人或真实手机课堂。
+## 使用开发源码
 
-安装、构建、模型边界、Figma及精简证据见 [online/README.md](online/README.md)。仓库不包含密钥、私人房间、凭据、数据目录、构建产物或浏览器档案。
+需要 Node.js24。进入 `online/` 后执行 `npm ci`、`npm run dev`，访问 http://localhost:3020/#/tavern 。默认模板主持，无需密钥。发布源码的构建使用 `published/` 内配置。
 
-原始书籍：肖恩·埃利斯、摩根·布朗《增长黑客》，中信2018中文版。本项目为学习型二次解读，经营规则为教学改编；现有AgentBar与Three.js版权说明保留。
+## 存档边界
+
+本档保存代码、规则、素材、构建及评审资料，不提交真实环境密钥、玩家房间数据、本机凭据、node_modules或浏览器档案。线上D1及运行时Secret由既有站点保留；代码回退不会自动恢复玩家数据或运行时配置。未改变任何线上状态。

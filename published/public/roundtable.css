@@ -1,0 +1,9 @@
+/* V3 identity anchors: names belong to the seated people. */
+.roundtable-label{position:absolute;z-index:3;transform:translate(-50%,-50%);color:#e4d6bd;text-align:center;pointer-events:none;line-height:1.4;max-width:150px}
+.roundtable-label button{font-family:inherit}.roundtable-name,.roundtable-person-name{display:block;font-size:13px;font-weight:500;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;max-width:146px;text-shadow:0 1px 6px #17130c}
+.roundtable-score,.roundtable-state,.roundtable-label small{display:none!important}
+.roundtable-label button:focus-visible{outline:2px solid #d4af75;outline-offset:4px;border-radius:5px}.roundtable-label button:hover{color:#e5bd83}.roundtable-label.is-me .roundtable-name{color:#eac393}
+.roundtable-label:is(button){pointer-events:auto;border:0;background:none;padding:4px 8px;font:inherit;cursor:pointer}.roundtable-label .roundtable-detail{min-height:32px}
+.roundtable-head-hit{position:absolute;z-index:4;display:block;transform:translate(-50%,-50%);width:54px;height:54px;padding:0;border:0;border-radius:50%;background:transparent;color:transparent;font-size:0;cursor:pointer;touch-action:manipulation}.roundtable-head-hit:hover{box-shadow:0 0 0 1px #d4af7570}.roundtable-head-hit:focus-visible{outline:2px solid #e3bd81;outline-offset:4px}
+.roundtable-unavailable{font-size:15px;color:#b4a58a;padding:45px 25px 10px;line-height:1.8}.roundtable-fallback{color:#d3b487}.roundtable-fallback button{font-size:14px;min-height:44px;color:inherit}
+@media(max-width:900px){.roundtable-label{max-width:118px}.roundtable-name,.roundtable-person-name{font-size:13px;max-width:114px}.roundtable-head-hit{width:44px!important;height:44px!important}}

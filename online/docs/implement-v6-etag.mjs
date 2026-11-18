@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const path=new URL('../public/app.js',import.meta.url);let app=fs.readFileSync(path,'utf8');
+const replace=(before,after)=>{if(!app.includes(before))throw Error(before.slice(0,100));app=app.replace(before,after);};
+replace("...(token?{Authorization:'Bearer '+token}:{})},body:","...(token?{Authorization:'Bearer '+token}:{}),...(method==='GET'&&options.etag?{'If-None-Match':options.etag}:{})},body:");
+replace("let data;try{data=await res.json();}","if(res.status===304){const raw=res.headers?.get?.('X-Server-Time');return {notModified:true,serverTime:raw!=null&&Number.isFinite(Number(raw))?Number(raw):undefined,etag:res.headers?.get?.('ETag')||options.etag||null};}\n  let data;try{data=await res.json();}");
+replace("error.confirmedRejected=true;throw error;}return data;", "error.confirmedRejected=true;throw error;}const etag=res.headers?.get?.('ETag');if(etag&&data&&typeof data==='object')data.etag=etag;return data;");
+replace("let roomEpoch=0,clockId=null,pollController=null", "let roomEtag=null,roomEtagOwner=null;\nlet roomEpoch=0,clockId=null,pollController=null");
+replace("pollFailures=0;scenePlayersKey='';lastClockKey='';}", "pollFailures=0;roomEtag=null;roomEtagOwner=null;scenePlayersKey='';lastClockKey='';}");
+replace("function acceptRoomState(next,epoch=roomEpoch,started=Date.now()){", "function currentRoomEtag(id,epoch=roomEpoch){return roomEtagOwner?.epoch===epoch&&roomEtagOwner.id===id&&roomEtagOwner.token===credentials(id)?.token?roomEtag:null;}\nfunction rememberRoomEtag(id,epoch,etag){roomEtag=typeof etag==='string'&&etag?etag:null;roomEtagOwner=roomEtag?{id,epoch,token:credentials(id)?.token}:null;}\nfunction acceptRoomNotModified(data,id,epoch,started,sentTag){if(!roomIsActive(id,epoch)||currentState?.id!==id||!sentTag||currentRoomEtag(id,epoch)!==sentTag||(data.etag&&data.etag!==sentTag))return false;if(Number.isFinite(data.serverTime)){serverOffset=(started+Date.now())/2-data.serverTime;currentState.serverTime=data.serverTime;}rememberRoomEtag(id,epoch,data.etag||sentTag);updateRoomClock();return true;}\nfunction acceptRoomState(next,epoch=roomEpoch,started=Date.now(),etag=null){");
+replace("currentState=next;if(Number.isFinite(next.serverTime))", "currentState=next;rememberRoomEtag(next.id,epoch,etag);if(Number.isFinite(next.serverTime))");
+replace("acceptRoomState(data.state,epoch,started);clockId=", "acceptRoomState(data.state,epoch,started,data.etag);clockId=");
+replace("const controller=new AbortController(),started=Date.now();pollController=controller;", "const controller=new AbortController(),started=Date.now(),etag=currentRoomEtag(id,epoch);pollController=controller;");
+replace("{token:credentials(id)?.token,signal:controller.signal}", "{token:credentials(id)?.token,signal:controller.signal,etag}");
+replace("pollFailures=0;acceptRoomState(data.state,epoch,started);", "pollFailures=0;if(data.notModified)acceptRoomNotModified(data,id,epoch,started,etag);else acceptRoomState(data.state,epoch,started,data.etag);");
+replace("if(data.state)acceptRoomState(data.state,epoch,started);return data;", "if(data.state)acceptRoomState(data.state,epoch,started,data.etag);return data;");
+replace("if(d.state)acceptRoomState(d.state,epoch);", "if(d.state)acceptRoomState(d.state,epoch,Date.now(),d.etag);");
+fs.writeFileSync(path,app);console.log('Private per-room/epoch/token ETag polling and 304 clock-only responses connected.');

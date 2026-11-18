@@ -1,0 +1,1867 @@
+{
+  "createdAt": "2026-11-17T14:03:20.328Z",
+  "phase": "pilot",
+  "realProvider": "DeepSeek API",
+  "model": "deepseek-flash",
+  "cases": 3,
+  "accepted": 3,
+  "acceptanceRate": 1,
+  "requests": 3,
+  "usage": {
+    "prompt_tokens": 14210,
+    "completion_tokens": 393,
+    "total_tokens": 14603
+  },
+  "source": "Direct real API evaluation; separate from the production D1 call counter.",
+  "trainingClaim": "Knowledge/prompt/few-shot development and held-out evaluation; no parameter fine-tuning or automatic learning has occurred.",
+  "rows": [
+    {
+      "id": "pilot-opening",
+      "split": "development",
+      "tags": [
+        "opening"
+      ],
+      "fixtureSource": "Synthetic public situations generated from the actual deterministic engine; manually published event fixtures are explicitly tagged.",
+      "input": {
+        "version": "god-contract-2",
+        "narrationContract": "grounded-natural-1",
+        "promptVersion": "growth-host-prompt-2.1.0",
+        "knowledgeVersion": "growth-god-knowledge-2.0.0",
+        "round": 1,
+        "phase": "preparing",
+        "product": {
+          "id": "P01",
+          "name": "学习打卡 App",
+          "coreBehavior": "当周完成至少三次有效学习任务",
+          "northStar": "当周完成核心行为的去重主用用户"
+        },
+        "claims": [
+          {
+            "id": "C0",
+            "type": "fact",
+            "text": "当前第1回合，阶段为准备。",
+            "metrics": {
+              "round": 1
+            },
+            "source": "当前公开服务端阶段"
+          },
+          {
+            "id": "P0",
+            "type": "fact",
+            "seat": 1,
+            "metrics": {
+              "score": 0,
+              "users": 450,
+              "profit": 0,
+              "cash": 1200,
+              "rank": 1,
+              "retention": 0
+            },
+            "bankrupt": false,
+            "text": "席位1综合分0，有效用户450，累计利润0，现金1200，名次1，留存率0.00%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P1",
+            "type": "fact",
+            "seat": 2,
+            "metrics": {
+              "score": 0,
+              "users": 450,
+              "profit": 0,
+              "cash": 1200,
+              "rank": 1,
+              "retention": 0
+            },
+            "bankrupt": false,
+            "text": "席位2综合分0，有效用户450，累计利润0，现金1200，名次1，留存率0.00%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P2",
+            "type": "fact",
+            "seat": 3,
+            "metrics": {
+              "score": 0,
+              "users": 450,
+              "profit": 0,
+              "cash": 1200,
+              "rank": 1,
+              "retention": 0
+            },
+            "bankrupt": false,
+            "text": "席位3综合分0，有效用户450，累计利润0，现金1200，名次1，留存率0.00%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P3",
+            "type": "fact",
+            "seat": 4,
+            "metrics": {
+              "score": 0,
+              "users": 450,
+              "profit": 0,
+              "cash": 1200,
+              "rank": 1,
+              "retention": 0
+            },
+            "bankrupt": false,
+            "text": "席位4综合分0，有效用户450，累计利润0，现金1200，名次1，留存率0.00%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "W0",
+            "type": "fact",
+            "text": "四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W1",
+            "type": "rumor",
+            "text": "下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。",
+            "source": "已经发布的公开世界消息"
+          }
+        ],
+        "knowledge": [
+          {
+            "id": "K02",
+            "title": "核心价值先于扩张",
+            "text": "先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。",
+            "category": "concept",
+            "chapter": "north-star",
+            "source": "同上，产品核心价值与增长前提概念转述；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+            "sourceType": "book-and-game-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K02",
+                "kind": "book-and-game-summary",
+                "label": "同上，产品核心价值与增长前提概念转述",
+                "locator": "项目知识卡#K02"
+              },
+              {
+                "id": "book:growth-2018",
+                "kind": "book-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+                "locator": "项目既有K01–K14；非逐字引用，未声称页码"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K14",
+            "title": "十二行动与等待",
+            "text": "每回合执行一项既有行动，附目标与档位。未能通过预算校验的提交不执行，截止时使用合法缓存默认，否则等待。",
+            "category": "concept",
+            "chapter": "north-star",
+            "source": "growth-1.0.0权限与时间协议；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K14",
+                "kind": "project-rule-summary",
+                "label": "growth-1.0.0权限与时间协议",
+                "locator": "项目知识卡#K14"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K01",
+            "title": "增长是团队方法",
+            "text": "增长由提出问题、确定指标、形成假设、排序实验、分析结果与复用经验构成。单次投放不是整个增长过程。",
+            "category": "concept",
+            "chapter": "north-star",
+            "source": "肖恩·埃利斯、摩根·布朗《增长黑客》，中信2018中文版，方法概念转述；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+            "sourceType": "book-and-game-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K01",
+                "kind": "book-and-game-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》，中信2018中文版，方法概念转述",
+                "locator": "项目知识卡#K01"
+              },
+              {
+                "id": "book:growth-2018",
+                "kind": "book-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+                "locator": "项目既有K01–K14；非逐字引用，未声称页码"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K13",
+            "title": "事实与传闻分开",
+            "text": "世界频道中的事实已发生，预告只有有限范围，传闻到期后核验。主持语言不改变真值，也不分配额外奖励。",
+            "category": "concept",
+            "chapter": "experiments",
+            "source": "世界情报与自带Agent接入v0.3；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K13",
+                "kind": "project-rule-summary",
+                "label": "世界情报与自带Agent接入v0.3",
+                "locator": "项目知识卡#K13"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-P01",
+            "title": "学习打卡 App的核心价值",
+            "text": "本产品是「学习打卡 App」。核心行为：当周完成至少三次有效学习任务；北极星指标：当周完成核心行为的去重主用用户。公开人群为备考新手、长期自学者、进阶学习者。这些定义不透露本局隐藏响应，不能断言某一人群必然更好。",
+            "category": "product",
+            "chapter": "product",
+            "source": "growth-1.0.0 P01",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:P01",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 P01",
+                "locator": "worker/engine.js#PRODUCTS:P01"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R01",
+            "title": "一局的时间与操作边界",
+            "text": "本局4席、6轮，每轮共同决策窗口45秒。准备、决策、锁单结算和终局是不同阶段；只有决策窗口内的合法行动才能被接收。每席每轮执行1个行动，截止前可以更新。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-S05",
+            "title": "简洁的圆桌主持",
+            "text": "每次用两到四句自然中文，聚焦当前公开证据与相关增长方法；避免每句都重复回合编号或固定开场。",
+            "category": "style",
+            "chapter": "style",
+            "source": "增长酒馆主持编辑规范",
+            "sourceType": "editorial-policy",
+            "sourceRefs": [
+              {
+                "id": "project:host-style",
+                "kind": "editorial-policy",
+                "label": "增长酒馆主持编辑规范",
+                "locator": "worker/god-knowledge.js#styleCards"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R03",
+            "title": "综合分、排名与破产",
+            "text": "综合分权重为规模50%、累计利润35%、合并留存15%。只按公开的2位小数综合分排位，同分并列；现金小于0破产，失去获胜资格，全员破产则无胜者。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R02",
+            "title": "现金、预算与固定运营费",
+            "text": "每家公司从1200现金、450有效用户起步。可用行动预算需预留20固定运营费；接收行动不会立即扣款，截止后统一结算。不能花未来收入，也不能靠主持临时加钱。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K06",
+            "title": "内容有延后回报",
+            "text": "内容行动的一半接触延到下一回合。终局未兑现的接触不计有效用户，也不预支未来利润。",
+            "category": "concept",
+            "chapter": "growth-loop",
+            "source": "游戏v0.1 A02；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K06",
+                "kind": "project-rule-summary",
+                "label": "游戏v0.1 A02",
+                "locator": "项目知识卡#K06"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-M07",
+            "title": "相同规则不代表跨桌同一场景",
+            "text": "不同房间可能有不同产品和事件条件。组内相同起点可比较，跨桌原始分数不能自动当作同场公平的全班名次。",
+            "category": "misconception",
+            "chapter": "misconception",
+            "source": "growth-1.0.0 growth-1.0.0；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              },
+              {
+                "id": "book:growth-2018",
+                "kind": "book-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+                "locator": "项目既有K01–K14；非逐字引用，未声称页码"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K11",
+            "title": "同一把尺衡量结果",
+            "text": "综合分由规模、累计净利润与合并留存构成。仅以公开两位小数排位，同分并列；破产者无获胜资格。",
+            "category": "concept",
+            "chapter": "metrics",
+            "source": "综合得分v0.2与growth-1.0.0；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K11",
+                "kind": "project-rule-summary",
+                "label": "综合得分v0.2与growth-1.0.0",
+                "locator": "项目知识卡#K11"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          }
+        ],
+        "retrieval": {
+          "version": "public-evidence-lexical-1",
+          "strategy": "deterministic-public-evidence-gates-and-lexical-ranking",
+          "trace": [
+            {
+              "id": "K02",
+              "score": 1007,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K02",
+                "book:growth-2018"
+              ]
+            },
+            {
+              "id": "K14",
+              "score": 1002,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K14",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K01",
+              "score": 1000,
+              "reasons": [
+                "phase-anchor"
+              ],
+              "sourceIds": [
+                "legacy:K01",
+                "book:growth-2018"
+              ]
+            },
+            {
+              "id": "K13",
+              "score": 997,
+              "reasons": [
+                "phase-anchor"
+              ],
+              "sourceIds": [
+                "legacy:K13",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-P01",
+              "score": 192,
+              "reasons": [
+                "public-product",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:P01"
+              ]
+            },
+            {
+              "id": "K-R01",
+              "score": 112,
+              "reasons": [
+                "phase",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-S05",
+              "score": 33,
+              "reasons": [
+                "host-style",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "project:host-style"
+              ]
+            },
+            {
+              "id": "K-R03",
+              "score": 28,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-R02",
+              "score": 24,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K06",
+              "score": 24,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K06",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-M07",
+              "score": 20,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0",
+                "book:growth-2018"
+              ]
+            },
+            {
+              "id": "K11",
+              "score": 20,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K11",
+                "engine:growth-1.0.0"
+              ]
+            }
+          ]
+        }
+      },
+      "result": {
+        "provider": "deepseek",
+        "text": "四家公司从同一公开起点出发：现金1200、有效用户450。席位1的有效用户为450，累计利润为0，当前名次并列第1。起点相同不代表后续路径相同，学习打卡App的北极星指标是当周完成核心行为的去重主用用户。你会先用什么公开证据判断核心行为是否真的发生？",
+        "kind": "fact",
+        "knowledgeIds": [
+          "K-R02",
+          "K-P01"
+        ],
+        "claimRefs": [
+          {
+            "id": "W0",
+            "type": "fact",
+            "text": "四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "P0",
+            "type": "fact",
+            "seat": 1,
+            "metrics": {
+              "score": 0,
+              "users": 450,
+              "profit": 0,
+              "cash": 1200,
+              "rank": 1,
+              "retention": 0
+            },
+            "bankrupt": false,
+            "text": "席位1综合分0，有效用户450，累计利润0，现金1200，名次1，留存率0.00%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          }
+        ],
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 4439,
+          "completion_tokens": 131,
+          "total_tokens": 4570
+        },
+        "latencyMs": 1394.8071
+      },
+      "samples": [
+        {
+          "attempt": 0,
+          "httpStatus": 200,
+          "rawOutput": "{\"kind\":\"fact\",\"claimIds\":[\"W0\",\"P0\"],\"knowledgeIds\":[\"K-R02\",\"K-P01\"],\"tone\":\"calm\",\"narration\":\"四家公司从同一公开起点出发：现金1200、有效用户450[W0][K-R02]。席位1的有效用户为450，累计利润为0，当前名次并列第1[P0]。起点相同不代表后续路径相同，学习打卡App的北极星指标是当周完成核心行为的去重主用用户[K-P01]。你会先用什么公开证据判断核心行为是否真的发生[K-P01]？\"}",
+          "usage": {
+            "prompt_tokens": 4439,
+            "completion_tokens": 131,
+            "total_tokens": 4570
+          },
+          "latencyMs": 1394.8071,
+          "accepted": true
+        }
+      ],
+      "latencyMs": 1402.7721,
+      "accepted": true
+    },
+    {
+      "id": "pilot-research",
+      "split": "development",
+      "tags": [
+        "settlement",
+        "research"
+      ],
+      "fixtureSource": "Synthetic public situations generated from the actual deterministic engine; manually published event fixtures are explicitly tagged.",
+      "input": {
+        "version": "god-contract-2",
+        "narrationContract": "grounded-natural-1",
+        "promptVersion": "growth-host-prompt-2.1.0",
+        "knowledgeVersion": "growth-god-knowledge-2.0.0",
+        "round": 2,
+        "phase": "preparing",
+        "product": {
+          "id": "P02",
+          "name": "健身习惯 App",
+          "coreBehavior": "当周完成至少两次计划训练",
+          "northStar": "当周完成核心行为的去重主用用户"
+        },
+        "claims": [
+          {
+            "id": "C0",
+            "type": "fact",
+            "text": "当前第2回合，阶段为准备。",
+            "metrics": {
+              "round": 2
+            },
+            "source": "当前公开服务端阶段"
+          },
+          {
+            "id": "P0",
+            "type": "fact",
+            "seat": 1,
+            "metrics": {
+              "score": 523.51,
+              "users": 324,
+              "profit": 303.88,
+              "cash": 1503.88,
+              "rank": 3,
+              "retention": 0.6933
+            },
+            "bankrupt": false,
+            "text": "席位1综合分523.51，有效用户324，累计利润303.88，现金1503.88，名次3，留存率69.33%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P1",
+            "type": "fact",
+            "seat": 2,
+            "metrics": {
+              "score": 530.57,
+              "users": 324,
+              "profit": 383.88,
+              "cash": 1583.88,
+              "rank": 1,
+              "retention": 0.6933
+            },
+            "bankrupt": false,
+            "text": "席位2综合分530.57，有效用户324，累计利润383.88，现金1583.88，名次1，留存率69.33%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P2",
+            "type": "fact",
+            "seat": 3,
+            "metrics": {
+              "score": 510.15,
+              "users": 317,
+              "profit": 216.03,
+              "cash": 1416.03,
+              "rank": 4,
+              "retention": 0.6787000000000001
+            },
+            "bankrupt": false,
+            "text": "席位3综合分510.15，有效用户317，累计利润216.03，现金1416.03，名次4，留存率67.87%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P3",
+            "type": "fact",
+            "seat": 4,
+            "metrics": {
+              "score": 530.57,
+              "users": 324,
+              "profit": 383.88,
+              "cash": 1583.88,
+              "rank": 1,
+              "retention": 0.6933
+            },
+            "bankrupt": false,
+            "text": "席位4综合分530.57，有效用户324，累计利润383.88，现金1583.88，名次1，留存率69.33%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "W0",
+            "type": "fact",
+            "text": "四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W1",
+            "type": "rumor",
+            "text": "下一轮可能出现「推荐热潮」。消息尚未核实，不保证成真。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W2",
+            "type": "fact",
+            "text": "第1周结算完成。当前最高分并列 530.57；完整账本已保存。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W3",
+            "type": "verification",
+            "text": "核验「下一轮可能出现「推荐热潮」」：未发生，传闻不成立。",
+            "verified": false,
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W4",
+            "type": "rumor",
+            "text": "下一轮可能出现「基础服务涨价」。消息尚未核实，不保证成真。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "L0",
+            "type": "fact",
+            "seat": 1,
+            "actionId": "A10",
+            "metrics": {
+              "delta": 523.51,
+              "net": 303.88
+            },
+            "text": "已结算第1回合，席位1执行A10，综合分变化523.51，回合净利润303.88。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L1",
+            "type": "fact",
+            "seat": 2,
+            "actionId": "A12",
+            "metrics": {
+              "delta": 530.57,
+              "net": 383.88
+            },
+            "text": "已结算第1回合，席位2执行A12，综合分变化530.57，回合净利润383.88。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L2",
+            "type": "fact",
+            "seat": 3,
+            "actionId": "A05",
+            "metrics": {
+              "delta": 510.15,
+              "net": 216.03
+            },
+            "text": "已结算第1回合，席位3执行A05，综合分变化510.15，回合净利润216.03。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L3",
+            "type": "fact",
+            "seat": 4,
+            "actionId": "A12",
+            "metrics": {
+              "delta": 530.57,
+              "net": 383.88
+            },
+            "text": "已结算第1回合，席位4执行A12，综合分变化530.57，回合净利润383.88。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          }
+        ],
+        "knowledge": [
+          {
+            "id": "K04",
+            "title": "留存是持续价值",
+            "text": "留存是上一回合用户继续完成核心行为的人数比例。游戏用最近三回合人数加权合并，并非现实七日留存。",
+            "category": "concept",
+            "chapter": "retention",
+            "source": "同上，留存概念；窗口与公式为游戏规则；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+            "sourceType": "book-and-game-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K04",
+                "kind": "book-and-game-summary",
+                "label": "同上，留存概念；窗口与公式为游戏规则",
+                "locator": "项目知识卡#K04"
+              },
+              {
+                "id": "book:growth-2018",
+                "kind": "book-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+                "locator": "项目既有K01–K14；非逐字引用，未声称页码"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R04",
+            "title": "共用市场不是各自独立增长",
+            "text": "同桌公司面对共享人群。接触、激活、留存、价格、事件与竞争共同决定经营结果；同一行动在不同产品、人群或对手投入下可能有不同结果。不能用一次变化证明单一因果。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K13",
+            "title": "事实与传闻分开",
+            "text": "世界频道中的事实已发生，预告只有有限范围，传闻到期后核验。主持语言不改变真值，也不分配额外奖励。",
+            "category": "concept",
+            "chapter": "experiments",
+            "source": "世界情报与自带Agent接入v0.3；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K13",
+                "kind": "project-rule-summary",
+                "label": "世界情报与自带Agent接入v0.3",
+                "locator": "项目知识卡#K13"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-A05",
+            "title": "调整习惯机制的规则与取舍",
+            "text": "A05「调整习惯机制」：标准行动成本160，可用档位0.5、1、1.5；选择一个目标人群。目标人群留存加成增加0.08×隐藏响应×投入档位，累计范围-0.08至0.16；响应可能为负。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。",
+            "category": "action",
+            "chapter": "action",
+            "source": "growth-1.0.0 A05",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:A05",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 A05",
+                "locator": "worker/engine.js#ACTIONS:A05"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-A12",
+            "title": "等待并观察的规则与取舍",
+            "text": "A12「等待并观察」：标准行动成本0，可用档位1；面向全部人群。不开展新行动，保留现有产品和定价，正常发生留存、自然接触和经营成本。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。",
+            "category": "action",
+            "chapter": "action",
+            "source": "growth-1.0.0 A12",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:A12",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 A12",
+                "locator": "worker/engine.js#ACTIONS:A12"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-A10",
+            "title": "用户调研的规则与取舍",
+            "text": "A10「用户调研」：标准行动成本80，可用档位1；选择一个目标人群。返回目标人群的引导和习惯响应估计，估计带有误差；仅本公司可见，无直接增长奖励。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。",
+            "category": "action",
+            "chapter": "action",
+            "source": "growth-1.0.0 A10",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:A10",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 A10",
+                "locator": "worker/engine.js#ACTIONS:A10"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K09",
+            "title": "调研是带误差的信息",
+            "text": "访谈提供有误差的私有线索，而非隐藏参数的答案。把线索作为下一次行动的输入，防止将单一样本泛化。",
+            "category": "concept",
+            "chapter": "experiments",
+            "source": "游戏v0.1 A10；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K09",
+                "kind": "project-rule-summary",
+                "label": "游戏v0.1 A10",
+                "locator": "项目知识卡#K09"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K14",
+            "title": "十二行动与等待",
+            "text": "每回合执行一项既有行动，附目标与档位。未能通过预算校验的提交不执行，截止时使用合法缓存默认，否则等待。",
+            "category": "concept",
+            "chapter": "north-star",
+            "source": "growth-1.0.0权限与时间协议；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K14",
+                "kind": "project-rule-summary",
+                "label": "growth-1.0.0权限与时间协议",
+                "locator": "项目知识卡#K14"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-P02",
+            "title": "健身习惯 App的核心价值",
+            "text": "本产品是「健身习惯 App」。核心行为：当周完成至少两次计划训练；北极星指标：当周完成核心行为的去重主用用户。公开人群为健身新手、习惯培养者、规律训练者。这些定义不透露本局隐藏响应，不能断言某一人群必然更好。",
+            "category": "product",
+            "chapter": "product",
+            "source": "growth-1.0.0 P02",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:P02",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 P02",
+                "locator": "worker/engine.js#PRODUCTS:P02"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R01",
+            "title": "一局的时间与操作边界",
+            "text": "本局4席、6轮，每轮共同决策窗口45秒。准备、决策、锁单结算和终局是不同阶段；只有决策窗口内的合法行动才能被接收。每席每轮执行1个行动，截止前可以更新。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-F06",
+            "title": "怎么判断是行动效果还是外部事件",
+            "text": "先查看已结算账本与已核验事件，比较多轮证据，区分行动、竞争、随机条件和时序；仅凭单次变化不能认定因果。",
+            "category": "faq",
+            "chapter": "faq",
+            "source": "growth-1.0.0 protocol；growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:protocol",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 protocol",
+                "locator": "worker/engine.js#API:protocol"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R02",
+            "title": "现金、预算与固定运营费",
+            "text": "每家公司从1200现金、450有效用户起步。可用行动预算需预留20固定运营费；接收行动不会立即扣款，截止后统一结算。不能花未来收入，也不能靠主持临时加钱。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          }
+        ],
+        "retrieval": {
+          "version": "public-evidence-lexical-1",
+          "strategy": "deterministic-public-evidence-gates-and-lexical-ranking",
+          "trace": [
+            {
+              "id": "K04",
+              "score": 1225,
+              "reasons": [
+                "phase-anchor",
+                "action-concept",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K04",
+                "book:growth-2018"
+              ]
+            },
+            {
+              "id": "K-R04",
+              "score": 1038,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K13",
+              "score": 1012,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K13",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-A05",
+              "score": 280,
+              "reasons": [
+                "settled-action",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:A05"
+              ]
+            },
+            {
+              "id": "K-A12",
+              "score": 280,
+              "reasons": [
+                "settled-action",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:A12"
+              ]
+            },
+            {
+              "id": "K-A10",
+              "score": 276,
+              "reasons": [
+                "settled-action",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:A10"
+              ]
+            },
+            {
+              "id": "K09",
+              "score": 222,
+              "reasons": [
+                "action-concept",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K09",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K14",
+              "score": 222,
+              "reasons": [
+                "action-concept",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K14",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-P02",
+              "score": 196,
+              "reasons": [
+                "public-product",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:P02"
+              ]
+            },
+            {
+              "id": "K-R01",
+              "score": 124,
+              "reasons": [
+                "phase",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-F06",
+              "score": 44,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:protocol",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-R02",
+              "score": 36,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            }
+          ]
+        }
+      },
+      "result": {
+        "provider": "deepseek",
+        "text": "席位2在第1回合执行了A12等待并观察，回合净利润为383.88。A12不开展新行动、保留现有产品和定价，正常发生留存、自然接触和经营成本。同一行动在不同产品、人群或对手投入下可能有不同结果，不能凭一次变化证明单一因果。你会用什么公开证据检验等待是否只是当期巧合？",
+        "kind": "fact",
+        "knowledgeIds": [
+          "K-A12",
+          "K-R04"
+        ],
+        "claimRefs": [
+          {
+            "id": "L1",
+            "type": "fact",
+            "seat": 2,
+            "actionId": "A12",
+            "metrics": {
+              "delta": 530.57,
+              "net": 383.88
+            },
+            "text": "已结算第1回合，席位2执行A12，综合分变化530.57，回合净利润383.88。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          }
+        ],
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 4841,
+          "completion_tokens": 127,
+          "total_tokens": 4968
+        },
+        "latencyMs": 1334.5569000000003
+      },
+      "samples": [
+        {
+          "attempt": 0,
+          "httpStatus": 200,
+          "rawOutput": "{\"kind\":\"fact\",\"claimIds\":[\"L1\"],\"knowledgeIds\":[\"K-A12\",\"K-R04\"],\"tone\":\"curious\",\"narration\":\"席位2在第1回合执行了A12等待并观察，回合净利润为383.88[L1]。A12不开展新行动、保留现有产品和定价，正常发生留存、自然接触和经营成本[K-A12]。同一行动在不同产品、人群或对手投入下可能有不同结果，不能凭一次变化证明单一因果[K-R04]。你会用什么公开证据检验等待是否只是当期巧合[K-R04]？\"}",
+          "usage": {
+            "prompt_tokens": 4841,
+            "completion_tokens": 127,
+            "total_tokens": 4968
+          },
+          "latencyMs": 1334.5569000000003,
+          "accepted": true
+        }
+      ],
+      "latencyMs": 1336.7233999999999,
+      "accepted": true
+    },
+    {
+      "id": "pilot-recap",
+      "split": "development",
+      "tags": [
+        "recap"
+      ],
+      "fixtureSource": "Synthetic public situations generated from the actual deterministic engine; manually published event fixtures are explicitly tagged.",
+      "input": {
+        "version": "god-contract-2",
+        "narrationContract": "grounded-natural-1",
+        "promptVersion": "growth-host-prompt-2.1.0",
+        "knowledgeVersion": "growth-god-knowledge-2.0.0",
+        "round": 6,
+        "phase": "finished",
+        "product": {
+          "id": "P03",
+          "name": "AI 笔记工具",
+          "coreBehavior": "当周完成一次笔记整理并再次查阅使用",
+          "northStar": "当周完成核心行为的去重主用用户"
+        },
+        "claims": [
+          {
+            "id": "C0",
+            "type": "fact",
+            "text": "当前第6回合，阶段为终局。",
+            "metrics": {
+              "round": 6
+            },
+            "source": "当前公开服务端阶段"
+          },
+          {
+            "id": "P0",
+            "type": "fact",
+            "seat": 1,
+            "metrics": {
+              "score": 522.46,
+              "users": 133,
+              "profit": 1670.68,
+              "cash": 2870.68,
+              "rank": 2,
+              "retention": 0.7857
+            },
+            "bankrupt": false,
+            "text": "席位1综合分522.46，有效用户133，累计利润1670.68，现金2870.68，名次2，留存率78.57%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P1",
+            "type": "fact",
+            "seat": 2,
+            "metrics": {
+              "score": 522.46,
+              "users": 133,
+              "profit": 1670.68,
+              "cash": 2870.68,
+              "rank": 2,
+              "retention": 0.7857
+            },
+            "bankrupt": false,
+            "text": "席位2综合分522.46，有效用户133，累计利润1670.68，现金2870.68，名次2，留存率78.57%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P2",
+            "type": "fact",
+            "seat": 3,
+            "metrics": {
+              "score": 539.38,
+              "users": 188,
+              "profit": 1000.5,
+              "cash": 2200.5,
+              "rank": 1,
+              "retention": 0.8493999999999999
+            },
+            "bankrupt": false,
+            "text": "席位3综合分539.38，有效用户188，累计利润1000.5，现金2200.5，名次1，留存率84.94%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P3",
+            "type": "fact",
+            "seat": 4,
+            "metrics": {
+              "score": 522.46,
+              "users": 133,
+              "profit": 1670.68,
+              "cash": 2870.68,
+              "rank": 2,
+              "retention": 0.7857
+            },
+            "bankrupt": false,
+            "text": "席位4综合分522.46，有效用户133，累计利润1670.68，现金2870.68，名次2，留存率78.57%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "W0",
+            "type": "verification",
+            "text": "核验「下一轮可能出现「广告信任下降」」：未发生，传闻不成立。",
+            "verified": false,
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W1",
+            "type": "rumor",
+            "text": "下一轮可能出现「细分人群需求窗口」。消息尚未核实，不保证成真。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W2",
+            "type": "fact",
+            "text": "第5周结算完成。当前最高分 544.89；完整账本已保存。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W3",
+            "type": "verification",
+            "text": "核验「下一轮可能出现「细分人群需求窗口」」：未发生，传闻不成立。",
+            "verified": false,
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "W4",
+            "type": "fact",
+            "text": "第6周结算完成。当前最高分 539.38；完整账本已保存。",
+            "source": "已经发布的公开世界消息"
+          },
+          {
+            "id": "L0",
+            "type": "fact",
+            "seat": 1,
+            "actionId": "A12",
+            "metrics": {
+              "delta": -8.99,
+              "net": 185.42
+            },
+            "text": "已结算第6回合，席位1执行A12，综合分变化-8.99，回合净利润185.42。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L1",
+            "type": "fact",
+            "seat": 2,
+            "actionId": "A12",
+            "metrics": {
+              "delta": -8.99,
+              "net": 185.42
+            },
+            "text": "已结算第6回合，席位2执行A12，综合分变化-8.99，回合净利润185.42。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L2",
+            "type": "fact",
+            "seat": 3,
+            "actionId": "A05",
+            "metrics": {
+              "delta": -5.51,
+              "net": 90.8
+            },
+            "text": "已结算第6回合，席位3执行A05，综合分变化-5.51，回合净利润90.8。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L3",
+            "type": "fact",
+            "seat": 4,
+            "actionId": "A12",
+            "metrics": {
+              "delta": -8.99,
+              "net": 185.42
+            },
+            "text": "已结算第6回合，席位4执行A12，综合分变化-8.99，回合净利润185.42。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          }
+        ],
+        "knowledge": [
+          {
+            "id": "K-R03",
+            "title": "综合分、排名与破产",
+            "text": "综合分权重为规模50%、累计利润35%、合并留存15%。只按公开的2位小数综合分排位，同分并列；现金小于0破产，失去获胜资格，全员破产则无胜者。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K11",
+            "title": "同一把尺衡量结果",
+            "text": "综合分由规模、累计净利润与合并留存构成。仅以公开两位小数排位，同分并列；破产者无获胜资格。",
+            "category": "concept",
+            "chapter": "metrics",
+            "source": "综合得分v0.2与growth-1.0.0；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K11",
+                "kind": "project-rule-summary",
+                "label": "综合得分v0.2与growth-1.0.0",
+                "locator": "项目知识卡#K11"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K12",
+            "title": "把判断带回下一次实验",
+            "text": "复盘应区分行动、事件、竞争与证据。一次胜负不能证明策略普遍有效，更不能从游戏收益推断现实收入。",
+            "category": "concept",
+            "chapter": "experiments",
+            "source": "书籍迭代概念与本项目改编边界；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+            "sourceType": "book-and-game-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K12",
+                "kind": "book-and-game-summary",
+                "label": "书籍迭代概念与本项目改编边界",
+                "locator": "项目知识卡#K12"
+              },
+              {
+                "id": "book:growth-2018",
+                "kind": "book-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+                "locator": "项目既有K01–K14；非逐字引用，未声称页码"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K13",
+            "title": "事实与传闻分开",
+            "text": "世界频道中的事实已发生，预告只有有限范围，传闻到期后核验。主持语言不改变真值，也不分配额外奖励。",
+            "category": "concept",
+            "chapter": "experiments",
+            "source": "世界情报与自带Agent接入v0.3；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K13",
+                "kind": "project-rule-summary",
+                "label": "世界情报与自带Agent接入v0.3",
+                "locator": "项目知识卡#K13"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-A05",
+            "title": "调整习惯机制的规则与取舍",
+            "text": "A05「调整习惯机制」：标准行动成本160，可用档位0.5、1、1.5；选择一个目标人群。目标人群留存加成增加0.08×隐藏响应×投入档位，累计范围-0.08至0.16；响应可能为负。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。",
+            "category": "action",
+            "chapter": "action",
+            "source": "growth-1.0.0 A05",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:A05",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 A05",
+                "locator": "worker/engine.js#ACTIONS:A05"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-A12",
+            "title": "等待并观察的规则与取舍",
+            "text": "A12「等待并观察」：标准行动成本0，可用档位1；面向全部人群。不开展新行动，保留现有产品和定价，正常发生留存、自然接触和经营成本。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。",
+            "category": "action",
+            "chapter": "action",
+            "source": "growth-1.0.0 A12",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:A12",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 A12",
+                "locator": "worker/engine.js#ACTIONS:A12"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K04",
+            "title": "留存是持续价值",
+            "text": "留存是上一回合用户继续完成核心行为的人数比例。游戏用最近三回合人数加权合并，并非现实七日留存。",
+            "category": "concept",
+            "chapter": "retention",
+            "source": "同上，留存概念；窗口与公式为游戏规则；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+            "sourceType": "book-and-game-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K04",
+                "kind": "book-and-game-summary",
+                "label": "同上，留存概念；窗口与公式为游戏规则",
+                "locator": "项目知识卡#K04"
+              },
+              {
+                "id": "book:growth-2018",
+                "kind": "book-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+                "locator": "项目既有K01–K14；非逐字引用，未声称页码"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K14",
+            "title": "十二行动与等待",
+            "text": "每回合执行一项既有行动，附目标与档位。未能通过预算校验的提交不执行，截止时使用合法缓存默认，否则等待。",
+            "category": "concept",
+            "chapter": "north-star",
+            "source": "growth-1.0.0权限与时间协议；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K14",
+                "kind": "project-rule-summary",
+                "label": "growth-1.0.0权限与时间协议",
+                "locator": "项目知识卡#K14"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-P03",
+            "title": "AI 笔记工具的核心价值",
+            "text": "本产品是「AI 笔记工具」。核心行为：当周完成一次笔记整理并再次查阅使用；北极星指标：当周完成核心行为的去重主用用户。公开人群为初次尝试者、日常记录者、深度知识工作者。这些定义不透露本局隐藏响应，不能断言某一人群必然更好。",
+            "category": "product",
+            "chapter": "product",
+            "source": "growth-1.0.0 P03",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:P03",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 P03",
+                "locator": "worker/engine.js#PRODUCTS:P03"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R08",
+            "title": "复盘与模型适用边界",
+            "text": "这是群体期望值教学模型，有效用户可能是小数，并非真实企业预测。完整回放可以复核规则、种子和历史行动，但一次输赢不能推出真实世界收益或普遍最优策略。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-F06",
+            "title": "怎么判断是行动效果还是外部事件",
+            "text": "先查看已结算账本与已核验事件，比较多轮证据，区分行动、竞争、随机条件和时序；仅凭单次变化不能认定因果。",
+            "category": "faq",
+            "chapter": "faq",
+            "source": "growth-1.0.0 protocol；growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:protocol",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 protocol",
+                "locator": "worker/engine.js#API:protocol"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          },
+          {
+            "id": "K-R04",
+            "title": "共用市场不是各自独立增长",
+            "text": "同桌公司面对共享人群。接触、激活、留存、价格、事件与竞争共同决定经营结果；同一行动在不同产品、人群或对手投入下可能有不同结果。不能用一次变化证明单一因果。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.0",
+            "scope": "public"
+          }
+        ],
+        "retrieval": {
+          "version": "public-evidence-lexical-1",
+          "strategy": "deterministic-public-evidence-gates-and-lexical-ranking",
+          "trace": [
+            {
+              "id": "K-R03",
+              "score": 1126,
+              "reasons": [
+                "phase-anchor",
+                "phase",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K11",
+              "score": 1024,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K11",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K12",
+              "score": 1023,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K12",
+                "book:growth-2018"
+              ]
+            },
+            {
+              "id": "K13",
+              "score": 1009,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K13",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-A05",
+              "score": 284,
+              "reasons": [
+                "settled-action",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:A05"
+              ]
+            },
+            {
+              "id": "K-A12",
+              "score": 284,
+              "reasons": [
+                "settled-action",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:A12"
+              ]
+            },
+            {
+              "id": "K04",
+              "score": 226,
+              "reasons": [
+                "action-concept",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K04",
+                "book:growth-2018"
+              ]
+            },
+            {
+              "id": "K14",
+              "score": 222,
+              "reasons": [
+                "action-concept",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K14",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-P03",
+              "score": 200,
+              "reasons": [
+                "public-product",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:P03"
+              ]
+            },
+            {
+              "id": "K-R08",
+              "score": 132,
+              "reasons": [
+                "phase",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-F06",
+              "score": 44,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:protocol",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-R04",
+              "score": 40,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            }
+          ]
+        }
+      },
+      "result": {
+        "provider": "deepseek",
+        "text": "席位3在第6回合执行A05，综合分变化-5.51、回合净利润90.8，最终以539.38分位列名次1。A05是调整习惯机制，效果还受人群、事件和同桌竞争影响，不能把这一次结果直接归因于该行动。复盘时宜把行动、事件与竞争分开检验，一次胜负不足以证明策略普遍有效。",
+        "kind": "recap",
+        "knowledgeIds": [
+          "K-A05",
+          "K12"
+        ],
+        "claimRefs": [
+          {
+            "id": "P2",
+            "type": "fact",
+            "seat": 3,
+            "metrics": {
+              "score": 539.38,
+              "users": 188,
+              "profit": 1000.5,
+              "cash": 2200.5,
+              "rank": 1,
+              "retention": 0.8493999999999999
+            },
+            "bankrupt": false,
+            "text": "席位3综合分539.38，有效用户188，累计利润1000.5，现金2200.5，名次1，留存率84.94%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "L2",
+            "type": "fact",
+            "seat": 3,
+            "actionId": "A05",
+            "metrics": {
+              "delta": -5.51,
+              "net": 90.8
+            },
+            "text": "已结算第6回合，席位3执行A05，综合分变化-5.51，回合净利润90.8。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          }
+        ],
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 4930,
+          "completion_tokens": 135,
+          "total_tokens": 5065
+        },
+        "latencyMs": 950.2820999999999
+      },
+      "samples": [
+        {
+          "attempt": 0,
+          "httpStatus": 200,
+          "rawOutput": "{\"kind\":\"recap\",\"claimIds\":[\"P2\",\"L2\"],\"knowledgeIds\":[\"K-A05\",\"K12\"],\"tone\":\"reflective\",\"narration\":\"席位3在第6回合执行A05，综合分变化-5.51、回合净利润90.8，最终以539.38分位列名次1[P2][L2]。A05是调整习惯机制，效果还受人群、事件和同桌竞争影响，不能把这一次结果直接归因于该行动[K-A05]。复盘时宜把行动、事件与竞争分开检验，一次胜负不足以证明策略普遍有效[K12]。\"}",
+          "usage": {
+            "prompt_tokens": 4930,
+            "completion_tokens": 135,
+            "total_tokens": 5065
+          },
+          "latencyMs": 950.2820999999999,
+          "accepted": true
+        }
+      ],
+      "latencyMs": 952.0218,
+      "accepted": true
+    }
+  ]
+}

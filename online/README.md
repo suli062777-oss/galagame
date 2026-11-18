@@ -1,10 +1,10 @@
-# 增长酒馆 V6（托管版本7）
+# 增长酒馆 · V6体验 / 线上版本7
 
 本轮把酒馆改为固定的回合条、经营与信息栏、单一行动区，并重做真实四席圆桌的木质桌椅、坐姿人物、头像归属和背景氛围。项目由原线上 Worker 工程复制到独立目录，保留 V2 和当前公开站点。
 
-公开入口：<https://growth-tavern-suli-demo.zheiisu.chatgpt.site/#/tavern>。V6体验现已发布为托管版本7，继续使用原D1、Secret与四席六轮规则。2026-11-17用户明确允许按需使用现有DeepSeek余额，因此新增显式 `GOD_MAX_CALLS=unlimited` 配置；累计计数保留，重试也计数，不自动充值。实际部署见 `docs/evidence/classroom-deployment-v7.json`；首次完整六轮的修复前聚合记录见 [classroom-online-v6.json](docs/evidence/classroom-online-v6.json)，最终公网复测见 [交付公网复测摘要](docs/evidence/交付公网复测摘要.json) 和 [独立审核](docs/evidence/CLASSROOM_ONLINE_V7_FINAL_AUDIT.md)。最终结论为 passed_with_observations；完整原始房间与请求报告仅保留本地。
+公开入口：<https://growth-tavern-suli-demo.zheiisu.chatgpt.site/#/tavern>。V6体验现已发布为托管版本7，继续使用原D1、Secret与四席六轮规则。2026-11-17用户明确允许按需使用现有DeepSeek余额，因此新增显式 `GOD_MAX_CALLS=unlimited` 配置；累计计数保留，重试也计数，不自动充值。实际部署见 `docs/evidence/classroom-deployment-v7.json`；首次完整六轮成功记录为 `classroom-online-v6-before-etag.json`，修复后的复测另存 `classroom-online-v7.json`，以各文件实际status和失败记录为准。
 
-当前可审阅运行源位于本目录，对应托管版本7的站点源 c1aeaff6f3a38b6473e19244f55087db190e6ecc。本仓库不包含本机发布 checkout、生成归档或私人房间数据；可用 `scripts/package-source.ps1` 生成源码交付包。
+实际发布源位于 `classroom-online/.sites-checkout`，发布归档为同级 `growth-tavern-classroom-v3_20261117.tar.gz`。`delivery/` 的旧ZIP是首次本地交付基线，不代表此次课堂线上版本。
 
 ## 本地运行
 
@@ -46,4 +46,4 @@ God权威来源为 `worker/god-knowledge.js`（76条）与 `god-contract.js`，N
 
 V6还增加常显主持、全文/历史/知识来源弹窗、低画质设置、单请求轮询与304响应，以及静止/后台停止绘制。参见 `docs/V6_UI.md`、`docs/SCENE_PERFORMANCE_2026-11-17.md`、`docs/GOD_NATURAL_CONTRACT.md`。浏览器提交次数不是GPU完成帧率；桌面窄视口不是实体手机，真实课堂仍需同学设备试局。
 
-设计映射与证据见 `docs/V3_UI.md`、`docs/V3_SCENE.md`、`docs/QA_REQUIREMENTS.md` 及交付说明。V6设计由原V3页面克隆，保留用户之前的修改稿；三维场景在Figma中是独立素材，文字、字段、按钮和信息结构为可编辑图层。参见 `docs/FIGMA_V6_SYNC.md`。
+设计映射与证据见 `docs/V3_UI.md`、`docs/V3_SCENE.md`、`docs/QA_REQUIREMENTS.md` 及交付说明。本轮新增 Figma V3 页面，保留之前用户修改稿；三维场景在 Figma 中是独立素材，文字、字段、按钮和信息结构为可编辑图层。

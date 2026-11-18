@@ -1,0 +1,630 @@
+{
+  "sourceHashes": {
+    "worker/god-contract.js": "a49facf6a38dbb205a7358e1591f8382313d00889521a8038e846542e987f452",
+    "worker/god-focus.js": "4ad2461e5a9217006fb2d8afd7c19951035a537dd2efb0d588abb56c89606047",
+    "worker/god-prompt.js": "e5f3c7c23ae3f8e842f5619987ff52f3b0f8479e002c56575a642a9a53370af2",
+    "worker/god-knowledge.js": "6bb709932f0eaa107835b5992a15516d3d84d527bed6b8e36ed547da631d921e",
+    "worker/god-grounding.js": "8bce7aaa49cf6da0bb78b4bccc277d4253ca1df581ef85fcfb103c852d15e71b"
+  },
+  "reviewPolicy": "Earlier evaluated scenario types were used for prompt development. Fresh deterministic seeds are marked as variants, not independent unseen scenario categories. Targeted reruns are regression evaluations, not held-out claims.",
+  "createdAt": "2026-11-17T14:30:41.068Z",
+  "phase": "targeted",
+  "variant": "E12-boundary-v32",
+  "realProvider": "DeepSeek API",
+  "model": "deepseek-flash",
+  "cases": 1,
+  "accepted": 1,
+  "acceptanceRate": 1,
+  "requests": 1,
+  "usage": {
+    "prompt_tokens": 1155,
+    "completion_tokens": 81,
+    "total_tokens": 1236
+  },
+  "source": "Direct real API evaluation; separate from the production D1 call counter.",
+  "trainingClaim": "Knowledge/prompt/few-shot development and held-out evaluation; no parameter fine-tuning or automatic learning has occurred.",
+  "rows": [
+    {
+      "id": "event-E12",
+      "split": "holdout",
+      "tags": [
+        "published-event",
+        "E12"
+      ],
+      "fixtureSource": "Synthetic public situations generated from the actual deterministic engine. World messages are removed to isolate action/opening fixtures; explicitly tagged event/rumor variants then inject one published public message.",
+      "input": {
+        "version": "god-contract-2",
+        "narrationContract": "grounded-natural-1",
+        "promptVersion": "growth-host-prompt-3.1.0",
+        "focus": {
+          "reason": "latest-published-world-message",
+          "claimIds": [
+            "W0"
+          ],
+          "knowledgeIds": [
+            "K-E12"
+          ]
+        },
+        "knowledgeVersion": "growth-god-knowledge-2.0.2",
+        "round": 2,
+        "phase": "preparing",
+        "product": {
+          "id": "P03",
+          "name": "AI 笔记工具",
+          "coreBehavior": "当周完成一次笔记整理并再次查阅使用",
+          "northStar": "当周完成核心行为的去重主用用户"
+        },
+        "claims": [
+          {
+            "id": "C0",
+            "type": "fact",
+            "text": "当前第2回合，阶段为准备。",
+            "metrics": {
+              "round": 2
+            },
+            "source": "当前公开服务端阶段"
+          },
+          {
+            "id": "P0",
+            "type": "fact",
+            "seat": 1,
+            "metrics": {
+              "score": 543.58,
+              "users": 339,
+              "profit": 412.34,
+              "cash": 1612.34,
+              "rank": 1,
+              "retention": 0.7267
+            },
+            "bankrupt": false,
+            "text": "席位1综合分543.58，有效用户339，累计利润412.34，现金1612.34，名次1，留存率72.67%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P1",
+            "type": "fact",
+            "seat": 2,
+            "metrics": {
+              "score": 543.58,
+              "users": 339,
+              "profit": 412.34,
+              "cash": 1612.34,
+              "rank": 1,
+              "retention": 0.7267
+            },
+            "bankrupt": false,
+            "text": "席位2综合分543.58，有效用户339，累计利润412.34，现金1612.34，名次1，留存率72.67%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P2",
+            "type": "fact",
+            "seat": 3,
+            "metrics": {
+              "score": 523.6,
+              "users": 332,
+              "profit": 244.12,
+              "cash": 1444.12,
+              "rank": 4,
+              "retention": 0.7112999999999999
+            },
+            "bankrupt": false,
+            "text": "席位3综合分523.6，有效用户332，累计利润244.12，现金1444.12，名次4，留存率71.13%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "P3",
+            "type": "fact",
+            "seat": 4,
+            "metrics": {
+              "score": 543.58,
+              "users": 339,
+              "profit": 412.34,
+              "cash": 1612.34,
+              "rank": 1,
+              "retention": 0.7267
+            },
+            "bankrupt": false,
+            "text": "席位4综合分543.58，有效用户339，累计利润412.34，现金1612.34，名次1，留存率72.67%，经营中。",
+            "source": "公开经营资料；有效用户按界面取整数，其余数值按两位小数展示"
+          },
+          {
+            "id": "W0",
+            "round": 2,
+            "type": "fact",
+            "text": "第一类人群迎来两轮需求高峰，之后将回落。",
+            "eventId": "E12",
+            "source": "已经发布的公开世界消息；对象以消息明确标注为准"
+          },
+          {
+            "id": "L0",
+            "type": "fact",
+            "seat": 1,
+            "actionId": "A12",
+            "metrics": {
+              "delta": 543.58,
+              "net": 412.34
+            },
+            "text": "已结算第1回合，席位1执行A12（等待并观察），综合分变化543.58，回合净利润412.34。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L1",
+            "type": "fact",
+            "seat": 2,
+            "actionId": "A12",
+            "metrics": {
+              "delta": 543.58,
+              "net": 412.34
+            },
+            "text": "已结算第1回合，席位2执行A12（等待并观察），综合分变化543.58，回合净利润412.34。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L2",
+            "type": "fact",
+            "seat": 3,
+            "actionId": "A05",
+            "metrics": {
+              "delta": 523.6,
+              "net": 244.12
+            },
+            "text": "已结算第1回合，席位3执行A05（调整习惯机制），综合分变化523.6，回合净利润244.12。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          },
+          {
+            "id": "L3",
+            "type": "fact",
+            "seat": 4,
+            "actionId": "A12",
+            "metrics": {
+              "delta": 543.58,
+              "net": 412.34
+            },
+            "text": "已结算第1回合，席位4执行A12（等待并观察），综合分变化543.58，回合净利润412.34。一次变化不能单独证明行动效果。",
+            "source": "上一已结算公开账本"
+          }
+        ],
+        "knowledge": [
+          {
+            "id": "K-E12",
+            "title": "季节性需求高峰",
+            "text": "「季节性需求高峰」机制：第一类人群迎来两轮需求高峰，之后将回落。公开效果：目标人群接触机会乘数为1.4。事件效果持续2轮。高峰之后的公开信息仅为“会回落”。除非后续公开情报另有说明，不能推断接触机会恢复常态或低于常态，也不能推断回落的具体幅度或持续时长。当前高峰的持续轮数不等于回落阶段的持续轮数。",
+            "category": "event",
+            "chapter": "event",
+            "source": "growth-1.0.0 E12",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:E12",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 E12",
+                "locator": "worker/engine.js#EVENTS:E12",
+                "note": "适用来源：只有关联事件已进入公开事实或核验时，公共主持才取得本机制说明；发生状态和对象由关联公开claim提供。此备注属于来源元数据，不是播报正文。"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public",
+            "mechanicsText": "「季节性需求高峰」机制：第一类人群迎来两轮需求高峰，之后将回落。公开效果：目标人群接触机会乘数为1.4。事件效果持续2轮。高峰之后的公开信息仅为“会回落”。除非后续公开情报另有说明，不能推断接触机会恢复常态或低于常态，也不能推断回落的具体幅度或持续时长。当前高峰的持续轮数不等于回落阶段的持续轮数。",
+            "sourceNote": "适用来源：只有关联事件已进入公开事实或核验时，公共主持才取得本机制说明；发生状态和对象由关联公开claim提供。此备注属于来源元数据，不是播报正文。"
+          },
+          {
+            "id": "K04",
+            "title": "留存是持续价值",
+            "text": "留存是上一回合用户继续完成核心行为的人数比例。游戏用最近三回合人数加权合并，并非现实七日留存。",
+            "category": "concept",
+            "chapter": "retention",
+            "source": "同上，留存概念；窗口与公式为游戏规则；肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+            "sourceType": "book-and-game-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K04",
+                "kind": "book-and-game-summary",
+                "label": "同上，留存概念；窗口与公式为游戏规则",
+                "locator": "项目知识卡#K04"
+              },
+              {
+                "id": "book:growth-2018",
+                "kind": "book-summary",
+                "label": "肖恩·埃利斯、摩根·布朗《增长黑客》2018中文版，项目方法转述",
+                "locator": "项目既有K01–K14；非逐字引用，未声称页码"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-R04",
+            "title": "共用市场不是各自独立增长",
+            "text": "同桌公司面对共享人群。接触、激活、留存、价格、事件与竞争共同决定经营结果；同一行动在不同产品、人群或对手投入下可能有不同结果。不能用一次变化证明单一因果。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K13",
+            "title": "事实与传闻分开",
+            "text": "世界频道中的事实已发生，预告只有有限范围，传闻到期后核验。主持语言不改变真值，也不分配额外奖励。",
+            "category": "concept",
+            "chapter": "experiments",
+            "source": "世界情报与自带Agent接入v0.3；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K13",
+                "kind": "project-rule-summary",
+                "label": "世界情报与自带Agent接入v0.3",
+                "locator": "项目知识卡#K13"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-A05",
+            "title": "调整习惯机制的规则与取舍",
+            "text": "A05「调整习惯机制」：标准行动成本160，可用档位0.5、1、1.5；选择一个目标人群。目标人群留存加成增加0.08×隐藏响应×投入档位，累计范围-0.08至0.16；响应可能为负。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。",
+            "category": "action",
+            "chapter": "action",
+            "source": "growth-1.0.0 A05",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:A05",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 A05",
+                "locator": "worker/engine.js#ACTIONS:A05"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-A12",
+            "title": "等待并观察的规则与取舍",
+            "text": "A12「等待并观察」：标准行动成本0，可用档位1；面向全部人群。不开展新行动，保留现有产品和定价，正常发生留存、自然接触和经营成本。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。",
+            "category": "action",
+            "chapter": "action",
+            "source": "growth-1.0.0 A12",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:A12",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 A12",
+                "locator": "worker/engine.js#ACTIONS:A12"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K14",
+            "title": "十二行动与等待",
+            "text": "每回合执行一项既有行动，附目标与档位。未能通过预算校验的提交不执行，截止时使用合法缓存默认，否则等待。",
+            "category": "concept",
+            "chapter": "north-star",
+            "source": "growth-1.0.0权限与时间协议；growth-1.0.0 growth-1.0.0",
+            "sourceType": "project-rule-summary",
+            "sourceRefs": [
+              {
+                "id": "legacy:K14",
+                "kind": "project-rule-summary",
+                "label": "growth-1.0.0权限与时间协议",
+                "locator": "项目知识卡#K14"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-P03",
+            "title": "AI 笔记工具的核心价值",
+            "text": "本产品是「AI 笔记工具」。核心行为：当周完成一次笔记整理并再次查阅使用；北极星指标：当周完成核心行为的去重主用用户。公开人群为初次尝试者、日常记录者、深度知识工作者。这些定义不透露本局隐藏响应，不能断言某一人群必然更好。",
+            "category": "product",
+            "chapter": "product",
+            "source": "growth-1.0.0 P03",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:P03",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 P03",
+                "locator": "worker/engine.js#PRODUCTS:P03"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-R01",
+            "title": "一局的时间与操作边界",
+            "text": "本局4席、6轮，每轮共同决策窗口45秒。准备、决策、锁单结算和终局是不同阶段；只有决策窗口内的合法行动才能被接收。每席每轮执行1个行动，截止前可以更新。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-F06",
+            "title": "怎么判断是行动效果还是外部事件",
+            "text": "先查看已结算账本与已核验事件，比较多轮证据，区分行动、竞争、随机条件和时序；仅凭单次变化不能认定因果。",
+            "category": "faq",
+            "chapter": "faq",
+            "source": "公开席位与Agent接入协议；growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-protocol",
+            "sourceRefs": [
+              {
+                "id": "api:protocol",
+                "kind": "game-protocol",
+                "label": "公开席位与Agent接入协议",
+                "locator": "worker/api.js#protocol"
+              },
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-S05",
+            "title": "简洁的圆桌主持",
+            "text": "每次用两到四句自然中文，聚焦当前公开证据与相关增长方法；避免每句都重复回合编号或固定开场。",
+            "category": "style",
+            "chapter": "style",
+            "source": "增长酒馆主持编辑规范",
+            "sourceType": "editorial-policy",
+            "sourceRefs": [
+              {
+                "id": "project:host-style",
+                "kind": "editorial-policy",
+                "label": "增长酒馆主持编辑规范",
+                "locator": "worker/god-knowledge.js#styleCards"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          },
+          {
+            "id": "K-R02",
+            "title": "现金、预算与固定运营费",
+            "text": "每家公司从1200现金、450有效用户起步。可用行动预算需预留20固定运营费；接收行动不会立即扣款，截止后统一结算。不能花未来收入，也不能靠主持临时加钱。",
+            "category": "rule",
+            "chapter": "rule",
+            "source": "growth-1.0.0 growth-1.0.0",
+            "sourceType": "game-rule",
+            "sourceRefs": [
+              {
+                "id": "engine:growth-1.0.0",
+                "kind": "game-rule",
+                "label": "growth-1.0.0 growth-1.0.0",
+                "locator": "worker/engine.js#RULES:growth-1.0.0"
+              }
+            ],
+            "version": "growth-god-knowledge-2.0.2",
+            "scope": "public"
+          }
+        ],
+        "retrieval": {
+          "version": "public-evidence-lexical-1",
+          "strategy": "deterministic-public-evidence-gates-and-lexical-ranking",
+          "trace": [
+            {
+              "id": "K-E12",
+              "score": 2420,
+              "reasons": [
+                "public-narration-focus",
+                "public-event",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:E12"
+              ]
+            },
+            {
+              "id": "K04",
+              "score": 1221,
+              "reasons": [
+                "phase-anchor",
+                "action-concept",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K04",
+                "book:growth-2018"
+              ]
+            },
+            {
+              "id": "K-R04",
+              "score": 1034,
+              "reasons": [
+                "phase-anchor",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K13",
+              "score": 1000,
+              "reasons": [
+                "phase-anchor"
+              ],
+              "sourceIds": [
+                "legacy:K13",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-A05",
+              "score": 300,
+              "reasons": [
+                "settled-action",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:A05"
+              ]
+            },
+            {
+              "id": "K-A12",
+              "score": 296,
+              "reasons": [
+                "settled-action",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:A12"
+              ]
+            },
+            {
+              "id": "K14",
+              "score": 226,
+              "reasons": [
+                "action-concept",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "legacy:K14",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-P03",
+              "score": 196,
+              "reasons": [
+                "public-product",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:P03"
+              ]
+            },
+            {
+              "id": "K-R01",
+              "score": 120,
+              "reasons": [
+                "phase",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-F06",
+              "score": 36,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "api:protocol",
+                "engine:growth-1.0.0"
+              ]
+            },
+            {
+              "id": "K-S05",
+              "score": 33,
+              "reasons": [
+                "host-style",
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "project:host-style"
+              ]
+            },
+            {
+              "id": "K-R02",
+              "score": 28,
+              "reasons": [
+                "public-claim-lexical"
+              ],
+              "sourceIds": [
+                "engine:growth-1.0.0"
+              ]
+            }
+          ]
+        }
+      },
+      "result": {
+        "provider": "deepseek",
+        "text": "第一类人群将迎来两轮需求高峰，之后回落。这类季节性高峰让目标人群的接触机会乘数为1.4，效果持续2轮，但回落幅度与时长未公开。",
+        "kind": "fact",
+        "knowledgeIds": [
+          "K-E12"
+        ],
+        "claimRefs": [
+          {
+            "id": "W0",
+            "round": 2,
+            "type": "fact",
+            "text": "第一类人群迎来两轮需求高峰，之后将回落。",
+            "eventId": "E12",
+            "source": "已经发布的公开世界消息；对象以消息明确标注为准"
+          }
+        ],
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 1155,
+          "completion_tokens": 81,
+          "total_tokens": 1236
+        },
+        "latencyMs": 1316.3151
+      },
+      "samples": [
+        {
+          "attempt": 0,
+          "httpStatus": 200,
+          "rawOutput": "{\"kind\":\"fact\",\"claimIds\":[\"W0\"],\"knowledgeIds\":[\"K-E12\"],\"tone\":\"calm\",\"narration\":\"第一类人群将迎来两轮需求高峰，之后回落[W0]。这类季节性高峰让目标人群的接触机会乘数为1.4，效果持续2轮，但回落幅度与时长未公开[K-E12]。\"}",
+          "usage": {
+            "prompt_tokens": 1155,
+            "completion_tokens": 81,
+            "total_tokens": 1236
+          },
+          "latencyMs": 1316.3151,
+          "accepted": true
+        }
+      ],
+      "latencyMs": 1325.6263,
+      "accepted": true
+    }
+  ]
+}

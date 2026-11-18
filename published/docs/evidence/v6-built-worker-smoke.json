@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-17T14:30:19.278Z",
+  "status": "passed",
+  "scope": "Actual generated Worker module using real SQLite D1 adapter; isolated practice six rounds, no external model or public transport",
+  "history": 6,
+  "hostHistory": 7,
+  "knowledgeRefs": 1,
+  "modelCalls": 0,
+  "persistedPriorCount": 12,
+  "unlimited": true,
+  "sceneRuntimeAsset": 200
+}

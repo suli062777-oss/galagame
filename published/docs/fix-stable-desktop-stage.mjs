@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const path=new URL('../public/tavern-v3.css',import.meta.url);
+let css=fs.readFileSync(path,'utf8');
+const before='.arena-main{display:grid;grid-template-rows:minmax(320px,1fr) auto;min-width:0;min-height:0;gap:12px}.arena-stage{position:relative;';
+const after='.arena-main{--stage-height:clamp(320px,calc(100dvh - 392px),520px);display:grid;grid-template-rows:var(--stage-height) auto;align-content:start;min-width:0;min-height:0;gap:12px}.arena-stage{height:var(--stage-height);position:relative;';
+if(!css.includes(before))throw Error('Desktop stage source changed.');
+css=css.replace(before,after);
+css+='\n/* Keep the camera viewport stable when the decision dock becomes a phase message. */\n@media(min-width:901px){.arena-dock{max-height:calc(100dvh - var(--stage-height) - 130px);overflow:auto}}\n';
+fs.writeFileSync(path,css);
+console.log('Fixed desktop stage height independently of phase/dock content; mobile height unchanged.');

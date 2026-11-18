@@ -102,7 +102,12 @@ input::placeholder, textarea::placeholder { color: #85877f; }
 .hero-copy h1 { margin-bottom: 22px; font-size: 48px; line-height: 1.25; }
 .hero-copy h1 > span { display: block; margin-top: 10px; color: var(--muted); font-size: 22px; font-weight: 400; }
 .hero-description { max-width: 480px; margin: 0 0 28px; font-size: 19px; line-height: 1.9; color: #4d514b; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.hero-actions .button.hero-primary {
+  min-height: 56px; padding: 14px 24px; font-size: 16px; font-weight: 600;
+  transition: background .16s, border-color .16s, color .16s, transform .16s;
+}
+.hero-actions .hero-primary:active { transform: translateY(1px); }
 .book-byline { margin: 24px 0 0; font-size: 14px; color: var(--muted); }
 .book-byline span { font-size: 14px; }
 .hero-art { min-width: 0; position: relative; }

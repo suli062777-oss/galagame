@@ -1,0 +1,33 @@
+const p=await figma.getNodeByIdAsync('207:150');await figma.setCurrentPageAsync(p);
+await Promise.all(['Regular','Medium','Bold'].map(style=>figma.loadFontAsync({family:'Noto Sans SC',style})));
+const createdNodeIds=[];const allVars=await figma.variables.getLocalVariablesAsync();const V=Object.fromEntries(allVars.filter(v=>v.variableCollectionId==='VariableCollectionId:207:151').map(v=>[v.name,v]));
+const paint=token=>figma.variables.setBoundVariableForPaint({type:'SOLID',color:{r:1,g:1,b:1}},'color',V[token]);
+const make=n=>(createdNodeIds.push(n.id),n);
+function box(parent,name,w,h,token='surface',radius=0){const n=make(figma.createFrame());n.name=name;n.resize(w,h);n.fills=token?[paint(token)]:[];n.cornerRadius=radius;n.clipsContent=false;parent.appendChild(n);return n;}
+function row(parent,name,gap=12,w){const n=make(figma.createAutoLayout('HORIZONTAL'));n.name=name;n.fills=[];n.clipsContent=false;n.itemSpacing=gap;parent.appendChild(n);if(w){n.resize(w,n.height);n.primaryAxisSizingMode='FIXED';n.counterAxisSizingMode='AUTO';}return n;}
+function col(parent,name,gap=10,w){const n=make(figma.createAutoLayout('VERTICAL'));n.name=name;n.fills=[];n.clipsContent=false;n.itemSpacing=gap;parent.appendChild(n);if(w){n.resize(w,n.height);n.primaryAxisSizingMode='AUTO';n.counterAxisSizingMode='FIXED';}return n;}
+function txt(parent,name,value,size=15,token='text',weight='Regular',width){const n=make(figma.createText());n.name=name;n.fontName={family:'Noto Sans SC',style:weight};n.fontSize=size;n.lineHeight={unit:'PIXELS',value:Math.ceil(size*1.6)};n.characters=value;n.fills=[paint(token)];if(width){n.resize(width,n.height);n.textAutoResize='HEIGHT';}parent.appendChild(n);return n;}
+function pos(n,x,y){n.x=x;n.y=y;return n;}
+function outline(n){n.strokes=[paint('line')];n.strokeWeight=1;return n;}
+const primary=await figma.getNodeByIdAsync('207:161'),secondary=await figma.getNodeByIdAsync('207:163'),fieldComp=await figma.getNodeByIdAsync('207:165');
+function button(parent,label,w=160,solid=true){const n=make((solid?primary:secondary).createInstance());parent.appendChild(n);n.resize(w,44);n.setProperties({[Object.keys(n.componentProperties).find(k=>k.startsWith('Label#'))]:label});n.name='按钮 / '+label;return n;}
+function field(parent,label,value,w){const n=make(fieldComp.createInstance());parent.appendChild(n);n.resize(w,76);const props=Object.keys(n.componentProperties);n.setProperties({[props.find(k=>k.startsWith('Label#'))]:label,[props.find(k=>k.startsWith('Value#'))]:value});return n;}
+function scene(parent,name,w,h,x,y){const n=pos(box(parent,name,w,h,'background',12),x,y);n.placeholder=true;return n;}
+const d=pos(box(p,'01 V3 桌面 · 决策主屏',1440,900,'background'),200,200);
+const header=pos(row(d,'回合顶栏',20,1392),24,18);header.resize(1392,56);header.primaryAxisSizingMode='FIXED';header.counterAxisSizingMode='FIXED';header.primaryAxisAlignItems='SPACE_BETWEEN';header.counterAxisAlignItems='CENTER';
+const id=row(header,'房间入口',12);button(id,'←',44,false);const naming=col(id,'名称与模式',0);txt(naming,'名称','增长酒馆',17,'text','Medium');txt(naming,'产品与模式','学习打卡 App · 练习 / 3席脚本',13,'muted');
+const phase=row(header,'阶段与时间',16);phase.counterAxisAlignItems='CENTER';txt(phase,'当前阶段','第 1 / 6 轮 · 共同决策',14,'muted');txt(phase,'剩余时间','45 秒',30,'text','Medium');button(header,'更多',84,false);
+const art=scene(d,'V3 场景 / 实时酒馆素材',1060,535,24,101);
+const dock=pos(outline(col(d,'行动区 / 单一主操作',14,1060)),24,654);dock.paddingLeft=dock.paddingRight=22;dock.paddingTop=18;dock.paddingBottom=16;dock.fills=[paint('surface')];dock.cornerRadius=16;
+const receipt=row(dock,'回执与控制方式',20,1016);receipt.primaryAxisAlignItems='SPACE_BETWEEN';txt(receipt,'提交状态','● 本轮尚未提交',13,'muted');txt(receipt,'控制方式','手动决策',13,'subtle');
+const fields=row(dock,'行动选择',12);field(fields,'行动','付费获客',428);field(fields,'目标人群','备考新手',338);field(fields,'投入','标准 ×1',226);
+const footer=row(dock,'预算与确认',20,1016);footer.primaryAxisAlignItems='SPACE_BETWEEN';footer.counterAxisAlignItems='CENTER';const budget=col(footer,'预算预览',2);txt(budget,'预算','预计投入 220 · 本轮可用现金 1,180',14,'muted');txt(budget,'作用说明','购买目标人群的接触机会，效果受同桌投放影响。',13,'subtle');button(footer,'确认行动',156);
+const rail=pos(outline(box(d,'经营与信息栏',310,775,'surface',16)),1106,101);const economy=pos(col(rail,'我的经营',16,266),22,22);const et=row(economy,'本人信息标题',10,266);et.primaryAxisAlignItems='SPACE_BETWEEN';txt(et,'数据标题','我的经营',14);txt(et,'名次','第 1 名',13,'muted');const cash=row(economy,'现金',12,266);cash.primaryAxisAlignItems='SPACE_BETWEEN';cash.counterAxisAlignItems='CENTER';txt(cash,'现金标签','现金',13,'muted');txt(cash,'现金值','1,200',29,'text','Medium');const two=row(economy,'分数与用户',40);for(const [label,value] of [['综合分','0.00'],['有效用户','450']]){const metric=col(two,label,4);txt(metric,'标签',label,13,'muted');txt(metric,'数值',value,20,'text','Medium');}
+const tabs=pos(row(rail,'信息页签',0,274),18,218);tabs.primaryAxisAlignItems='SPACE_BETWEEN';for(const label of ['情报','研究','账本'])txt(tabs,label,label,14,label==='情报'?'accent':'muted','Medium');
+const content=pos(col(rail,'本轮信息',20,266),22,276);txt(content,'内容标题','本轮情报',15,'text','Medium');const host=col(content,'主持摘要',8,266);txt(host,'主持来源','主持 · 模板',13,'subtle');txt(host,'主持播报','先确认用户的首次价值，再决定这一轮的投入。',15,'text','Regular',266);for(const [type,message] of [['事实','四家公司拥有相同起点：1200现金、450有效用户。'],['有限预告','本轮之后将出现新的公开事件。']]){const item=col(content,type,6,266);txt(item,'信息类型',type,13,'accent');txt(item,'信息内容',message,15,'text','Regular',266);}
+const m=pos(box(p,'02 V3 手机 · 决策主屏',390,844,'background'),1840,200);const mh=pos(row(m,'手机回合条',8,358),16,14);mh.primaryAxisAlignItems='SPACE_BETWEEN';txt(mh,'返回与房间','← 增长酒馆',16,'text','Medium');txt(mh,'回合时间','R1 / 6 · 45秒',16,'text','Medium');
+const metrics=pos(row(m,'经营摘要',20,358),16,82);metrics.primaryAxisAlignItems='SPACE_BETWEEN';for(const [label,value] of [['现金','1,200'],['综合分','0.00'],['有效用户','450']]){const item=col(metrics,label,4);txt(item,'标签',label,13,'muted');txt(item,'值',value,20,'text','Medium');}
+const mart=scene(m,'V3 手机场景 / 实时酒馆素材',358,370,16,160);
+const peek=pos(outline(col(m,'情报摘要入口',5,358)),16,550);peek.paddingLeft=peek.paddingRight=14;peek.paddingTop=peek.paddingBottom=12;peek.cornerRadius=12;txt(peek,'入口','本轮情报  ↗',14,'muted');txt(peek,'摘要','先观察首次价值与可用现金。',15);
+const bar=pos(outline(col(m,'固定行动入口',10,358)),16,694);bar.paddingTop=bar.paddingBottom=16;bar.paddingLeft=bar.paddingRight=14;bar.fills=[paint('surface')];bar.cornerRadius=14;txt(bar,'行动摘要','本轮尚未提交 · 选择一个行动',14,'muted');button(bar,'选择行动',330);
+return {createdNodeIds,frames:[{id:d.id,name:d.name,sceneId:art.id},{id:m.id,name:m.name,sceneId:mart.id}],scenePlaceholders:[art.id,mart.id]};

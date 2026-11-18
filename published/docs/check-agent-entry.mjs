@@ -1,0 +1,29 @@
+/** Focused checks execute the actual app functions in a VM. No real clipboard,
+ * user credential, network, provider, or game action is accessed. */
+import fs from 'node:fs/promises';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const source=await fs.readFile(path.join(root,'public/app.js'),'utf8');
+const functions=source.split(/\r?\n/).filter(line=>/^(?:async )?function (agentEntryMarkup|updateAgentConnection|openAgentDialog|copyAgentInstructions)\(/.test(line));
+assert.equal(functions.length,4,'Read all four actual application functions');
+const nodes=new Map(),node=key=>{if(!nodes.has(key))nodes.set(key,{dataset:{},attrs:{},value:'',textContent:'',disabled:false,open:false,focused:false,selected:false,setAttribute(k,v){this.attrs[k]=String(v);},querySelector(k){return node(key+' '+k);},focus(){this.focused=true;},select(){this.selected=true;}});return nodes.get(key);};
+const instruction='QA dummy instruction, not a real credential';
+let markup='',modalTitle='',closedSheets=0,clipboardCalls=0;
+const state={me:{agentConnected:false,authorization:'assist',persona:'analytical',risk:'medium'}};
+const context=vm.createContext({currentState:state,$:node,closeRoomSheets(){closedSheets++;},modal(title,html){modalTitle=title;markup=html;},agentPrompt:()=>instruction,esc:value=>String(value),navigator:{clipboard:{async writeText(value){clipboardCalls++;assert.equal(value,instruction);assert.equal(node('#copy-agent-button').disabled,true,'Pending copy disables only its button');}}}});
+vm.runInContext(functions.join('\n'),context);
+const checks=[];
+async function check(name,fn){await fn();checks.push({name,passed:true});}
+await check('Top-level entry clearly requests Agent connection without exposing instructions',()=>{const html=context.agentEntryMarkup(state);assert.match(html,/连接我的 Agent/);assert.match(html,/data-action="agent"/);assert.doesNotMatch(html,/Bearer|QA dummy/);});
+await check('Copy control precedes collapsed instructions and preferences',()=>{context.openAgentDialog();assert.equal(modalTitle,'连接自己的 Agent');assert.equal(closedSheets,1);assert.ok(markup.indexOf('id="copy-agent-button"')<markup.indexOf('id="agent-instructions"'));assert.ok(markup.indexOf('id="copy-agent-button"')<markup.indexOf('class="agent-preferences"'));assert.ok(node('#copy-agent-button').focused);assert.match(node('#agent-modal-connection').textContent,/等待 Agent 自检/);});
+await check('Successful stubbed clipboard copy reports success and preserves disconnected state',async()=>{const before=JSON.stringify(state);await context.copyAgentInstructions(node('#copy-agent-button'));assert.equal(clipboardCalls,1);assert.equal(node('#copy-agent-button').disabled,false);assert.equal(node('#copy-agent-button').dataset.copied,'true');assert.match(node('#agent-copy-feedback').textContent,/已复制/);assert.match(node('#agent-modal-connection').textContent,/等待 Agent 自检/);assert.equal(JSON.stringify(state),before);});
+await check('Rejected clipboard copy expands/selects manual fallback and re-enables retry',async()=>{context.navigator.clipboard.writeText=async()=>{throw new Error('QA permission denied');};await context.copyAgentInstructions(node('#copy-agent-button'));assert.equal(node('#agent-instructions').open,true);assert.equal(node('#agent-prompt').value,instruction);assert.equal(node('#agent-prompt').focused,true);assert.equal(node('#agent-prompt').selected,true);assert.equal(node('#copy-agent-button').dataset.copied,'false');assert.equal(node('#copy-agent-button').disabled,false);assert.match(node('#agent-copy-feedback').textContent,/自动复制未成功/);assert.equal(state.me.agentConnected,false);});
+await check('Unavailable clipboard also provides the manual fallback',async()=>{context.navigator.clipboard=undefined;node('#agent-prompt').selected=false;await context.copyAgentInstructions(node('#copy-agent-button'));assert.equal(node('#agent-prompt').selected,true);assert.equal(node('#copy-agent-button').disabled,false);});
+await check('Only server-state fixture changes update entry and open-dialog connection status',()=>{state.me.agentConnected=true;state.me.authorization='autopilot';context.updateAgentConnection(state);assert.equal(node('.agent-connect-entry').dataset.connected,'true');assert.match(node('.agent-connect-entry .agent-entry-long').textContent,/已连接/);assert.match(node('#agent-modal-connection').textContent,/服务器已收到 Agent 自检/);assert.match(node('#agent-current-mode').textContent,/自主模式/);state.me.agentConnected=false;state.me.authorization='assist';context.updateAgentConnection(state);assert.equal(node('.agent-connect-entry').dataset.connected,'false');assert.match(node('#agent-modal-connection').textContent,/等待 Agent 自检/);assert.match(node('#agent-current-mode').textContent,/建议模式/);});
+await check('Invitation and Agent copy actions remain separate application paths',()=>{assert.ok(/case 'copy-room':await copyInvitation\(\)/.test(source),'Invitation action uses its own handler');assert.ok(/case 'copy-agent':await copyAgentInstructions\(el\)/.test(source),'Agent copy action uses its own handler');assert.ok(source.includes("url.searchParams.set('room',roomId)"),'Invitation URL uses the public room entry');});
+const report={scope:'Actual app functions in an isolated VM; clipboard and Agent connection are fixtures, no real clipboard/network or credentials accessed',generatedAt:new Date().toISOString(),passed:true,checks,modelCalls:0,realClipboardWrites:0};
+await fs.writeFile(path.join(root,'docs/evidence/agent-entry-vm.json'),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({passed:true,checks:checks.length,realClipboardWrites:0,modelCalls:0}));

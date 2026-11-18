@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-18",
+  "scope": "Review artifacts only; no production state changes",
+  "pages": [
+    {
+      "page": "review.html",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "brokenImages": [],
+      "headings": 28
+    },
+    {
+      "page": "review.html",
+      "width": 390,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "brokenImages": [],
+      "headings": 28
+    },
+    {
+      "page": "product-ux-review.html",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "brokenImages": [],
+      "headings": 16
+    },
+    {
+      "page": "product-ux-review.html",
+      "width": 390,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "brokenImages": [],
+      "headings": 16
+    },
+    {
+      "page": "reference-research.html",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "brokenImages": [],
+      "headings": 14
+    },
+    {
+      "page": "reference-research.html",
+      "width": 390,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "brokenImages": [],
+      "headings": 14
+    },
+    {
+      "page": "visual-review.html",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "brokenImages": [],
+      "headings": 21
+    },
+    {
+      "page": "visual-review.html",
+      "width": 390,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "brokenImages": [],
+      "headings": 21
+    },
+    {
+      "page": "direction-demo.html",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "brokenImages": [],
+      "headings": 8
+    },
+    {
+      "page": "direction-demo.html",
+      "width": 390,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "brokenImages": [],
+      "headings": 8
+    }
+  ],
+  "interactions": [
+    {
+      "step": "entry",
+      "visible": [
+        "entry"
+      ]
+    },
+    {
+      "step": "mission",
+      "visible": [
+        "mission"
+      ]
+    },
+    {
+      "step": "decision",
+      "visible": [
+        "decision"
+      ]
+    },
+    {
+      "step": "review",
+      "visible": [
+        "review"
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,22 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const url=new URL('../public/app.js',import.meta.url);let app=await readFile(url,'utf8');
+app=app.replace('let roomUi={tab:', 'let submissionUncertain=false,unconfirmedAction=null;\nlet roomUi={tab:');
+const phaseStart=app.indexOf('function roomPhaseMarkup('),phaseEnd=app.indexOf('function roomMenu(',phaseStart);
+app=app.slice(0,phaseStart)+`function roomPhaseMarkup(s){const full=s.phase==='lobby'?'等待入席':s.phase==='finished'?'六轮已完成':\`第 \${s.round} / 6 轮 · \${phaseName(s)}\`;const short=s.phase==='lobby'?'等待入席':s.phase==='finished'?'本局结束':\`R\${s.round}/6 · \${({preparing:'准备',decision:'决策',settling:'结算'})[s.phase]||''}\`;return \`<span id="phase-label"><span class="phase-full">\${full}</span><span class="phase-short">\${short}</span></span>\${['preparing','decision','settling'].includes(s.phase)?'<strong id="countdown" aria-live="off"></strong>':''}\`;}
+`+app.slice(phaseEnd);
+app=app.replace('${esc(s.product?.name)}${s.mode', '<span class="room-product-title">${esc(s.product?.name)}</span>${s.mode');
+app=app.replace('<div class="scene-caption"><span class="scene-caption-mark" aria-hidden="true"></span><span>${s.mode===\'practice\'?\'一人练习，同桌三席为脚本\':\'同一张桌，同一个市场\'}</span></div>','');
+app=app.replace("if(!res.ok||data.ok===false)throw new Error(data.error||'请求失败，请稍后重试。');", "if(!res.ok||data.ok===false){const error=new Error(data.error||'请求失败，请稍后重试。');error.status=res.status;error.code=data.code;error.confirmedRejected=true;throw error;}");
+app=app.replace("let state='unsubmitted',text='本轮尚未提交';if(submitting)","let state='unsubmitted',text='本轮尚未提交';const expired=s.phase==='decision'&&s.deadline!=null&&Date.now()-serverOffset>=s.deadline;if(submissionUncertain&&unconfirmedAction?.key===roomActionKey(s)&&actionFingerprint(me.action)===actionFingerprint(unconfirmedAction.action)){submissionUncertain=false;submissionError='';unconfirmedAction=null;}if(expired){state='locked';text='截止已到，等待统一结算';}else if(submitting)");
+app=app.replace("else if(submissionError){state='error';text=me.action?'更新未成功，原行动仍有效':'提交未成功，请重试';}","else if(submissionError){state=submissionUncertain?'uncertain':'error';text=submissionUncertain?'尚未确认结果，正在同步':me.action?'更新未成功，原行动仍有效':'提交未成功，请重试';}");
+app=app.replace("submit.disabled=submitting||Boolean(s.players.find(p=>p.id===me.id)?.bankrupt);", "submit.disabled=submitting||expired||Boolean(s.players.find(p=>p.id===me.id)?.bankrupt);");
+app=app.replace("submitting=true;submissionError='';$('#action-error').textContent='';", "submitting=true;submissionError='';submissionUncertain=false;unconfirmedAction={key,action:submitted};$('#action-error').textContent='';");
+app=app.replace("draftState={key,action:submitted,dirty:false};roomUi.actionOpen=false;", "draftState={key,action:submitted,dirty:false};submissionUncertain=false;unconfirmedAction=null;roomUi.actionOpen=false;");
+app=app.replace("submissionError=err.message;if($('#action-error'))", "submissionError=err.message;submissionUncertain=!err.confirmedRejected;if($('#action-error'))");
+app=app.replace("if($('#action-error'))$('#action-error').textContent=err.message;", "if($('#action-error'))$('#action-error').textContent=submissionUncertain?'连接中断，提交结果尚未确认。恢复连接后会自动核对。':err.message;");
+app=app.replace("const action=el.dataset.action;try{switch(action){", "const action=el.dataset.action;const menu=el.closest('.room-menu');if(menu&&!action.startsWith('globe-'))menu.open=false;try{switch(action){");
+app=app.replace("if(panel==='intent'){modal", "if(panel==='intent'){closeRoomSheets();modal");
+app=app.replace('data-action="open-panel" data-panel="world"><span>本轮情报', 'aria-controls="insight-panel" data-action="open-panel" data-panel="world"><span>本轮情报');
+await writeFile(url,app,'utf8');
+const cssUrl=new URL('../public/tavern-v3.css',import.meta.url);let css=await readFile(cssUrl,'utf8');css=css.replace(/font-size:(10|11|12)px/g,'font-size:13px');css+=`\n.phase-short{display:none}.arena-room>div{min-width:0}\n@media(max-width:900px){.phase-full{display:none}.phase-short{display:inline}.arena-phase{font-size:13px}.room-product-name{font-size:13px}.room-product-name:has(.practice-label) .room-product-title{display:none}.room-product-name .practice-label{display:block;border:0;padding:0;font-size:13px}.mobile-economy span,.mobile-economy small{font-size:13px}.scene-caption{display:none}}\n`;
+await writeFile(cssUrl,css,'utf8');
