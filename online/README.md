@@ -1,3 +1,15 @@
+# 增长酒馆 · 课堂体验改进
+
+本轮按2026-11-18详评落实课堂加入、开局任务、十二行动说明、手机操作、真实回合复盘、札记草稿和实验预测。纸白阅读与暖暗酒馆延续原品牌，首页新增内置image_gen生成的折纸棋子插画和真实经营预览。
+
+回退基线：`baseline-v8-20261118`（cbcc8cc）；开发分支：`codex/classroom-experience-20261118`。完整实现映射与验收边界见 [CLASSROOM_RELEASE.md](docs/CLASSROOM_RELEASE.md)，独立品审见 [CLASSROOM_INDEPENDENT_REVIEW.md](docs/CLASSROOM_INDEPENDENT_REVIEW.md)，图片与最终提示词见 [HERO_IMAGE.md](docs/HERO_IMAGE.md)。实际部署版本由交付记录确认。
+
+运行仍为Node.js24、`npm ci`、`npm run dev`，默认 http://localhost:3020/#/home ，本地主持为模板，无需密钥；`npm test`包含新增草稿、历史证据与回链回归，`npm run build`构建原站点Worker。没有新增框架或运行依赖。
+
+## 历史基础与后端边界（保留原说明）
+
+以下是前版V6/托管版本7的历史实现和模型边界，本轮前端改进不重置数据或模型配置；当前课堂前端以上述实施记录为准。
+
 # 增长酒馆 · V6体验 / 线上版本7
 
 本轮把酒馆改为固定的回合条、经营与信息栏、单一行动区，并重做真实四席圆桌的木质桌椅、坐姿人物、头像归属和背景氛围。项目由原线上 Worker 工程复制到独立目录，保留 V2 和当前公开站点。

@@ -1,0 +1,565 @@
+{
+  "date": "2026-11-18",
+  "scope": "Independent Chrome screenshots; actual local template practice and UI; no public rooms or model calls; software WebGL; desktop emulation of phone dimensions",
+  "health": {
+    "provider": "template",
+    "enabled": false
+  },
+  "screens": [
+    {
+      "name": "home-desktop",
+      "url": "http://127.0.0.1:3020/#/home",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 0,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 2395,
+      "phase": null,
+      "headings": [
+        "增长黑客",
+        "同一张桌，各自作判断。",
+        "从一轮决定开始",
+        "经营一局",
+        "回看为什么",
+        "换一个变量试试",
+        "翻开第一篇"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "home-mobile",
+      "url": "http://127.0.0.1:3020/#/home",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 2196,
+      "phase": null,
+      "headings": [
+        "增长黑客",
+        "同一张桌，各自作判断。",
+        "从一轮决定开始",
+        "经营一局",
+        "回看为什么",
+        "换一个变量试试",
+        "翻开第一篇"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-join-desktop",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 0,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1063,
+      "phase": null,
+      "headings": [
+        "加入同学的增长桌",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 811.65625,
+        "y": 556.671875,
+        "width": 451.828125,
+        "height": 50,
+        "bottom": 606.671875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-join-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1493,
+      "phase": null,
+      "headings": [
+        "加入同学的增长桌",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 18,
+        "y": 521.671875,
+        "width": 339,
+        "height": 50,
+        "bottom": 571.671875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-practice-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1399,
+      "phase": null,
+      "headings": [
+        "自己先练习一局",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 18,
+        "y": 427.875,
+        "width": 339,
+        "height": 50,
+        "bottom": 477.875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-practice-360",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 360,
+      "height": 800,
+      "scrollY": 0,
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "scrollHeight": 1397,
+      "phase": null,
+      "headings": [
+        "自己先练习一局",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 18,
+        "y": 426.171875,
+        "width": 309,
+        "height": 50,
+        "bottom": 476.171875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "room-lobby-desktop",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 0,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1091,
+      "phase": "lobby",
+      "headings": [
+        "增长酒馆",
+        "经营健身习惯 App",
+        "酒馆主持",
+        "这一桌，准备好了",
+        "桌上消息",
+        "本轮情报",
+        "入席后，一起看消息"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 425.78125,
+        "width": 1051,
+        "height": 360,
+        "bottom": 785.78125
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "room-lobby-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1337,
+      "phase": "lobby",
+      "headings": [
+        "增长酒馆",
+        "经营健身习惯 App",
+        "酒馆主持",
+        "这一桌，准备好了",
+        "桌上消息",
+        "本轮情报",
+        "入席后，一起看消息"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 580.359375,
+        "width": 347,
+        "height": 300,
+        "bottom": 880.359375
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-desktop",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 0,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 1000,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 100,
+        "width": 1056,
+        "height": 310,
+        "bottom": 410
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 362,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "action-sheet-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 362,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "result-desktop",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 0,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1632,
+      "phase": "finished",
+      "headings": [
+        "增长酒馆",
+        "本局经营复盘",
+        "选一轮，回看当时的决定",
+        "等待并观察",
+        "酒馆主持",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 1289.5,
+        "width": 1051,
+        "height": 210,
+        "bottom": 1499.5
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "result-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1902,
+      "phase": "finished",
+      "headings": [
+        "增长酒馆",
+        "本局经营复盘",
+        "选一轮，回看当时的决定",
+        "等待并观察",
+        "酒馆主持",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 1521.65625,
+        "width": 347,
+        "height": 190,
+        "bottom": 1711.65625
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "result-mobile-review",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 390,
+      "height": 844,
+      "scrollY": 650,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1902,
+      "phase": "finished",
+      "headings": [
+        "增长酒馆",
+        "本局经营复盘",
+        "选一轮，回看当时的决定",
+        "等待并观察",
+        "酒馆主持",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 871.65625,
+        "width": 347,
+        "height": 190,
+        "bottom": 1061.65625
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "result-mobile-320",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 320,
+      "height": 800,
+      "scrollY": 0,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "scrollHeight": 2025,
+      "phase": "finished",
+      "headings": [
+        "增长酒馆",
+        "本局经营复盘",
+        "选一轮，回看当时的决定",
+        "等待并观察",
+        "酒馆主持",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 10,
+        "y": 1644.046875,
+        "width": 285,
+        "height": 190,
+        "bottom": 1834.046875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "result-round-one-320",
+      "url": "http://127.0.0.1:3020/#/tavern/F5BE6D",
+      "width": 320,
+      "height": 800,
+      "scrollY": 560,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "scrollHeight": 1993,
+      "phase": "finished",
+      "headings": [
+        "增长酒馆",
+        "本局经营复盘",
+        "选一轮，回看当时的决定",
+        "等待并观察",
+        "酒馆主持",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 10,
+        "y": 1051.75,
+        "width": 285,
+        "height": 190,
+        "bottom": 1241.75
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "lab-desktop",
+      "url": "http://127.0.0.1:3020/#/lab",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 0,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 3452,
+      "phase": "finished",
+      "headings": [
+        "增长实验室",
+        "先修漏桶，还是先加水？",
+        "更多流量，还是更好体验？",
+        "好想法很多，先验证哪一个？",
+        "现在，把这些判断带到同一张桌上。"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "lab-mobile",
+      "url": "http://127.0.0.1:3020/#/lab",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 4508,
+      "phase": "finished",
+      "headings": [
+        "增长实验室",
+        "先修漏桶，还是先加水？",
+        "更多流量，还是更好体验？",
+        "好想法很多，先验证哪一个？",
+        "现在，把这些判断带到同一张桌上。"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "lab-prediction-verified",
+      "url": "http://127.0.0.1:3020/#/lab",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 4947,
+      "phase": "finished",
+      "headings": [
+        "增长实验室",
+        "先修漏桶，还是先加水？",
+        "更多流量，还是更好体验？",
+        "好想法很多，先验证哪一个？",
+        "现在，把这些判断带到同一张桌上。"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": null,
+      "brokenImages": []
+    }
+  ],
+  "observations": [
+    {
+      "kind": "result-visual-metrics",
+      "scoreMetadataFont": "15px",
+      "contributionColumns": "87px 87px 87px",
+      "roundColumns": "90.3281px 90.3281px 90.3438px",
+      "selectedRound": "1",
+      "reviewText": "第 1 轮 · 你的实际行动等待并观察行动费用0有效用户450 → 323.6本轮净利润383.88综合分530.57核对截至这一轮结算的公开记录以下只列截至第 1 轮结算已公开的记录，可能包含结算后消息；不代表做决定前已经知道。后续轮次的核验不会列入。事实四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。尚未核实下一轮可能出现「广告平台涨价」。消息尚未核实，不保证成真。事实第1周结算完成。当前最高分 530.57；完整账本已保存。留存用户 312 · 新增有效用户 11.6 · 结算前现金 1,200 · 结算后现金 1,583.88你当时根据什么做决定？哪些变化还不能归因于这次行动？写下这一轮的判断 →看看相关增长方法"
+    },
+    {
+      "kind": "prediction",
+      "experiment": "retention",
+      "selected": "你的预测：更少。接下来按题目条件，操作一次模型。",
+      "revealed": "题目验证：50% 留存 · 第六轮 199 人。你的预测是「更少」，与该条件下的模型方向一致。可继续调整变量，比较其他结果。"
+    },
+    {
+      "kind": "prediction",
+      "experiment": "activation",
+      "selected": "你的预测：更多。接下来按题目条件，操作一次模型。",
+      "revealed": "题目验证：1,000 人访问 × 25% 完成率 = 250 人。你的预测是「更多」，与该条件下的模型方向一致。可继续调整变量，比较其他结果。"
+    },
+    {
+      "kind": "prediction",
+      "experiment": "ice",
+      "selected": "你的预测：降低。接下来按题目条件，操作一次模型。",
+      "revealed": "题目验证：影响 5 / 信心 3 / 便利 5 · 平均分 4.3。你的预测是「降低」，与该条件下的模型方向一致。可继续调整变量，比较其他结果。"
+    }
+  ],
+  "errors": [],
+  "completedRounds": 6,
+  "passed": true
+}

@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-18",
+  "scope": "Read-only actual preview home/entry; Chrome desktop emulated widths; no rooms or model calls",
+  "pages": [
+    {
+      "page": "home",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "entry": null,
+      "input": null,
+      "hero": {
+        "naturalWidth": 1400,
+        "objectFit": "contain",
+        "aspectRatio": "3 / 2",
+        "filter": "none"
+      }
+    },
+    {
+      "page": "tavern",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "entry": {
+        "top": 556.671875,
+        "bottom": 606.671875,
+        "visible": true
+      },
+      "input": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "hero": null
+    },
+    {
+      "page": "home",
+      "width": 1024,
+      "scrollWidth": 1009,
+      "clientWidth": 1009,
+      "entry": null,
+      "input": null,
+      "hero": {
+        "naturalWidth": 1400,
+        "objectFit": "contain",
+        "aspectRatio": "3 / 2",
+        "filter": "none"
+      }
+    },
+    {
+      "page": "tavern",
+      "width": 1024,
+      "scrollWidth": 1009,
+      "clientWidth": 1009,
+      "entry": {
+        "top": 556.671875,
+        "bottom": 606.671875,
+        "visible": true
+      },
+      "input": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "hero": null
+    },
+    {
+      "page": "home",
+      "width": 768,
+      "scrollWidth": 753,
+      "clientWidth": 753,
+      "entry": null,
+      "input": null,
+      "hero": {
+        "naturalWidth": 1400,
+        "objectFit": "contain",
+        "aspectRatio": "3 / 2",
+        "filter": "none"
+      }
+    },
+    {
+      "page": "tavern",
+      "width": 768,
+      "scrollWidth": 753,
+      "clientWidth": 753,
+      "entry": {
+        "top": 575.46875,
+        "bottom": 625.46875,
+        "visible": true
+      },
+      "input": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "hero": null
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "entry": null,
+      "input": null,
+      "hero": {
+        "naturalWidth": 1400,
+        "objectFit": "contain",
+        "aspectRatio": "3 / 2",
+        "filter": "none"
+      }
+    },
+    {
+      "page": "tavern",
+      "width": 390,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "entry": {
+        "top": 521.671875,
+        "bottom": 571.671875,
+        "visible": true
+      },
+      "input": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "hero": null
+    },
+    {
+      "page": "home",
+      "width": 360,
+      "scrollWidth": 345,
+      "clientWidth": 345,
+      "entry": null,
+      "input": null,
+      "hero": {
+        "naturalWidth": 1400,
+        "objectFit": "contain",
+        "aspectRatio": "3 / 2",
+        "filter": "none"
+      }
+    },
+    {
+      "page": "tavern",
+      "width": 360,
+      "scrollWidth": 345,
+      "clientWidth": 345,
+      "entry": {
+        "top": 521.671875,
+        "bottom": 571.671875,
+        "visible": true
+      },
+      "input": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "hero": null
+    },
+    {
+      "page": "home",
+      "width": 320,
+      "scrollWidth": 305,
+      "clientWidth": 305,
+      "entry": null,
+      "input": null,
+      "hero": {
+        "naturalWidth": 1400,
+        "objectFit": "contain",
+        "aspectRatio": "3 / 2",
+        "filter": "none"
+      }
+    },
+    {
+      "page": "tavern",
+      "width": 320,
+      "scrollWidth": 305,
+      "clientWidth": 305,
+      "entry": {
+        "top": 531.671875,
+        "bottom": 581.671875,
+        "visible": true
+      },
+      "input": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "hero": null
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

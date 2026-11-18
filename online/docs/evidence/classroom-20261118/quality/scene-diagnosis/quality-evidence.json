@@ -1,0 +1,2133 @@
+{
+  "date": "2026-11-18",
+  "scope": "Independent Chrome screenshots; actual local template practice and UI; no public rooms or model calls; software WebGL; desktop emulation of phone dimensions",
+  "health": {
+    "provider": "template",
+    "enabled": false
+  },
+  "screens": [
+    {
+      "name": "home-desktop",
+      "url": "http://127.0.0.1:3020/#/home",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1363,
+      "phase": null,
+      "headings": [
+        "增长黑客",
+        "从一轮决定开始",
+        "经营一局",
+        "回看为什么",
+        "换一个变量试试",
+        "翻开第一篇"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "home-mobile",
+      "url": "http://127.0.0.1:3020/#/home",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1707,
+      "phase": null,
+      "headings": [
+        "增长黑客",
+        "从一轮决定开始",
+        "经营一局",
+        "回看为什么",
+        "换一个变量试试",
+        "翻开第一篇"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-join-desktop",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1063,
+      "phase": null,
+      "headings": [
+        "加入同学的增长桌",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 811.65625,
+        "y": 556.671875,
+        "width": 451.828125,
+        "height": 50,
+        "bottom": 606.671875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-join-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1493,
+      "phase": null,
+      "headings": [
+        "加入同学的增长桌",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 18,
+        "y": 521.671875,
+        "width": 339,
+        "height": 50,
+        "bottom": 571.671875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-practice-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1399,
+      "phase": null,
+      "headings": [
+        "自己先练习一局",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 18,
+        "y": 427.875,
+        "width": 339,
+        "height": 50,
+        "bottom": 477.875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "entry-practice-360",
+      "url": "http://127.0.0.1:3020/#/tavern",
+      "width": 360,
+      "height": 800,
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "scrollHeight": 1397,
+      "phase": null,
+      "headings": [
+        "自己先练习一局",
+        "课堂经营练习"
+      ],
+      "entrySubmit": {
+        "x": 18,
+        "y": 426.171875,
+        "width": 309,
+        "height": 50,
+        "bottom": 476.171875
+      },
+      "nameInput": {
+        "background": "rgb(21, 22, 16)",
+        "color": "rgb(238, 233, 221)",
+        "placeholder": "rgb(170, 169, 154)"
+      },
+      "stage": null,
+      "brokenImages": []
+    },
+    {
+      "name": "room-lobby-desktop",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1091,
+      "phase": "lobby",
+      "headings": [
+        "增长酒馆",
+        "经营学习打卡 App",
+        "酒馆主持",
+        "这一桌，准备好了",
+        "桌上消息",
+        "本轮情报",
+        "入席后，一起看消息"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 425.78125,
+        "width": 1051,
+        "height": 360,
+        "bottom": 785.78125
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "room-lobby-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1337,
+      "phase": "lobby",
+      "headings": [
+        "增长酒馆",
+        "经营学习打卡 App",
+        "酒馆主持",
+        "这一桌，准备好了",
+        "桌上消息",
+        "本轮情报",
+        "入席后，一起看消息"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 580.359375,
+        "width": 347,
+        "height": 300,
+        "bottom": 880.359375
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-before",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 1000,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 100,
+        "width": 1056,
+        "height": 310,
+        "bottom": 410
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-after-force",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 1000,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 100,
+        "width": 1066,
+        "height": 310,
+        "bottom": 410
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-expanded",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 1000,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 100,
+        "width": 1056,
+        "height": 420,
+        "bottom": 520
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-collapsed",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 1000,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 100,
+        "width": 1056,
+        "height": 310,
+        "bottom": 410
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-resized",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 1370,
+      "height": 930,
+      "clientWidth": 1370,
+      "scrollWidth": 1370,
+      "scrollHeight": 930,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 22,
+        "y": 100,
+        "width": 986,
+        "height": 280,
+        "bottom": 380
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "decision-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 362,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    },
+    {
+      "name": "action-sheet-mobile",
+      "url": "http://127.0.0.1:3020/#/tavern/FEFC8D",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报"
+      ],
+      "entrySubmit": null,
+      "nameInput": null,
+      "stage": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 362,
+        "height": 240,
+        "bottom": 407.6875
+      },
+      "brokenImages": []
+    }
+  ],
+  "observations": [
+    {
+      "label": "decision-before-capture",
+      "diagnostics": {
+        "version": 3,
+        "renderer": "webgl",
+        "viewport": {
+          "width": 1056,
+          "height": 310,
+          "mobile": false
+        },
+        "seatCount": 4,
+        "occupiedSeats": 4,
+        "avatarSeats": [
+          {
+            "seat": 0,
+            "hasTexture": true,
+            "textureUuid": "13c64869-173c-405d-9520-8ea66ce9da7c",
+            "avatarVersion": 1,
+            "avatarPreset": "ember",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 380.3398226954505,
+              "top": 131.2332051227442,
+              "right": 422.9827185167103,
+              "bottom": 180.41303447121228
+            },
+            "label": {
+              "left": 355.7421875,
+              "top": 75.21875,
+              "width": 92,
+              "height": 44
+            }
+          },
+          {
+            "seat": 1,
+            "hasTexture": true,
+            "textureUuid": "96d56178-8811-4a41-b694-f375c016f37f",
+            "avatarVersion": 1,
+            "avatarPreset": "tide",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 382.06422438553585,
+              "top": 38.94243775774337,
+              "right": 419.38257273152504,
+              "bottom": 86.84039746918218
+            },
+            "label": {
+              "left": 374.21875,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 2,
+            "hasTexture": true,
+            "textureUuid": "40eb08f8-de1c-47e4-922d-2f83caf8e42e",
+            "avatarVersion": 1,
+            "avatarPreset": "moss",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 636.6174272684749,
+              "top": 38.94243775774337,
+              "right": 673.9357756144642,
+              "bottom": 86.84039746918218
+            },
+            "label": {
+              "left": 628.765625,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 3,
+            "hasTexture": true,
+            "textureUuid": "e6c70f4c-114e-4d44-8a75-e60cfb6f1cad",
+            "avatarVersion": 1,
+            "avatarPreset": "orbit",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 633.0172814832897,
+              "top": 131.2332051227442,
+              "right": 675.6601773045494,
+              "bottom": 180.41303447121228
+            },
+            "label": {
+              "left": 627.828125,
+              "top": 75.21875,
+              "width": 53,
+              "height": 44
+            }
+          }
+        ],
+        "globe": {
+          "minimumZoom": 0.84,
+          "maximumZoom": 1.12,
+          "current": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "default": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "maximum": {
+            "zoom": 1.12,
+            "scale": 0.6944,
+            "centerY": 2.6526880000000004,
+            "globeBottom": 1.4027680000000002,
+            "allMarkersBottom": 1.2500000000000002,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "conservativeLocalRadius": 2.02,
+          "markerCount": 0
+        },
+        "environment": {
+          "bottleCount": 24,
+          "windowCount": 2,
+          "lampCount": 2,
+          "propNames": [
+            "walnut floor",
+            "woven rug",
+            "back bar",
+            "bottles",
+            "arched windows",
+            "wall sconces",
+            "brass balance",
+            "ferns"
+          ],
+          "objectCount": 21
+        },
+        "quality": {
+          "requested": "auto",
+          "effective": "high",
+          "reason": "desktop",
+          "pixelRatio": 1,
+          "shadows": true,
+          "markerBudget": 120,
+          "antialias": true
+        },
+        "frameCount": 9,
+        "renderCount": 9,
+        "fps": 2,
+        "callbackFps": 2,
+        "fpsWindowMs": 1000,
+        "renderMode": "on-demand",
+        "drawCalls": 194,
+        "triangles": 66402,
+        "geometryCount": 74,
+        "textureCount": 10,
+        "performance": {
+          "activeFrames": 0,
+          "idleCallbacks": 0,
+          "idleUpdates": 1,
+          "projectionCount": 32,
+          "diagnosticReads": 9,
+          "suspended": false,
+          "scheduler": {
+            "pending": false,
+            "requested": false,
+            "continuous": false,
+            "suspended": false,
+            "destroyed": false
+          },
+          "renderCpuMs": {
+            "last": 3.400000000372529,
+            "mean": 121.26666666660458,
+            "max": 924.7999999998137
+          },
+          "staticBatches": [
+            {
+              "sourceMeshes": 144,
+              "batches": 11,
+              "drawsSaved": 133
+            },
+            {
+              "sourceMeshes": 30,
+              "batches": 6,
+              "drawsSaved": 24
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            }
+          ],
+          "sharedGeometries": 115
+        },
+        "defaultAutoRotate": false
+      },
+      "documentHidden": false,
+      "canvas": {
+        "width": 1056,
+        "height": 310,
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1056,
+          "height": 310
+        },
+        "visibility": "visible",
+        "display": "block",
+        "opacity": "1",
+        "contextLost": false,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "low-power",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "shell": {
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1056,
+          "height": 310
+        },
+        "bounds": "{\"viewport\":{\"width\":1056,\"height\":310,\"mobile\":false},\"seats\":[{\"seat\":0,\"hasTexture\":true,\"textureUuid\":\"13c64869-173c-405d-9520-8ea66ce9da7c\",\"avatarVersion\":1,\"avatarPreset\":\"ember\",\"headScale\":[1,1,1],\"head\":{\"left\":380.3398226954505,\"top\":131.2332051227442,\"right\":422.9827185167103,\"bottom\":180.41303447121228},\"label\":{\"left\":355.7421875,\"top\":75.21875,\"width\":92,\"height\":44}},{\"seat\":1,\"hasTexture\":true,\"textureUuid\":\"96d56178-8811-4a41-b694-f375c016f37f\",\"avatarVersion\":1,\"avatarPreset\":\"tide\",\"headScale\":[1,1,1],\"head\":{\"left\":382.06422438553585,\"top\":38.94243775774337,\"right\":419.38257273152504,\"bottom\":86.84039746918218},\"label\":{\"left\":374.21875,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":2,\"hasTexture\":true,\"textureUuid\":\"40eb08f8-de1c-47e4-922d-2f83caf8e42e\",\"avatarVersion\":1,\"avatarPreset\":\"moss\",\"headScale\":[1,1,1],\"head\":{\"left\":636.6174272684749,\"top\":38.94243775774337,\"right\":673.9357756144642,\"bottom\":86.84039746918218},\"label\":{\"left\":628.765625,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":3,\"hasTexture\":true,\"textureUuid\":\"e6c70f4c-114e-4d44-8a75-e60cfb6f1cad\",\"avatarVersion\":1,\"avatarPreset\":\"orbit\",\"headScale\":[1,1,1],\"head\":{\"left\":633.0172814832897,\"top\":131.2332051227442,\"right\":675.6601773045494,\"bottom\":180.41303447121228},\"label\":{\"left\":627.828125,\"top\":75.21875,\"width\":53,\"height\":44}}],\"globe\":{\"minimumZoom\":0.84,\"maximumZoom\":1.12,\"current\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"default\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"maximum\":{\"zoom\":1.12,\"scale\":0.6944,\"centerY\":2.6526880000000004,\"globeBottom\":1.4027680000000002,\"allMarkersBottom\":1.2500000000000002,\"tableTop\":1.12,\"minimumClearance\":0.13},\"conservativeLocalRadius\":2.02,\"markerCount\":0},\"frameCount\":8,\"renderCount\":8,\"fps\":3,\"drawCalls\":194,\"environmentObjects\":21}"
+      },
+      "container": {
+        "x": 22,
+        "y": 100,
+        "width": 1056,
+        "height": 310
+      }
+    },
+    {
+      "label": "after-force-draw",
+      "diagnostics": {
+        "version": 3,
+        "renderer": "webgl",
+        "viewport": {
+          "width": 1066,
+          "height": 310,
+          "mobile": false
+        },
+        "seatCount": 4,
+        "occupiedSeats": 4,
+        "avatarSeats": [
+          {
+            "seat": 0,
+            "hasTexture": true,
+            "textureUuid": "13c64869-173c-405d-9520-8ea66ce9da7c",
+            "avatarVersion": 1,
+            "avatarPreset": "ember",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 385.3398226954505,
+              "top": 131.2332051227442,
+              "right": 427.9827185167103,
+              "bottom": 180.41303447121228
+            },
+            "label": {
+              "left": 360.7421875,
+              "top": 75.21875,
+              "width": 92,
+              "height": 44
+            }
+          },
+          {
+            "seat": 1,
+            "hasTexture": true,
+            "textureUuid": "96d56178-8811-4a41-b694-f375c016f37f",
+            "avatarVersion": 1,
+            "avatarPreset": "tide",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 387.06422438553585,
+              "top": 38.94243775774337,
+              "right": 424.3825727315251,
+              "bottom": 86.84039746918218
+            },
+            "label": {
+              "left": 379.21875,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 2,
+            "hasTexture": true,
+            "textureUuid": "40eb08f8-de1c-47e4-922d-2f83caf8e42e",
+            "avatarVersion": 1,
+            "avatarPreset": "moss",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 641.6174272684749,
+              "top": 38.94243775774337,
+              "right": 678.9357756144642,
+              "bottom": 86.84039746918218
+            },
+            "label": {
+              "left": 633.765625,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 3,
+            "hasTexture": true,
+            "textureUuid": "e6c70f4c-114e-4d44-8a75-e60cfb6f1cad",
+            "avatarVersion": 1,
+            "avatarPreset": "orbit",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 638.0172814832897,
+              "top": 131.2332051227442,
+              "right": 680.6601773045495,
+              "bottom": 180.41303447121228
+            },
+            "label": {
+              "left": 632.828125,
+              "top": 75.21875,
+              "width": 53,
+              "height": 44
+            }
+          }
+        ],
+        "globe": {
+          "minimumZoom": 0.84,
+          "maximumZoom": 1.12,
+          "current": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "default": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "maximum": {
+            "zoom": 1.12,
+            "scale": 0.6944,
+            "centerY": 2.6526880000000004,
+            "globeBottom": 1.4027680000000002,
+            "allMarkersBottom": 1.2500000000000002,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "conservativeLocalRadius": 2.02,
+          "markerCount": 0
+        },
+        "environment": {
+          "bottleCount": 24,
+          "windowCount": 2,
+          "lampCount": 2,
+          "propNames": [
+            "walnut floor",
+            "woven rug",
+            "back bar",
+            "bottles",
+            "arched windows",
+            "wall sconces",
+            "brass balance",
+            "ferns"
+          ],
+          "objectCount": 21
+        },
+        "quality": {
+          "requested": "auto",
+          "effective": "high",
+          "reason": "desktop",
+          "pixelRatio": 1,
+          "shadows": true,
+          "markerBudget": 120,
+          "antialias": true
+        },
+        "frameCount": 9,
+        "renderCount": 9,
+        "fps": 0,
+        "callbackFps": 0,
+        "fpsWindowMs": 1000,
+        "renderMode": "on-demand",
+        "drawCalls": 194,
+        "triangles": 66402,
+        "geometryCount": 74,
+        "textureCount": 10,
+        "performance": {
+          "activeFrames": 0,
+          "idleCallbacks": 0,
+          "idleUpdates": 1,
+          "projectionCount": 36,
+          "diagnosticReads": 11,
+          "suspended": true,
+          "scheduler": {
+            "pending": false,
+            "requested": true,
+            "continuous": false,
+            "suspended": true,
+            "destroyed": false
+          },
+          "renderCpuMs": {
+            "last": 3.400000000372529,
+            "mean": 121.26666666660458,
+            "max": 924.7999999998137
+          },
+          "staticBatches": [
+            {
+              "sourceMeshes": 144,
+              "batches": 11,
+              "drawsSaved": 133
+            },
+            {
+              "sourceMeshes": 30,
+              "batches": 6,
+              "drawsSaved": 24
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            }
+          ],
+          "sharedGeometries": 115
+        },
+        "defaultAutoRotate": false
+      },
+      "documentHidden": false,
+      "canvas": {
+        "width": 1066,
+        "height": 310,
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1066,
+          "height": 310
+        },
+        "visibility": "visible",
+        "display": "block",
+        "opacity": "1",
+        "contextLost": false,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "low-power",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "shell": {
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1066,
+          "height": 310
+        },
+        "bounds": "{\"viewport\":{\"width\":1066,\"height\":310,\"mobile\":false},\"seats\":[{\"seat\":0,\"hasTexture\":true,\"textureUuid\":\"13c64869-173c-405d-9520-8ea66ce9da7c\",\"avatarVersion\":1,\"avatarPreset\":\"ember\",\"headScale\":[1,1,1],\"head\":{\"left\":385.3398226954505,\"top\":131.2332051227442,\"right\":427.9827185167103,\"bottom\":180.41303447121228},\"label\":{\"left\":360.7421875,\"top\":75.21875,\"width\":92,\"height\":44}},{\"seat\":1,\"hasTexture\":true,\"textureUuid\":\"96d56178-8811-4a41-b694-f375c016f37f\",\"avatarVersion\":1,\"avatarPreset\":\"tide\",\"headScale\":[1,1,1],\"head\":{\"left\":387.06422438553585,\"top\":38.94243775774337,\"right\":424.3825727315251,\"bottom\":86.84039746918218},\"label\":{\"left\":379.21875,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":2,\"hasTexture\":true,\"textureUuid\":\"40eb08f8-de1c-47e4-922d-2f83caf8e42e\",\"avatarVersion\":1,\"avatarPreset\":\"moss\",\"headScale\":[1,1,1],\"head\":{\"left\":641.6174272684749,\"top\":38.94243775774337,\"right\":678.9357756144642,\"bottom\":86.84039746918218},\"label\":{\"left\":633.765625,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":3,\"hasTexture\":true,\"textureUuid\":\"e6c70f4c-114e-4d44-8a75-e60cfb6f1cad\",\"avatarVersion\":1,\"avatarPreset\":\"orbit\",\"headScale\":[1,1,1],\"head\":{\"left\":638.0172814832897,\"top\":131.2332051227442,\"right\":680.6601773045495,\"bottom\":180.41303447121228},\"label\":{\"left\":632.828125,\"top\":75.21875,\"width\":53,\"height\":44}}],\"globe\":{\"minimumZoom\":0.84,\"maximumZoom\":1.12,\"current\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"default\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"maximum\":{\"zoom\":1.12,\"scale\":0.6944,\"centerY\":2.6526880000000004,\"globeBottom\":1.4027680000000002,\"allMarkersBottom\":1.2500000000000002,\"tableTop\":1.12,\"minimumClearance\":0.13},\"conservativeLocalRadius\":2.02,\"markerCount\":0},\"frameCount\":9,\"renderCount\":9,\"fps\":1,\"drawCalls\":194,\"environmentObjects\":21}"
+      },
+      "container": {
+        "x": 22,
+        "y": 100,
+        "width": 1066,
+        "height": 310
+      }
+    },
+    {
+      "label": "after-expand",
+      "diagnostics": {
+        "version": 3,
+        "renderer": "webgl",
+        "viewport": {
+          "width": 1056,
+          "height": 420,
+          "mobile": false
+        },
+        "seatCount": 4,
+        "occupiedSeats": 4,
+        "avatarSeats": [
+          {
+            "seat": 0,
+            "hasTexture": true,
+            "textureUuid": "13c64869-173c-405d-9520-8ea66ce9da7c",
+            "avatarVersion": 1,
+            "avatarPreset": "ember",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 327.94427590996526,
+              "top": 177.7998262953309,
+              "right": 385.7185218613495,
+              "bottom": 244.43056283196503
+            },
+            "label": {
+              "left": 310.9140625,
+              "top": 121.796875,
+              "width": 92,
+              "height": 44
+            }
+          },
+          {
+            "seat": 1,
+            "hasTexture": true,
+            "textureUuid": "96d56178-8811-4a41-b694-f375c016f37f",
+            "avatarVersion": 1,
+            "avatarPreset": "tide",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 330.2805620707259,
+              "top": 52.760722123394245,
+              "right": 380.8409049910985,
+              "bottom": 117.65473205502101
+            },
+            "label": {
+              "left": 329.046875,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 2,
+            "hasTexture": true,
+            "textureUuid": "40eb08f8-de1c-47e4-922d-2f83caf8e42e",
+            "avatarVersion": 1,
+            "avatarPreset": "moss",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 675.1590950089015,
+              "top": 52.760722123394245,
+              "right": 725.7194379292739,
+              "bottom": 117.65473205502101
+            },
+            "label": {
+              "left": 673.9375,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 3,
+            "hasTexture": true,
+            "textureUuid": "e6c70f4c-114e-4d44-8a75-e60cfb6f1cad",
+            "avatarVersion": 1,
+            "avatarPreset": "orbit",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 670.2814781386505,
+              "top": 177.7998262953309,
+              "right": 728.0557240900348,
+              "bottom": 244.43056283196503
+            },
+            "label": {
+              "left": 672.65625,
+              "top": 121.796875,
+              "width": 53,
+              "height": 44
+            }
+          }
+        ],
+        "globe": {
+          "minimumZoom": 0.84,
+          "maximumZoom": 1.12,
+          "current": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "default": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "maximum": {
+            "zoom": 1.12,
+            "scale": 0.6944,
+            "centerY": 2.6526880000000004,
+            "globeBottom": 1.4027680000000002,
+            "allMarkersBottom": 1.2500000000000002,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "conservativeLocalRadius": 2.02,
+          "markerCount": 0
+        },
+        "environment": {
+          "bottleCount": 24,
+          "windowCount": 2,
+          "lampCount": 2,
+          "propNames": [
+            "walnut floor",
+            "woven rug",
+            "back bar",
+            "bottles",
+            "arched windows",
+            "wall sconces",
+            "brass balance",
+            "ferns"
+          ],
+          "objectCount": 21
+        },
+        "quality": {
+          "requested": "auto",
+          "effective": "high",
+          "reason": "desktop",
+          "pixelRatio": 1,
+          "shadows": true,
+          "markerBudget": 120,
+          "antialias": true
+        },
+        "frameCount": 9,
+        "renderCount": 9,
+        "fps": 0,
+        "callbackFps": 0,
+        "fpsWindowMs": 1000,
+        "renderMode": "on-demand",
+        "drawCalls": 194,
+        "triangles": 66402,
+        "geometryCount": 74,
+        "textureCount": 10,
+        "performance": {
+          "activeFrames": 0,
+          "idleCallbacks": 0,
+          "idleUpdates": 1,
+          "projectionCount": 40,
+          "diagnosticReads": 13,
+          "suspended": true,
+          "scheduler": {
+            "pending": false,
+            "requested": true,
+            "continuous": false,
+            "suspended": true,
+            "destroyed": false
+          },
+          "renderCpuMs": {
+            "last": 3.400000000372529,
+            "mean": 121.26666666660458,
+            "max": 924.7999999998137
+          },
+          "staticBatches": [
+            {
+              "sourceMeshes": 144,
+              "batches": 11,
+              "drawsSaved": 133
+            },
+            {
+              "sourceMeshes": 30,
+              "batches": 6,
+              "drawsSaved": 24
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            }
+          ],
+          "sharedGeometries": 115
+        },
+        "defaultAutoRotate": false
+      },
+      "documentHidden": false,
+      "canvas": {
+        "width": 1056,
+        "height": 420,
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1056,
+          "height": 420
+        },
+        "visibility": "visible",
+        "display": "block",
+        "opacity": "1",
+        "contextLost": false,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "low-power",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "shell": {
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1056,
+          "height": 420
+        },
+        "bounds": "{\"viewport\":{\"width\":1056,\"height\":420,\"mobile\":false},\"seats\":[{\"seat\":0,\"hasTexture\":true,\"textureUuid\":\"13c64869-173c-405d-9520-8ea66ce9da7c\",\"avatarVersion\":1,\"avatarPreset\":\"ember\",\"headScale\":[1,1,1],\"head\":{\"left\":327.94427590996526,\"top\":177.7998262953309,\"right\":385.7185218613495,\"bottom\":244.43056283196503},\"label\":{\"left\":310.9140625,\"top\":121.796875,\"width\":92,\"height\":44}},{\"seat\":1,\"hasTexture\":true,\"textureUuid\":\"96d56178-8811-4a41-b694-f375c016f37f\",\"avatarVersion\":1,\"avatarPreset\":\"tide\",\"headScale\":[1,1,1],\"head\":{\"left\":330.2805620707259,\"top\":52.760722123394245,\"right\":380.8409049910985,\"bottom\":117.65473205502101},\"label\":{\"left\":329.046875,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":2,\"hasTexture\":true,\"textureUuid\":\"40eb08f8-de1c-47e4-922d-2f83caf8e42e\",\"avatarVersion\":1,\"avatarPreset\":\"moss\",\"headScale\":[1,1,1],\"head\":{\"left\":675.1590950089015,\"top\":52.760722123394245,\"right\":725.7194379292739,\"bottom\":117.65473205502101},\"label\":{\"left\":673.9375,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":3,\"hasTexture\":true,\"textureUuid\":\"e6c70f4c-114e-4d44-8a75-e60cfb6f1cad\",\"avatarVersion\":1,\"avatarPreset\":\"orbit\",\"headScale\":[1,1,1],\"head\":{\"left\":670.2814781386505,\"top\":177.7998262953309,\"right\":728.0557240900348,\"bottom\":244.43056283196503},\"label\":{\"left\":672.65625,\"top\":121.796875,\"width\":53,\"height\":44}}],\"globe\":{\"minimumZoom\":0.84,\"maximumZoom\":1.12,\"current\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"default\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"maximum\":{\"zoom\":1.12,\"scale\":0.6944,\"centerY\":2.6526880000000004,\"globeBottom\":1.4027680000000002,\"allMarkersBottom\":1.2500000000000002,\"tableTop\":1.12,\"minimumClearance\":0.13},\"conservativeLocalRadius\":2.02,\"markerCount\":0},\"frameCount\":9,\"renderCount\":9,\"fps\":0,\"drawCalls\":194,\"environmentObjects\":21}"
+      },
+      "container": {
+        "x": 22,
+        "y": 100,
+        "width": 1056,
+        "height": 420
+      }
+    },
+    {
+      "label": "after-collapse",
+      "diagnostics": {
+        "version": 3,
+        "renderer": "webgl",
+        "viewport": {
+          "width": 1056,
+          "height": 310,
+          "mobile": false
+        },
+        "seatCount": 4,
+        "occupiedSeats": 4,
+        "avatarSeats": [
+          {
+            "seat": 0,
+            "hasTexture": true,
+            "textureUuid": "13c64869-173c-405d-9520-8ea66ce9da7c",
+            "avatarVersion": 1,
+            "avatarPreset": "ember",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 380.3398226954505,
+              "top": 131.2332051227442,
+              "right": 422.9827185167103,
+              "bottom": 180.41303447121228
+            },
+            "label": {
+              "left": 355.7421875,
+              "top": 75.21875,
+              "width": 92,
+              "height": 44
+            }
+          },
+          {
+            "seat": 1,
+            "hasTexture": true,
+            "textureUuid": "96d56178-8811-4a41-b694-f375c016f37f",
+            "avatarVersion": 1,
+            "avatarPreset": "tide",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 382.06422438553585,
+              "top": 38.94243775774337,
+              "right": 419.38257273152504,
+              "bottom": 86.84039746918218
+            },
+            "label": {
+              "left": 374.21875,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 2,
+            "hasTexture": true,
+            "textureUuid": "40eb08f8-de1c-47e4-922d-2f83caf8e42e",
+            "avatarVersion": 1,
+            "avatarPreset": "moss",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 636.6174272684749,
+              "top": 38.94243775774337,
+              "right": 673.9357756144642,
+              "bottom": 86.84039746918218
+            },
+            "label": {
+              "left": 628.765625,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 3,
+            "hasTexture": true,
+            "textureUuid": "e6c70f4c-114e-4d44-8a75-e60cfb6f1cad",
+            "avatarVersion": 1,
+            "avatarPreset": "orbit",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 633.0172814832897,
+              "top": 131.2332051227442,
+              "right": 675.6601773045494,
+              "bottom": 180.41303447121228
+            },
+            "label": {
+              "left": 627.828125,
+              "top": 75.21875,
+              "width": 53,
+              "height": 44
+            }
+          }
+        ],
+        "globe": {
+          "minimumZoom": 0.84,
+          "maximumZoom": 1.12,
+          "current": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "default": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "maximum": {
+            "zoom": 1.12,
+            "scale": 0.6944,
+            "centerY": 2.6526880000000004,
+            "globeBottom": 1.4027680000000002,
+            "allMarkersBottom": 1.2500000000000002,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "conservativeLocalRadius": 2.02,
+          "markerCount": 0
+        },
+        "environment": {
+          "bottleCount": 24,
+          "windowCount": 2,
+          "lampCount": 2,
+          "propNames": [
+            "walnut floor",
+            "woven rug",
+            "back bar",
+            "bottles",
+            "arched windows",
+            "wall sconces",
+            "brass balance",
+            "ferns"
+          ],
+          "objectCount": 21
+        },
+        "quality": {
+          "requested": "auto",
+          "effective": "high",
+          "reason": "desktop",
+          "pixelRatio": 1,
+          "shadows": true,
+          "markerBudget": 120,
+          "antialias": true
+        },
+        "frameCount": 9,
+        "renderCount": 9,
+        "fps": 0,
+        "callbackFps": 0,
+        "fpsWindowMs": 1000,
+        "renderMode": "on-demand",
+        "drawCalls": 194,
+        "triangles": 66402,
+        "geometryCount": 74,
+        "textureCount": 10,
+        "performance": {
+          "activeFrames": 0,
+          "idleCallbacks": 0,
+          "idleUpdates": 1,
+          "projectionCount": 48,
+          "diagnosticReads": 16,
+          "suspended": true,
+          "scheduler": {
+            "pending": false,
+            "requested": true,
+            "continuous": false,
+            "suspended": true,
+            "destroyed": false
+          },
+          "renderCpuMs": {
+            "last": 3.400000000372529,
+            "mean": 121.26666666660458,
+            "max": 924.7999999998137
+          },
+          "staticBatches": [
+            {
+              "sourceMeshes": 144,
+              "batches": 11,
+              "drawsSaved": 133
+            },
+            {
+              "sourceMeshes": 30,
+              "batches": 6,
+              "drawsSaved": 24
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            }
+          ],
+          "sharedGeometries": 115
+        },
+        "defaultAutoRotate": false
+      },
+      "documentHidden": false,
+      "canvas": {
+        "width": 1056,
+        "height": 310,
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1056,
+          "height": 310
+        },
+        "visibility": "visible",
+        "display": "block",
+        "opacity": "1",
+        "contextLost": false,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "low-power",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "shell": {
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 1056,
+          "height": 310
+        },
+        "bounds": "{\"viewport\":{\"width\":1056,\"height\":310,\"mobile\":false},\"seats\":[{\"seat\":0,\"hasTexture\":true,\"textureUuid\":\"13c64869-173c-405d-9520-8ea66ce9da7c\",\"avatarVersion\":1,\"avatarPreset\":\"ember\",\"headScale\":[1,1,1],\"head\":{\"left\":380.3398226954505,\"top\":131.2332051227442,\"right\":422.9827185167103,\"bottom\":180.41303447121228},\"label\":{\"left\":355.7421875,\"top\":75.21875,\"width\":92,\"height\":44}},{\"seat\":1,\"hasTexture\":true,\"textureUuid\":\"96d56178-8811-4a41-b694-f375c016f37f\",\"avatarVersion\":1,\"avatarPreset\":\"tide\",\"headScale\":[1,1,1],\"head\":{\"left\":382.06422438553585,\"top\":38.94243775774337,\"right\":419.38257273152504,\"bottom\":86.84039746918218},\"label\":{\"left\":374.21875,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":2,\"hasTexture\":true,\"textureUuid\":\"40eb08f8-de1c-47e4-922d-2f83caf8e42e\",\"avatarVersion\":1,\"avatarPreset\":\"moss\",\"headScale\":[1,1,1],\"head\":{\"left\":636.6174272684749,\"top\":38.94243775774337,\"right\":673.9357756144642,\"bottom\":86.84039746918218},\"label\":{\"left\":628.765625,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":3,\"hasTexture\":true,\"textureUuid\":\"e6c70f4c-114e-4d44-8a75-e60cfb6f1cad\",\"avatarVersion\":1,\"avatarPreset\":\"orbit\",\"headScale\":[1,1,1],\"head\":{\"left\":633.0172814832897,\"top\":131.2332051227442,\"right\":675.6601773045494,\"bottom\":180.41303447121228},\"label\":{\"left\":627.828125,\"top\":75.21875,\"width\":53,\"height\":44}}],\"globe\":{\"minimumZoom\":0.84,\"maximumZoom\":1.12,\"current\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"default\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"maximum\":{\"zoom\":1.12,\"scale\":0.6944,\"centerY\":2.6526880000000004,\"globeBottom\":1.4027680000000002,\"allMarkersBottom\":1.2500000000000002,\"tableTop\":1.12,\"minimumClearance\":0.13},\"conservativeLocalRadius\":2.02,\"markerCount\":0},\"frameCount\":9,\"renderCount\":9,\"fps\":0,\"drawCalls\":194,\"environmentObjects\":21}"
+      },
+      "container": {
+        "x": 22,
+        "y": 100,
+        "width": 1056,
+        "height": 310
+      }
+    },
+    {
+      "label": "after-resize-desktop",
+      "diagnostics": {
+        "version": 3,
+        "renderer": "webgl",
+        "viewport": {
+          "width": 986,
+          "height": 280,
+          "mobile": false
+        },
+        "seatCount": 4,
+        "occupiedSeats": 4,
+        "avatarSeats": [
+          {
+            "seat": 0,
+            "hasTexture": true,
+            "textureUuid": "13c64869-173c-405d-9520-8ea66ce9da7c",
+            "avatarVersion": 1,
+            "avatarPreset": "ember",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 359.62951727331017,
+              "top": 118.53321753022058,
+              "right": 398.14568124089965,
+              "bottom": 162.95370855464336
+            },
+            "label": {
+              "left": 332.9609375,
+              "top": 62.53125,
+              "width": 92,
+              "height": 44
+            }
+          },
+          {
+            "seat": 1,
+            "hasTexture": true,
+            "textureUuid": "96d56178-8811-4a41-b694-f375c016f37f",
+            "avatarVersion": 1,
+            "avatarPreset": "tide",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 361.187041380484,
+              "top": 35.173814748929495,
+              "right": 394.8939366607324,
+              "bottom": 78.43648803668067
+            },
+            "label": {
+              "left": 351.53125,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 2,
+            "hasTexture": true,
+            "textureUuid": "40eb08f8-de1c-47e4-922d-2f83caf8e42e",
+            "avatarVersion": 1,
+            "avatarPreset": "moss",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 591.1060633392676,
+              "top": 35.173814748929495,
+              "right": 624.8129586195159,
+              "bottom": 78.43648803668067
+            },
+            "label": {
+              "left": 581.453125,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 3,
+            "hasTexture": true,
+            "textureUuid": "e6c70f4c-114e-4d44-8a75-e60cfb6f1cad",
+            "avatarVersion": 1,
+            "avatarPreset": "orbit",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 587.8543187591004,
+              "top": 118.53321753022058,
+              "right": 626.3704827266898,
+              "bottom": 162.95370855464336
+            },
+            "label": {
+              "left": 580.609375,
+              "top": 62.53125,
+              "width": 53,
+              "height": 44
+            }
+          }
+        ],
+        "globe": {
+          "minimumZoom": 0.84,
+          "maximumZoom": 1.12,
+          "current": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "default": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "maximum": {
+            "zoom": 1.12,
+            "scale": 0.6944,
+            "centerY": 2.6526880000000004,
+            "globeBottom": 1.4027680000000002,
+            "allMarkersBottom": 1.2500000000000002,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "conservativeLocalRadius": 2.02,
+          "markerCount": 0
+        },
+        "environment": {
+          "bottleCount": 24,
+          "windowCount": 2,
+          "lampCount": 2,
+          "propNames": [
+            "walnut floor",
+            "woven rug",
+            "back bar",
+            "bottles",
+            "arched windows",
+            "wall sconces",
+            "brass balance",
+            "ferns"
+          ],
+          "objectCount": 21
+        },
+        "quality": {
+          "requested": "auto",
+          "effective": "high",
+          "reason": "desktop",
+          "pixelRatio": 1,
+          "shadows": true,
+          "markerBudget": 120,
+          "antialias": true
+        },
+        "frameCount": 9,
+        "renderCount": 9,
+        "fps": 0,
+        "callbackFps": 0,
+        "fpsWindowMs": 1000,
+        "renderMode": "on-demand",
+        "drawCalls": 194,
+        "triangles": 66402,
+        "geometryCount": 74,
+        "textureCount": 10,
+        "performance": {
+          "activeFrames": 0,
+          "idleCallbacks": 0,
+          "idleUpdates": 1,
+          "projectionCount": 56,
+          "diagnosticReads": 19,
+          "suspended": true,
+          "scheduler": {
+            "pending": false,
+            "requested": true,
+            "continuous": false,
+            "suspended": true,
+            "destroyed": false
+          },
+          "renderCpuMs": {
+            "last": 3.400000000372529,
+            "mean": 121.26666666660458,
+            "max": 924.7999999998137
+          },
+          "staticBatches": [
+            {
+              "sourceMeshes": 144,
+              "batches": 11,
+              "drawsSaved": 133
+            },
+            {
+              "sourceMeshes": 30,
+              "batches": 6,
+              "drawsSaved": 24
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            }
+          ],
+          "sharedGeometries": 115
+        },
+        "defaultAutoRotate": false
+      },
+      "documentHidden": false,
+      "canvas": {
+        "width": 986,
+        "height": 280,
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 986,
+          "height": 280
+        },
+        "visibility": "visible",
+        "display": "block",
+        "opacity": "1",
+        "contextLost": false,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "low-power",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "shell": {
+        "rect": {
+          "x": 22,
+          "y": 100,
+          "width": 986,
+          "height": 280
+        },
+        "bounds": "{\"viewport\":{\"width\":986,\"height\":280,\"mobile\":false},\"seats\":[{\"seat\":0,\"hasTexture\":true,\"textureUuid\":\"13c64869-173c-405d-9520-8ea66ce9da7c\",\"avatarVersion\":1,\"avatarPreset\":\"ember\",\"headScale\":[1,1,1],\"head\":{\"left\":359.62951727331017,\"top\":118.53321753022058,\"right\":398.14568124089965,\"bottom\":162.95370855464336},\"label\":{\"left\":332.9609375,\"top\":62.53125,\"width\":92,\"height\":44}},{\"seat\":1,\"hasTexture\":true,\"textureUuid\":\"96d56178-8811-4a41-b694-f375c016f37f\",\"avatarVersion\":1,\"avatarPreset\":\"tide\",\"headScale\":[1,1,1],\"head\":{\"left\":361.187041380484,\"top\":35.173814748929495,\"right\":394.8939366607324,\"bottom\":78.43648803668067},\"label\":{\"left\":351.53125,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":2,\"hasTexture\":true,\"textureUuid\":\"40eb08f8-de1c-47e4-922d-2f83caf8e42e\",\"avatarVersion\":1,\"avatarPreset\":\"moss\",\"headScale\":[1,1,1],\"head\":{\"left\":591.1060633392676,\"top\":35.173814748929495,\"right\":624.8129586195159,\"bottom\":78.43648803668067},\"label\":{\"left\":581.453125,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":3,\"hasTexture\":true,\"textureUuid\":\"e6c70f4c-114e-4d44-8a75-e60cfb6f1cad\",\"avatarVersion\":1,\"avatarPreset\":\"orbit\",\"headScale\":[1,1,1],\"head\":{\"left\":587.8543187591004,\"top\":118.53321753022058,\"right\":626.3704827266898,\"bottom\":162.95370855464336},\"label\":{\"left\":580.609375,\"top\":62.53125,\"width\":53,\"height\":44}}],\"globe\":{\"minimumZoom\":0.84,\"maximumZoom\":1.12,\"current\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"default\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"maximum\":{\"zoom\":1.12,\"scale\":0.6944,\"centerY\":2.6526880000000004,\"globeBottom\":1.4027680000000002,\"allMarkersBottom\":1.2500000000000002,\"tableTop\":1.12,\"minimumClearance\":0.13},\"conservativeLocalRadius\":2.02,\"markerCount\":0},\"frameCount\":9,\"renderCount\":9,\"fps\":0,\"drawCalls\":194,\"environmentObjects\":21}"
+      },
+      "container": {
+        "x": 22,
+        "y": 100,
+        "width": 986,
+        "height": 280
+      }
+    },
+    {
+      "label": "after-resize-mobile",
+      "diagnostics": {
+        "version": 3,
+        "renderer": "webgl",
+        "viewport": {
+          "width": 362,
+          "height": 240,
+          "mobile": true
+        },
+        "seatCount": 4,
+        "occupiedSeats": 4,
+        "avatarSeats": [
+          {
+            "seat": 0,
+            "hasTexture": true,
+            "textureUuid": "13c64869-173c-405d-9520-8ea66ce9da7c",
+            "avatarVersion": 1,
+            "avatarPreset": "ember",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 66.682443377123,
+              "top": 101.59990074018907,
+              "right": 99.69629820648538,
+              "bottom": 139.67460733255146
+            },
+            "label": {
+              "left": 37.2734375,
+              "top": 45.59375,
+              "width": 92,
+              "height": 44
+            }
+          },
+          {
+            "seat": 1,
+            "hasTexture": true,
+            "textureUuid": "96d56178-8811-4a41-b694-f375c016f37f",
+            "avatarVersion": 1,
+            "avatarPreset": "tide",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 68.01746404041482,
+              "top": 30.148984070510995,
+              "right": 96.909088566342,
+              "bottom": 67.23127546001201
+            },
+            "label": {
+              "left": 55.953125,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 2,
+            "hasTexture": true,
+            "textureUuid": "40eb08f8-de1c-47e4-922d-2f83caf8e42e",
+            "avatarVersion": 1,
+            "avatarPreset": "moss",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 265.09091143365805,
+              "top": 30.148984070510995,
+              "right": 293.98253595958516,
+              "bottom": 67.23127546001201
+            },
+            "label": {
+              "left": 253.03125,
+              "top": 2,
+              "width": 53,
+              "height": 44
+            }
+          },
+          {
+            "seat": 3,
+            "hasTexture": true,
+            "textureUuid": "e6c70f4c-114e-4d44-8a75-e60cfb6f1cad",
+            "avatarVersion": 1,
+            "avatarPreset": "orbit",
+            "headScale": [
+              1,
+              1,
+              1
+            ],
+            "head": {
+              "left": 262.3037017935146,
+              "top": 101.59990074018907,
+              "right": 295.317556622877,
+              "bottom": 139.67460733255146
+            },
+            "label": {
+              "left": 252.296875,
+              "top": 45.59375,
+              "width": 53,
+              "height": 44
+            }
+          }
+        ],
+        "globe": {
+          "minimumZoom": 0.84,
+          "maximumZoom": 1.12,
+          "current": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "default": {
+            "zoom": 1,
+            "scale": 0.62,
+            "centerY": 2.5023999999999997,
+            "globeBottom": 1.3863999999999996,
+            "allMarkersBottom": 1.2499999999999998,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "maximum": {
+            "zoom": 1.12,
+            "scale": 0.6944,
+            "centerY": 2.6526880000000004,
+            "globeBottom": 1.4027680000000002,
+            "allMarkersBottom": 1.2500000000000002,
+            "tableTop": 1.12,
+            "minimumClearance": 0.13
+          },
+          "conservativeLocalRadius": 2.02,
+          "markerCount": 0
+        },
+        "environment": {
+          "bottleCount": 24,
+          "windowCount": 2,
+          "lampCount": 2,
+          "propNames": [
+            "walnut floor",
+            "woven rug",
+            "back bar",
+            "bottles",
+            "arched windows",
+            "wall sconces",
+            "brass balance",
+            "ferns"
+          ],
+          "objectCount": 21
+        },
+        "quality": {
+          "requested": "auto",
+          "effective": "low",
+          "reason": "mobile",
+          "pixelRatio": 1,
+          "shadows": false,
+          "markerBudget": 72,
+          "antialias": true
+        },
+        "frameCount": 11,
+        "renderCount": 11,
+        "fps": 1,
+        "callbackFps": 1,
+        "fpsWindowMs": 1000,
+        "renderMode": "on-demand",
+        "drawCalls": 190,
+        "triangles": 57138,
+        "geometryCount": 74,
+        "textureCount": 10,
+        "performance": {
+          "activeFrames": 0,
+          "idleCallbacks": 0,
+          "idleUpdates": 1,
+          "projectionCount": 64,
+          "diagnosticReads": 22,
+          "suspended": false,
+          "scheduler": {
+            "pending": false,
+            "requested": false,
+            "continuous": false,
+            "suspended": false,
+            "destroyed": false
+          },
+          "renderCpuMs": {
+            "last": 5.099999999627471,
+            "mean": 100.09090909082443,
+            "max": 924.7999999998137
+          },
+          "staticBatches": [
+            {
+              "sourceMeshes": 144,
+              "batches": 11,
+              "drawsSaved": 133
+            },
+            {
+              "sourceMeshes": 30,
+              "batches": 6,
+              "drawsSaved": 24
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 40,
+              "batches": 1,
+              "drawsSaved": 39
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            },
+            {
+              "sourceMeshes": 15,
+              "batches": 4,
+              "drawsSaved": 11
+            }
+          ],
+          "sharedGeometries": 115
+        },
+        "defaultAutoRotate": false
+      },
+      "documentHidden": false,
+      "canvas": {
+        "width": 362,
+        "height": 240,
+        "rect": {
+          "x": 14,
+          "y": 167.6875,
+          "width": 362,
+          "height": 240
+        },
+        "visibility": "visible",
+        "display": "block",
+        "opacity": "1",
+        "contextLost": false,
+        "contextAttributes": {
+          "alpha": true,
+          "antialias": true,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "low-power",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        }
+      },
+      "shell": {
+        "rect": {
+          "x": 14,
+          "y": 167.6875,
+          "width": 362,
+          "height": 240
+        },
+        "bounds": "{\"viewport\":{\"width\":362,\"height\":240,\"mobile\":true},\"seats\":[{\"seat\":0,\"hasTexture\":true,\"textureUuid\":\"13c64869-173c-405d-9520-8ea66ce9da7c\",\"avatarVersion\":1,\"avatarPreset\":\"ember\",\"headScale\":[1,1,1],\"head\":{\"left\":66.682443377123,\"top\":101.59990074018907,\"right\":99.69629820648538,\"bottom\":139.67460733255146},\"label\":{\"left\":37.2734375,\"top\":45.59375,\"width\":92,\"height\":44}},{\"seat\":1,\"hasTexture\":true,\"textureUuid\":\"96d56178-8811-4a41-b694-f375c016f37f\",\"avatarVersion\":1,\"avatarPreset\":\"tide\",\"headScale\":[1,1,1],\"head\":{\"left\":68.01746404041482,\"top\":30.148984070510995,\"right\":96.909088566342,\"bottom\":67.23127546001201},\"label\":{\"left\":55.953125,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":2,\"hasTexture\":true,\"textureUuid\":\"40eb08f8-de1c-47e4-922d-2f83caf8e42e\",\"avatarVersion\":1,\"avatarPreset\":\"moss\",\"headScale\":[1,1,1],\"head\":{\"left\":265.09091143365805,\"top\":30.148984070510995,\"right\":293.98253595958516,\"bottom\":67.23127546001201},\"label\":{\"left\":253.03125,\"top\":2,\"width\":53,\"height\":44}},{\"seat\":3,\"hasTexture\":true,\"textureUuid\":\"e6c70f4c-114e-4d44-8a75-e60cfb6f1cad\",\"avatarVersion\":1,\"avatarPreset\":\"orbit\",\"headScale\":[1,1,1],\"head\":{\"left\":262.3037017935146,\"top\":101.59990074018907,\"right\":295.317556622877,\"bottom\":139.67460733255146},\"label\":{\"left\":252.296875,\"top\":45.59375,\"width\":53,\"height\":44}}],\"globe\":{\"minimumZoom\":0.84,\"maximumZoom\":1.12,\"current\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"default\":{\"zoom\":1,\"scale\":0.62,\"centerY\":2.5023999999999997,\"globeBottom\":1.3863999999999996,\"allMarkersBottom\":1.2499999999999998,\"tableTop\":1.12,\"minimumClearance\":0.13},\"maximum\":{\"zoom\":1.12,\"scale\":0.6944,\"centerY\":2.6526880000000004,\"globeBottom\":1.4027680000000002,\"allMarkersBottom\":1.2500000000000002,\"tableTop\":1.12,\"minimumClearance\":0.13},\"conservativeLocalRadius\":2.02,\"markerCount\":0},\"frameCount\":10,\"renderCount\":10,\"fps\":1,\"drawCalls\":194,\"environmentObjects\":21}"
+      },
+      "container": {
+        "x": 14,
+        "y": 167.6875,
+        "width": 362,
+        "height": 240
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

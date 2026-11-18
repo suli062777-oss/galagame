@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-18T09:25:19.746116+08:00",
+  "baseline_commit": "cbcc8cc25df89189cc644f1f5263e404adec5d40",
+  "baseline_tag": "baseline-v8-20261118",
+  "checkpoint_tag": "checkpoint-classroom-20261118",
+  "source_files": 319,
+  "source_bytes": 29498878,
+  "frozen_baseline_unchanged": true,
+  "server_worker_and_database_rules_unchanged": true,
+  "runtime_data_and_environment_keys_excluded": true,
+  "possible_private_key_or_provider_token_matches": 0,
+  "existing_test_record": {
+    "path": "online/docs/evidence/classroom-20261118/final-tests.txt",
+    "passed": 173,
+    "failed": 0,
+    "rerun_for_archive": false
+  },
+  "site_deployed_by_this_archive": false
+}

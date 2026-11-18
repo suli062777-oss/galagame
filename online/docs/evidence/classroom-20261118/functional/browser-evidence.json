@@ -1,0 +1,438 @@
+{
+  "date": "2026-11-18",
+  "candidateBuild": "20261118-classroom",
+  "scope": "Actual local UI with real API and template narration; viewport captures only; no live site mutation or paid calls",
+  "screens": [
+    {
+      "name": "home-desktop",
+      "source": "local",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\implementation-classroom-20261118\\online\\docs\\evidence\\classroom-20261118\\functional\\screenshots\\home-desktop.png",
+      "url": "http://127.0.0.1:61468/#/home",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 2242,
+      "phase": null,
+      "headings": [
+        "增长黑客",
+        "同一张桌，各自作判断。",
+        "从一轮决定开始",
+        "经营一局",
+        "回看为什么",
+        "换一个变量试试",
+        "翻开第一篇"
+      ],
+      "visibleActions": [
+        "G↗增长黑客",
+        "阅读地图",
+        "增长实验室",
+        "案例拆解",
+        "阅读札记 0",
+        "增长酒馆 ↗",
+        "进入增长酒馆 →",
+        "开始阅读"
+      ],
+      "text": "跳到正文\nG\n↗\n增长黑客\n阅读地图\n增长实验室\n案例拆解\n阅读札记 0\n增长酒馆\n↗\n增长黑客\n\n把增长判断，放进六轮经营。\n和同学各自经营一家公司，在同一个市场里，看见选择带来的变化。\n\n课堂可直接加入\n4 席 · 6 轮 · 每轮 45 秒\n进入增长酒馆\n→\n开始阅读\n\n可以全程手动，Agent 是可选搭档。\n\n同一张桌，各自作判断。\n\n看看本轮发生了什么，再决定把预算放在哪里。结果保留在账本里，方便回头核对。\n\n加入一桌\n→\n从一轮决定开始\n\n先经营，也可以带着问题读。\n\n经营一局\n\n加入同学的桌，或者和三席脚本先练习。\n\n↗\n回看为什么\n\n理解用户、激活、留存与增长实验。\n\n↗\n换一个变量试试\n\n先作预测，再观察教学模型怎样变化。\n\n↗\n翻开第一篇\n0% 已读\n从第一篇读起\n→\n\n基于《增长黑客》的交互阅读与教学经营。\n肖恩·埃利斯 · 摩根·布朗 · 中信出版集团 · 2018年中文版\n\n《增长黑客》交互阅读\n肖恩·埃利斯 · 摩根·布朗 · 中信2018年中文版\n\n阅读地图\n我的札记\n增长酒馆\n\n学习型二次解读，游戏规则为教学改编。"
+    },
+    {
+      "name": "room-lobby",
+      "source": "local",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\implementation-classroom-20261118\\online\\docs\\evidence\\classroom-20261118\\functional\\screenshots\\room-lobby.png",
+      "url": "http://127.0.0.1:61468/#/tavern/65E8DE",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1091,
+      "phase": "lobby",
+      "headings": [
+        "增长酒馆",
+        "经营健身习惯 App",
+        "酒馆主持",
+        "这一桌，准备好了",
+        "桌上消息",
+        "本轮情报",
+        "入席后，一起看消息"
+      ],
+      "visibleActions": [
+        "←",
+        "连接我的 Agent连接 Agent",
+        "更多⌄",
+        "更换我的头像",
+        "Agent 设置",
+        "规则与帮助",
+        "沙盘视图",
+        "缩小",
+        "放大",
+        "开启旋转",
+        "回到阅读",
+        "六轮后，怎样比较经营表现？",
+        "查看本局完整规则",
+        "看一个操作样例 →",
+        "课堂功能验收 · 你",
+        "火种",
+        "常青",
+        "罗盘",
+        "展开圆桌",
+        "展开",
+        "往期",
+        "开始经营",
+        "情报",
+        "研究",
+        "账本"
+      ],
+      "text": "跳到正文\n←\n增长酒馆\n\n健身习惯 App\n练习 · 3席脚本\n\n等待入席\n连接我的 Agent\n更多\n⌄\n本局任务\n经营健身习惯 App\n让用户获得价值\n当周完成至少两次计划训练\n怎样算有效用户\n当周完成核心行为的去重主用用户\n六轮后，怎样比较经营表现？\n\n你在第 1 席 · 你是房主，人齐后开始。 可以全程手动，Agent 可选。\n\n看一个操作样例 →\n课堂功能验收 · 你\n火种\n常青\n罗盘\n展开圆桌\n酒馆主持\n模板主持\n\n模板主持 · 当前未调用外部模型。准备好后开始六周经营。\n\n展开\n往期\n单人练习 · 4/4\n这一桌，准备好了\n\n另三席由经营脚本扮演，随时可以开始。\n\n课堂功能验收 · 你\n火种\n常青\n罗盘\n开始经营\n我的经营\n第 1 名\n现金\n1,200\n综合分\n0.00\n有效用户\n450\n情报\n研究\n账本\n本轮情报\n入席后，一起看消息\n\n开局后会发布事实、预告与待核验传闻。"
+    },
+    {
+      "name": "decision-mobile",
+      "source": "local",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\implementation-classroom-20261118\\online\\docs\\evidence\\classroom-20261118\\functional\\screenshots\\decision-mobile.png",
+      "url": "http://127.0.0.1:61468/#/tavern/65E8DE",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "找到新用户"
+      ],
+      "visibleActions": [
+        "←",
+        "连接我的 Agent连接 Agent",
+        "更多⌄",
+        "更换我的头像",
+        "Agent 设置",
+        "规则与帮助",
+        "沙盘视图",
+        "缩小",
+        "放大",
+        "开启旋转",
+        "回到阅读",
+        "课堂功能验收 · 你",
+        "火种",
+        "常青",
+        "罗盘",
+        "展开圆桌",
+        "展开",
+        "往期",
+        "本轮情报四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。↗",
+        "选择行动"
+      ],
+      "text": "跳到正文\n←\n增长酒馆\n\n健身习惯 App\n练习 · 3席脚本\n\nR1/6 · 决策\n44秒\n连接 Agent\n⌄\n现金\n1,200\n综合分 第1名\n0.00\n有效用户\n450\n课堂功能验收 · 你\n火种\n常青\n罗盘\n展开圆桌\n酒馆主持模板主持\n\n先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。\n\n展开\n往期\n本轮情报\n四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。\n↗\n草稿未提交\n用户推荐\n选择行动"
+    },
+    {
+      "name": "action-mobile",
+      "source": "local",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\implementation-classroom-20261118\\online\\docs\\evidence\\classroom-20261118\\functional\\screenshots\\action-mobile.png",
+      "url": "http://127.0.0.1:61468/#/tavern/65E8DE",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "找到新用户"
+      ],
+      "visibleActions": [
+        "←",
+        "连接我的 Agent连接 Agent",
+        "更多⌄",
+        "更换我的头像",
+        "Agent 设置",
+        "规则与帮助",
+        "沙盘视图",
+        "缩小",
+        "放大",
+        "开启旋转",
+        "回到阅读",
+        "课堂功能验收 · 你",
+        "火种",
+        "常青",
+        "罗盘",
+        "展开圆桌",
+        "展开",
+        "往期",
+        "本轮情报四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。↗",
+        "×",
+        "知道了",
+        "选行动时，回看本轮情报",
+        "查看完整公开情报",
+        "比较十二种行动",
+        "找到新用户",
+        "激活与留存",
+        "定价与收益",
+        "研究与观察",
+        "理解这个行动背后的方法"
+      ],
+      "text": "跳到正文\n←\n增长酒馆\n\n健身习惯 App\n练习 · 3席脚本\n\nR1/6 · 决策\n43秒\n连接 Agent\n⌄\n现金\n1,200\n综合分 第1名\n0.00\n有效用户\n450\n课堂功能验收 · 你\n火种\n常青\n罗盘\n展开圆桌\n酒馆主持模板主持\n\n先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。\n\n展开\n往期\n本轮情报\n四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。\n↗\n这一轮，怎么经营？\n×\n草稿已选择，确认后才会执行\n手动决策\n\n先看情报，再核对行动、人群与预算。默认草稿不是推荐，确认后才提交。\n\n知道了\n选行动时，回看本轮情报\n比较十二种行动\n找到新用户\n激活与留存\n定价与收益\n研究与观察\n\n先判断问题，再选行动。默认草稿不是推荐，确认后才会提交。\n\n行动\n付费获客\n内容获客\n用户推荐\n调整新手引导\n调整习惯机制\n改善核心价值\n限时付费试用\n提高订阅价格\n降低订阅价格\n用户调研\n小规模对照实验\n等待并观察\n目标人群\n健身新手\n习惯培养者\n规律训练者\n投入\n轻量 ×0.5\n标准 ×1\n加码 ×1.5\n\n预计投入 140\n可用预算 1,180\n已留20运营费\n\n以该公司上轮有效活跃用户数×0.55×投入档位产生目标人群接触机会\n\n理解这个行动背后的方法\n确认行动\n\n更多操作"
+    },
+    {
+      "name": "decision-desktop",
+      "source": "local",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\implementation-classroom-20261118\\online\\docs\\evidence\\classroom-20261118\\functional\\screenshots\\decision-desktop.png",
+      "url": "http://127.0.0.1:61468/#/tavern/65E8DE",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 1000,
+      "phase": "decision",
+      "headings": [
+        "增长酒馆",
+        "酒馆主持",
+        "这一轮，怎么经营？",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "找到新用户"
+      ],
+      "visibleActions": [
+        "←",
+        "连接我的 Agent连接 Agent",
+        "更多⌄",
+        "更换我的头像",
+        "Agent 设置",
+        "规则与帮助",
+        "沙盘视图",
+        "缩小",
+        "放大",
+        "开启旋转",
+        "回到阅读",
+        "课堂功能验收 · 你",
+        "火种",
+        "常青",
+        "罗盘",
+        "展开圆桌",
+        "展开",
+        "往期",
+        "知道了",
+        "比较十二种行动",
+        "找到新用户",
+        "激活与留存",
+        "定价与收益",
+        "研究与观察",
+        "理解这个行动背后的方法",
+        "确认行动",
+        "更多操作",
+        "设为超时默认",
+        "情报",
+        "研究",
+        "账本",
+        "查看往期"
+      ],
+      "text": "跳到正文\n←\n增长酒馆\n\n健身习惯 App\n练习 · 3席脚本\n\n第 1 / 6 轮 · 共同决策\n43秒\n连接我的 Agent\n更多\n⌄\n课堂功能验收 · 你\n火种\n常青\n罗盘\n展开圆桌\n酒馆主持\n模板主持\n\n先把已经确认的变化和猜测分开。 四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。 先确认用户完成了有价值的核心行为，再扩大触达。曝光、注册与有效活跃不是同一个口径。\n\n展开\n往期\n草稿已选择，确认后才会执行\n手动决策\n\n先看情报，再核对行动、人群与预算。默认草稿不是推荐，确认后才提交。\n\n知道了\n比较十二种行动\n找到新用户\n激活与留存\n定价与收益\n研究与观察\n\n先判断问题，再选行动。默认草稿不是推荐，确认后才会提交。\n\n行动\n付费获客\n内容获客\n用户推荐\n调整新手引导\n调整习惯机制\n改善核心价值\n限时付费试用\n提高订阅价格\n降低订阅价格\n用户调研\n小规模对照实验\n等待并观察\n目标人群\n健身新手\n习惯培养者\n规律训练者\n投入\n轻量 ×0.5\n标准 ×1\n加码 ×1.5\n\n预计投入 140\n可用预算 1,180\n已留20运营费\n\n以该公司上轮有效活跃用户数×0.55×投入档位产生目标人群接触机会\n\n理解这个行动背后的方法\n确认行动\n\n更多操作\n我的经营\n第 1 名\n现金\n1,200\n综合分\n0.00\n有效用户\n450\n情报\n研究\n账本\n本轮情报\n查看往期\n未核实传闻\n第 1 轮\n\n下一轮可能出现「订阅疲劳」。消息尚未核实，不保证成真。\n\n事实\n第 1 轮\n\n四家公司拥有相同起点：1200现金、450有效用户。本局六周，经营公式已冻结。"
+    },
+    {
+      "name": "result-desktop",
+      "source": "local",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\implementation-classroom-20261118\\online\\docs\\evidence\\classroom-20261118\\functional\\screenshots\\result-desktop.png",
+      "url": "http://127.0.0.1:61468/#/tavern/65E8DE",
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "scrollHeight": 1646,
+      "phase": "finished",
+      "headings": [
+        "增长酒馆",
+        "本局经营复盘",
+        "选一轮，回看当时的决定",
+        "等待并观察",
+        "酒馆主持",
+        "桌上消息",
+        "本轮情报",
+        "比较行动的作用与代价",
+        "找到新用户"
+      ],
+      "visibleActions": [
+        "←",
+        "连接我的 Agent连接 Agent",
+        "更多⌄",
+        "更换我的头像",
+        "Agent 设置",
+        "规则与帮助",
+        "沙盘视图",
+        "缩小",
+        "放大",
+        "开启旋转",
+        "回到阅读",
+        "完整账本",
+        "第 1 轮528.11+528.11",
+        "第 2 轮531.09+2.98",
+        "第 3 轮528.22-2.87",
+        "第 4 轮509.04-19.18",
+        "第 5 轮496.58-12.46",
+        "第 6 轮492.76-3.82",
+        "核对截至这一轮结算的公开记录",
+        "写下这一轮的判断 →",
+        "看看相关增长方法",
+        "情报",
+        "研究",
+        "账本",
+        "查看往期"
+      ],
+      "text": "跳到正文\n←\n增长酒馆\n\n健身习惯 App\n练习 · 3席脚本\n\n已完成 6 / 6 轮\n连接我的 Agent\n更多\n⌄\n已完成 6 / 6 轮 · 本局结果\n本局经营复盘\n492.76\n综合分 · 第 4 名\n\n有效用户 140 · 累计利润 950.94 · 单人练习，另外三席为脚本\n\n规模贡献\n125.70\n利润贡献\n252.37\n留存贡献\n114.69\n\n分项来自本局实际规则与账本，同分并列；球面领地是分数可视化，不是真实市场份额。\n\n选一轮，回看当时的决定\n完整账本\n第 1 轮\n528.11\n+528.11\n第 2 轮\n531.09\n+2.98\n第 3 轮\n528.22\n-2.87\n第 4 轮\n509.04\n-19.18\n第 5 轮\n496.58\n-12.46\n第 6 轮\n492.76\n-3.82\n第 6 轮 · 你的实际行动\n等待并观察\n行动费用\n0\n有效用户\n149.2 → 140.1\n本轮净利润\n130.74\n综合分\n492.76\n核对截至这一轮结算的公开记录\n\n你当时根据什么做决定？哪些变化还不能归因于这次行动？\n\n写下这一轮的判断 →\n看看相关增长方法\n整理这局复盘\n回到增长方法 →\n课堂功能验收 · 你\n火种\n常青\n罗盘\n展开圆桌\n酒馆主持\n模板主持\n\n账本已经落定，可以开始复盘。 已结算第6回合，席位1执行A12（等待并观察），综合分变化-3.82，回合净利润130.74。一次变化不能单独证明行动效果。 A12「等待并观察」：标准行动成本0，可用档位1；面向全部人群。不开展新行动，保留现有产品和定价，正常发生留存、自然接触和经营成本。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。\n\n展开\n往期\n再开一桌\n导出完整回放\n再看看圆桌\n我的经营\n第 4 名\n现金\n2,150.94\n综合分\n492.76\n-3.82\n有效用户\n140\n情报\n研究\n账本\n本轮情报\n查看往期\n事实\n第 6 轮\n\n第6周结算完成。当前最高分 618.57；完整账本已保存。\n\n事实\n第 6 轮\n\n内容渠道机会：内容渠道出现新的推荐机会，内容接触量上升。\n\n核验结果\n第 6 轮\n\n核验「下一轮可能出现「内容渠道机会」」：与本轮实际事件一致。\n\n事实\n第 5 轮\n\n消费收缩：消费意愿进入两轮收缩期，各公司需要检查收费策略。"
+    },
+    {
+      "name": "result-mobile",
+      "source": "local",
+      "file": "D:\\AI\\workspace\\Mac迁移\\读书会（mac）\\growth-atlas-v3\\implementation-classroom-20261118\\online\\docs\\evidence\\classroom-20261118\\functional\\screenshots\\result-mobile.png",
+      "url": "http://127.0.0.1:61468/#/tavern/65E8DE/review/2",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 1902,
+      "phase": "finished",
+      "headings": [
+        "增长酒馆",
+        "本局经营复盘",
+        "选一轮，回看当时的决定",
+        "调整新手引导",
+        "酒馆主持",
+        "桌上消息",
+        "本轮情报",
+        "激活：让价值第一次发生"
+      ],
+      "visibleActions": [
+        "←",
+        "连接我的 Agent连接 Agent",
+        "更多⌄",
+        "更换我的头像",
+        "Agent 设置",
+        "规则与帮助",
+        "沙盘视图",
+        "缩小",
+        "放大",
+        "开启旋转",
+        "回到阅读",
+        "完整账本",
+        "第 1 轮528.11+528.11",
+        "第 2 轮531.09+2.98",
+        "第 3 轮528.22-2.87",
+        "第 4 轮509.04-19.18",
+        "第 5 轮496.58-12.46",
+        "第 6 轮492.76-3.82"
+      ],
+      "text": "跳到正文\n←\n增长酒馆\n\n健身习惯 App\n练习 · 3席脚本\n\n本局结束\n连接 Agent\n⌄\n现金\n2,150.94\n综合分 第4名\n492.76\n有效用户\n140\n已完成 6 / 6 轮 · 本局结果\n本局经营复盘\n492.76\n综合分 · 第 4 名\n\n有效用户 140 · 累计利润 950.94 · 单人练习，另外三席为脚本\n\n规模贡献\n125.70\n利润贡献\n252.37\n留存贡献\n114.69\n\n分项来自本局实际规则与账本，同分并列；球面领地是分数可视化，不是真实市场份额。\n\n选一轮，回看当时的决定\n完整账本\n第 1 轮\n528.11\n+528.11\n第 2 轮\n531.09\n+2.98\n第 3 轮\n528.22\n-2.87\n第 4 轮\n509.04\n-19.18\n第 5 轮\n496.58\n-12.46\n第 6 轮\n492.76\n-3.82\n第 2 轮 · 你的实际行动\n调整新手引导\n行动费用\n80\n有效用户\n340.38 → 254.22\n本轮净利润\n224.71\n综合分\n531.09\n核对截至这一轮结算的公开记录\n\n你当时根据什么做决定？哪些变化还不能归因于这次行动？\n\n写下这一轮的判断 →\n看看相关增长方法\n整理这局复盘\n回到增长方法 →\n课堂功能验收 · 你\n火种\n常青\n罗盘\n展开圆桌\n酒馆主持模板主持\n\n账本已经落定，可以开始复盘。 已结算第6回合，席位1执行A12（等待并观察），综合分变化-3.82，回合净利润130.74。一次变化不能单独证明行动效果。 A12「等待并观察」：标准行动成本0，可用档位1；面向全部人群。不开展新行动，保留现有产品和定价，正常发生留存、自然接触和经营成本。它不是必胜策略，结果还受产品、人群、事件和同桌竞争影响。\n\n展开\n往期\n本轮情报\n第6周结算完成。当前最高分 618.57；完整账本已保存。\n↗\n再开一桌\n导出完整回放\n再看看圆桌"
+    }
+  ],
+  "journey": [
+    {
+      "round": 1,
+      "phase": "decision",
+      "action": "A01",
+      "receipt": "已接收 付费获客"
+    },
+    {
+      "round": 2,
+      "phase": "decision",
+      "action": "A04",
+      "receipt": "已接收 调整新手引导"
+    },
+    {
+      "round": 3,
+      "phase": "decision",
+      "action": "A05",
+      "receipt": "已接收 调整习惯机制"
+    },
+    {
+      "round": 4,
+      "phase": "decision",
+      "action": "A06",
+      "receipt": "已接收 改善核心价值"
+    },
+    {
+      "round": 5,
+      "phase": "decision",
+      "action": "A02",
+      "receipt": "已接收 内容获客"
+    },
+    {
+      "round": 6,
+      "phase": "decision",
+      "action": "A12",
+      "receipt": "已接收 等待并观察"
+    }
+  ],
+  "errors": [],
+  "tests": [
+    {
+      "name": "Home uses real new hero and actual product preview",
+      "passed": true
+    },
+    {
+      "name": "Actual practice has three script seats and actual product mission",
+      "passed": true
+    },
+    {
+      "name": "All twelve actions remain available in purpose groups",
+      "passed": true
+    },
+    {
+      "name": "Guide selection updates a draft without submitting an action",
+      "passed": true
+    },
+    {
+      "name": "Mobile action context and one confirmation are reachable",
+      "passed": true
+    },
+    {
+      "name": "Round 1 displays a real ledger summary",
+      "passed": true
+    },
+    {
+      "name": "Round 2 displays a real ledger summary",
+      "passed": true
+    },
+    {
+      "name": "Round 3 displays a real ledger summary",
+      "passed": true
+    },
+    {
+      "name": "Round 4 displays a real ledger summary",
+      "passed": true
+    },
+    {
+      "name": "Round 5 displays a real ledger summary",
+      "passed": true
+    },
+    {
+      "name": "Six different actions genuinely settle and the result has real contributions",
+      "passed": true
+    },
+    {
+      "name": "Historical round selector displays this seat actual action",
+      "passed": true
+    },
+    {
+      "name": "Historical evidence is explicitly bounded to settlement time",
+      "passed": true
+    },
+    {
+      "name": "Related reading keeps a return link to the chosen round",
+      "passed": true
+    },
+    {
+      "name": "Round note has real facts and a specific source return",
+      "passed": true
+    }
+  ],
+  "finished": true,
+  "modelCalls": 0
+}

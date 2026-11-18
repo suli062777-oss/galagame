@@ -1,0 +1,225 @@
+{
+  "date": "2026-11-18",
+  "scope": "Real local DOM and template API at 127.0.0.1:3020; fresh isolated browser profile; no public service or paid model calls",
+  "checks": [
+    {
+      "name": "Local service is template-only",
+      "passed": true,
+      "details": {
+        "provider": "template",
+        "enabled": false,
+        "calls": 0
+      }
+    },
+    {
+      "name": "No-invitation entry defaults to code join",
+      "passed": true,
+      "details": {
+        "entry": "join",
+        "mode": "multiplayer",
+        "codeRequired": true,
+        "buttonTop": 521.671875,
+        "buttonBottom": 571.671875,
+        "height": 844
+      }
+    },
+    {
+      "name": "Mobile initial join CTA is visible",
+      "passed": true,
+      "details": {
+        "entry": "join",
+        "mode": "multiplayer",
+        "codeRequired": true,
+        "buttonTop": 521.671875,
+        "buttonBottom": 571.671875,
+        "height": 844
+      }
+    },
+    {
+      "name": "Practice mode submits create/practice and no code",
+      "passed": true,
+      "details": {
+        "entry": "create",
+        "mode": "practice",
+        "hasCode": false
+      }
+    },
+    {
+      "name": "Practice mode creates real script-seat room",
+      "passed": true,
+      "details": {
+        "route": "#/tavern/145B17"
+      }
+    },
+    {
+      "name": "Organizer mode submits create/multiplayer",
+      "passed": true,
+      "details": {
+        "entry": "create",
+        "mode": "multiplayer"
+      }
+    },
+    {
+      "name": "Code join reaches requested real room",
+      "passed": true,
+      "details": {
+        "room": "0F1C98"
+      }
+    },
+    {
+      "name": "Invitation only requires visible nickname",
+      "passed": true,
+      "details": {
+        "entry": "join",
+        "room": "0F1C98",
+        "codeHidden": true,
+        "modeButtons": 0,
+        "requiredVisible": [
+          "name"
+        ]
+      }
+    },
+    {
+      "name": "Invitation joins real room",
+      "passed": true,
+      "details": {
+        "room": "0F1C98"
+      }
+    },
+    {
+      "name": "Existing invited seat returns directly to room",
+      "passed": true,
+      "details": {
+        "room": "0F1C98"
+      }
+    },
+    {
+      "name": "Unsaved note survives normal route switch",
+      "passed": true,
+      "details": {
+        "status": "已恢复未保存草稿，修改会继续暂存在此浏览器。"
+      }
+    },
+    {
+      "name": "Unsaved note survives browser reload",
+      "passed": true,
+      "details": {
+        "status": "已恢复未保存草稿，修改会继续暂存在此浏览器。"
+      }
+    },
+    {
+      "name": "Saved note does not resurrect stale draft",
+      "passed": true,
+      "details": {
+        "noteId": "99c74391-f61d-4229-8bd0-aa3c01d76d8c",
+        "status": "上次保存 2026/11/18 09:11:20"
+      }
+    },
+    {
+      "name": "Explicit discard restores formal saved content",
+      "passed": true,
+      "details": {
+        "status": "已丢弃未保存草稿，保留正式札记。"
+      }
+    },
+    {
+      "name": "Controlled newer-save conflict does not overwrite saved note",
+      "passed": true,
+      "details": {
+        "controlledFixture": "A second saved version was written to this isolated test profile only",
+        "status": "检测到较新的已保存版本。未保存草稿仍在，尚未覆盖当前正文。"
+      }
+    },
+    {
+      "name": "Explicit conflict restore recovers retained draft",
+      "passed": true
+    },
+    {
+      "name": "Saved chapter note keeps a real source return link",
+      "passed": true,
+      "details": [
+        {
+          "href": "#/read/retention",
+          "text": "← 回到这条札记的阅读来源"
+        }
+      ]
+    },
+    {
+      "name": "Chapter source return link navigates to original chapter",
+      "passed": true
+    },
+    {
+      "name": "All three experiments have predictions and fixed comparisons",
+      "passed": true
+    },
+    {
+      "name": "retention records prediction before revealing outcome",
+      "passed": true,
+      "details": {
+        "feedback": "你的预测：更多。接下来按题目条件，操作一次模型。"
+      }
+    },
+    {
+      "name": "retention scenario operates original controls then explains result",
+      "passed": true,
+      "details": {
+        "current": "50% 留存 · 第六轮 199 人",
+        "feedback": "题目验证：50% 留存 · 第六轮 199 人。你的预测是「更多」，与该条件下的模型方向不同。可继续调整变量，比较其他结果。"
+      }
+    },
+    {
+      "name": "activation records prediction before revealing outcome",
+      "passed": true,
+      "details": {
+        "feedback": "你的预测：更多。接下来按题目条件，操作一次模型。"
+      }
+    },
+    {
+      "name": "activation scenario operates original controls then explains result",
+      "passed": true,
+      "details": {
+        "current": "1,000 人访问 × 25% 完成率 = 250 人",
+        "feedback": "题目验证：1,000 人访问 × 25% 完成率 = 250 人。你的预测是「更多」，与该条件下的模型方向一致。可继续调整变量，比较其他结果。"
+      }
+    },
+    {
+      "name": "ice records prediction before revealing outcome",
+      "passed": true,
+      "details": {
+        "feedback": "你的预测：降低。接下来按题目条件，操作一次模型。"
+      }
+    },
+    {
+      "name": "ice scenario operates original controls then explains result",
+      "passed": true,
+      "details": {
+        "current": "影响 5 / 信心 3 / 便利 5 · 平均分 4.3",
+        "feedback": "题目验证：影响 5 / 信心 3 / 便利 5 · 平均分 4.3。你的预测是「降低」，与该条件下的模型方向一致。可继续调整变量，比较其他结果。"
+      }
+    },
+    {
+      "name": "Fixed baseline stays fixed while remembered contrast stays previous",
+      "passed": true,
+      "details": {
+        "remembered": "这次对照已记住：50% 留存 · 第六轮 199 人（本页暂存）"
+      }
+    },
+    {
+      "name": "Prediction can be skipped without blocking model controls",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "mobile-entry.png",
+    "note-draft-restored.png",
+    "note-draft-conflict.png",
+    "lab-prediction-and-comparison.png"
+  ],
+  "passed": true,
+  "limitations": [
+    "Controlled local storage fixture tests newer saved-version conflict; not two real people editing simultaneously",
+    "Root agent separately verifies actual round-linked room notes, six-round gameplay and publication",
+    "Mobile layout is desktop viewport emulation, not a physical phone"
+  ]
+}
